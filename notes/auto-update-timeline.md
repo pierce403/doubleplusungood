@@ -8,6 +8,7 @@ Focus: how the built-in updater (WinGUp/gup.exe) and its security posture evolve
 - 2007-11-21 — c5b219340: v4.6 release notes mention restricting auto-updater on legacy Win9x/Me/NT.
 - 2009-08-12 — ff1d754ad: added “snooze” support (skip auto-updater for 15 days).
 - 2011-10-22 — 9a2f0eeb7 (`PowerEditor/bin/updater/gup.xml`): updater URL switched to notepad-plus-plus.org (HTTP).
+- 2015-05-16 — 5c272a881 (`PowerEditor/bin/updater/gup.xml`, Notepad++ 6.7.8): updater InfoUrl moved to HTTPS (`https://notepad-plus-plus.org/update/getDownloadUrl.php`); gup.xml notes both HTTP/HTTPS support.
 - 2012-11-05 — cb383ab1b: removed Win95/98/ME gating for updater.
 - 2013-02-17 — 1e10e5e4d: added “Set Updater proxy…” command.
 - 2015-05-22 — d3c7ade18 (`PowerEditor/src/NppCommands.cpp`): blocked updater on Windows XP due to obsolete security APIs once downloads moved to SSL; prompts users to download manually.
@@ -21,6 +22,7 @@ Focus: how the built-in updater (WinGUp/gup.exe) and its security posture evolve
 - 2019-01-18 — b9ce84888: EU-FOSSA fix to prevent EXE hijacking of gup.exe launched by Notepad++.
 - 2019-02-13 — 501980782 (`PowerEditor/src/NppCommands.cpp`): verify gup.exe’s certificate before launching (release builds).
 - 2022-05-29 — b5479bb9b (`PowerEditor/src/WinControls/PluginsAdmin/pluginsAdmin.cpp`): fixed certificate-check issue that hid Plugin Admin.
+- 2018-05-18 — 07b765316: removed bundled updater binaries (including gup.xml) from the repo; updater config moved into code/build artifacts later.
 - 2025-10-30 — e6739c0ab (`PowerEditor/src/resource.h`): Notepad++ now passes the updater info URL directly (HTTPS).
 - 2025-11-16 — 3daa59326 (`PowerEditor/src/resource.h`): force the download domain prefix for updates to prevent hijacked URLs.
 - 2025-12-01 — bcf2aa68e: security enhancement to verify certificate & signature on the update installer.
@@ -30,3 +32,4 @@ Focus: how the built-in updater (WinGUp/gup.exe) and its security posture evolve
 - XP is blocked for the updater because Notepad++ update downloads require SSL; users are redirected to manual downloads.
 - The app now injects the `INFO_URL` (HTTPS) and forces a trusted download domain, mitigating URL tampering.
 - Plugins Admin also uses WinGUp for plugin updates and inherits the same certificate checks and XP exclusions.
+- Code-signing and release-key materials live in-repo: `README.md` documents the Notepad++ code-signing certificate (name, fingerprint, expiry) and `nppGpgPub.asc` contains the GPG release key; updater modules are checked against embedded hashes/certificates before execution.
