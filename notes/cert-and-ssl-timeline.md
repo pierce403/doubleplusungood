@@ -13,6 +13,7 @@ Goal: track how update URLs moved to HTTPS, how signing/verification changed, an
 - 2025-10-30 — e6739c0ab (`PowerEditor/src/resource.h`): Notepad++ passes the updater info URL directly (HTTPS).
 - 2025-11-16 — 3daa59326 (`PowerEditor/src/resource.h`): forces download domain prefix to GitHub to prevent hijacked update URLs.
 - 2025-12-01 — bcf2aa68e: security enhancement to verify certificate & signature on the update installer.
+- 2025-12-09 — b5ce090bf (Notepad++ 8.8.9 release): shipped after reports that the updater delivered malware; release framed as a corrective update.
 - 2025-12-09 — README.md: documents current Notepad++ code-signing certificate (name/fingerprint/expiry). `nppGpgPub.asc` in repo holds the GPG release key.
 
 ## Findings about trust anchors

@@ -26,6 +26,7 @@ Focus: how the built-in updater (WinGUp/gup.exe) and its security posture evolve
 - 2025-10-30 — e6739c0ab (`PowerEditor/src/resource.h`): Notepad++ now passes the updater info URL directly (HTTPS).
 - 2025-11-16 — 3daa59326 (`PowerEditor/src/resource.h`): force the download domain prefix for updates to prevent hijacked URLs.
 - 2025-12-01 — bcf2aa68e: security enhancement to verify certificate & signature on the update installer.
+- 2025-12-09 — b5ce090bf (Notepad++ 8.8.9 release): issued after reports that the updater was installing malware; 8.8.9 described as fixing the updater compromise (per headline “Notepad++ updater installed malware”).
 
 ## Current behaviors to note
 - Updater binaries live under `updater/gup.exe`; before launch, release builds verify the signature/known hashes (`PowerEditor/src/NppCommands.cpp`, `PowerEditor/src/MISC/Common/verifySignedfile.*`).
