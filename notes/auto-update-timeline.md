@@ -7,6 +7,7 @@ Focus: how the built-in updater (WinGUp/gup.exe) and its security posture evolve
 - 2007-11-10 — a89f6010d: preference toggle added to enable/disable the updater.
 - 2007-11-21 — c5b219340: v4.6 release notes mention restricting auto-updater on legacy Win9x/Me/NT.
 - 2009-08-12 — ff1d754ad: added “snooze” support (skip auto-updater for 15 days).
+- 2008-08-01 — CVE-2008-3436: authenticity check bypass in GUP (≤4.8.0) allowed MITM delivery of trojan updates, demoed with Evilgrade/DNS poisoning; fixed in 4.8.1. citeturn0search1turn0search6
 - 2011-10-22 — 9a2f0eeb7 (`PowerEditor/bin/updater/gup.xml`): updater URL switched to notepad-plus-plus.org (HTTP).
 - 2015-05-16 — 5c272a881 (`PowerEditor/bin/updater/gup.xml`, Notepad++ 6.7.8): updater InfoUrl moved to HTTPS (`https://notepad-plus-plus.org/update/getDownloadUrl.php`); gup.xml notes both HTTP/HTTPS support.
 - 2012-11-05 — cb383ab1b: removed Win95/98/ME gating for updater.

@@ -7,6 +7,7 @@ This repository exists to drive a security-focused timeline narrative for the ve
 - The Dec 2025 incident: malicious payloads were served via MITM on the updater; 8.8.9 is the maintainer’s fix with domain pinning + signature checks.
 - No evidence that Notepad++ installers ever install a root CA—scripts only sign binaries; verification relies on OS trust plus in-app hash/cert checks.
 - We added response materials: full git timeline, auto-update/cert timelines, news roundup with IOCs, and an incident-response playbook.
+- Historical precursor: 2008 Evilgrade/CVE-2008-3436 showed updater spoofing (pre-4.8.1) via DNS/HTTP MITM; echoes the 2025 issue and informs the hardening trail.
 
 ## Layout
 - `AGENTS.md`: instructions and mission context for coding agents.
