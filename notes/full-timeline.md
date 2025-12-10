@@ -1,0 +1,6666 @@
+# Notepad++ Git Timeline (chronological)
+
+Generated from `git log` in `notepad-plus-plus/`, oldest first. Format: `YYYY-MM-DD <short-hash> <subject>`.
+- 2007-08-07 ec7b0c2da v4.2 ready
+- 2007-08-07 9365f6f30 [CLEAN_UP] remove unnecessary files.
+- 2007-08-08 b4f7260e9 [BUG_FIXED] 1. Fix User Define Language extension recognition problem for sensitive case (now it's insensitive). 2. Fix keyboard shortcut bug in FindReplaceDlg.
+- 2007-08-08 98e9f1f97 [NEW_FEATURE] Add a menu entry to access to notepad++ plugins project page.
+- 2007-08-12 232269464 [RELEASE_V42] 1. Fix User Define Language extension recognition problem for sensitive case (now it's insensitive). 2. Add a menu entry to access to notepad++ plugins project page. 3. Enhance file open dialog (add all supported extensions in the filters list). 4. Fix bug of Run macro until EOF.
+- 2007-08-14 a789174c0 [BUG_FIXED] v4.2.1 : Fix regression bug : replace in selection bug.
+- 2007-08-15 61c0b2af5 [RELEASE] v4.2.2 : 1. Fix a regression bug regarding the filters in Find in files dialog. 2. Add a new transparency feature for Find dialog : Transparency on loss focus.
+- 2007-08-19 5357c6404 [BUG_FIXED] Crash bug while the shortcut command is absent in shortcut.xml is fixed. Add a new message NPPM_MSGTOPLUGIN for the communication between 2 plugins.
+- 2007-08-20 1f83e269f [NEW_FEATURE] Add a new plugin message NPPM_MENUCOMMAND which allows plugins to execute all the npp available menu commands.
+- 2007-08-22 e062a94cc [BUG_FIXED] Fix the file status auto-detection bug :  a unwanted selection after a popup dialog.
+- 2007-08-22 d2aecf4d1 [BUG_FIXED]add a "case" in the "switch".
+- 2007-08-22 894c4dcff [NEW_FEATURE] Add new plugin notification message NPPN_FILEJUSTOPENED.
+- 2007-08-23 dd759bfa4 [NEW_FEATURE] Auto check "In selection" in Find Replace dialog while there's a selection in the text zone.
+- 2007-08-26 e34c53d63 [NEW_FEATURE] Global Override style - incomplete.
+- 2007-08-27 de9aa761f [NEW_FEATURE] Global override style : to be continued.
+- 2007-08-28 1d523a912 [UPDATE] GlobalOverride feature...
+- 2007-08-28 f72f29ac5 [NEW_FEATURE] Global override feature is available.
+- 2007-08-29 9128785e1 [BUG_FIXED] Fix the bold/italic/underline refresh problem in Stylers Configurator for Scintilla component.
+- 2007-08-30 dee59a4ce [UPDATE] Remove apply button in Stylers configurator. Now the visual effect is update immediately.
+- 2007-09-01 7047f34cb [NEW_FEATURE] Change the behaviour of Styles Configurator : 1. Remove "Apply" button. 2. Cancel to restore the old setting.
+- 2007-09-03 93a47c6d7 [BUG_FIX] Fix win9x unicode search problem.
+- 2007-09-04 7175d376d [BUG_FIXED] refine the "cancel" feature in styler configurator.
+- 2007-09-04 66efb809a [BUG_FIXED] Fix the inconsistence of UNDO/REDO block.
+- 2007-09-05 315e38d7c [BUG_FIXED] Fix the crash issue while the config.xml is corrupted.
+- 2007-09-05 16d7ca340 [NEW_FEATURE] refine the styles configurator : cancel all modifications if the style configurator dialog is not closed while quit Notepad++.
+- 2007-09-05 750ff805f [CLEAN] remove unnecessary files.
+- 2007-09-06 07ac34458 [BUG_FIXED] Fix the crash bug while closing Notepad++ if Styles Configurator is never launched.
+- 2007-09-10 1388b2282 [NEW_FEATURE] Add hide lines feature (not yet finished). Fix the Scintilla Transpose function bug (Ctrl+Shift+Down in npp).
+- 2007-09-10 8d99c62d5 [NEW_FEATURE] Trigger Auto-Completion automatically (Not yet finished).
+- 2007-09-12 30a7f93cb [NEW_FEATURE] AutoC finished.
+- 2007-09-13 e5d3d370b [ADD] Add 2 xpm icons for hide lines feature.
+- 2007-09-14 81e7b66ec [ENHANCE] Enhance the hide lines feature.
+- 2007-09-15 20f8196be [BUG_FIX] Fix the crash problem while session.xml is corrupted.
+- 2007-09-15 49c21209a [NEW_FEATURE] The set languages in session are remembered now.
+- 2007-09-15 98fc4be76 [NEW_FEATURE] Add NPPM_INTERNAL_DOCSWITCHOFF and NPPM_INTERNAL_DOCSWITCHIN Messages.
+- 2007-09-16 4e26d3b46 [ENHANCE] refine the hide lines feature.
+- 2007-09-18 b9ff195fc [BUG_FIXED] centralize updateStatusBar() and dynamicCheckMenuAndTB() under NPPM_INTERNAL_DOCSWITCHIN message.
+- 2007-09-18 492290b69 [BUG_FIXED] Fix the display file type bug on the status bar while switching between the files.
+- 2007-09-19 f14608834 [BUG_FIXED] Fix the display file type bug on the status bar while switching between the files (Finally!).
+- 2007-09-20 4398b312d [NEW_FEATURE] Star up without plugins.
+- 2007-09-20 36b21e456 [BUG_FIXED] Fix the Styler Configurator display bug while the absence of global override entry in styles.xml.
+- 2007-09-21 24bb9be97 [BUG_FIXED] Status Zone display pb.
+- 2007-09-23 772874cbd [RELEASE_4_3] v4.3 is entirely translatable.
+- 2007-09-23 32aac7148 [CLEAN_UP] clean up.
+- 2007-09-25 140abd70f [BUG_FIXED] Fix the NOTEPAD++ getting focus problem while find dialog is activated. Fix unwanted selection after popup dialog (keep file) when the file opend is deleted.
+- 2007-09-29 09464881c [NEW_FEATURE] Add Session Restore with Sub-View Settings feature.
+- 2007-09-30 16ebb8c3d [BUG_FIXED] Fix a regression bug for the lang saving in session file. ADD NPPN_FILEBEFOREOPENED and NPPN_FILECLOSED plugins notification message.
+- 2007-10-01 9b3b105ae [ADD] Add the font LINEDRAW.TTF in svn.
+- 2007-10-02 5b4eae333 [BUG_FIXED] Fix crash issue while file is deleted outside (answer NO to popup dialog to not keep) and the silence update option is on.
+- 2007-10-08 a088bf7f0 [NEW_FEATURE] Add NPPN_FILESAVED and NPPN_FILEBEFORESAVE notifications. Enhance the File save Dialog (add ext).
+- 2007-10-11 681ef5ea4 [NEW_FEATURE] Enhance auto-added ext in file save dialog.
+- 2007-10-13 a5ec85b4b [RELEASE_44] Update the build note content.
+- 2007-10-14 86855be79 [RELEASE_44] v4.4 OR. Add NPPN_SHUTDOWN notification.
+- 2007-10-16 ead33bc5d [ENHANCE] Enhance the auto-add extension feature.
+- 2007-10-19 798ffa148 [ENHANCEMENT] New auto-add extension behaviour : 1. The filter *.* don't change the extension at all, whatever users type. 2. The file save dialog will be launched with the filter *.* set as default. So user can add any customized extension. 3. Choose other filters will change extension of file automatically. For example, a file name "toto.php" will be changed to "toto.txt" if the filter Normal Text "*.txt" is choosen.
+- 2007-10-20 681bb5943 [ENHANCEMENT] New auto-add extension behaviour : the chosen filter is remembered on the next launch.
+- 2007-10-21 cce77550f [NEW_FEATURE] Add new -ro and -noSession command line parameters.
+- 2007-10-22 efb48516c [BUG_FIXED] Fix crash issue while the launch the session file which contains the same file in 2 views (clone mode). The session code to memorize 2 views is completely rewritten.
+- 2007-10-22 0ea22b1a1 [ADD] Add a edit control in Preference dlg for the session file extension.
+- 2007-10-23 27d6d9b28 [NEW_FEATURE] Add the session file ext association feature (not yet finish).
+- 2007-10-23 0dd83435c [NEW_FEATURE] Add the session file extension association feature (work copy). Enhance the read/write config.xml to avoid crash.
+- 2007-10-24 d24b0372a [NEW_FEATURE] Session file load/save dialogs recognize the user defined session file extension.
+- 2007-10-25 249b9a79d [NEW_FEATURE] Add NPPM_ACTIVATEDOCMENU message. Fix NPPN_SHUTDOWN notification bug. Fix Russian display problem in the shortcut mapper.
+- 2007-10-25 7e195e305 [RELEASE_45] update the version, add a readme file for makefile.
+- 2007-10-27 f5b8eace0 [BUG_FIXED_AND_NEW_FEATURE] Add open relative file path from command line feature. Fix the crash issue when open a file which does not exist anymore from RFL (if its path exceed certain length).
+- 2007-10-29 97dfcc594 [BUG_FIXED] Fix a bug in Run dialog : the executable file won't be executed even it is between the double quot.
+- 2007-11-01 8e2d9c744 [BUGFIXED_NEWFEATURE] Change the behaviour : When file is deleted from outside and switch back to Notepad++, user will be asked if he want to keep this file. If he answer yes, he will not be asked in the next time. Change Window title from Notepad++ - file path to file path - notepad++.exe
+- 2007-11-06 0898192c6 [BUG_FIXED] Fix save file dialog crash issue. Add writelog() function. Preparing integrate auto-updater module.
+- 2007-11-06 80df519db [BUG_FIXED] Fix the bug that the title doesn't be updated while file status changed and updated.
+- 2007-11-10 a501b3f65 [NEW_FEATURE] Preparing Updater.
+- 2007-11-10 a89f6010d [NEW_FEATURE] Enable/disable Notepad++ updater via preference dialog.
+- 2007-11-13 07c17d7c4 [BUG_FIXED] Fix the crash issue while the length of config.xml is zero.
+- 2007-11-14 ae7b901f9 [NEW_FEATURE] Updater is ready to go.
+- 2007-11-21 d64eb2637 [REALEASE_46] New release v4.6.
+- 2007-11-21 c5b219340 [REALEASE_46] New release v4.6 - add the restriction to launch auto-updater under winnt/95/98/me.
+- 2007-11-27 011f2fcbc [BUG_FIXED] Fix the bug of dynamic menu format.
+- 2007-11-29 74d580d94 [BUG_FIXED] Make the "recovery system" for 3 mandatory xml files (config.xml, langs.xml and stylers.xml) to prevent the fail loading due to the corrupted files.
+- 2007-12-03 4beac9434 [BUG_FIXED] Fix the hiding bug while launch time (change of environment from duel monitors to mono monitor). Add NPPM_GETNPPVERSION message for plugin system.
+- 2007-12-06 e4e465b09 [UPDATE] Integrate the newest GUP into Notepad++. Add "Update Notepad++" menu item.
+- 2007-12-08 fd501da2b [CHANGE_BEHAVIOUR] Change Find in files behaviour : all the hidden directory won't be searched (for example : .svn).
+- 2007-12-10 50ad91543 [NEW_FEATURE] Comment (Ctrl+K) and Uncomment (Ctrl+Shift+K) is separated now.
+- 2007-12-10 c7188766c [ENHANCE] Enhance the horizontal scroll feature.
+- 2007-12-11 6ab332687 [NEW_FEATURE] Column selection is remembered now while switching among the files. As well this settings will be stored in the next session.
+- 2007-12-14 c67df4644 [NEW_FEATURE] Add NPPM_HIDETABBAR and NPPM_ISTABBARHIDE plugins messages.
+- 2007-12-15 6d1521e99 [NEW_FEATURE] Add "-notabbar" flag to hide the tab bar (ie. Notepad style).
+- 2007-12-15 8c1a5f557 [NEW_FEATURE] Add build date - time in about box. Fix the glitch of display of hidding tab bar.
+- 2007-12-16 8daa6278f [CHANGE] Change "UTF8 without BOM" menu item behaviour.
+- 2007-12-25 576930dab [NEW_FEATURE] Add the Scintilla external lexer capacity under the Notepad++ plugin form.
+- 2007-12-26 3fb08ce73 [MODIF] Minor change.
+- 2007-12-29 64fbc8a62 [BUG_FIXED] fix a bug where a file with 2 or more consecutive spaces gives problems with sessions and history. fixes problem where opening a file when in save as dialog saves the wrong file. Change the main Notepad++ icon.
+- 2007-12-30 6edeeff8d [BUG_FIXED] Pass the message with *W version for Scintilla. change.log and todo.txt are updated
+- 2007-12-31 53a40b7ff [RELEASE_47] 4.7 release.
+- 2008-01-01 8ae442cdc [[RELEASE_47] 4.7 release - modification of nppSetup.nsi to adapt the new xml model protection system. Swap back the main icon.
+- 2008-01-01 7d53a41d4 [MODIF] Minor modification.
+- 2008-01-01 890482139 [NEW_FEATURE] Add a menu item "Clean Recent Files List".
+- 2008-01-02 fae88016e [RELEASE_471] 4.7.1 release - Fix the crash bug due to subview session saving problem.
+- 2008-01-03 9d134b4cd [RELEASE_4_72] Fix the regression that the native language doesn't show in the menu. Enhance the full screen feature (F11).
+- 2008-01-03 8c0817a0b [RELEASE_4_72] 4.7.2 final release.
+- 2008-01-07 72bb63c88 [RELEASE_473] Enhance installer. Fix horizontal scroll bug regarding the folding issue. Add a new behaviour that click on active tab activate the view as current view.
+- 2008-01-08 2ba1a1597 [BUG_FIXED] Fix the crash issue of window dialog while clicking Sort button without selected item. Enhance Sort feature GUI part - Enable Sort button only after clicking on the column tab; Disable Sort button after sorting.
+- 2008-01-10 95e2c6d52 [BUG_FIXED] Fix the horizon scroll bar bug. Correct a typo.
+- 2008-01-12 2417d3af6 [BUG_FIXED] 1. Fix the bug regarding the scroll bar for folding issue. 2. Fix the full screen (F11) bug regarding multi-display issue 3. including nppcm64.dll in installer for ths x64 OS.
+- 2008-01-14 c83d5801c [NEW_FEATURE] Support YAML language.
+- 2008-01-14 3412c5ce5 [RELEASE_475] Fix invisible tabs bug while closing (Finally).
+- 2008-01-16 9768d7f0a [NEW_FEATURE] Add new look and feel of Docking container.
+- 2008-01-16 df87cfe02 [NEW_FEATURE] Add 3 files for new docking manager.
+- 2008-01-17 5b79b33eb [BUG_FIXED] Fix full screen mode bug : can not switch applications by using Alt+TAB in full screen mode.
+- 2008-01-17 525960820 [BUG_FIXED] Fix word-completion crash bug while the word to complete exceeds 256 characters.
+- 2008-01-17 e8323985c [BUG_FIXED] Fix Preference crash bug.
+- 2008-01-19 4b34c681a [NEW_FEATURE] Add multiline and vertical capacity for tab bar.
+- 2008-01-20 bf507dc5e [NEW_FEATURE] Add launch "as notepad" style feature (detection of asNotepad.xml, then launch notepad++ with -multiInst -nosession -notabbar options). vertical/multiline tab is in progression.
+- 2008-01-20 63ec780bf [IN_PROGRESS] VERTICAL/MULTILINE feature in progress.
+- 2008-01-22 84487e2f2 [IN_PROGRESS] VERTICAL/MULTILINE feature in progress.
+- 2008-01-23 dfb0f2dad [IN_PROGRESS] Add multiline and vertical capacity for tab bar.
+- 2008-01-23 05ac5e63c [IN_PROGRESS] Add multiline and vertical capacity for tab bar.
+- 2008-01-23 4b4e1f996 [NEW_FEATURE] VERTICAL/MULTILINE feature done.
+- 2008-01-25 d88fa6236 [NEW_FEATURE] Make orange indicator on the top of tab lighter when the view loss the focus. Fix the multi-line tab height display problem while adding/removing the document.
+- 2008-01-30 eedb31193 [NEW_FEATURE] Enhance ShortcutMapper - all the commands can be assigned to a shortcut, including the unmapped ones.
+- 2008-01-30 8d0a0b8c3 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@119 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-01-30 3b5428002 [NEW_FEATURE] Add detection mouse wheel on the different view feature. User can scroll edit view when mouse on it, it's not necessary to set edit view as current view to scroll it.
+- 2008-02-03 83fb8c749 [NEW_FEATURE] Add Go to offset feature (in Go To Line dialog).
+- 2008-02-03 4b0926a0d [BUG_FIXED] Restore working directory with no open files.
+- 2008-02-04 e240ac8c6 [NEW_FEATURE] Wrap position restore while switching back document.
+- 2008-02-09 850b69023 [UPDATE] Upgrade Scintilla from v1.73 to v1.75
+- 2008-02-10 53f1dbfc1 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@125 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-02-10 fd383d3b5 [BUG_FIXED] Fix folding bugs while deleting the begin/end folding keywords.
+- 2008-02-10 e0d391d73 [ADD] add property file for scintilla vc2005 project file.
+- 2008-02-11 c0ae1fefc [MNEW_FEATURE] Add mouse wheel horizontal scroll feature (vista only). Add mouse browsing (forward/back) feature.
+- 2008-02-12 ec338d909 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@129 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-02-13 393ded102 [NEW_FEATURE] Add the utf8->ansi / ansi->utf8 conversion feature.
+- 2008-02-16 93280d508 [ENHANCE] Enhance the conversion feature by emptying the undo buffer after the conversion.
+- 2008-02-18 62cfd070b [BUG_FIXED] cannot save file(s) if application closed while minimized.
+- 2008-02-19 0e32dd48f [CHANGE_BEHAVIOUR] Change the horizontal scroll behaviour from dynamic one to static one.
+- 2008-02-20 608bc8187 [ENHANCE] Enhance the changed HSCRLL behaviour.
+- 2008-02-20 a9172eee7 [BUG_FIXED] Fix a small display drawback while switch from simple line tab to multi line tab.
+- 2008-02-22 dbd9afeac [ENHANCEMENT] Enhance the auto-completion feature : user can define the number of characters to trigger auto-completion popup dialog.
+- 2008-02-23 4cce0e45f git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@137 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-02-27 2b1e41512 [RELEASE_4_8] Notepad++ v4.8 OR.
+- 2008-03-01 c7162f955 [BUG_FIXED] Fix the bug of last session's doc position are not rescrolled on Notepad++ launch time if wrap mode is activated.
+- 2008-03-02 d550ce44b [RELEASE_4_8_1] Notepad++ v4.8.1 release : 1. Enhance shortcut mapper; fix bug - get back Shift+Del, Shift+Ins and Ctrl+Ins shortcut. 2. Disable GUP on Notepad++ launch time under vista due to UAC issue.
+- 2008-03-05 147d885a4 [BUG_FIXED] Fix unicode input problem for non ansi characters. Fix missing fonts in font list problem (Styler configurator).
+- 2008-03-07 7d950fe5d [SCINTILLA_NEW_FEATURE] Add the capacity of keeping line highlighting even when it loss its focus.
+- 2008-03-07 88edc71a7 [NEW_FEATURE] Add the capacity (behaviour) of keeping line highlighting even when Notepad++ loss its focus.
+- 2008-03-09 b271777e8 [RELEASE_4_82] Notepad++ v4.8.2 release.
+- 2008-03-10 6480c3099 [BUG_FIXED] Fix the DnD text bug between 2 views. Notepad_plus.cpp clean up.
+- 2008-03-15 ae9f90bd5 [NEW_FEATURE] Add DnD feature (WM_DROPFILES) for the plugins windows.
+- 2008-03-15 2c7231484 [NEW_ENTRY] Add new entry for document monitor plugin.
+- 2008-03-16 e7e3be93b [NEW_FEATURE] Add scroll to end line after update feature.
+- 2008-03-22 ba85977e6 [BUG_FIXED] Enhance checking modification from outside feature.
+- 2008-03-23 3453ff8ee [ENHANCEMENT] Enhance scroll to eof feature for the current document.
+- 2008-03-23 79db2731c [BUG_FIXED] Fix the bug of scrolling to eof feature for the current document.
+- 2008-03-24 a03ca89d0 [BUG_FIXED] Fix the bug that the first new document is set as "New Document setting".
+- 2008-03-24 99faa2bc0 [NEW_FEATURE] Add a new message for Document Monitor plugin.
+- 2008-03-27 92c229a57 [BUG_FIXED] Fix the annoying acrobat reader dialog problem.
+- 2008-03-28 3701d40a8 [BUG_FIXED] Fix crash bug while a "New 2" is in session.xml. Clean up the toolbar code.
+- 2008-03-28 0d932b764 [ENHANCEMENT]Improve toolbar performance. Internals prepped for later extensions.
+- 2008-03-29 16f5cc9a3 [FIXED] Fix some typos.
+- 2008-03-30 7a07e38f4 [BUG_FIXED] Fix a crash bug by inserting a new feature.
+- 2008-03-31 ef071a1fa [NEW] Add separator menu item for plugin menu (if _pFunc == NULL).
+- 2008-04-03 9c1b24237 [BUG_FIXED] Fix crash bug when 'Close All But Me' is selected.
+- 2008-04-05 a80ee0d2f [BUG_FIXED] Fix the crash problem while the separator shortcut (if assigned) is triggered.
+- 2008-04-05 a4f36f368 [BUG_FIXED] If plugin function pointer is null, then it'll be added in menu as separator, but it won't be added in shortcut mapper list.
+- 2008-04-06 1023a17c5 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@163 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-04-06 6a3fdbd1f [BUG_FIXED] Fix the file Auto-detection settings writing in config.xml bug.
+- 2008-04-07 4effb92bc [BUG_FIXED] Bring back the old behaviour for HOME and END keys.
+- 2008-04-11 e55d1e199 [RELEASE_4_85] OR v4.8.5
+- 2008-04-15 1a5e5c27b git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@167 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-04-16 a2aa87d8c [NEW_FEATURE] Add hilighting all token wile selecting a word (in progress). Add auto hide menu feature (in progress).
+- 2008-04-18 11333a7ec [NEW] Hide menu bar (in progress).
+- 2008-04-19 12a2f1604 [NEW_FEATURE] Add style transparency feature, rightclick on color to enable.
+- 2008-04-19 9e26b31e3 Incremental search integrated into ReBar, Fix Find dialogs buffer overflow, Added chevron into rebar to show hidden icons, Added plugin message to add rebarbands (experimental), simplify sizing logic a little, Remove nonexistant file from vc2003 project file.
+- 2008-04-20 544a4916d [NEW_FEATURE] Finish IE7 style menu (auto hide).
+- 2008-04-20 52ebeee04 [NEW_FEATURE] Add hilighting all token wile selecting a word (finished).
+- 2008-04-21 4a6ca982e [NEW_FEATURE] Smart HighLighting uses indicator instead of style.
+- 2008-04-21 9a3861918 [ENHANCE] Find dialog always scrolls text into view, The option where to display text is removed (poor behaviour), view doesnt scroll or scrolls (attempts to) to center, Find dialog shows searched text in messagebox when not found.
+- 2008-04-22 936d040e4 [NEW_FEATURE] Find dialog has 'Extended' option: search for tabs, newlines, [ENHANCEMENT] Find dialog shows text that was searched when its not found, some code cleanup (replace now only replaces given word on first hit, instead of selection, if it contained the token).
+- 2008-04-22 65bb6ceb7 [NEW_FEATURE] Mark All is change to indicator way from style way. Fix the smart highlighting performance issue.
+- 2008-04-22 4dd887089 Add lt and gt chars to isWordChar check. Fix small regression with hilite and purge.
+- 2008-04-23 a1b864771 [TUNE] Tune isWordChar() function for smart highlighting feature.
+- 2008-04-23 92d408054 Fix buffer error in find message. Add binary, octal, decimal escape sequences for extended search
+- 2008-04-23 a54e45dd4 Move tab-drag cursor hotspot to tip of the arrow
+- 2008-04-23 84fa914ea [CLEAN] Clean up. Refine the smart hiliting feature.
+- 2008-04-23 cd2cc80ed Add places bar in save as dialog
+- 2008-04-24 d074522b7 [ENHANCEMENT] Change commandline handling, relative paths are now properly handled. Fix a small bug when failed open of file would still change the language.
+- 2008-04-24 e89bbe72d [NEW_FEATURE] Add 2 messages for doc monitor plugin.
+- 2008-04-24 1667a3a84 Fix DnD 'deadzone'
+- 2008-04-24 279355ee3 Cleanup vs2003 project file
+- 2008-04-24 ef941865d Fix crash bug because of incorrect static initialisation error.
+- 2008-04-25 1eb46eaca [NEW_FEATURE] Add hilite all in Incremental search.
+- 2008-04-26 36706f13a [NEW_FEATURE] Refine the "HighLight all" feature in incremental search dialog.
+- 2008-04-28 017784de5 Fix URL highlight lockup
+- 2008-04-29 2951979ef [NEW] Make search in hidden folder optional in find in file.
+- 2008-04-30 6b4b3c3f0 [BUG_FIXED] Fix the stylers configurator transparency bug.
+- 2008-05-01 3e705b3e6 [RELEASE_4_9] Release 4.9. Fix the replace bug while replacing nothing. Fix the F3 searching direction bug.
+- 2008-05-02 d8d5ce965 [] Add "CURRENT_LINE" and "CURRENT_COLUMN" environment variables for run dialog. Add NPPM_GETCURRENTLINE and NPPM_GETCURRENTCOLUMN plugin messages.
+- 2008-05-03 537e3ad70 [BUG_FIXED] Fix Find in files result display problem (unicode). Fix smart hilite bug that it doesn't work with the word contain the accent(s).
+- 2008-05-04 929d1d43b [RELEASE] v4.9.1
+- 2008-05-06 b177e060b Fix octal search typo
+- 2008-05-08 fd437c9c7 [NEW_FEATURE] Add "Save Copy As" feature.
+- 2008-05-10 7b7909ad8 [BUG_FIXED] Fix the regression bug that x position doesn't be restored while switching back a document.
+- 2008-05-11 3208c99d9 [RELEASE] v4.9.2
+- 2008-05-15 cfdbd4b5e [BUG_FIXED] Fix smart highlight bug.
+- 2008-05-18 6b5aa92d6 [NEW_FEATURE] Add Calltip capacity.
+- 2008-05-21 7085e6972 [NEW_FEATURE] Add tooltips in document tab to display the full file name path.
+- 2008-05-22 e6cfeedc0 Finish Calltip. Make AutoComplete class. AutoComplete uses XML data. Add exception handling (dumping filedata). Sync Project file with added files.
+- 2008-05-23 8fed0b093 [UPDATE] update vc2005 project file.
+- 2008-05-25 f6dafe8b0 [NEW_FEATURE] Tabbar's coulours is configurable (Active tab Text, Inactive tab text, Inactive tab background, Active tab focused indicator and Active tab unfocused indicator).
+- 2008-05-26 fdc6f7d8b [NEW_FEATURE] Marked line operation (in progress).
+- 2008-05-27 b6020b908 Add indicator transparency option. Set it to 100 (out of 255) for better visibility.
+- 2008-05-27 b62de8fd3 [NEW_FEATURE] bookmarked lines operations.
+- 2008-05-28 169d0e69c Fix goto line with command line bug.
+- 2008-05-30 9c0023c57 [NEW_FEATURE] Add "Select all" and "copy" context menu items in Find in files results window.
+- 2008-06-01 a3b344bbc [NEW_FEATURE] All the menu commands can be added in context menu, including plugins' commands, macros and user defined commands. The bookmarks' look & feel are improved.
+- 2008-06-01 b9256773b [BEHAVIOUR_FIXED] Fix a minor behaviour in shorcutmapper.
+- 2008-06-06 e4cab506f [Near 5.0] Change filehandling: buffers. This fixes many things like clonemode etc.. Faster shutdown. Open files with date pre-1970. Hide lines now saved during switches. Recent files has been redone: also numbers, more stable, no duplicates. Display asterisk in titlebar if dirty file is active. Some minor stuff that may have come along.
+- 2008-06-06 fd7b3614d [NEW_FEATURE] Caret width and blink rate are customizable. (in progress)
+- 2008-06-07 95044318e Fix filesession position bug
+- 2008-06-07 b3d018373 [NEW_FEATURE] Finish the Caret setting.
+- 2008-06-07 47194d114 fix markers and language on session load
+- 2008-06-07 3e551ff84 Fix bug where saving document would cause folding to be lost
+- 2008-06-07 944813522 Fix wordcompletion bug: API file had to be present to function.
+- 2008-06-08 70ca7e3ff Fix crash if session contained only sub-view files.
+- 2008-06-08 a7d7d28f9 Fix bug where linenumber margin of secondary view was shown on startup if primary was shown, even though settings said otherwise.
+- 2008-06-08 536a07167 [NEW_FEATURE] Add the smart highlight file size limit - 1.5 MB in order to improve the performance. Make setInfo() call before getFuncsArray() call for PluginsManager.
+- 2008-06-11 b07c4db28 [BUG_FIXED] Fix "replace with space" in GUI not be remembered bug. Fix HTML syntax highlighting is not applied in php, asp file bug.
+- 2008-06-12 f7397ed5e [NEW] Protect SCNotification structure data from the modification of plugins.
+- 2008-06-12 f7f1e9bf7 [BUG_FIXED] Fix all doc tab blink bug when Notepad++ is re-activated.
+- 2008-06-12 c87f33fbe Fix crash in recentfilelist
+- 2008-06-12 a979745f9 Fix statusbar not updating
+- 2008-06-13 73a6500e6 [ENHANCE] Make smart highlight work only with mouse double clicked in order to improve the its performance.
+- 2008-06-14 26287e2f0 Fix bugs with find in (open) files. Ensure goto line is visible
+- 2008-06-14 673c2f309 Prevent unfolding from hiding goto line
+- 2008-06-14 01285fbfb attachDefaultDoc now in Scintilla::init(). (fix crash on startup because buffer == NULL)
+- 2008-06-15 84b2a5381 [BUG_FIXED] Fix the crash issue under Chinese/Korean/Japanese Windoz in v5.0 alpha. Fix go to line command line bug. Enhance Find in files and Find in all opened files features' performance. Fix dialog off screen problem under multi-monitor environment.
+- 2008-06-16 5529852d6 Fix file case problem. Fix incremental search not using selected text. Fix Session not loaded using anything other than file->open menu.
+- 2008-06-16 1a2e2e043 Fix reload not trigger restyle. Fix find in files corrupting Buffer status. Incremental search removing highlighting of closed.
+- 2008-06-16 53f60b4a7 Fix styler configurator setting wrong lexer in sub-view.
+- 2008-06-16 ba6a9c260 Fix correct userdefined lang not selected when opening file. Fix view not updating if userdefine is changed (only for active view)
+- 2008-06-16 599872531 Change shortcut for Word-completion to Ctrl-Enter
+- 2008-06-16 fe67fabc7 Fix bug with lexer. Saving doesnt reset language if name not changed.
+- 2008-06-17 a06816432 Change find in files/replace etc to use invisible view. Also fix bug where replace in files didnt trigger save point
+- 2008-06-18 ed40c1f03 Adjust lexing handling, restored performance in some cases, temp. disable cloneview on updates. Update lexer table to also contain lexerID.
+- 2008-06-18 15a335da5 Adjust reload after fileupdate, now deferred. Fix bug where changing readonly attribute didnt always trigger change of status.
+- 2008-06-19 bae3eb5bd [BUG_FIXED] Fix the User Language Define Dialog don't update current document.
+- 2008-06-20 4e3dd33f9 [NEW_FEATURE] Add Caret block mode.
+- 2008-06-20 d5f5e41fd [NEW_FEATURE] Add Caret block mode.
+- 2008-06-22 8e9e2f30b [BUG_FIXED] Fix crash issue while file's language is "User Defined" in the last session. Fix the User Defined language and some languages' syntax highlighting problem while reload last session.
+- 2008-06-22 5be9af9cc [NEW_FEATURE] Add Matched Tag Highlighting feature.
+- 2008-06-23 1335a73d6 Fix style not enabled if restyle requested on unstyled document.
+- 2008-06-23 f7f0c438b Remove duplicate code
+- 2008-06-23 f154e6984 [NEW_FEATURE] Tag match highliting is finished.
+- 2008-06-23 4c138a551 [BUG_FIXED] Fix the single tag colourising bug.
+- 2008-06-23 ec66a2289 Fix case sensitivity bug in Calltips Single existing file on commandline will not be interpreted but opened directly
+- 2008-06-23 70bfdcf84 Moved xmlUpdater and IExplorerShell to tools folder. Add xmlApiSorter tool. Update tool files to point to correct directories.
+- 2008-06-25 f53fa31a7 [BUG_FIXED] Fix NPPM_GETCURRENTIDEX bug.
+- 2008-06-25 86e358a89 Fix selection issue after switching document. Make getBufferByID inline. Fix selection reset after reload or saving session.
+- 2008-06-25 6f740de0a Fix view not closing of not active.
+- 2008-06-26 97ab1062d [NEW] Add 2 plugin message for v5 : NPPM_GETFULLPATHFROMBUFFERID and NPPM_GETPOSFROMBUFFERID.
+- 2008-06-26 c48b68c07 Fix bug where reloading a readonly file would not work.
+- 2008-06-27 6ecf55132 Fix calltip regression.
+- 2008-06-28 b2a99264f [BUG_FIXED] improve the recognition of tag name.
+- 2008-06-29 84bd5081b Fix bug with no titlebar if no session is loaded. Fix bug where not enough stylebits are set on a document.
+- 2008-06-29 ad776f17f [NEW_FEATURE] Add rename and delete current document features.
+- 2008-06-29 d82edbff5 [MODIFY] Minor change.
+- 2008-06-30 608265a3c [BUG_FIXED] Fix find/replace bug due to Tag matching feature. Enhance the tag matching display.
+- 2008-06-30 9a2cebbd6 [BUG_FIXED] Avoid delete/rename operation on New file.
+- 2008-07-01 41be902ec [ENHANCE] Enhance Tag match highlighting.
+- 2008-07-02 25a8dd0dd Fix saveAll bug.
+- 2008-07-02 d391d0740 Add spaces to templates for VS2003 compiler.
+- 2008-07-02 29161802e [ENHANCE] Enhance tag match hilite. Make Enhance tag match hilite optional.
+- 2008-07-03 bd1e9eb82 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@271 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-07-03 d28414d7c [ENHANCE] Make Tag attributes highlight work correctly.
+- 2008-07-06 e95acd8f5 [RELEASE] v5 official release.
+- 2008-07-06 014af9eb4 [BUG_FIXED] Fix word completion doesn't display bug.
+- 2008-07-07 ce45ebe45 [BUG_FIXED] fixed the tag attribute highlight memorizing bug.
+- 2008-07-07 a9ad2f7a2 [BUG_FIXED] Fix word completion not in alphabet order.
+- 2008-07-08 8fb47c3ba git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@277 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-07-08 1338ac4fe Fix bug: hide lines not working right when closing. Fix bug: Files not in recent list on exit and no session saved. Fix bug: bad copy/pate code in getCurrentOpenedFiles.
+- 2008-07-08 722416bcc git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository@279 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2008-07-08 f0c3cfc77 [BUG_FIXED] Fix tag match highlight bug.
+- 2008-07-09 f35ddeb8d [NEW_NAME] rename some dialog items.
+- 2008-07-09 d8973543a [BUG_FIXED] Fix tags match highlighter bug.
+- 2008-07-09 7523faff2 [IMPROVE] Reorganize the xml tag match hilite.
+- 2008-07-09 4748f3fa3 Re-enable gcc compiler environment
+- 2008-07-09 c9e76e019 [CODE_REORGANISATION] reorganisation xmlMatchedTagsHighlighter class.
+- 2008-07-10 096f03084 [BUG_FIXED] Fix tags match highlighter bug - the none-html zone won't be highlight.
+- 2008-07-11 96299bc21 Change timestamp functions from _stat to GetFileAttributes, should work with 2003 and 2005 compilers.
+- 2008-07-14 8bfe2001e [RELEASE] OR v5.0.1. Revert to the old timestamp due to the annoying bug. Rename Makefile.win to makefile. Remove throwing exception temporarily in order to fix Notepad++ launch problem under WINE.
+- 2008-07-14 2cb0038e0 [RELEASE] OR v5.0.1. Fix bug : Syntax highlighting is not applied after "Save as".
+- 2008-07-17 481b80909 [BUG_FIXED] Fix the huge file makes notepad++ crash issue. Fix adding item in the history file list while deleting file from Notepad++  bug.
+- 2008-07-17 ea80233f6 [BUG_FIXED] Fix crash bug for tags match highlighting.
+- 2008-07-17 fb94eb5ec Adjusted Smart Highlighter to only highlight the visible lines. Highlighting code is now in a new class SmartHighlighter.
+- 2008-07-17 bccf1356a Set indicators to draw under the text
+- 2008-07-17 4ae42c565 Fix bug when closing file using close button. Add Scintilla vcproj file for VS 2003
+- 2008-07-17 45c7e7802 Fix delay because of folding tests.
+- 2008-07-17 68673f804 [UPDATE] update the project.
+- 2008-07-20 f3ebd08bd [BUG_FIXED] Fix a bug that file detection options set are not saved.
+- 2008-07-21 42cfe9041 [NEW] URL highlighter highlights only the current view, it highlights : http, https, ftp and malto.
+- 2008-07-21 d156d90a9 [ADD] Add UrlHighlighter class files.
+- 2008-07-21 ccef65d20 [REVERT] Revert to old clickable link implementation which is more accurate.
+- 2008-07-21 1d9f93b2a [RELEASE] v5.0.2 release.
+- 2008-07-24 e6247761d [BUG_FIXED] Fix a crash bug while searching in all opened documents if a document contains long line.
+- 2008-08-03 04f43d856 [RELEASE] Notepad++ v5.0.3. Fix the display problem in found results dialog while processing find in all opened files/find in files in a file contains a very long line. Fix not remembering the history file setting "Don't check at launch time" option bug.
+- 2008-08-06 85db072c3 [NEW] Make x64 compiling compatible.
+- 2008-08-15 aa1f014ac [NEW_FEATURE] Unicode path is supported.
+- 2008-09-01 90f5488b5 Fix folding not occuring over entire document
+- 2008-09-06 147278ac6 [NEW_FEATURE] UNICODE/ANSI release. Fix crash issue due to the incoherent modification/creation date. Fix tag match highlighting mismatched bug.
+- 2008-09-07 8c70585f2 [TUNE] vc2008 -> vc2005
+- 2008-09-08 521c53918 Add hidden capability of setting default directory (with envvars). No more directory locks (can freely delete all directories).
+- 2008-09-09 2b4481949 [NEW] Add 2 notification (NPPN_DOCSWITCHINGIN and NPPN_DOCSWITCHINGOFF)messages.
+- 2008-09-09 d38539070 Rename SysMsg->Common , force include in vc2003 and makefile. Change default directory hidden option, tries to use newer API call. Made compilable again with MinGW, exception handling disabled when compiled with makefile. Change basic_string<TCHAR> to generic_string. Fix bug with CPP lexer keyword list. Add unicode Configurations to vc2003 project file.
+- 2008-09-09 6a73e6248 Add Common files.
+- 2008-09-09 c2acd3042 clean up.
+- 2008-09-10 adba68de0 Fix loads of sizeof() problems with TCHAR (possible buffer overfows by factor 2). Fix a problem with Incremental search+UTF8 in win9x.
+- 2008-09-10 f8d3d3e5d Fix sizeof bug with font size list.
+- 2008-09-10 2b93d0ab4 [MINOR] Change tag matched hiliter colour.
+- 2008-09-10 0f7794883 [BUG_FIXED] Fix context menu incorrect setting crash bug.
+- 2008-09-11 11b624062 [BUG_FIXED] Fix UDL name load bug.
+- 2008-09-12 5ef6a4a5b [NEW_FEATURE] Add new pluin notification NPPN_LANGCHANGED.
+- 2008-09-15 cc263ceda [NEW_FEATURE] Add "Doc go to new instance" and "Doc open in new instance" feature.
+- 2008-09-15 5c6fb5e0f [NEW_FEATURE] Add new pluin notification NPPN_LANGCHANGED (Finished).
+- 2008-09-16 836036890 [BUG_FIXED] Fix "Remember the last operation Dir" bug.
+- 2008-09-16 e58b8c2a2 Replace DOCSWITCHOFF/DOCSWITCHIN with BUFFERACTIVATED notifications to cover more situations
+- 2008-09-16 e85d8619e [NEW] Make the last current directory as current directory when the path of current document doesn't exist.
+- 2008-09-17 7b643b860 [NEW_FEATURE] Make User defined default directory feature (for open/save directory) available in Preference dialog.
+- 2008-09-18 576ee8ea8 [NEW_FEATURE] Make tag match highlighting on non html zone optional. Fix bug that ansi->utf8 w/o BOM and utf8 w/o BOM-> ansi make buffer dirty.
+- 2008-09-22 56563f000 Add NPPM_SETFILENAME. Implement 3 TODO messages. Fix bug if plugin doesnt clean up Scintilla handles.
+- 2008-09-22 ab5c0fab6 Fix smart hilight ranges. Smart hilite relies on SCN_SCROLLED custom notification. Keep in mind to compile the Notepad++ SciLexer on SVN.
+- 2008-09-26 f63a7529a [NEW_FEATURE] Move document to another instance of Notepad++ via DnD doc tab.
+- 2008-09-28 fcc46e047 [BUG_FIXED] Fix crash problem while typing Chinese character in ANSI CSS document under Chinese environment.
+- 2008-09-29 8d4289a18 [BUG_FIXED] Fix cpu high consummation bug while document is cloned with smart highlighting and xml matched highlighting features activating.
+- 2008-09-30 68a59eb3c Fix bug with exception display
+- 2008-09-30 3169124d8 [BUG_FIXED] Fix the User defined language Unicode bug. Remove all the comic sans font (finally :) ).
+- 2008-09-30 ddd055e5a [NEW_FEATURE] Find in Files in thread.
+- 2008-10-01 2fd07e9a2 [ENHANCE] Enhance Find in files thread feature - add stop searching ability.
+- 2008-10-05 22f25219e Fix NPPM_GETBUFFERFILENAME bug
+- 2008-10-05 af23902b8 [BUG_FIXED] Fix file association Unicode bug. [BUG_FIXED] Fix WindowDlg close file bug. [BUG_FIXED] Add html.xml, sql.xml and rc.xml into installer. [CHANGE] Change the reload from disk behaviour.
+- 2008-10-08 9c736cdc8 Fix caret blinkrate issues (startup value wrong, not stopping on slowest)
+- 2008-10-08 02e92ab36 Fix wrap after save as bug.
+- 2008-10-08 8e3555f8e [FEATURE]Add option to only show the filename in the titlebar. [BUG] Fix bug with clearing read-only flag.
+- 2008-10-11 d2c8c52c5 [BUG_FIXED] Fix cancel to save file in Notepad++ can not stop system shutdown problem. Fix ANSI version copy file name bug.
+- 2008-10-16 c16b93830 [BUG_FIXED] Fix ANSI replace/replace all bug. [NEW_FEATURE] Add find/replace dialog memorize capacity.
+- 2008-10-19 f033f1a8e [BUG_FIXED] Fix "find in all opened files" and "find in files" unicode text search bug in ANSI version.
+- 2008-10-21 15afe60ae Fix bug with opening relative path files (delay initial SetCurrentDirectory call)
+- 2008-10-22 9f3ecd76f Add messages: NPPM_[G/S]ET_BUFFERLANGTYPE, NPPM_[G/S]ET_BUFFERENCODING, NPPM_[G/S]ET_BUFFERFORMAT, to access buffer properties. See Notepad_plus_msgs.h for details.
+- 2008-10-25 23bce30e0 [RELEASE] v5.1 OR.
+- 2008-10-26 3b7184ffe [RELEASE] v5.1 OR (save the earth action) : Add question dialog for removing incompatible plugins to prevent annoying message from the next launch time - that will reduce million click times by users for each new release.
+- 2008-10-26 a7df3063d [BUG_FIXED] Fix calltip argument with 'L' leader character bug. Remove TextFX from installer.
+- 2008-10-27 67499d839 Fixed bugs: Open in new instance not allowing spaces in paths. open in new instance uses filename of current running executable instead of 'notepad++.exe'. Filters for open/save dialog not showing or incorrectly showing 'L'. "Global Styles" string incorrectly displayed in Unicode version. Removed redundant array for extensions in file dialogs.
+- 2008-11-01 ea516df61 [BUG_FIXED] Fix Unicode version display Korean/Japanese language problem.
+- 2008-11-02 5d11a8706 [BUG_FIXED] Fix tab control draw bug again (With a slightly different approach this time).
+- 2008-11-11 47a7fdbc2 [RELEASE] v5.1.1 release. Add a auto-package script.
+- 2008-11-11 0147313a9 [RELEASE] v5.1.1 release.
+- 2008-11-16 8bd91ca17 [BUG_FIXED]Fix Japanese/Polish/Russian language display bug under Notepad++ Unicode version.
+- 2008-11-19 1cc93da80 [BUG]Fix bug when pasting to bookmarked lines in Unicode version. [BUG]Fix (temporary) memory leak when a file cannot be opened if it consumes too much memory. Add string tokenizer routine in Common. Update VS2003 project file for TinyXMLA.
+- 2008-11-19 8f0351294 [BUG] Fix tabbar context menu.
+- 2008-11-25 e7a0a07fa [BUG_FIXED] Fix writing a key in registry while preference dialog launches
+- 2008-11-26 534ebfabe [FIX_BUG] Crash in FileDialog if too many languages or extensions were added. [FIX_BUG] Crash after handling crash (or, stop pure virtual functioncall after crash). [FIX_BUG] Notepad++ fully accessible in crash error messagepump (or, you can still go on if a crash occurs). Show shortcut for restore zoom option.
+- 2008-11-30 4e51f83fe [BUG_FIXED] Prevent Notepad++ save files to "vitual store" under vista. Remove unnecessary timer for find in files feature.
+- 2008-12-04 c62bfed96 [BUG_FIXED] Make Find in files threadless to improve the performance and to avoid the crash.
+- 2008-12-05 9552d39b0 [BUG_FIXED] Replace DeleteObject(hIcon) by DestroyIcon(hIcon)to save the kitties.
+- 2008-12-06 53a52f557 [BUG_FIXED] Fix Find in Files search in both Unicode/Ainsi files.
+- 2008-12-07 b8980eda5 [BUG_FIXED]Fix caret position moving problem after loading a session.
+- 2008-12-08 e6d799a64 [BUG FIXED] Fix close all files/app exit cancel bug. Fix default button problem in Find in Files dialog.
+- 2008-12-09 abf2bffba [BUG_FIXED] Fix crash bug while loading File of User Defined Language. Fusion 2 commands "activate main view" and "activate sub view" in "Focus the other view".
+- 2008-12-11 54695f819 [NEW] Update Log.
+- 2008-12-14 2b0cfc133 [RELEASE] v5.1.2 release.
+- 2008-12-14 e11530f0c [BUG_FIXED]Fix the bug that Unicode path file opened in the previous session doesn't be restored.
+- 2008-12-15 bb475168b [BUG_FIXED] Fix Tidy installation problem for TextFX plugin.
+- 2008-12-16 22bf2fe47 [BUG_FIXED] Adding search text on the top of combo box. The selected text is not automatically added to the combo box, only when the search is processed.
+- 2008-12-21 bc9507190 [NEW_FEATURE] Add PostIt feature (F12 to toggle it).
+- 2008-12-21 90420137f [BUG_FIXED] Restore normal window while exiting if PostIt mode is active.
+- 2008-12-21 aaccc02a2 [BUG_FIXED] Fix "Go to another view" translation coding error.
+- 2008-12-23 0c6496f6b [NEW_FEATURE] Process WM_IME_REQUEST message to support Windows IME.
+- 2008-12-24 56e1ac893 [MODIF] Modify the N++ recovery dir into to %temp%.
+- 2008-12-26 6e4a80da1 [BUG_FIXED] Fix nativeLang loading problem if Notepad++ location path contains Unicode characters.
+- 2008-12-29 6e0caa10c [ADD] Add a new Unicode compliant nppCM project.
+- 2008-12-29 17453dea5 [BUG_FIXED] Fix "Go to/Open in another instance" bug.
+- 2008-12-29 b4e6f2723 [RELEASE] v5.1.3 release.
+- 2008-12-29 e12d8b8c9 [BUG_FIXED] Fix recent files list bug.
+- 2008-12-30 261d357e6 [BUG_FIXED] Fix bug that external lexer doesn't work with Unicode version.
+- 2009-01-01 f7a1301d0 [CLEAN] Remove redundant AddFontResource call.
+- 2009-01-03 44219af45 [BUG_FIXED] Fix external lexer plugin loading problem for Unicode Notepad++. Add new plugin notification message NPPN_WORDSTYLESUPDATED.
+- 2009-01-03 be3285aa2 [NEW_FEATURE] Change language on the run time for Unicode version (in progress).
+- 2009-01-04 43bf9f4c9 [NEW_FEATURE] Change language on the run time for Unicode version (in progress - reloading another language is ok).
+- 2009-01-07 7a137760e [NEW_FEATURE] Change language on the run time for Unicode version (Finished).
+- 2009-01-08 ab5c33a89 [UPDATE] Make language table complete for localization feature.
+- 2009-01-08 0d07533ce [BUG_FIXED] Fix localization feature bug while doLocalConf;xml is present.
+- 2009-01-08 1759a31b2 [BUG_FIXED] Fix context menu broken due to localization feature.
+- 2009-01-08 7279b1c91 [UPDATE] Update localization list.
+- 2009-01-08 967ddc39e [BUG_FIXED] Fix verbose backup bug (while the backup dir is not set).
+- 2009-01-10 fbf0ab11f [NEW_FEATURE] Add the ability to force opened ANSI document as UTF-8 w/o BOM.
+- 2009-01-11 d7d78db3b [NEW_FEATURE] Add 2 plugin messages : NPPN_SHORTCUTREMAPPED notification and NPPM_GETSHORTCUTBYCMDID message.
+- 2009-01-12 28082233e [RELEASE] v5.1.4 release. Add NppHelp entry.
+- 2009-01-13 00682573a Adjust PostIt/FullScreen behaviour to mix well together. Fixes a few glitches, makes use of WM_POPUP style.
+- 2009-01-14 cbaf5fda2 [NEW] Add NPPM_DOOPEN plugin message.
+- 2009-01-14 2818386fb [BUG_FIXED] Fix a cosmetic bug. Correct a label in installer.
+- 2009-01-17 1e2770329 [NEW_FEATURE] refine "open ANSI files as UTF8 w/o BOM" feature.
+- 2009-01-20 2e1806bd3 [MODIF] hide 5 inconsist plugins messages.
+- 2009-01-22 048e3b947 [BUG_FIXED] Fix the find in files crash bug while cloned views are side by side and focus is on main view. (walkaround).
+- 2009-01-23 c57f952ea [BUG_FIX] Correct SCEN_SETFOCUS handling: fixes Find in files stackoverflow due to inconsistent value of pEditView. Removes the previous workaround.
+- 2009-01-24 e64e4309a [NEW_FEATURE] Add Replace in files feature.
+- 2009-01-25 ab4ae49c8 [NEW] Adding find in files filters supports user defined language.
+- 2009-01-26 6eda888b6 [NEW] The file filters and the directory are set while find/replace/findInFiles dialog is launched. [BUG_FIXED] Texts in combo box of Find dialog are restored in order now on the launch time.
+- 2009-01-27 6fe5d8ac7 Fix command line parsing to accept unquoted files as single argument once again. Add DefaultIcon key to registry. Close root key handle when modifying registry.
+- 2009-01-29 8dcd31a77 [FEATURE] Add minidump feature. Make sure that at every release, PDB and exe binaries are saved.
+- 2009-01-29 c889934a2 Add minidump helper class files
+- 2009-01-29 d8bfb122b Fix typo in code
+- 2009-02-02 7d2eb7837 [FIX_BUG] Finally removed insertion of tab characters when running Trim trailing and Save macro demo.
+- 2009-02-04 7705e0b57 [NEW_FEATURE] Enhance "Find in all opened files" and "Find in files" features.
+- 2009-02-05 c3d105612 [FIX_BUG] Restore searchResult lexer in case the lexer was changed to SCLEX_NULL in GotoFoundLine(). (This affected the folding of the found results and also DeleteResult and gotoNextFoundResult, any may crash the program)
+- 2009-02-05 dae69e8c3 [NEW_FEATURE] Added commands for the found results pane: Goto next/previous found result (default keys: F4/Shift+F4) Switch to found results window (default key: F7)
+- 2009-02-05 44da1e1d4 [UPDATE] Removed NDEBUG compilation flag from the Npp Debug build target. [UPDATE] Removed ..\src\WinControls\Preference\resource.h from the project.
+- 2009-02-06 881d0ade2 minor change - whitespace
+- 2009-02-06 2ae8792fe [UPDATE] Added shortcut keys (underline) for the GoTo dialog.
+- 2009-02-06 d5b8efeef [UPDATE] Updated some MessageBoxes and minor code changes.
+- 2009-02-06 214dfbf38 [UPDATE] Added shortcut keys (underline) for the Find dialog. Fixed tab ordering, and moved/resized some controls.
+- 2009-02-06 e6fd7c835 [UPDATE] Set focus on the main editor after double-clicking a search result (scintilla stole the focus on mouse up). [UPDATE] Updated some MessageBoxes (for the Find dialog).
+- 2009-02-07 9678cec40 [REVERT] Revert to 413.
+- 2009-02-07 36ee1015f [BUG_FIXED] Fix function tip crash issue.
+- 2009-02-07 0e5fa0354 undo revert
+- 2009-02-08 a7b0ebc94 [RELEASE] v5.2 release.
+- 2009-02-09 66a072889 [NEW_FEATURE] Add "Find all in current file" feature.
+- 2009-02-09 60f91b7b4 [BUG_FIXED] Fix for L_EXTERNAL in loadSession.
+- 2009-02-10 2948c18e3 [BUG_FIXED] Changing "Search result" stylers via Styler Configurator updates visual effect on the fly now.
+- 2009-02-11 e1c1a64b1 [NEW] Change the bookmarks' numbers. Modify showMargin function. [CLEAN_UP] remove constant.h.
+- 2009-02-11 4e74b2dff [BUG_FIXED] Changing global stylers now affects the Finder window. [BUG_FIXED] Changing current line background color of the search result styler now affects the Finder window. [UPDATE] Some other updates regarding the finder styles.
+- 2009-02-19 29a3bf1b1 [NEW_FEATURE] Modification state vertical bar (in progress).
+- 2009-02-21 d16e9beb1 [BUG_FIXED] Fix read only file SaveAs bug. [NEW_FEATURE] Don't save empty untitled document.
+- 2009-02-21 342f226fa [BUG_FIXED] Fix modif marker margin bug : the previous document is marked while open a file.
+- 2009-02-25 a0c490719 [BUG_FIXED] fix esc key for column mode behaviour.
+- 2009-03-01 06301c159 [NEW] Make line change state margin customizable (show/hide).
+- 2009-03-03 b006afab7 [BUG_FIXED] Fix uncomment block bug. [ENHANCED] Enlarge some strings displayed zone for the translation.
+- 2009-03-06 849ebb417 [NEW_FEATURE] drop (or open in dos command line) a directory in Notepad++ to open all files in the directory recursively.
+- 2009-03-08 22cae478e [NEW_FEATURE] find/replace dialog settings are remembered. Add a hidden setting (dlgAlwaysVisible in config.xml) to not hide the dialog if any result found.
+- 2009-03-10 c81c6ab82 [CHANGE_BEHAVIOUR] Set current working directory in browser, if Find in files combo is empty.
+- 2009-03-15 c6a049821 [BUG_FIXED] Fix the Find in files performance issue due to change line marker. Make the default colours for the global styles.
+- 2009-03-18 8887ef132 [BUG_FIXED] Fix the bug the Notepad++ is launched several instances but show nothing. Fix Find in files regression : Panel doesn't take Unicode.
+- 2009-03-20 b987cd705 [RELEASE] Notepad++ v5.3 release.
+- 2009-03-23 2eda8ec25 [NEW] SConstruct and SConscript are recognized as python file. [BUG_FIXED] stop the indicator highlighting while the line change marker margin is hidden.
+- 2009-03-28 fbd300f33 [BUG_FIXED] Fix replace inaccurate bug. [NEW] Increase Find what and replace with fields to 2047 characters.
+- 2009-03-29 434c4d0d6 [RELEASE] v5.3.1 OR.
+- 2009-03-29 3ecb9a221 [RELEASE] v5.3.1 OR.
+- 2009-03-31 05e55ebf6 [BUG_FIXED] Fix conversion min to Maj and Maj to min (or vice et versa) in column selection bug. [NEW] column selection allows to insertion a string by typing characters in sequence (w/o column mode editor).
+- 2009-04-01 4826c0b01 [BUG_FIXED] Fix vista hook failure.
+- 2009-04-05 91b9b03ff [NEW] Add NPPN_FILEBEFORELOAD and NPPN_FILELOADFAILED messages. [BUG_FIXED] Fix New document not be switched while db clicking in Find in files result panel.
+- 2009-04-07 defd2ae4e [RESET] restore SetWindowsHookEx parameter values.
+- 2009-04-12 741cd58e6 [UPDATE] 1. xmlUpdater now supports multiple models in one xml model file. 2. xmlUpdater now supports removing xml nodes (using action="remove" attribute). 3. combined stylesLexerModel.xml, and stylesGlobalModel.xml to stylesModel.xml. 4. added a new file "stylers_remove.xml" for removing old deprecated styles from stylers.xml when upgrading NPP.
+- 2009-04-12 6ed92acab [BUG_FIXED] Fix the search result inaccurate colorization bug. [BUG_FIXED] Fix the Mark all in selection bug (while Find Replace Dialog loosing the focus). [NEW_FEATURE] Mark all extension : user can mark any occurrence with 5 different colours.
+- 2009-04-13 1175b8205 [UPDATE] line numbers margin width is changed dynamically according to the needed space (but keeping at least 3 digits).
+- 2009-04-15 8c21ac903 [UPDATE] Remove leftovers from old marking method (IDM_SEARCH_MARKALL, IDM_SEARCH_UNMARKALL)
+- 2009-04-18 c924a4756 [UPDATE] Added an (hidden) option to make the "Filters" and "Directory" fields follow the current opened document in "Find in files" dialog. The new parameters are located in config.xml and are called: "fifFilterFollowsDoc" and "fifFolderFollowsDoc" (set to "yes"/"no")
+- 2009-04-23 9deb93204 [UPDATE] "Switch to found results window" command now switches back to the current edit view if the focus is already on the found results.
+- 2009-04-23 924efc4ed [NEW_FEATURE] Add chrome tab like feature : drag out tab to create a new instance. [NEW_FEATURE] Add theme selector to switch styles.xml on the fly. [NEW_FEATURE] Add new command parameters : -c (column) -x et -y (startup position). [REMOVE] Remove change line marker which does not work correctly. [ENHANCE] Improve main menu structure.
+- 2009-04-23 7c5a7bb46 [ADD] Add drag out cursor.
+- 2009-04-24 6b0cfa6bb [NEW_FEATURE] Language Menu can be compacted (optional).
+- 2009-04-24 ce5275890 Created trunk folder remotely
+- 2009-04-24 4dd3b257e Moved PowerEditor in trunk remotely
+- 2009-04-24 9d4a4a9ed Moved scintilla in trunk remotely
+- 2009-04-24 d5475beb3 Moved readmeFirst.txt in trunk remotely
+- 2009-04-25 19befa979 [BUG_FIXED] Fixed two bugs when calculating the width of the TeskList (document list when pressing ctrl+tab or right-click + mouse wheel.  1. max width was not calculated correctly  2. style of selected file font (bold) wasn't taken into consideration
+- 2009-04-25 9b645c68d [UPDATE] Update Scintilla from v1.75 to v1.77.
+- 2009-04-26 83ac50e3d [CLEAN] Remove C notion (void). [BUG_FIXED] Fix a crash bug of docking manager [ADD] Add LexMySQL.cxx
+- 2009-04-27 3067f9f93 [UPDATE] MRU file list under the File menu is limited to 100 characters per file. Longer files are fitted to 100 characters by replacing path components with ellipses. (code reuse - Window menu)
+- 2009-04-27 aed6bdf26 [BUG_FIXED] Fixed crash bug : Double click a file associated with an older version of Notepad++ while a newer version of Notepad++ instance is running.
+- 2009-04-28 342fa5b95 [CLEAN] Remove un-needed _themeName check that caused bug in Theme Selector list updater.
+- 2009-04-28 1a9750500 [BUG_FIXED] Fix cursor position bug in Incremental search.
+- 2009-04-28 bd300294d [NEW_FEATURE] Indentguideline can be shown w/o whitespace or tab symbol.
+- 2009-04-28 fd94587a2 [UPDATE] Update change.log.
+- 2009-04-29 10aa27cfe [BUG_FIXED] Fixed context menu population to check sub menus of main menu entries.
+- 2009-04-29 9867d7b57 [NEW_FEATURE] Detect UTF16 encoding (BE and LE) w/o BOM.
+- 2009-05-01 b20baeac1 [REVERT] revert the fixing cursor bug in incremental find : due to the regression. [CLEAN_UP] Clean up.
+- 2009-05-04 a5ddc3e7b [BUGFIX] Added protection against invalid start/end markers in wchar2char and char2wchar. This is needed for find in files where the result is found in a line containing the null character (binary files). This caused an Access violation exception because the markers were past the EOL in this case (char2wchar), and then they were used in wchar2char.
+- 2009-05-09 7c0e0823d [BUG_FIXED] - In Windows 7 when the find dialog was closed the translucaent shadow remained. [Ticket#2786783]
+- 2009-05-21 e4975230a [NEW] Add "follow current doc" checkbox in Find in file dialog.
+- 2009-05-25 c3da0f775 [NEW_FEATURE] Add the ability of tag match feature to not highlight comment zone in html/xml. [BUG_FIXED] Fix TCL language highlighting bug. [NEW_RELEASE] v5.4 released.
+- 2009-05-26 82f0d792f [BUG_FIXED] Add ChangeMarkers in installer. Add theme description in installer. Update contextMenu.xml in installer. Fix lastRecentFileList localization issue. [NEW] Add readonly change status notification for plugin system.
+- 2009-05-27 e72b17ed9 [BUG_FIXED] - Modified the Styler Configurator user extension handler
+- 2009-05-27 8c6ac8289 [RELEASE] v5.4.1 official release.
+- 2009-05-28 1f33dd89f [BUG_FIXED] Fix the localization switcher bug while w/o doLocalConf.xml.
+- 2009-05-30 3a706fd87 [BUGFIX] Issue# 2798613 - Modified updateMenuItemCommand routine to keep menu item's current uFlags
+- 2009-05-30 b1a0d797e [BUGFIX] pt.2 Issue# 2798613 - Modified updateMenuItemCommand routine to keep menu item's current uFlags
+- 2009-06-01 9e1a05c0e [RELEASE] v5.4.2 release. [BUG_FIXED] Fix only one document "Move to other view" close Notepad++ instance issue. [BUG_FIXED] Fix plugin menu boolean check box bug.
+- 2009-06-02 15f2fccbb [BUGFIX] - Issue 2797248/2799322 - Altered points used for checking tab dragging.
+- 2009-06-02 327797f5a [BUGFIX] - Added call to reset tab drag points.
+- 2009-06-03 782dbaf7f [BUG_FIXED]Fix (partially) hotspot style font problem.
+- 2009-06-07 5b5c31787 [RELEASE] v5.4.3 release. [BUG_FIXED] Fix clickable link styling bug. [BUG_FIXED] Fix vs2008 compiling issue - toolbar always hidden.
+- 2009-06-10 e94b452d2 [BUG_FIXED] Fix the find in files crash issue if find what field contains 0x0A or 0xD.
+- 2009-06-14 6dbed6e3c [BUG_FIXED] Fix the clickable link issue for some links (add '~' in RegExp).
+- 2009-06-18 e7e4c9840 [BUG_FIXED] Fix no tool bar bug under w2k. [BUG_FIXED] Fix "In selection" bug in Find Replace features.
+- 2009-06-18 63e9faeae [BUG_FIX] Fix some semantic problem in source code. They causes the bug eventually.
+- 2009-06-23 541091ef0 [BUG_FIXED] Fix the clickable link issue for some links (add '~' in RegExp).
+- 2009-06-23 b96da24ec [NEW] Make NpWiki++ available as on line help. [NEW] Add number of lines on status bar.
+- 2009-06-24 8ee30eaef [NEW] Upgrade Scintilla from 1.77 to 1.78.
+- 2009-06-24 3fa7bd97f [ADD] Add 3 lexers in project file.
+- 2009-06-27 736137918 [BUG_FIXED] Fix Matlab script making Notepad++ crash under Chinese windows issue.
+- 2009-06-27 5d20ba21a [BUG_FIXED] Fix Incremental search bug.
+- 2009-07-02 b02de751e [BUG_FIXED] Fix Window7 SetWindowsHookEx() failed issue for the dockable windows. (by recognizing windows7 environment)
+- 2009-07-02 aac719f84 [ADD] Add npp help binary and source files.
+- 2009-07-04 05bb2a8f7 [ENHANCE] Enhance the source code compiling by /W4 /WX .
+- 2009-07-04 65c213e2d [BUG_FIXED] Fix the bug that Notepad++ does not show on while it is minimized and its file is modified from outside.
+- 2009-07-05 84154b4b3 [ADD] Add nativeLang files
+- 2009-07-05 26334291d [RELEASE] v5.4.4 release.
+- 2009-07-08 5fbda7b27 [RELEASE] release (fix restore window bug).
+- 2009-07-08 bc6e33c78 [BUG_FIXED] Fix the plugins shortcuts not working issue. Fix the tooltip on toolbar bug for the plugins icons.
+- 2009-07-11 72e20073b [BUG_FIXED] Fix a crash that was occurring when searching in files from a deep path. Fix Pascal and Scheme syntax highlighting problem (styles.xml). Add SQL folding capacity.
+- 2009-07-14 f71ca5e4d [BUG_FIXED] Fix a crash issue (Unicode binary) while close Notepad++ with an RC file opened under Chinese Xp.
+- 2009-07-14 75d6569db [RELEASE] Release 5.4.5. [BUG_FIXED] Disable auto-update checking under Win7 due to the lamentable UAC.
+- 2009-08-03 3464682ef [ENHANCE] Enhance to avoid eventual crash (TCHAR * to generic_string). [BUG_FIXED] Fix a crash bug due to unstability of FTP_synchronize plugin (enhance DockingCont.cpp).
+- 2009-08-03 659a93873 [BUG_FIXED] FIX toolbar bug : make toolbar chevron work.
+- 2009-08-03 761bdc511 [NEW_FEATURE] Add new feature in Incremental Search : show pink background when text not found (like Firefox).
+- 2009-08-03 846a96e4a [BUG_FIXED] Fix the ANSI build compiling problem.
+- 2009-08-08 dd70030c5 [BUG_FIXED] Fix a crash issue while launch Fin in file (regression since the last svn commit). [BUG_FIXED] Fix a crash issue while deleting the last line. [BUG_FIXED] Fix a bug of plugin message NPPM_GETPLUGINSCONFIGDIR (regression since the last svn commit). [NEW_FEATURE] User can define different size of TAB by each language (in progress). [NEW_FEATURE] Add new plugin notification NPPN_DOCORDERCHANGED to notify plugins that document order is changed.
+- 2009-08-11 e8f584c76 [BUG_FIXED] Fix a crash issue due to tip feature (to check). [NEW_FEATURE] Add import plugins feature (load on the fly). [NEW_FEATURE] Add import theme (stylers.xml) feature. [ENHANCE] Prevent crash from some uncertain context.
+- 2009-08-12 ff1d754ad [NEW_FEATURE] Add the ability to not launch Auto-updater during a period (15 days by default).
+- 2009-08-14 7472160a9 [NEW_FEATURE] Tab settings per language (in prograss)
+- 2009-08-18 f3a451f61 [NEW_FEATURE] Tab settings per language(implementation terminated).
+- 2009-08-19 8f30af618 [NEW] Merge 2 print tab in Preference dialog in 1 tab.
+- 2009-08-21 43a49d0b5 [MODIF] Modify menu items and controls names. [NEW] Add Uzbek, Kazakh and Afrikaans languages. [UPDATE] Update English, Chinese, French and the other language files.
+- 2009-08-23 c84437b0d [UPDATE] Update Scintilla from v1.78 to v2.01.
+- 2009-08-23 d37b20de0 [UPDATE] commit forgotten files.
+- 2009-08-24 a371d017c [BUG_FIXED] Fix shorcut mapper crash bug.
+- 2009-08-31 79eba94cb [ADAPTATION] Make existing Column mode operations work with Scintilla 2.01 (in progress).
+- 2009-09-04 0c490dc55 [ENHANCE] Thanks to Jocelyn Legault (precompiled headers), the build time is sped up.
+- 2009-09-09 c75618ad6 [BUG_FIXED] A toolbar tip crash is fixed by Jocelyn Legault (to be confirmed). [NEW_BEHAVIOUR] "-nosession" parameter's behaviour changed : not only none of session is loaded, but also none of session is saved. [BUG_FIXED] A docking feature crash issue is fixed.
+- 2009-09-10 9627abcd6 [NEW_FEATURE] (Author : Christian Cuvier) Add the escape character capacity for the delimiter in User Defined Language System.
+- 2009-09-10 0800917f3 [NEW] Make multi-selection optional (in progress).
+- 2009-09-11 3c7977ecb [BUG_FIXED] Fix tooltip crash issue. [NEW_FEATURE] Add selected lines moving up/down capacity.
+- 2009-09-11 a858bd3b9 [UPDATE] Update installer - remove FTP_Synchronize plugin and Change Mark plugin due to their unstable issue.
+- 2009-09-12 074441eda [[NEW_FEATURE] (Author : Christian Cuvier) Rational number is recognized in User Defined Language System.
+- 2009-09-13 2b9ddf181 [NEW] Add Multi-Editing enable/disable
+- 2009-09-13 6a022cdb9 [NEW_FEATURE] Make column editor work in multi-selection mode. [BUG_FIXED] Fix column editor inserting octal number broken issue.
+- 2009-09-15 0c5101a62 [CHANGE_BEHAVIOUR] Mark all extension won't do selection if there is no selection.
+- 2009-09-19 f5cca1add [BUG_FIXED] Fix getting fonts problem under Chines/Korean/Japanese environment. [BUG_FIXED] Fix wrong File encoding auto-detection problem : binary file is detected as UTF-16 big-endian. [UPDATE] (Author : Christian Cuvier) Update NppHelp to v5.5.
+- 2009-09-21 75efadfca [RELEASE] v5.5 official release. [NEW] New icon for Notepad++ binary. [UPDATE] (Author : Christian Cuvier) Update NppHelp to v5.5.
+- 2009-09-22 ea2caf3d1 [RELEASE] Release v5.5 bis : Add Plugin Manager in installer. [NEW] remove unnecessary (repeated) separator in context menu.
+- 2009-09-22 dfaed129b [NEW_FEATURE] Set extension automatically (according to set document language) in save as dialog.
+- 2009-09-22 3a11d6de6 Replaced nppcm with NppShell. -Context menu icon properly rendered -Incorporate dynamic icon for registered filetypes -Dialog to allow change of various settings
+- 2009-09-23 22f7f6651 NppShell: make gcc compatible and a bit more standard compliant add code::blocks project file to compile with gcc
+- 2009-09-29 d36fd964e [NEW_FEATURE] Try to catch plugin crash. [BUG_FIXED] (Author : Jocelyn Legault) Fix some memory leaks.
+- 2009-10-01 2478059b5 [BUG_FIXED] Fix file ext unexpected behaviour.
+- 2009-10-02 b45df0db2 [NEW_FEATURE] Add plugin Black list.
+- 2009-10-04 50f39e351 [NEW_FEATURE] (Author : Christian Cuvier) characters count is added in status bar. [NEW] a bigger chameleon picture is displayed in about dialog.
+- 2009-10-09 c36ad90e3 [RELEASE] v5.5.1 release. [NEW_FEATURE] Add "open all" capacity in finder (for find in files).
+- 2009-10-11 cc3ce1a5a [BUG_FIXED] Fixed status bar displaying "-2 char" issue for a empty document. [BUG_FIXED] Fixed installation of NppShell64 failed issue in installer.
+- 2009-10-14 8c3485289 [BUG_FIXED] Fix column editor insert number bug in virtual space mode.
+- 2009-10-19 4b1812816 [NEW_FEATURE] Add COBOL, D, Gui4Cli, PowerShell and R language support (in progress).
+- 2009-10-19 12132dffb [NEW_FEATURE] Add COBOL, D, Gui4Cli, PowerShell and R language support.
+- 2009-10-26 c14d526b2 [NEW] Add SQL ESC symbol '\'. [NEW] Add new Notepad++ logo in About box.
+- 2009-11-03 706044403 [NEW] Add D, R, PowerShell and COBOL keywords and colour settings.
+- 2009-11-05 bb8ad920d [BUG_FIXED] Fix Calltip hint bug and add a new capacity in it. [NEW] Add colour settings for GUI4Cli.
+- 2009-11-11 98fdb775f [NEW_MINOR_FEATURE] Add the ability to add the second keyword group for user in both LISP and Scheme languages.
+- 2009-11-11 b8c8283a5 [NEW_FEATURE] (Author : Slurdge) Add system tray context menu and new command argument "-systemtray". [NEW_FEATURE] Add new command argument "--help".
+- 2009-11-12 1e41a6629 [BUG_FIXED] Provide a walk around solution for the wrap symbol display problem in scintilla.
+- 2009-11-12 bdbb2711e [BUG_FIXED] Fix systemtray close crash bug. [CHANGE_BEHAVIOUR] Change systemtray feature behaviour.
+- 2009-11-15 f5d7e44e2 [NEW_FEATURE] Add Marker Jumper feature.
+- 2009-11-15 86248087b [NEW] Make Marker Jumper wrap able.
+- 2009-11-15 16930873f [NEW] Add Kyrgyz language file.
+- 2009-11-19 fe4c746cd [NEW_FEATURE] Add Chinese BIG5 encoding (in progress).
+- 2009-11-20 90f5338cb [NEW] Add Chinese simplified, Japanese, Korean, Thai... encodings.
+- 2009-11-21 10e6cbfb6 [NEW] Add new encodings, make status bar work for the new encodings.
+- 2009-11-22 de6f421c9 [NEW] File Encoding is remembered in the session.
+- 2009-11-22 8bb48853d [BUG_FIXED] Fix encoding files loading bug.
+- 2009-11-23 5b4f8e3e1 [NEW] Add new encodings. [REMOVE] Remove Line Draw TTF for MSDOS ASCCI Art highlighter; using encoding Dos 437 instead. [UPDATE] (Author : Christian Cuvier) Update NppHelp to v5.6.
+- 2009-11-23 a6bffa966 [ADD] Add the forgotten symbols. [UPDATE] Update change log.
+- 2009-11-24 215b5c004 [NEW_FEATURE] Add indent guide line highlighting for html/xml tags.
+- 2009-11-25 5b23ddeef [ADD] Add the style themes. [MODIF] Modify the SetWindowLongPtr argument for 64 bits compiling.
+- 2009-11-26 9ebb4b39f [NEW_FEATURE] Add auto-detection of HTML/XML file encoding.
+- 2009-11-27 9746d60cd [BUG_FIXED] Fix the Unicode to ANSI encoding bug.
+- 2009-11-30 553e47d58 [RELEASE] Notepad++ v5.6 release. [NEW_FEATURE] Add ISO_8859-1 to ISO_8859-16 encodings. [BUG_FIXED] Fix last recent file list menu items localization encoding bug. [BUG_FIXED] Fix last recent file number goes to zero issue.
+- 2009-11-30 df88f81d9 [BUG_FIXED] Fix the Context menu installation in installer.
+- 2009-12-01 51e96391c [BUG_FIXED] Fix brace highlighting breaking issue. [NEW] Add new encodings in the shortcuts map. [CLEAN] Remove annoying encoding issue warning dialogs. [ENHANCE] Enhance Html encoding auto-detection.
+- 2009-12-02 6f052ca8d [BUG_FIXED] (Author : Vitaliy Dovgan)Fix case-insensitive searching bug for non-ascii characters (for example some characters in French and Cyrillic characters). [BUG_FIXED] Fix brace highlighting performance issue.
+- 2009-12-02 40be6f6cc [CLEAN] Move EOL format items to sub menu Edit.
+- 2009-12-03 44913da6f [NEW] Add find result commands in the menu. [NEW] Add DOS CodePage : CP437, CP737, CP850, CP852, CP855, CP857, CP858, CP860, CP861, CP863, CP865, CP866 and CP869.
+- 2009-12-04 88958a855 [BUG_FIXED] Fix localization combo box unselected in preference dialog bug after startup (when a localization file is in use).
+- 2009-12-04 b7ae5956f [UPDATE] Update the localization files.
+- 2009-12-04 b908173f7 [NEW] unfold while jumping markers.
+- 2009-12-05 759a950cf [RELEASE] Notepad++ v5.6.1 release. [UPDATE] (Author : Christian Cuvier) Update NppHelp. [UPDATE]  Update localization files.
+- 2009-12-06 0d2eee4ed [BUG_FIXED] Fix the translated sub menu entries applying on the menu item. [ENHANCED] Display more information while catching of plugins crash.
+- 2009-12-06 ac118c608 [BUG_FIXED] Fix tag highlighting bug while disabling indent guide lines.
+- 2009-12-07 cc875b245 [UPDATE] Update 3 localization files : English, French and Chinese.
+- 2009-12-08 c16f0d393 [BUG_FIXED] Fix the Unicode localization file display incident. [UPDATE] Update 3 localization files.
+- 2009-12-11 2ec3cdea2 [RELEASE] Notepad++ v5.6.2 [UPDATE] Update localization files and NppHelp. [ADD] Make some commands recordable.
+- 2009-12-13 b186f2a05 [NEW_FEATURE] Add restore button in fullscreen and postIt mode. [BUG_FIXED] Fix auto-updater bug.
+- 2009-12-17 56a236af4 [RELEASE] Notepad++ v5.6.3 release
+- 2009-12-19 00e79d39c [NEW] Automatize release procedure. Add md5 binary and source.
+- 2009-12-23 dbe22f6ca [BUG_FIXED] Fix status bar display bug that xml/html utf8 indicator makes status bar display ANSI instead of ANSI as UTF-8. [UPDATE] Convert process thread module from ANSI to Unicode.
+- 2009-12-27 d9e7cf9fa [NEW_FEATURE] Add feature of conversion from a localization encoding to UNICODE.
+- 2009-12-28 fa593ca44 [RELEASE] Notepad++ v5.6.4 release
+- 2010-01-16 5d4d1d0ee [BUG_FIXED] Fixed Chinese characters display problem after "find in the current document".
+- 2010-01-17 6d161a269 [BUG_FIXED] Fix xml/html encoding overrides BOM if present.
+- 2010-01-18 61a268159 [BUG_FIXED] Fix loading encoding file making file corrupted (after saving).
+- 2010-01-19 e96e419f7 [NEW] (Author : Darko Martinovic) Add "set find text and find next" feature.
+- 2010-01-19 1f1ce8957 [BUG_FIXED] (Author : Beetny) Fix "Close Window(s)" in Window dialog bug (if file is dirty and cancel to close).
+- 2010-01-23 9c03f4826 [BUG_FIXED] Recover langs.xml while its length is zero. [NEW] Add JSP.
+- 2010-01-24 3f6f0e9b2 [NEW] (Author : Christian Cuvier) Add "\u" in find extened mode to find Unicode encoding character(ex. "\u00e9" find 'é'). [BUG_FIXED] (Author : Fabrizio Gennari) Fix finding "\0" or "\x00" issue in find extened mode. [NEW] (Author : Hayes Roberts) Add Notepad++ mascot images.
+- 2010-01-24 910b88d52 [RELEASE] Notepad++ v5.6.5 release.
+- 2010-01-25 5925d28ab [ADD] Add GUP.
+- 2010-01-26 691849d1d [RELEASE] Notepad++ v5.6.6 release. [BUG_FIXED] Fixed Search bug with Chinese/Japanese/Korean characters.
+- 2010-01-29 639c33658 [UPDATE] Refactor Notepad_plus.cpp (in progress).
+- 2010-01-31 ebfec9d02 [UPDATE] Refactor Notepad_plus.cpp (in progress).
+- 2010-02-04 689d434a9 [OPTIMIZE] (Author : Sune Marcher) Rewrite of menuID2LangType function. [UPDATE] Refactor Notepad_plus.cpp (in progress).
+- 2010-02-08 e098cbc67 [REVERT] menuID2LangType function is reverted due to its performance issue. [NEW_FEATURE] Add "Display loading time" feature (via command line argument "-loadingTime"). [NEW] Add NPPM_INTERNAL_DISABLEAUTOUPDATE message (which can be triggered by GUP.exe).
+- 2010-02-10 0d2efe29e [BUG_FIXED] Fix the bug while giving command C:\NppDir>notepad++ (w/o quote), npp try to open file "notepad++".
+- 2010-02-11 6ae357c28 [NEW_BEHAVIOUR] (Author : Christian Wegner) Focus (switch to) the dirty document while asking to save unsaved document when user close Notepad++.
+- 2010-02-13 ccbdf7c21 [UPDATE] Refactor Notepad_plus.cpp (in progress).
+- 2010-02-17 be8d467e9 [CLEAN_UP] (Author : Jocelyn Legault) Initialize correctly the DockingDlgInterface. Clean up the docking manager's code.
+- 2010-02-17 1bab772c3 [UPDATE] refactor Notepad_plus.cpp.
+- 2010-02-20 99042edb2 [BUG_FIXED] Fix "finds in all opened files" crash bug.
+- 2010-02-21 d23e8c74c [BUG_FIXED] Fix the bug while changing the language list in Style Configurator, the "Save and close" button is enabled.
+- 2010-02-21 b3f11896e [RELEASE] Notepad++ v5.6.7 release. [CHANGE_BEHAVIOUR] Enlarge regconition of clickable link from "http://" to any URI.
+- 2010-02-21 52dc1c9d8 [UPDATE] (Author : Christian Cuvier) Update NppHelp.
+- 2010-02-24 7a236ed33 [BUG_FIXED] Fix comment stream without selection bug. [BUG_FIXED] Fix Find in files results highlighting problem.
+- 2010-03-01 de399da6f Add Bitmap.cpp file, currently unused. Revert icon drawing as not to break Aero themes. Static linking in C::B project. Set both icons in resource to point to original verison. In case of elevation error, try shellexecute instead.
+- 2010-03-04 40eb02ab1 [RELEASE] Notepad++ v5.6.8 release.
+- 2010-03-05 fd02b9df0 [UPDATE] refactoring (in progress).
+- 2010-03-15 bffdb9f4f [UPDATE] Update native language model and chinese.xml.
+- 2010-03-16 2e5412703 [UPDATE] refactoring (in progress).
+- 2010-03-17 194882dd0 [UPDATE] minor modification.
+- 2010-03-21 468f93b3c [FIX] Fix some typos.
+- 2010-03-24 b127612e1 [BUG_FIXED] Fix language switching to English not working bug. [MODIFY] Reduce PostIt/FullScreen restore button size. [BUG_FIXED] Fix PostIt wrong restore button position after toggling off fullScreen mode.
+- 2010-03-26 d7133d001 [UPDATE] (Author: Sin Thesis) Refactoring (in progress).
+- 2010-03-29 c1ba3a14b [FIX] Fix the compiling problem for ANSI build.
+- 2010-04-18 5aab10a73 [BUG_FIXED] Fix closing several detected non-existing files bug.
+- 2010-04-20 0bb88d079 [NEW_BEHAVIOUR] File detection : Switch to modified or deleted file while user is asked to reload or keep the file.
+- 2010-05-08 a82f2de60 [NEW_FEATURE] Add import/export User Defined Language features.
+- 2010-05-24 9715f095f [BUG_FIXED] Fix premature deallocation bug for import UDL. [UPDATE] Update localization files.
+- 2010-05-24 1953eea07 [NEW] Add NPPM_SAVECURRENTFILEAS message.
+- 2010-05-25 52539b01b [CLEAN] throw runtime_error instead of int.
+- 2010-05-27 3c7a885a8 [NEW_FEATURE] Add "Inverse bookmark" feature.
+- 2010-06-29 470350278 [BUG_FIXED] (Author: Christian Cuvier) Fix crashes on new 11 character long UDL names bug.
+- 2010-07-04 ba9731ca7 [NEW] Regroup bookmark operation menu commands under "Bookmark" menu folder. [BUG_FIXED] Fix "Save all" inconsistent icon state on toolbar. [UPDATE] - (Author: Christian Cuvier) Update offline help document. - Native Language Files : updated and added new one - Add new keywords for HTML5 and css.
+- 2010-07-05 f5251b5bc [RELEASE] Notepad++ 5.7 release.
+- 2010-07-12 a2dd82844 [UPDATE] Update Scintilla from 2.0.1 to 2.1.2
+- 2010-07-14 52e19bbb8 [UPDATE] Complete Scintilla source files.
+- 2010-07-18 e0773602b [UPDATE] Update the readmeFirst.txt for the build information. Remove systemMessage(). Fix symbol redefinition due to Scintilla header update.
+- 2010-07-26 a3d71483e [NEW_FEATURE] - Add line wrap methods. - Make folding margin hidable. - One set of settings are applied in 2 scintilla controls.
+- 2010-07-27 4eeff970a [BUG_FIXED] Restore zoom settings saving for both scintilla controls.
+- 2010-07-31 9400d0121 [BUG_FIXED] Fix crash issue due to themes switching.
+- 2010-08-14 49e4230a4 [NEW_FEATURE] Add 2 menu commands : "Modify Shortcut/Delete Macro" and  "Modify Shortcut/Delete Command". [NEW] Add "Modify" and "Delete" buttons on Shortcut mapper dialog. [BUG_FIXED] Fix Shortcut Mapper inconsistence issue after deleting a macro or an user command. [NEW] Add NPPM_GETCURRENTNATIVELANGENCODING message (to get the current native language enconding). [UPDATE] Update native languages files: english.xml, french.xml and chinese.xml . [BUG_FIXED] Remove characters count feature from the status bar due to its performance issue with UTF8 file.
+- 2010-08-14 29143b3d6 [BUG_FIXED] (Author: François-R Boyer) Fix Unicode file corrupted on saving bug (the buffer alignment issue).
+- 2010-08-15 711e56ad3 [BUG_FIXED] (Author: Dave Brotherstone) Fix SaveSession bug. [UPDATE] Resize the section of status bar.
+- 2010-08-15 33de57fe1 [NEW_FEATURE] (Author: Christian Cuvier) Add macro new ability to record search and replace actions.
+- 2010-08-16 948f281eb [BUG_FIXED] (Author: François-R Boyer) Fix DBCS encodings file saving corruption bug. [BUG_FIXED] (Author: François-R Boyer) Fix file containing NULL character loading bug. [ENHANCEMENT] (Author: François-R Boyer) Improve getCurrentDocCharCount() method performance.
+- 2010-08-21 46c328607 [BUG_FIXED] Remove selected character count from status bar due to the performance issue.
+- 2010-08-21 d4d42f8a1 [UPDATE] Update Scintilla from 2.12 to 2.20
+- 2010-08-22 c1ff1bfaf [UPDATE] Adapt LexObjC LexSearchResult and LexUser to a new configuration.
+- 2010-08-25 6da146a4e [BUG_FIXED] Fix macro recoding for find in files regression.
+- 2010-08-27 f60278233 [BUG_FIXED] Fix Lexer SearchResult syntax highlighting bug.
+- 2010-08-29 3fa8a89e7 [BUG_FIXED] Fix a vulnerability: get full ScinLexer.dll path to avoid hijack.
+- 2010-08-30 2c05fa7f3 [BUG_FIXED] (Author: jgr [SF user name: joerngr]) Fix dragging undocked window performance issue while using Vista Aero UI style.
+- 2010-09-01 315a6d7a2 [BUG_FIXED] Fix the menu items settings non-memorized regression.
+- 2010-09-02 a1866aba6 [BUG_FIXED] (Author: François-R Boyer) Avoid "#if 1 //" from making CppLexer crash. [UPDATE] Update english.xml for v5.7.1 and the newest translations.
+- 2010-09-04 247375f6c [BUG_FIXED] Fix "Select and Find Next" and "Count" regressions. [UPDATE] Adapt Scintilla 2.20 (making SCI_SETPROPERTIES call after SCI_SETLEXER call).
+- 2010-09-05 059f9977e [UPDATE] Update Scintilla to v2.21.
+- 2010-09-06 21e9d97dc [BUG_FIXED] (Author: François-R Boyer) Fix large file truncated after loading. [ENHANCED] (Author: François-R Boyer) Improve file loading performance.
+- 2010-09-11 c2702447f [BUG_FIXED] Fix User Defined Language syntax folding not working problem. [NEW] Add Tamil translation.
+- 2010-09-13 876bd5c2f [NEW] (Author: Dave Brotherstone) Add NPPM_ALLOCATECMDID plugin message.
+- 2010-09-16 16c671a82 [BUG_FIXED] Fix VB syntax highlighting regression in asp script.
+- 2010-09-19 00fbd3444 [NEW] (Author: Dave Brotherstone) Add NPPM_ALLOCATEMARKER plugin message. [NEW_FEATURE] Add Statistics feature which is accessible from the menu command "Summary..." (under menu "View") and the 2nd zone of statusbar (double click).
+- 2010-09-19 8caa50ba5 [RELEASE] Notepad++ 5.8 release.
+- 2010-09-23 52a0e7971 [BUG_FIXED] (Author : Vitaliy Dovgan) Fix macro record bug from ANSI document. [BUG_FIXED] Fix hidding/showing status bar bug.
+- 2010-09-25 bb7cb36df [NEW_FEATURE] Add Word count feature in Summary command.
+- 2010-09-25 5be72543f [BUG_FIXED] (Author: François-R Boyer) Fix saving UCS-2 text file corrupted bug.
+- 2010-09-26 7bc4a501f [BUG_FIXED] Apply a walk around solution for Actionscript crash problem.
+- 2010-09-27 9ab9b02e6 [RELEASE] Notepad++ 5.8.1 release [NEW_FEATURE] (Author: Christian Cuvier) Update NppHelp. [UPDATE] Update native Language files.
+- 2010-10-03 e420ae370 [BUG_FIXED] Fix windows 7 crash bug while executing update. [BUG_FIXED] (Author: Christian Cuvier) Fix find performance issue related macro recording.
+- 2010-10-05 cfe63a204 [BUG_FIXED] Fix macro recording bug for the non-ASCII characters.
+- 2010-10-05 5f9206f62 [BUG_FIXED] (Author: Mohamed Amr) Fix C# syntax highlighting disabled problem after reloading.
+- 2010-10-09 23cfd4cba [BEHAVIOUR_CHANGED] Modify SaveFile dialog behaviour: it will not process a given directory as saving file name. It browse inside the directory instead. [BUG_FIXED] Fix build problem for ANSI version. [UPDATE] Update GUP.exe to v1.9.
+- 2010-10-10 52edd1eb1 [RELEASE] Notepad++ 5.8.2 release.
+- 2010-10-14 710753253 [BUG_FIXED] Due to UAC issue, under vista and windows 7, the usage of doLocalConf.xml is not allowed if Notepad++ is installed in "program files" directory.
+- 2010-10-16 c8f5903ce [BUG_FIXED] (Author: Jocelyn Legault) Fix a heap corruption of ColourPicker.
+- 2010-10-17 293451089 [BUG_FIXED] (Author: Jocelyn Legault) Fix zoom bug on the second view (a non-initialized variable).
+- 2010-10-17 1549b4f89 [BUG_FIXED] Fix crash issue : crash in the next launch after setting MS-DOS-Style as default language.
+- 2010-10-22 14773572c [NEW_FEATURE] Add Edit ContextMenu feature.
+- 2010-10-23 046ca42b5 [BUG_FIXED] Remove unsupported encodings by microsoft windows : ISO-8859-10, ISO-8859-11, ISO-8859-16. [BUG_FIXED] Fix move down current lines bug while moving down on the last line.
+- 2010-10-23 9d9d64fb2 [BUG_FIXED] (Author: Neil Hodgson) Fix for bug #3065912 Fail to Search up when code.page = 936.
+- 2010-10-23 87bfb72d5 [UPDATE] Add Notepad++ lexer in VS6 project file.
+- 2010-10-24 03b2d5e8b [NEW] Add new application icon. [ENHANCE] Enhance Editing Contextmenu feature. [UPDATE] Add comment in contextMenu.xml.
+- 2010-10-26 a86096b84 [BUG_FIXED] (Author: Jocelyn Legault) Fix a memory corruption bug.
+- 2010-10-30 25755fd81 [NEW_FEATURE] Add a new capacity in context menu: the commands can be in the sub-menu.
+- 2010-10-30 df0f0b3a3 [BUG_FIXED] Fix context menu reload problem (plugin commands reload fails).
+- 2010-11-01 2745ad40e [NEW_FEATURE] Add the capacity to open x64 system files.
+- 2010-11-02 4feab306b [RELEASE] Notepad++ 5.8.3 release.
+- 2010-11-06 549e5f5f2 [BUG_FIXED] Fix memory leak problem while switching tab.
+- 2010-11-06 a85c08b0a [NEW_FEATURE] (Author: Christian Cuvier) Add a new capacity in context menu: the menu item can be renamed (only for occidental languages). [UPDATE] Update contextMenu.xml.
+- 2010-11-07 99c6363e2 [UPDATE] Update contextMenu.xml.
+- 2010-11-07 9d733b29c [NEW_FEATURE] Add a new capacity in context menu: the menu item and folder item can be renamed in any language.
+- 2010-11-09 a7f127dca [BUG_FIXED] (Author: Neil Hodgson) Fix for bug #3103936. Backwards search with code page 936 does not match at line start.
+- 2010-11-13 8b346dc58 [NEW_FEATURE] All the supported encoding charsets can be set as default in "New Document Settings".
+- 2010-11-13 3a6ebc088 [BUG_FIXED] Fix User Defined Language dialog docking problem under Windows 7.
+- 2010-11-13 45481e65a [NEW] (Author: Ben) Remove Calltip restriction from plugins side.
+- 2010-11-14 d70c6b254 [NEW_FEATURE] (Author: Nick) Add -alwaysOnTop command line argument.
+- 2010-11-14 6bcf26de8 Fix colors of icon in context menu: -Use ownerdrawn icon on OS < Vista -Use alphablended icon on OS >= Vista Allow alphablended icon to be used for shell icons
+- 2010-11-14 d03a5df50 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository/trunk@704 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2010-11-14 79e153399 [RELEASE] Notepad++ 5.8.4 release.
+- 2010-11-14 2179160db [BUG_FIXED] (Author: Christian Cuvier) Initialize the variable _edgeNbColumn to avoid crash if config.xml is not present.
+- 2010-11-17 8b2fe6f45 [BUG_FIXED] Fix the initial document encoding is not set by "New Document Settings".
+- 2010-11-18 f2590e144 [MODIF] langs.xml will be located in %appdate%/Notepad++/ due to UAC issue.
+- 2010-11-18 49cd94f13 [MODIF] Modify File Association dialog UI.
+- 2010-11-20 38035762d [BUG_FIXED] Fix the search direction not being memorized problem.
+- 2010-11-20 079353cd4 [BUG_FIXED] Fix localization switching under Windows 7 problem (UAC issue).
+- 2010-11-21 9a6e4fceb [BUG_FIXED] Fix x64 system files problems : 1. not included in recent file history list while closing a file. 2. not remembered in the next session problem.
+- 2010-11-21 821a98ac6 [UPDATE] Update installer to adapt the new behaviour of langs.xml and the new NppShell.
+- 2010-11-23 772c0dbcb [NEW] (Author: François-R Boyer) Add ChangeIcon command line program.
+- 2010-11-23 9a3ae5522 [NEW_FEATURE] Add the option to switch back to the old icon in installer. [ADD/UPDATE] Add/update language.
+- 2010-11-24 55f1751fd [RELEASE] Notepad++ 5.8.5 release.
+- 2010-11-24 2a299689b [NEW_FEATURE] Make english.xml customizable.
+- 2010-11-25 622282fc6 [NEW] Add ChangeIcon.exe into generation binary procedure.
+- 2010-11-25 b94ab27b3 [BUG_FIXED] (Author: Christian Cuvier) Fix the changing theme settings makes switch back to the default theme bug.
+- 2010-12-04 17331e2ed [BUG_FIXED] Fix auto-completion detection language bug. [UPDATE] (Author: Motaz) Enhance the installer icon.
+- 2010-12-05 8b5a523e9 [BUG_FIXED] Fix folding margin to be displayed when opening Notepad++ with a new/empty file (Normal text).
+- 2010-12-05 10b4a1c9e [NEW_FEATURE] Add trim functions (header/trailing/compact feature). [NEW_FEATURE] Add white space and TAB conversion features.
+- 2010-12-07 aedc09709 [BUG_FIXED] Fix task list display glitch under Windows 7.
+- 2010-12-11 f2db20fc3 [BUG_FIXED] Fix empty line count failure (RE).
+- 2010-12-13 aa3797ead [BUG_FIXED] Fix langs.xml 0 length problem while user ends session w/o closing Notepad++.
+- 2010-12-17 7923c0a2c [UPDATE] Update lanuages and add a new language : Esperanto.
+- 2010-12-18 1bfddb120 [RELEASE] Notepad++ 5.8.6 release. [NEW] Generation of the minimalist package.
+- 2010-12-22 12500d57c [UPDATE] Correct 2 item terms in menu.
+- 2010-12-24 4bcd399c4 [UPDATE] Update english.xml file.
+- 2010-12-26 ba7a2db5f [UPDATE] Update English files for the translation.
+- 2010-12-28 c18080106 [UPDATE] Update Npp Help screen shots.
+- 2011-01-08 3bd739969 [BUG_FIXED] Fix a regression bug: the notification message boxes were not modal.
+- 2011-01-19 1e48bf25f [NEW_FEATURE] 1. New "Mark" tab for "Mark all" feature in Find/Replace dialog. 2. Make "Fide what" and "Replace with" fields larger in Find/Replace dialog. 3. Make some message dialogs translatable.
+- 2011-01-22 9b37f57e3 [NEW] Make NativeLangSpeaker object available for all classes in Notepad++.
+- 2011-01-31 3a149d850 [RELEASE] Notepad++ 5.8.7 release. [ENHANCE] Add minimalist installation available in installer. [UPDATE] Update some language files. [NEW] Change off-line document format from chm to html. [BUG_FIXED] Fix TAB key browsing bug in Preferences dialog partially.
+- 2011-02-18 211998c11 [UPDATE] Remove unstable plugin.
+- 2011-02-19 f5fa3cc1d [NEW_FEATURE] Add "Remove Unmarked Lines" command. [NEW] Add "Column Mode Tip" to notice users the usage of column mode in Notepad++.
+- 2011-02-20 aa5bfb5d5 [BUG_FIXED] Fix the inverse of title and message for some MessageBox.
+- 2011-03-05 4fa0f00d0 [NEW_LANGUAGE] Add ligurian language
+- 2011-03-11 a5083edfb [NEW_FEATURE] Add "paste HTML content" and "paste RTF content" commands.
+- 2011-03-15 8b7e0b76c [NEW_FEATURE] Add Copy/Cut/Paste Binary Content feature.
+- 2011-03-22 0152ded3f [UPDATE] Scintilla update from 2.21 to 2.25
+- 2011-03-29 88a2393e4 [BUG_FIXED] Fix English not shown in Preferences dialog bug on the absence of nativeLang.xml.
+- 2011-03-31 b00ed6ec6 [RELEASE] Notepad++ 5.9 release
+- 2011-04-13 28fa54583 [NEW_FEATURE] Add Character Insertion Panel.
+- 2011-04-14 6a468a874 [BUG_FIXED] Fix incorrect insertion under the different codepage.
+- 2011-04-17 4afbeefc0 [BUG_FIXED] Remove unnecessary lines which could make bugs.
+- 2011-04-20 7b54c09db [NEW_FEATURE] Add Clipboard History feature.
+- 2011-04-20 aa30b8cb4 [ADD] Add a forgotten file.
+- 2011-04-22 7bef0d0f3 [NEW_FEDATURE] Make dockable dialog settings memorizable for Notepad++ internal use.
+- 2011-04-22 d43b0a6ea [BUG_FIXED] Fix the display bug for "...".
+- 2011-04-23 1de5e37a0 [ENHANCE] Improve clipboard History feature.
+- 2011-04-24 f4d6bf75f [FIXED] Fix a typo.
+- 2011-04-28 d521e78de [UPDATE] Adapt Scintilla VC6 makefile for the additional lexers that Notepad++ needs.
+- 2011-05-06 166d513c7 [UPDATE] Modify the comment to make the file ANSI compatible.
+- 2011-05-19 6eb08d415 [NEW_FEATURE] Add find characters in range feature. [NEW_FEATURE] Add file switcher (list) dialog (in progress).
+- 2011-05-21 70970e2bf [UPDATE] Move 3 external precompile symboles into project file.
+- 2011-05-21 a92c57b56 [UPDATE] Modify the project file to adapt to compile with VS2010.
+- 2011-05-21 1e441838a [CLEAN_UP] Clean up project file.
+- 2011-05-22 1309f8fa8 [UPDATE] Implement file switcher feature (in progress).
+- 2011-05-23 851284d90 [ENHANCE] enhance AnsiCharactersInsertion feature. [UPDATE] Implementation of document switcher is in progress.
+- 2011-05-28 bfa92c64a [ENHANCE] Enhance the packaging procedure.
+- 2011-05-29 1b68569f5 [ENHANCE] Enhance the packaging procedure.
+- 2011-05-29 095da3d22 [ENHANCE] Enhance the packaging procedure.
+- 2011-05-30 b2390c7aa [ENHANCE] Enhance the packaging procedure.
+- 2011-05-30 12181b584 [ENHANCE] Enhance the packaging procedure.
+- 2011-05-30 c67a87bd9 [ENHANCE] Enhance the packaging procedure.
+- 2011-05-31 cf11f87b7 [RELEASE] Notepad++ 5.9.1 release
+- 2011-05-31 7b4be2235 [RELEASE] Notepad++ 5.9.1 release (fixed)
+- 2011-06-04 903788f9b [ENHANCE] 1. Put the focus on edit zone after insertion from ASCII panel and clipboard history panel. 2. Make clipboard inspection implementation conform to win32 standard.
+- 2011-06-04 6578a2219 [BUG_FIXED] 1. Fix the crash issue clipboard history under XP while there is no data in Clipboard. 2. Fix the wrong assignment for 2 members of std::string type in Buffer class.
+- 2011-06-05 c4327b5b3 [RELEASE] Notepad++ 5.9.2 release
+- 2011-06-11 ffb79104f [NEW_FEATURE] Add file switcher (list) dialog (in progress).
+- 2011-06-13 b32e97222 [NEW_FEDATURE] Implement VerticalFileSwitcher feature (in progress).
+- 2011-06-15 8bae5fcf0 [NEW] Add 2 plugins messages NPPM_GETLANGUAGENAME & NPPM_GETLANGUAGEDESC.
+- 2011-06-16 4782e310b [NEW_FEDATURE] Implement VerticalFileSwitcher feature (in progress).
+- 2011-06-18 9ea90c644 [BUG_FIXED] Fix wrong result returned by NPPM_GETLANGUAGENAME.
+- 2011-06-18 61b318359 [NEW_FEATURE] Make Recent File List in submenu (in progress).
+- 2011-06-22 daaaabe74 [NEW_FEDATURE] Add contextMenu in VerticalFileSwitcher panel.
+- 2011-06-26 16bae1a4a [NEW_FEATURE] Make Recent File List totally customizable (in progress).
+- 2011-06-27 9cddb4903 [NEW_FEATURE] Make Recent File List totally customizable (in progress).
+- 2011-06-27 5905eac7b [NEW_FEATURE] Make Recent File List totally customizable (in progress).
+- 2011-06-27 f002d94ff [NEW_FEATURE] Make Recent File List totally customizable (terminated).
+- 2011-06-30 5d8355de6 [NEW_FEATURE] Add file switcher (list) dialog (in progress).
+- 2011-07-09 c508aa94e [MODIFY] Chang file switcher behaviour while clonning a document on the other view.
+- 2011-07-13 505fba9b7 [BUG_FIXED] Detect the absence of Scintilla.
+- 2011-07-14 5aad3ba82 [NEW_FEATURE] Add full path file name as tip in file switcher (while hovering on item).
+- 2011-07-15 bd28e3bfa [NEW_FEATURE] Make file switcher dialog accessible (in progress).
+- 2011-07-15 b1e3ca6ab [BUG_FIXED] Fix Doc Switcher logic bug.
+- 2011-07-15 f1d217157 [BUG_FIXED] Fix Doc Switcher clone status bug.
+- 2011-07-17 10dc4e06d [UPDATE] Update Scintilla to 2.27.
+- 2011-07-17 a9da25912 [NEW_FEATURE] Add active folding area highlighting feature (only for box and circle mode).
+- 2011-07-20 3727c1efb [UPDATE_UI] Tune the position of UI component in Preferences dialog.
+- 2011-07-23 1b590704f [RELEASE] Notepad++ v5.9.3 release.
+- 2011-07-24 d31369f26 [BUG_FIXED] (Author:Alexander van der Lokken) Fix "Replace all" feature hangs on the Regular Expression '$'.
+- 2011-07-24 1ce665e1e [RELEASE] Notepad++ v5.9.3 release.
+- 2011-08-20 df3e1d4ef [NEW_FEATURE] Doc Switcher can be sorted now.
+- 2011-08-21 bcb9206c4 [BUG_FIXED] Fix ANSI version Clipboard history entries display bug.
+- 2011-08-23 e252f39de [BUG_FIXED] Fix wrong display of tab number setting dialog in Lang Menu/Tab settings of Preferences dialog.
+- 2011-08-29 52a17f805 [NEW_FEATURE] Add Project manager (in progress).
+- 2011-09-01 463e19840 [NEW_FEATURE] enhance Project manager (in progress).
+- 2011-09-01 4a2f68945 [NEW_FEATURE] enhance Project manager (in progress).
+- 2011-09-03 de6036b57 [NEW_FEATURE] enhance Project manager (in progress).
+- 2011-09-03 f88cbf265 [NEW_FEATURE] enhance Project manager (in progress).
+- 2011-09-07 ede0a41d7 [ENHANCE] Enhance Project Manager.
+- 2011-09-11 bf93a7988 [ENHANCE] Enhance Project Manager.
+- 2011-09-14 8d137e245 [ENHANCE] Enhance Project Manager.
+- 2011-09-14 489f63cd6 [ENHANCE] Enhance Project Manager.
+- 2011-09-16 0fd460401 [ENHANCE] Enhance Project Manager.
+- 2011-09-18 647748824 [ENHANCE] Enhance Project Manager.
+- 2011-09-20 6f444eee1 [ENHANCE] Enhance Project Manager.
+- 2011-09-20 e107b8a54 [NEW_FEATURE] enhance Project manager (in progress).
+- 2011-09-21 87a142c5e [ENHANCE] Enhance Project Manager.
+- 2011-09-22 100842b72 [ENHANCE] Enhance Project Manager.
+- 2011-09-23 2d5cf5dde [ENHANCE] Enhance Project Manager.
+- 2011-09-25 cfa7850d0 [ENHANCE] Enhance Project Manager.
+- 2011-09-26 79399432c [ENHANCE] Enhance Project Manager.
+- 2011-09-26 7c71960fd [NEW_FEATURE] enhance Project manager (in progress).
+- 2011-09-26 b040f8cce [ENHANCE] Enhance Project Manager.
+- 2011-09-28 49eb552f7 [ENHANCE] Enhance Project Manager.
+- 2011-10-02 33ce72fa6 [ENHANCE] Enhance Project Manager - add DELETE and ENTER shortcut.
+- 2011-10-04 a0dfaf424 [BUG_FIXED] Fix Project Manager writing file paths bug while saving under the root.
+- 2011-10-07 4af7c82a6 [BUG_FIXED] Fix a crash bug - crash on launch time if default User defined language was set on the previous session.
+- 2011-10-09 9bec0007c [UPDATE] Update the localization files.
+- 2011-10-10 d8cf66efe [UPDATE] Update the localization files.
+- 2011-10-10 cbd3affb9 [RELEASE] Notepad++ v5.9.4 release
+- 2011-10-10 86947350c [RELEASE] Notepad++ v5.9.4 release
+- 2011-10-16 4e7a56087 [BUG_FIXED] 1. Fix Project Panel loading non-project file bug. 2. Fix adding/hidding Language Menue item problem in Preference dialog.
+- 2011-10-21 95a31d6a8 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository/trunk@829 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2011-10-22 9a2f0eeb7 [MODIF] Change the updater url.
+- 2011-10-23 077bcf56d [RELEASE] Notepad++ 5.9.5 release. [NEW_FEATURE] Make Project panel translatable. [UPDATE] Update the localization files.
+- 2011-10-29 46888bb4f [BUG_FIXED] Fix Project Manager's "Open Workspace" and "Reload Workspace" commands bug - without removing the old Workspace.
+- 2011-10-31 8daa455c0 [NEW_FEATURE] Add "adding files from folder" for Project Manager.
+- 2011-10-31 bc3870e74 [RELEASE] Notepad++ 5.9.6 release
+- 2011-11-01 e82e63d3a [BUG_FiXED] Fix the crash issue while execute "Add Files from Directory" command (Project Manager).
+- 2011-11-03 2158a119c [OPTIMIZE] Compact recursiveAddFilesFrom function.
+- 2011-11-03 7c81c623f [ENHANCEMENT] Enhance "Add files from Directory" command in Project Manager: sorted result: first all folders, then all files, both of them alphabetically.
+- 2011-11-05 56a653b1a [RELEASE] Notepad++ 5.9.6.1 release
+- 2011-11-06 f35cd62e8 [NEW_FEATURE] Add drag and drop ability (in progress).
+- 2011-11-06 117136e34 [BUG_FIXED] Fix a crash issue while right-clicking on the doc switcher's column control ("Name" and "Ext.").
+- 2011-11-09 721d28336 [ENHANCE] Drag and drop feature (in progress).
+- 2011-11-09 daec0f042 [UPDATE] Reduce the margin of edit zone.
+- 2011-11-13 150304a5a [RELEASE] Notepad++ 5.9.6.2 release
+- 2011-11-16 6c4eef8cb [MODIF_BEHAVIOUR] Make plugins in %APPDATA%/Notepad++/plugins/ override les plugins in Notepad++ installation directory.
+- 2011-11-19 24a25a0b4 [ENHANCE] Project Manager Drag and Drop feature (in progress).
+- 2011-11-22 49964f565 [CHANGE_BEHAVIOUR] Plugins loading from %APPDATA\Notepad++\plugins\% is enabled only if "NPP_INSTALLED_DIR\Notepad++\allowAppDataPlugins.xml" is present. [NEW_FEATURE] Edit Zone border can be customizable via Preferences dialog.
+- 2011-12-10 0598f46e9 [ENHANCE] Force incremental search bar use the gray background.
+- 2011-12-17 ab2836f71 [ENHANCE] Enhancement for drag and drop feature in Project Manager.
+- 2011-12-19 07acbb581 [ENHANCE] Drag and drop feature in Project Manager.
+- 2011-12-30 5bdd0008f [NEW_FEATURE] Add "Move Up" and "Move Down" commands in Project Panel (in progress).
+- 2011-12-31 f90935057 [UPDATE] Add 2 translation entries ("Move Up" & "Move Down" for Project Panel) in english.xml.
+- 2012-01-01 9138bbc5e [NEW_FEATURE] Add "Move Up" (Ctrl+Up) and "Move Down" (Ctrl+Down) commands in Project Panel.
+- 2012-01-01 d6633a0b6 git-svn-id: svn://svn.tuxfamily.org/svnroot/notepadplus/repository/trunk@853 f5eea248-9336-0410-98b8-ebc06183d4e3
+- 2012-01-01 18942fa99 [RELEASE] Notepad++ 5.9.7 release
+- 2012-01-02 4eb429531 [BUG_FIXED] Fix "Save All" UI problem.
+- 2012-01-02 be0793935 [UPDATE] Update Localization files.
+- 2012-01-03 15f64db06 [NEW] Add Sardinian localization file
+- 2012-01-05 9053074f3 [RELEASE] Notepad++ 5.9.8 official release
+- 2012-01-07 e10047272 [FIX] Fix some localization files are not included in installer.
+- 2012-01-30 76c1a650c [NEW_FEATURE] Add Document Map feature (in progress).
+- 2012-02-02 7c2305015 [BUG_FIXED] Fix Document Map Docking dialog dropped/switching/close problems.
+- 2012-02-09 73ffaa855 [BUG_FIXED] Fix Doc Map resized and dropped display bug.
+- 2012-02-13 7e0ed0ebf [NEW_FEATURE] (Author: Dave Brotherstone) Add PCRE (Perl Compatible Regular Expressions) support.
+- 2012-02-15 3264a77ea [ENHANCEMENT] (Author: Dave Brotherstone) Enhance Scintilla compiling script for PCRE support.
+- 2012-02-18 91a40f059 [ADD] (Author: Dave Brotherstone) PCRE support (Add forgotten file).
+- 2012-02-20 dd2f32bb6 [FIXED_BUG] doc map: Fix moving problem. doc map: Fix folding/unfolding problem.
+- 2012-02-21 a1d9f0f4b [FIXED_BUG] doc map: Fix folding (doc map view zone) problem.
+- 2012-02-23 17f472c9c [FIXED_BUG] doc map: Fix folding (doc map view zone) problem.
+- 2012-02-25 41a9d6854 [MODIF] Installer: Don't override contextMenu.xml.
+- 2012-02-25 f89bd5aee [FIXED_BUG] doc map: Fix folding (doc map view zone) problem.
+- 2012-02-26 9d1e83607 [NEW_FEATURE] Doc map: mouse wheel is working. [BUG_FIXED] Doc map: Remove the unnecessary merge.
+- 2012-02-26 f08c29f2b [BUG_FIXED] Fix a resize bug in Doc Map
+- 2012-02-27 d6f66b1d7 [ENHANCEMENT] Enhance the source code.
+- 2012-03-04 da8fdbb86 [NEW_FEATURE] Doc map: Processing text wrapping situation (in progress).
+- 2012-03-07 f3fbd9768 [ENHANCEMENT] Speed up the loading time for the large file. [NEW] Doc Map: wrapping (in progress).
+- 2012-03-08 44a37232d [BUG_FIXED] Doc Map wrapping problem.
+- 2012-03-10 9206fd252 [ENHANCEMENT] Doc map: Improve wrapping operation.
+- 2012-03-12 e6dbc657d [ENHANCEMENT] Enhance doc map.
+- 2012-03-12 f2433f2d0 [ENHANCEMENT] Doc map: Improve wrapping operation.
+- 2012-03-13 1d12661db [ENHANCEMENT] Doc map: Improve wrapping operation.
+- 2012-03-14 e05b1ad82 [ENHANCEMENT] Enhance doc map.
+- 2012-03-14 671e7b1b4 [ENHANCEMENT] Doc map: Improve wrapping operation.
+- 2012-03-15 989a970dd [ENHANCEMENT] Enhance doc map.
+- 2012-03-18 c1c738348 [ENHANCEMENT] Doc map: Improve wrapping operation.
+- 2012-03-18 870a4f105 [ENHANCEMENT] Enhance doc map.
+- 2012-03-19 9ac8c7dea [FIXED_BUG] Fix some minor bug. [UPDATE] 1. Update several native language. 2. Update Ruby keywords. 3. add 2 new themes. 4. Change the book marker for adapting darker theme.
+- 2012-03-25 f077b71eb [RELEASE] Notepad++ 6.0 release
+- 2012-04-02 8c27c2a20 [BUG_FIXED] 1. User Defined Language syntax highlighting problem while Doc Map is opened. 2. Chinese characters showing problem while Doc Map is opened. 3. the old behaviour (comment/uncomment w/o selection) is restored.
+- 2012-04-04 88ea28097 [BUG_FIXED] Fix find/replace bug while doc mapper is opened.
+- 2012-04-08 0bc0a42ec [BUG_FIXED] Fix selecting all the text in doc map while clicking on doc map dialog caption.
+- 2012-04-09 9d6671a68 [RELEASE] Notepad++ 6.1 release.
+- 2012-04-11 8c3f729f3 [BUG_FIXED] 1. Fix focus on document map bug after its launch. 2. Fix auto-completion bug.
+- 2012-04-13 21b729be9 [BUG_FIXED] Fix selectAll-copy-paste on the same document crash bug while document map has been activated.
+- 2012-04-15 25cdfe770 [BUG_FiXED] (Author: Dave Brotherstone)Fix Scintilla compilation with boost v1.49 PCRE problem.
+- 2012-04-15 8b7e86d4d [UPDATE] Enhance project's GPL to avoid the bundle version made by the tiers sites : cnet, softonic and 01net.
+- 2012-04-15 a89692213 [UPDATE] Update the GPL of all project source code to avoid the bundle version made by the tiers sites : cnet, softonic and 01net.
+- 2012-04-17 218853598 [RELEASE] Notepad++ 6.1.1 release
+- 2012-04-23 1bb0c2f13 [BUG_FiXED] (Author: Dave Brotherstone)Add a forgotten file.
+- 2012-04-23 1282853ed [BUG_FiXED] (Author: Dave Brotherstone)Add a forgotten file.
+- 2012-04-23 71e2f0c9e [BUG_FIXED] (Author: Dave Brotherstone) Fix UTF-8 EOF detection for PCRE.
+- 2012-04-23 74084db9a [BUG_FIXED] Fix a file detection bug on opening file.
+- 2012-04-26 e9f84327f [RELEASE] Notepad++ 6.1.2 release
+- 2012-05-01 024c82e88 [BUG_FIXED] Fix mouse cursor disappearing bug on right click while a project item is dragging.
+- 2012-05-01 1697b664b [BUG_FIXED] Fix a bug while command argument is empty (""). [NEW_FEATURE] Warn user while the amount of file to open is larger than 200.
+- 2012-05-01 0e67b9924 [BUG_FIXED] Fix a logical bug for important amount file to to open feature.
+- 2012-05-01 19808a632 [BUG_FIXED] (Author: Anton Vasiliev) Fix hanging problem while double-click on a project folder then (immediately) drag it.
+- 2012-05-01 fa987cc47 [BUG_FIXED] Fix Notepad++ close bug while move one cloned new empty document into another view, in the destination contained only this new empty document.
+- 2012-05-03 5d28d74ac [ENHANCEMENT] (Author: Anton Vasiliev) Add some enhancement to common functions.
+- 2012-05-12 43f4e4c45 [ENHANCEMENT] Enhance warning message when the amount of files to open is too important.
+- 2012-05-19 efc33d6c0 [ENHANCEMENT] (Author: Dave Brotherstone) Enhance xml matching tags highlighting performance issue.
+- 2012-05-25 07f9ab578 [ENHANCEMENT] (Author: Dave Brotherstone) Style clickable links only in current page instead of on whole documents.
+- 2012-05-27 7d36c18b1 [ENHANCEMENT] (Author: Marius Negrutiu) Modified the uninstaller to remove NPP file associations.
+- 2012-05-27 6bf1810da [UPDATE] Add 2 javascript entries for auto-completion.
+- 2012-05-28 39da7315b [RELEASE] 6.1.3 release [TYPO_CORRECTION] Correct some typo.
+- 2012-06-04 980ff19c9 [UPDATE_COMPONENT] (Author: Loreia L.) Make NppShell compilable under Visual Studio 2008.
+- 2012-06-10 8dbb88009 [BUG_FIXED] (Author: Andreas Jonsson) 1. Fix a regression in clickable link feature. 2. Add "reload from disk" command entry in tab context menu.
+- 2012-06-16 baff12228 [BUG_FIXED] (Author: Loreia L.) Provide a walkaround for Windows Explorer's crash bug due to the conflicts between NppShell.dll and Net iD's contextmenu component.
+- 2012-06-24 07671e8d7 [RELEASE] 6.1.4 release
+- 2012-06-26 86f444f82 [BUG_FIXED] Fix un regression: folding/unfolding performance issue.
+- 2012-06-29 cac7e4ff2 [BUG_FIXED] (Author: John Burak) Fix xml syntax highlighting broken because of php preprocessor instruction inside.
+- 2012-06-30 e2a165cc8 [BUG_FIXED] (Author: FLS) Fix wrap/unwrap line position not being kept bug.
+- 2012-06-30 4a8cb6d15 [BUG_FIXED] (Author: Andreas Jonsson) Fix lower/UPPER case on selected text which contains NULL characters.
+- 2012-07-01 2a6d8b213 [BUG_FIXED] Fix tab context menu in the other localization regression due to adding new command "Reload".
+- 2012-07-01 af994f004 [BUG_FIXED] Add Windows 8 detection - Fix the sidebar splitter failed in Windows 8 issue.
+- 2012-07-05 52d9ea2d4 [BUG_FIXED] (Author: Dave Brotherstone) Fix a html tag match freezing issue.
+- 2012-07-07 3ef269d95 [BUG_FIXED] (Author: Andreas Jonsson) Fix a GUI bug: it shows empty tab row while closing a last tab in a row (in the multi-line tab mode).
+- 2012-07-07 6224cf51b [RELEASE] 6.1.5 release
+- 2012-07-20 6fc39bed3 [BUG_FIXED] Check update without elevating to Administrator right. [NEW_FEATURE] Activate auto-updating feature under Vista, Windows 7 and Windows 8.
+- 2012-07-20 83bd722c0 [BUG_FIXED] (Author: Andreas Jonsson) Fix a issue that "max number of recent files" cannot be set to 0.
+- 2012-07-20 dbd2df857 [BUG_FIXED] (Author: Andreas Jonsson) Fix some problems with Find/Replace dialog messages like "1 hits in 1 files".
+- 2012-07-21 8d4f1a36c [NEW_FEATURE] (Author: Andreas Jonsson) Make Document map togglable via menu.
+- 2012-07-21 1eda47d56 [BUG_FIXED] (Author: Andreas Jonsson) Fix two logic errors.
+- 2012-08-05 be4682a68 :)
+- 2012-08-05 a900e8d01 [BUG_FIXED] (Author: Andreas Jonsson) Fix "Doc switcher icon state not refreshed on 'save all'" bug.
+- 2012-08-08 78a38c1c2 [CLEAN_UP] Remove unnecessary function.
+- 2012-08-09 301492a3a [ENHANCEMENT] (Author: Andreas Jonsson) Enhance folding performance on large document.
+- 2012-08-12 f719de993 [NEW] Add font size 5, 6 and 7 in Style Configurator
+- 2012-08-12 418c440f6 [BUG_FIXED] Align text display in help dialog (--help).
+- 2012-08-12 211932fdd [BUG_FIXED] Walk around Notepad++ hanging on C(JK?) input with ANSI document while enabling word completion.
+- 2012-08-16 2873d3790 [RELEASE] 6.1.6 release
+- 2012-08-22 7ff455816 [BUG_FiXED] (Author: Andreas Jonsson) Fix a buffer overflow bug.
+- 2012-08-22 7e352c4a3 :)
+- 2012-08-23 e08e566e1 [BUG_FiXED] Fix config.xml 0 length bug after Windows' update (with reboot).
+- 2012-08-25 e86940390 [NEW_FEATURE] (Author: Loreia) Enhance TAB2SPACE and SPACE2TAB features.
+- 2012-08-29 4d11f5d26 [NEW_FEATURE] (Author: Andreas Jonsson) Add case sensitive option for smart highlighting feature.
+- 2012-08-29 072c80eb7 [ENHANCEMENT] Group smart highlighting settings.
+- 2012-08-30 da5d65a47 :)
+- 2012-08-31 0011deec4 [ENHANCEMENT] (Author: FLS) Enhance comment operations: Stream Uncomment added, cross-calling of block.
+- 2012-08-31 75ccf352d [BUG_FiXED] (Author: Andreas Jonsson) Fix a behavior issue on Windows shutdown.
+- 2012-09-02 caaaef7c2 [ENHANCEMENT] Enhance the localization system - no need to update nativeLang.xml if menu sub-entries are moved.
+- 2012-09-03 755774861 [ENHANCEMENT] Enhance the localization system - main menu entries.
+- 2012-09-08 37efb3f8e :)
+- 2012-09-08 f1a2acd85 [BUG_FIXED] (Author: Andreas Jonsson) Fix saving file fails silently bug.
+- 2012-09-08 7fd0c5764 [BUG_FIXED] (Author: Andreas Jonsson) Fix a crash issue on save as command.
+- 2012-09-09 e4fcbb728 [UPDATE] Update the nativeLang.xml for all available languages for Notepad++.
+- 2012-09-10 dcf7cc089 [RELEASE] 6.1.7 release
+- 2012-09-11 bb0678a0d [BUG_FiXED] Fix a regression of wrong behaviour while save an empty file.
+- 2012-09-16 ba6315c7b [ENHANCE] Enhance the translation system (for tab context menu).
+- 2012-09-16 275a78228 [RELEASE] 6.1.8 release
+- 2012-09-28 a58e54bc6 [NEW_FEATURE] (Author: Loreia L.) New implementation of User Defined Language - UDL2.
+- 2012-10-01 60239d517 [UPDATE] Update language files and html API file.
+- 2012-10-04 2352cb8d5 [NEW] Make Styler dialog of UDL2 translatable.
+- 2012-10-07 bbb7581da :)
+- 2012-10-07 74b13ac56 [BUG_FIXED] GUI: make "Update" option visible in Preferences dialog.
+- 2012-10-07 0cfae0f4c [BUG_FIXED] Fixed a translation items shift issue.
+- 2012-10-07 4f8122d2e [BUG_FIXED] (Author: Andreas Jonsson) Remove the restriction of URL parsing.
+- 2012-10-07 cc1c928b8 [BUG_FIXED] (Author: Ivan Radić, aka Loreia) Fix a minor issue of UDL2.
+- 2012-10-09 23559e7bf [RELEASE] 6.2 release
+- 2012-10-10 a97b25ed9 [BUG_FIXED] (Author: Ivan Radić, aka Loreia) Python style improvment.
+- 2012-10-19 25ae135f8 [BUG_FIXED] (Author: Ivan Radić, aka Loreia) Fix link hotspot colourising issue.
+- 2012-10-20 3bfa679f4 [BUG_FIXED] Fix a crash issue (a regression) on opening/closing files.
+- 2012-10-20 b31da09c2 [BUG_FIXED] (Author: Ivan Radić, aka Loreia) - Expanded max array style from 24 to 30 (to accomodate for GlobalStyles). - UDL Styler dialog has removed close cutton because it is causing application crash in Npp v.6.2 - Fixed bug where "Folder in code" keywords were detected even outside of commnets. - Fixed bug where 0xfece57 was picked as number, but 0xfe57ce was not.
+- 2012-10-21 783793ba6 [BUG_FIXED] Remove GUI limitation issue for auto-updating feature.
+- 2012-10-22 0e2f87897 [UPDATE] rename the eol operation commands.
+- 2012-10-27 377a9ebca :)
+- 2012-11-03 9aeb96789 [BUG_FIXED] (Author: Ivan Radić, aka Loreia) Fix a crash issue due to the inconsistent userDefineLang.xml.
+- 2012-11-04 71b72dbdf [UPDATE]Remove ANSI Config from project.
+- 2012-11-04 29ff3561c [BUG_FIXED] Fix a regression bug about Configurator GUI: font setting controls are disabled.
+- 2012-11-05 41432b9f6 :)
+- 2012-11-05 fa5fb505c [BUG_FIXED] Fix a crash bug while file path as argument and its length is more than 260 characters(MAX_PATH).
+- 2012-11-05 cb383ab1b [UPDATE] Remove wiondows version (95/98/ME) control for updater.
+- 2012-11-06 60ed8107b [UPDATE] Add STYLE_NOT_USED constant to make source code more readable.
+- 2012-11-07 297ea4560 [RELEASE] Notepad++ 6.2.1 release
+- 2012-11-08 1ec4e68ed [RELEASE] Notepad++ 6.2.1 release Add Aragonese language, update 2 languages.
+- 2012-11-13 1e9690998 [BUG_FIXED] Fix url link style problem in php document.
+- 2012-11-16 f22c49c7f [NEW_FEATURE] (Author: Ivan Radić, aka Loreia) Add selected line count display on the status bar.
+- 2012-11-16 d1088bc2e [NEW_FEATURE] (Author: Ivan Radić, aka Loreia) Add the capacity to treat path like "\test\test.txt".
+- 2012-11-18 ae2438f73 [RELEASE] Notepad++ 6.2.2 release
+- 2012-11-24 27efa1548 [NEW_FEATURE] Add build-in FunctionList (in progress).
+- 2012-12-02 bcb502808 [BUG_FIXED] (Author: Dave Brotherstone) Fix find "\r\n" in RegExpr mode.
+- 2012-12-05 8f1e8ccda [NEW_FEATURE] Add Remove empty lines feature.
+- 2012-12-07 cca224d2e [BEHAVIOUR_MODIFIED] Change "Delete file" command to "Move to Recycle Bin".
+- 2012-12-08 90cd3e065 [BUG_FIXED] Fix "Move to Recycle Bin" crash bug in debug mode.
+- 2012-12-10 7e5e59feb [CHANGE_BEHAVIOUR] Change document default value from ANSI to UTF8 w/o BOM. [WALK_AROUND] Enable Word-completion under CJK environment for unicode document.
+- 2012-12-12 1216ab3fc [UPDATE] Build-in FunctionList in progress.
+- 2012-12-16 c6afa7a3d [RELEASE] Notepad++ 6.2.3 End of World Edition.
+- 2012-12-31 d0395e1ff [BUG_FIXED] (Author: Pekka Pöyry) Fix the bug that double clicking on tab with 2 views doesn't open new file.
+- 2013-01-01 e96c9b151 [BUG_FIXED] (Author: Pekka Pöyry) Fix tab display bug when buffer's filename is changed or buffer is closed.
+- 2013-01-03 ba935673e [BUG_FIXED] (Author: Mike Stratoti) Enhance and stabilize the build.
+- 2013-01-05 7516aa543 [BEHAVIOUR_CHANGE] Remove the "move to Recycle bin" confirmation dialog for windows 7/Vista/XP.
+- 2013-01-06 ef6c612dc [UPDATE] Build-in FunctionList in progress.
+- 2013-01-06 6c344ac24 [UPDATE] Remove unstable plugin during the installation. .
+- 2013-01-08 18737c7cc [BUG_FIXED] (Author: Pekka Pöyry) Fix the issue of document focus after canceling exit on an unsaved file.
+- 2013-01-08 37bac16af [BUG_FIXED] (Author: Pekka Pöyry) Fix focus order by TAB key in preference dialog.
+- 2013-01-18 0a8a17fa9 [UPDATE] Build-in FunctionList in progress.
+- 2013-01-23 c725d3012 [CHANGE] Slight change of Tab bar close icon.
+- 2013-01-23 793a6665e :)
+- 2013-01-23 27b2431ad [UPDATE] Build-in FunctionList in progress.
+- 2013-01-25 ffdebe56e [BUG_FIXED] (Author: François-R Boyer & Dave Brotherstone) Regex search and replace haning problem fix.
+- 2013-01-26 233b1ac80 [BUG_FIXED] (Author: Pekka Pöyry) Empty document cannot be saved when using special encoding.
+- 2013-01-26 2e238a03b [BUG_FIXED] (Author: Pekka Pöyry) Can't open file via Explorer context menu when Notepad++ is run as administrator.
+- 2013-01-27 d60466eed [BUG_FIXED] (Author: Ivan Radić - aka Loreia) UDL 2.1.
+- 2013-01-27 300343011 [BUG_FIXED] (Author: Dave Brotherstone) Fix incremental search regression.
+- 2013-01-27 e5861b4df [BUG_FIXED] (Author: Pekka Pöyry) Fix the problem that calltip becomes garbage after switching document.
+- 2013-01-27 c8043294b [BUG_FIXED] (Author: Pekka Pöyry) Fix the problem of wrong starting window position on the second monitor.
+- 2013-01-28 73c4811c8 [RELEASE] Notepad++ 6.3 RC.
+- 2013-01-30 04be12a1a [BUG_FIXED] (Author: Ivan Radić - aka Loreia) UDL 2.1 minor bug fixed.
+- 2013-02-02 5e122d008 [BUG_FIXED] (Author: Ivan Radić - aka Loreia) UDL 2.1 minor bug fixed.
+- 2013-02-03 ce1b17b79 [RELEASE] Notepad++ 6.3 Release.
+- 2013-02-10 7c05c2f20 [NEW] FunctionList: restore the previous state.
+- 2013-02-11 f911b63a5 [BUG_FIXED] (Author: Pekka Pöyry) Fix the problem of Window position not saved/restored properly.
+- 2013-02-17 1e10e5e4d [NEW] Add "Set Updater proxy..." command for setting the proxy of updater. [BUG_FIXED] Warn user if current document is read only while replacing operation.
+- 2013-02-18 283f7567a [BUG_FIXED] (Author: FLS) Fix a crash bug on uncommenting.
+- 2013-02-18 0180d012c [NEW_FEATURE] (Author: FLS) Remember folding states for each file in session.
+- 2013-02-22 49128550d [UPDATE] Build-in FunctionList in progress.
+- 2013-02-24 9df4ec6b5 [UPDATE] FunctionList in progress.
+- 2013-03-02 f98e5fd8a [UPDATE] Build-in FunctionList in progress.
+- 2013-03-03 d6ea29c57 [NEW] Add new API NPPM_GETCURRENTVIEW. Add new capacity in existent API NPPM_GETMENUHANDLE.
+- 2013-03-06 385c4c1f4 [BUG_FIXED] (Author: Dave Brotherstone) Fix replacing '\n' bug in both extended and regex mode.
+- 2013-03-17 3b0810926 [RELEASE] Notepad++ 6.3.1 Release.
+- 2013-03-20 45f9d6e13 [UPDATE] Build-in FunctionList in progress.
+- 2013-04-02 f03cac670 [BUG_FIXED] Revert remember folding states between session feature for a performance issue.
+- 2013-04-02 84339dc3a [NEW_FEATURE] (Author: PSI) Recognize wscript and Rakefile respectively as python and ruby file.
+- 2013-04-02 3aff6b23a [RELEASE] Notepad++ 6.3.2 Release.
+- 2013-04-07 06756d295 [NEW_FEATURE] Add scroll pos in the middle for function list feature.
+- 2013-04-20 d7cce2130 [RESTORE_FEATURE] Restore remembering session folding feature with the optimized algorithm.
+- 2013-05-01 db19cf8d6 [NEW_FEATURE] Add Close/Keep the selected files commands in Document List Panel.
+- 2013-05-05 5da5167b7 [RELEASE] Notepad++ 6.3.3 Release.
+- 2013-05-11 36b9b7cc8 [NEW_BEHAVIOUR] Remove the result dialogs of Find/Replace dialog. Display the error/result in the new added statusbar of Find/Replace dialog. (di Sardegna)
+- 2013-05-12 0fd29adc4 [NEW_BEHAVIOUR] Make default button on Cancel for replace in files confirm dialog. (di Sardegna)
+- 2013-05-15 a62ecb644 [ENHANCEMENT] Enhance the performance to get once the length in the for loop.
+- 2013-05-16 865eded30 [BUG_FIXED] Fix fold all command bug (which folds partially).
+- 2013-05-17 532275abb [ENHANCEMENT] (Author: Jinhui Yang) Enhance Find/Replace dialog statusbar message.
+- 2013-05-19 e2e770324 [ENHANCEMENT] (Author: Jinhui Yang) Fix macro problem: Find functionality doesn't work in "Run a Macro Multiple Times".
+- 2013-05-20 434638c61 [NEW_FEATURE] (Author: FLS) Enhance the performance of switching files if folding is applied.
+- 2013-05-20 b0f47da58 [BUG_FIXED] (Author: Jens Lorenz) Fix a detection error of UTF16 file from a binary file.
+- 2013-05-20 71234725a [ENHANCEMENT] Add "End Reached" and "Top Reached" status in find/replace dialog StatusBar. Make "Error", "End Reached" and "Top Reached" status visible (flash main window) if find/replace dialog is hidden.
+- 2013-05-21 0bd5bfa63 [ENHENCEMENT] Block comment work with line characters more than 1024.
+- 2013-05-21 fb67ac3bc [ENHANCEMENT] Better flash window while search not found.
+- 2013-05-27 3d7183e49 [BUG_FIXED] Fix small window size problem due to closing Notepad++ in icon state (reduced in the taskbar) on the last session.
+- 2013-05-30 03b2582a6 [UPDATE] Enhance C++ parser for function list.
+- 2013-06-01 2afce6c1b [BUG_FIXED] (Author: Pekka Pöyry) Fix the bug of Window position not saved/restored properly.
+- 2013-06-04 02086c9c0 [BUG_FIXED] (Author: CodeForLife) Fix Incorrect Macro Deleted from Macro Menu.
+- 2013-06-04 3b9f24ba5 [NEW] Add FunctionList toolbar button.
+- 2013-06-08 7e66078be [NEW_FEATURE] (Author: Andreas Jonsson) Delimiter select by ctrl + Double click.
+- 2013-06-09 fe5b147fe [BUG_FIXED] (Author: Andreas Jonsson) Fix opening the same file twice due to its different path (symbol link).
+- 2013-06-09 874d5605c [NEW_FEATURE] (Author: Andreas Jonsson) Add Begin/End Select feature.
+- 2013-06-12 896c70597 [UPDATE] Change function list xml structure (minor). [BUG_FIXED] Fix a function list bug about comment.
+- 2013-06-14 d39c743ff [BUG_FIXED] (Author: Andreas Jonsson) Fix Ctrl+double click delimiter selection bug.
+- 2013-06-18 197a28d1b [ENHANCEMENT] (Author: Ivan Radic,aka. Loreia L.) Enhance TAB/Space conversion: support UTF8 and to preserve formatting.
+- 2013-06-25 e1423c27d [MODIF] Change Preferences dialog interface: use list instead of tab to switch among the dialogs.
+- 2013-06-27 5ae6536ce [UPDATE] Add/update localization files.
+- 2013-06-29 32c6a0b39 [BUG_FIXD] Fix a crash bug of dockable dialog due to optimization of loop. [ENHANCEMENT] functionList.xml will be copied in the %appdata%\notepad++\ if doLocalConf.xml is not present.
+- 2013-06-29 86a33d0f7 [RELEASE] Notepad++ 6.4 Release.
+- 2013-06-30 ab5a388e9 [RELEASE] Notepad++ 6.4.1 Release (Fix 6.4 wrong binary file including)
+- 2013-07-02 c737d48c3 [BUG_FIXED] Fix localization regression.
+- 2013-07-02 6902738c8 [UPDATE] Add a new command in macro recording.
+- 2013-07-03 7898a2ff4 [BUG_FIXED] (Author: Andreas Jonsson) Fix "Find all in current document" asking for creating a new file bug (regression).
+- 2013-07-03 67f5cbb79 [BUG_FIXED] (Author: Andreas Jonsson) Fix Run dialog doesn't work with spaces in path.
+- 2013-07-07 e66965e46 [BUG_FIXED] (Author: Andreas Jonsson) Fix Find/Replace dialog status bar overwriting memory problem.
+- 2013-07-07 9cabe6eac [UPDATE] Update GUI translation.
+- 2013-07-07 f80a49148 [BUG_FIXED] (Author: Andreas Jonsson) Minor fixes.
+- 2013-07-08 6264ef03d [ENHANCEMENT] Code optimization.
+- 2013-07-08 4dd7423f6 [ENHANCEMENT] (Author: Andreas Jonsson) Enhance the delimiter selection(Ctrl + double click) feature.
+- 2013-07-08 4f66f6388 [BUG_FIXED] prevent from crash in debug mode.
+- 2013-07-08 327860d6b [RELEASE] Notepad++ 6.4.2 Release.
+- 2013-07-09 48a968a8c [UPDATE] Complete english.xml.
+- 2013-07-11 0f512c77c [BUG_FIXED] Fix a crash issue while using function list.
+- 2013-07-17 58716efa7 [NEW_FEATURE] Add open session in the new instance and customizable multi-instance feature. [NEW_FEATURE] Add new command line argument "-openSession" for opening a session file.
+- 2013-07-21 9382bd329 [BUG_FIXED] (Author: Andreas Jonsson) Bugfix: begin/end selection when the text is not constant.
+- 2013-07-22 c47a5e7c1 [NEW] Add the GUI part of delimiter selection (Ctrl + Mouse Double Click).
+- 2013-07-23 4a225476f [BUG_FIXED] (Author: Andreas Jonsson) Fix regression -systemtray option not working properly.
+- 2013-07-24 31b15392a [ENHANCEMENT] Enhance delimiter selection settings GUI.
+- 2013-07-25 1a534cd92 [NEW_FEATURE] Add localization option -LlangCode where langCode is browser language code.
+- 2013-07-25 7465e1dc8 [BUG_FIXED] Fix Language Switcher not working bug while localization command option is used.
+- 2013-07-27 e89c5b9df [UPDATE] Add a warning text of restarting Notepad++ for multi-instant mode.
+- 2013-07-27 bc17d4782 [BUG_FIXED] Fix open session on another instance while session to open path contain space. [ENHANCEMENT] open session always on the same instance if no files opened in this instance.
+- 2013-07-27 1659205fe [UPDATE] Add new option "-L" in command line help dialog.
+- 2013-07-28 512cc2db6 [RELEASE] Notepad++ 6.4.3 Release.
+- 2013-07-30 774a9fab3 [BUG_FIXED] Fix opening file problem from the network drive.
+- 2013-07-30 37ffe3c7e [BUG_FIXED] Fix english.xml invalid xml bug.
+- 2013-07-31 c866075f5 [BUG_FIXED] (Author: Dave Brotherstone) Fix UTF-8 (w/o BOM) detection bug.
+- 2013-08-01 8fe56ada5 [NEW_FEATURE] (Author: Andreas Jonsson) Add new feature: select all between matching braces.
+- 2013-08-01 3f9b573aa [NEW_FEATURE] (Author: Andreas Jonsson) Add new feature: Ctrl+Alt+Enter insert blank line above the current line, Ctrl+Alt+Shift+Enter insert blank line below the current line.
+- 2013-08-02 75166f659 [BUG_FIXED] (Author: Andreas Jonsson) Fix macro replaying crash issue.
+- 2013-08-03 e172c6970 [NEW_FEATURE] (Author: Andreas Jonsson) Add new feature: Shortcut Ctrl+NumPad to access the tab directly.
+- 2013-08-03 082253c37 [NEW_FEATURE] (Author: Andreas Jonsson) Add "close all tab to left" and "close all tab to right" features.
+- 2013-08-05 785459bf8 [BUG_FIXED] (Author: Andreas Jonsson) Now statusbar reports the number of selected characters instead of number of bytes.
+- 2013-08-06 614070068 [BUG_FIXED] (Author: Ede_123) Fix opening file in Notpad++ makes Aero-snapped canceled.
+- 2013-08-06 f2fc73857 [BUG_FIXED] (Author: Neomi) Fix line numbers space problem while folding.
+- 2013-08-08 59fc425d7 [BUG_FIXED] Fix a crash issue while there's missing tag in function list. [BUG_FIXED] Fix function list parses C++ class (*.h) problem while there is comment on the beginning of document. [ENHANCEMENT] Enhance C/C++ parse result for function list.
+- 2013-08-08 7f972ebc6 [RELEASE] Notepad++ 6.4.4 Release.
+- 2013-08-09 fe69887ed [RELEASE] Notepad++ 6.4.5 Release. [BUG_FIXED] Fix a regression on recent files history.
+- 2013-08-28 cb7806e94 [UPDATE] Update Scintilla to 3.3.4 [BUG_FIXED] (Author: Dave Brotherstone) Fix scintilla crash bug while closing a document.
+- 2013-09-01 9e0bf8b63 [UPDATE] Rename "block comment" to "Single line comment" and "stream comment" to "block comment". [UPDATE] Remove invalid command "Online Documentation".
+- 2013-09-02 01f3148e0 [UPDATE] (Author: Neomi) Remove unnecessary modification in Scintilla.
+- 2013-09-02 0b5687052 [NEW_FEATURE] Add new feature: auto-complete matched delimiters (in progress).
+- 2013-09-03 986363365 [NEW_FEATURE] Add new feature: auto-complete matched delimiters (in progress).
+- 2013-09-05 86fd35de4 [NEW_FEATURE] New feature: auto-complete matched delimiters (in progress).
+- 2013-09-05 eeebf2379 [NEW_FEATURE] New feature: auto-complete matched delimiters (in progress).
+- 2013-09-06 b0ad8cae0 [NEW_FEATURE] New feature: auto-complete matched delimiters.
+- 2013-09-08 136dd2463 [NEW_FEATURE] Turn multi-paste on.
+- 2013-09-08 3a593808a [NEW_FEATURE] Add User Defined Languages support for the build-in function list. [BUG_FIXED] Fix a minor problem of file extension support for the build-in function list. [NEW] Add php, perl, xml, batch, ini and nsis for the build-in function list.
+- 2013-09-09 dda403cc6 [BUG_FIXED] Fix a crash bug while existing Notepad++ due to writing auto-insert settings.
+- 2013-09-09 f552ef85a [NEW_FEATURE] (Author: Andreas Jonsson) Change window title if program is running as administrator.
+- 2013-09-14 8e1850a54 [ENHANCEMENT] Avoid Notepad++ crash.
+- 2013-09-14 5ade0c482 [NEW_FEATURE] Add Coffee script support.
+- 2013-09-15 d56b2eef6 [UPDATE] Add CoffeeScript keywords.
+- 2013-09-16 9795408fa [BUG_FIXED] (Author: Andreas Jonsson) Fix canceling shutdown make Notepad++ quit w/o saving files bug. [ENHANCEMENT] (Author: Andreas Jonsson) Check "Begin/End select" menuitem when active. [ENHANCEMENT] (Author: Andreas Jonsson) Clear Replace dialog status bar before processing any action.
+- 2013-09-17 419fd585d [BUG_FIXED] (Author: Andreas Jonsson) Fix right-to-left text after closing document map bug.
+- 2013-09-17 82281c7d2 [BUG_FIXED] (Author: Andreas Jonsson) A regression fix for "Begin/End select" feature.
+- 2013-09-18 4105c3d2f [ENHANCEMENT] Mark all (5 styles available) feature checks 2 options "Match case" and "Match whole word only" in Find/Replace dialog. If a part of the word is selected, then "Match whole word only" will be always false, whatever the value is in Find/Replace dialog.
+- 2013-09-19 1eba16d3a [BUG_FIXED] (Author: Andreas Jonsson) Disable tag matching inside PHP code blocks.
+- 2013-09-19 2535486bb [UPDATE] Add new keywords for language NSIS.
+- 2013-09-20 95de01147 [UPDATE] Add powershell styles in Plastic Code Wrap theme.
+- 2013-09-24 f1e75559b [ENHANCEMENT] Add reload feature in function list.
+- 2013-09-29 5d900beba [RELEASE] Notepad++ 6.5 Release.
+- 2013-10-02 7cd196558 [BUG_FIXED] Fix tab settings bug in Normal text.
+- 2013-10-10 73cfa3785 [NEW_FEATURE] (Author: Andreas Jonsson) Add auto-completion for absolute path feature.
+- 2013-10-12 0da8942be [NEW_FEATURE] Add search ability into function list.
+- 2013-10-14 ea1f12e7a [ENHANCEMENT] Warn to user for unfound result of functionlist.
+- 2013-10-14 61a78b662 [BUG_FIXED] Fix the error background bug of functionList.
+- 2013-10-15 d3afa41a9 [NEW_FEATURE] Add sort button in function list.
+- 2013-10-18 7e6e8f6fb [ENHANCEMENT] Enhance sort feature in function list.
+- 2013-10-19 fbf9b8983 [ENHANCEMENT] Enhance GUI in function list (in progress).
+- 2013-10-20 641c1af0e [ENHANCEMENT] change the icon buttons of functionlist.
+- 2013-10-21 81f5a3613 [BUG_FIXED] Fix sort settings bug in function list while reloading.
+- 2013-10-25 a171d5fbd [ENHANCEMENT] Add button tips in function list.
+- 2013-10-26 8598bb36e [UPDATE] Update native language files (in progress).
+- 2013-10-28 c9ab034e6 [UPDATE] Update localization files (in progress).
+- 2013-10-28 c824157bc [UPDATE] Update native language files (in progress).
+- 2013-10-31 cf2dce672 [UPDATE] Update native language files.
+- 2013-11-01 65ac0ce09 [BUG_FIXED] (Author: FLS) Fix EOL type not correctly determined for UTF-16 files bug.
+- 2013-11-03 9594e0baf [RELEASE] Notepad++ 6.5.1 Release.
+- 2013-11-05 d320a022d [BUG_FIXED] Fix the bug that Global Styles are not loaded completely in Stylers Configurator.
+- 2013-11-06 8e8257c8d [NEW] URL hovered highlighting can be customized.
+- 2013-11-17 1d0b91e53 [NEW] Add swap line function.
+- 2013-11-17 806dee917 [NEW_FEATURE] Add line sorting feature (in progress).
+- 2013-11-19 35a496e51 [NEW_FEATURE] Add sort lines feature.
+- 2013-11-20 ad9fac22a [BUG_FIXED] (Author: tns) Fix tab close button's color remains hovered while mouse leaves.
+- 2013-11-20 b36301649 [BUG_FIXED] (Author: Andreas Jonsson) Fix bug in path auto-completion.
+- 2013-11-27 80a672009 [BUG_FIXED] (Author: JimD) Fix buffer overflowed problem for function calltip.
+- 2013-11-29 6e45308b7 [BUG_FIXED] Fix the class border determination problem (while open/close symbols are in the comment zone) in function list feature.
+- 2013-12-03 662aed98c [NEW] Add panel icons for 6 panels: ascii insertion, clipboard history, doc map, doc switcher, function list and project.
+- 2013-12-07 4a90b305b [ENHANCEMENT] Improve php and js parsers in functionList.
+- 2013-12-07 24c71c8ce [NEW_FEATURE] Add 2 new commands: Open containing folder and Open cmd.
+- 2013-12-08 a7c2d050f [BUG_FIXED] Fix the display/translation problem for new added commands. [UPDATE] Update html auto-completion file.
+- 2013-12-10 fa5e33a50 [RELEASE] Notepad++ 6.5.2 Release.
+- 2013-12-19 0e36da739 [ENHANCEMENT] prevent switched-in document from parsing for function list and document map while these 2 panels are hidden.
+- 2013-12-21 635871776 [ENHANCEMENT] Add hex column in Ascii Insert Panel.
+- 2013-12-23 bbe9bff59 [BUG_FIXED] Fix the context menu not being copied by installer in Notepad++ installed directory. [NEW] Add MimeTools plugins in the package.
+- 2013-12-23 3fc26bbcf [BUG_FIXED] (Author: Neomi) Fix text flickering due to line number pane size adaptation.
+- 2013-12-25 adc711fb0 [ENHANCEMENT] Enhance sort lines feature: sort selected lines if several lines are selected.
+- 2013-12-26 7df06f992 [BUG_FIXED] Fix the bug that modified tab interface colour settings cannot be saved in stylers configurator.
+- 2013-12-28 cee958260 [ENHANCED] Make advanced scrolling optional so in the case of touchpad scrolling problem this feature can be disabled to make the compatibility.
+- 2013-12-31 d98d0fa12 [RELEASE] Notepad++ 6.5.3 Release.
+- 2014-01-04 f9e917b70 [ENHANCE] Make extension column optional in vertical file switcher (in progress).
+- 2014-01-05 f8ab8e8c4 [ENHANCE] Make extension column optional in vertical file switcher (in progress).
+- 2014-01-05 4c6ea9795 [UPDATE] Remove an incorrect character.
+- 2014-01-14 6e9b5a64b [ENHANCE] Make extension column optional in vertical file switcher.
+- 2014-01-21 35c160ddf [NEW] DPI aware (in progress).
+- 2014-02-11 7edbd5534 [NEW_FEATURE] Make Notepad++ DPI-aware.
+- 2014-02-11 7cbc34257 [BUG_FIXED] Fix docking tab icon display position.
+- 2014-02-12 b94b9d8c6 [NEW_FEATURE] Make DPI-aware for Shortcutmapper and Preference Dialog.
+- 2014-02-13 0683267b5 [UPDATE] Make open file toolbar icon background transparent.
+- 2014-02-15 f1e1cfbe9 [CLEAN] Clean up the code.
+- 2014-02-16 63626f65c [NEW_FEATURE] Add function + word completion option in auto-completion feature.
+- 2014-02-16 53b81b318 [BUG_FIXED] Fix context menu does not "check" items that should be "checked".
+- 2014-02-17 10d6809dd [BUG_FIXED] (Author: Mathias Kresin) Fix closing bug in doc switcher via the context menu (right clicking of an unselected item).
+- 2014-02-17 6435087f0 [UPDATE] Update language files.
+- 2014-02-18 2193c7197 [RELEASE] Notepad++ 6.5.4 Release.
+- 2014-02-19 c18eccdd3 [BUG_FIXED] Fix the no ext column setting for Doc Switcher not initialized properly in preference dialog.
+- 2014-02-20 7ce969dc7 [BUG_FIXED] (Author: visimulator) Prevent Notepad++ from crash while scrolling pass over EOF.
+- 2014-02-21 36fd69ee5 [BUG_FIXED] (Author: Andreas Jonsson) Fix rename not replacing the existing file.
+- 2014-02-21 665e1c270 [BUG_FIXED] Remove extension as from Haskell.
+- 2014-02-22 abf23face [BUG_FIXED] Fix a localization bug.
+- 2014-02-22 c297a35f3 [BUG_FIXED] Fix the crash bug while setting current document as Objective-C source code.
+- 2014-02-23 f2c01c2ab [BUG_FIXED] (Author: visimulator) Fix sorting path in Windows document dialog makes Notepad++ crash.
+- 2014-02-23 9554b8c79 [NEW_FEATURE] (Author: Giles Payne) Auto-detect character encoding.
+- 2014-02-24 f558747a2 [ENHANCEMENT] Enhance Function list panel: reload on saving.
+- 2014-02-25 fd800dcf2 [ENHANCEMENT] Enhance Function list: better regconization of perl function.
+- 2014-03-04 b63c4a0f6 [NEW_FEATURE] (Author: Loreia) Add widecard capacity for command line arguments.
+- 2014-03-05 98cf4f3ab [BUG_FIXED] Fix the word-compltion hanging problem in Chinese ANSI document.
+- 2014-03-05 282d0ea9a [NEW] Add new command line argument "-r" for opening files recursively (with wildcard characters).
+- 2014-03-05 8f1e1bd94 [NEW] Add "Command line arguments help" menu item command.
+- 2014-03-06 11847747b [RELEASE] Notepad++ 6.5.5 Release.
+- 2014-03-08 ffccd1394 [ENHANCEMENT] Make files in uchardet folder conform with compiling warning level 4.
+- 2014-03-09 91c8310be [UPDATE] (AUTHOR Chris Covier) Make project compile under VS2013.
+- 2014-03-09 545f4f943 [UPDATE] (AUTHOR Chris Covier) Make Scintilla project compilable under VS2013.
+- 2014-03-10 1302b354a [UPDATE] Include "precompiledHeaders.h" in several files.
+- 2014-03-15 9f46e7c4c [BUG_FIXED] Fix RTL/LTR command making mirrored text bug.
+- 2014-03-16 f12faf0ac [NEW_FEATURE] (Author: Giles Payne) Auto-detect character encoding (settings part).
+- 2014-03-27 9c9fa8c48 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-03-28 7cbcc1f90 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-03-29 97c739505 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-03-31 33189832b [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-03-31 6f7689170 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-01 098084a37 [BUG_FIXED] Fix Find in files search result not displaying bug.
+- 2014-04-01 4a794ac8b [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-02 9b341806a [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-02 ac4b7ea8d [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-03 026aaf94a [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-03 db0489c8e [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-03 c79f10559 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-05 b72f30213 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-06 5512a9221 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-08 7ec6d51d8 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-10 b30c3246d [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-10 412b0c54e [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-13 4c49b023c [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-13 e8b76a28e [NEW_FEATURE] Snapshot feature.
+- 2014-04-16 698f48e6e [NEW_FEATURE] Snapshot feature.
+- 2014-04-16 a41d760cb [BUG_FIXED] Apply DPI-aware on find & replace dialog tab and User define language dialog tab.
+- 2014-04-20 1a7382635 [NEW_FEATURE] Snapshot feature.
+- 2014-04-22 162de3ff6 [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-23 f8142f4aa [NEW_FEATURE] Automatic Backup System (in progress).
+- 2014-04-23 e4ff45312 [NEW_FEATURE] Automatic Backup System.
+- 2014-04-27 e1a3fe91b [BUG_FIXED] Fix crash bug on second view (startup) while session snapshot is enabled.
+- 2014-04-27 85a6d2c05 [NEW_FEATURE] Automatic Backup System: uniq untitled tab name.
+- 2014-04-30 73603b235 [NEW_FEATURE] (Author: Andreas Jonsson) Make backslash as an escape character optional in SQL.
+- 2014-05-01 e680fca05 [NEW] Add shell script parser for the function list.
+- 2014-05-01 f8fd88b96 [RELEASE] Notepad++ 6.6 Release (Workers' Day Edition).
+- 2014-05-04 1e590aa78 [RELEASE] Notepad++ 6.6.1 Release (Workers' Day Edition). [BUG_FIXED] Fix Notepad++ hanging issue while saving a large file if session snapshot feature is on.
+- 2014-05-08 2aa456f7c [UPDATE] Add comments for session snapshot.
+- 2014-05-08 7bfcda086 [RELEASE] Notepad++ 6.6.2 Release. [BUG_FIXED] Fix session snapshot enabled issue even "remember current session" option is disabled.
+- 2014-05-10 e3208e4ce [BUG_FIXED] Fix docking error messages displaying due to bad detection of windows version.
+- 2014-05-12 dacbb4bc0 [BUG_FIXED] Fix bug that backup is not performed while view is switched from one to another.
+- 2014-05-15 e975e0641 [BUG_FIXED] Fix session snapshot SaveAll bug.
+- 2014-05-17 924dc4d4e [BUG_FIXED] (Author: Andreas Jonsson) Fix a bug in NppShell when trying to open many files.
+- 2014-05-17 4ab4945f0 [BUG_FIXED] Fix SaveAll command hanging issue while session snapshot is enabled. [CHANGE_BEHAVIOUR] Disable session snapshot while command line -nosession is used.
+- 2014-05-18 948b52c9d [RELEASE] Notepad++ 6.6.3 Release.
+- 2014-06-02 bad9b9dbb [NEW_FEATURE] Settings on cloud - dropbox.
+- 2014-06-02 e402928e4 [NEW] Add warning text if settings on cloud option has been changed.
+- 2014-06-04 f21040716 [NEW] Add backup folder information so user can get back the modified file while crashing.
+- 2014-06-04 f28e17fcf [RELEASE] Notepad++ 6.6.4 Release.
+- 2014-06-05 e40f8a2d7 [TYPO] Fix a typo.
+- 2014-06-07 908d12a06 [BUG_FIXED] Fix a saving issue in session snapshot & periodic backup feature while backup file is deleted or read-only.
+- 2014-06-12 e995a13b3 [NEW] Add Jsoncpp component.
+- 2014-06-12 0f6c6276b [BUG_FIXED] Fix "Settings on cloud - Dropbox" not working problem if the dropbox path has been changed. [RELEASE] Notepad++ v6.6.6
+- 2014-06-22 8c5b4df67 [BUG_FIXED] Fix "Settings on cloud - Dropbox" not saving problem on the 1st time if the dropbox path has been changed.
+- 2014-06-22 3f8474ffc [NEW_FEATURE] Add "Setting on Cloud - OneDrive" GUI part.
+- 2014-06-24 e959002a6 [NEW_FEATURE] Settings on cloud - OneDrive.
+- 2014-06-24 2683ec18e [BUG_FIXED] Fix a crash bug on Notepad++ start up.
+- 2014-06-24 650533438 [RELEASE] Notepad++ 6.6.7 Release.
+- 2014-06-26 795678e3a [BUG_FIXED] Fix OneDrive detection error.
+- 2014-06-28 c27ea30f0 [ENHANCEMENT] Read dropbox database file instead of json file. Remove unnecessary and unstable component.
+- 2014-06-29 822693e10 [NEW] Add SQL ability.
+- 2014-06-30 e9ada0861 [NEW_FEATURE] Settings on cloud - Google Drive.
+- 2014-07-16 f3407442d [NEW_FEATURE] Add 2 new plugins APIs: NPPM_GETEDITORDEFAULTBACKGROUNDCOLOR & NPPM_GETEDITORDEFAULTFOREGROUNDCOLOR [NEW_FEATURE] Make internal docking dialog match/follow the selected theme's background and foreground colors.
+- 2014-07-18 a8ebab987 [BUG_FIXED] Update internal docking dialog colors while selecting themes.
+- 2014-07-19 bf9f679cb [BUG_FIXED] Make Finder's fg/bg colors aligned with global default fg/bg colors.
+- 2014-07-21 447947623 [BUG_FIXED] Prevent Notepad++ from crash due to indexation in clipbordHistory object.
+- 2014-07-21 b3abee882 [BUG_FIXED] (Author: Andreas Jonsson) Fix the bug that "backslash is escape char for SQL" setting is not saved correctly. [BUG_FIXED] (Author: Andreas Jonsson) Fix the bug that user cannot disable "backslash is SQL escape char" without restarting.
+- 2014-07-23 d4127c609 [UPDATE] Update the translation for English, Chinese and French.
+- 2014-07-26 44c291aee [NEW] Add new notification NPPN_SNAPSHOTDIRTYFILELOADED to notify plugins that a snapshot dirty file is loaded on startup.
+- 2014-07-27 a20c6693a [BUG_FIXED] Fix DocMap's syntax highlighting doesn't update while current doc apply a new syntax highlighting.
+- 2014-07-27 9418974c8 [RELEASE] Notepad++ 6.6.8 Release.
+- 2014-07-29 5d0858d5c [BUG_FIXED] Fix color picker' chooser does not work well.
+- 2014-08-02 c92f6cc91 [NEW] Apply new file default settings on created new file (opened via commandline).
+- 2014-08-03 8b9baff19 [BUG_FIXED] (Author: versat) Fix Change Icon app memory leak and wrong usage of function memset.
+- 2014-08-05 fefa864ff [FIXED] Make functionList.xml validated xml file.
+- 2014-08-10 b139d878e [BUG_FIXED] Make icons' background color of functionList and projectManager transparent.
+- 2014-08-15 7d2e4a359 [UPDATE] Add new language Gujarati. [NEW] Add python parson for function List.
+- 2014-08-25 770624c9c [BUG_FIXED] Make getFileName safer.
+- 2014-08-29 f3303ce00 [BUG_FIXED] Fix comment command bug for Fortran: the comment symbols should be set on the first column.
+- 2014-09-07 d7779d747 [UPDATE] Minor change.
+- 2014-09-07 fa351a683 [RELEASE] Notepad++ 6.6.9 Release.
+- 2014-10-14 b50d2a9a2 [NEW] Add VS 2013 support.
+- 2014-10-15 d815ae498 [BUG_FIXED] (Author: Pavel Nedev) Fix docSwitcher bug which shows new 0 after loading a session of files.
+- 2014-10-25 daf42f1d6 [BUG_FIXED] Fix document list panel has no selection while start up.
+- 2014-10-28 57633249a [NEW] Add C# in Function List. [BUG_FIXED] Add "Block Uncomment" command in the Shortcut Mapper.
+- 2014-10-28 9dd5e6280 [NEW_FEATURE] (Author: Etienne Boireau) While current file is closed the previous activated file will be activated (MRU).
+- 2014-10-31 2c9ad7ac2 [BUG_FIXED] (Author: Etienne Boireau) Fix Global colors not applied to all text of the "Find result" pane.
+- 2014-11-02 fb4a2dd27 [ENHANCEMENT] (Author: Pavel Nedev) Resize column Name correctly while hiding column Ext.
+- 2014-11-07 f043be8d2 [ENHANCEMENT] Enhance php parser in functionList.
+- 2014-11-11 ee67ab951 [BUG_FIXED] Fix crash issue on quit Notepad++ while session snapshot period backup feature is on.
+- 2014-11-12 d90541d0e [NEW_FEATURE] Smart Indent (in progress).
+- 2014-11-12 1d92d189b [FIX] Fix typo.
+- 2014-11-13 a0d922797 [NEW_FEATURE] Smart Indent (in progress).
+- 2014-11-14 8ceabd785 [NEW_FEATURE] Smart Indent (in progress).
+- 2014-11-15 83debc292 [NEW_FEATURE] Smart Indent (in progress).
+- 2014-11-17 22c70653a [NEW_FEATURE] Smart Indent (in progress).
+- 2014-11-18 a509210cd [NEW_FEATURE] Smart Indent (in progress).
+- 2014-11-23 5a7b30789 [NEW_FEATURE] Enhance Auto-insert feature (in progress).
+- 2014-11-24 cb07a7715 [NEW_FEATURE] Enhance the auto-insert (in progress).
+- 2014-11-24 57940d83f [NEW_FEATURE] Enhance Auto-insert feature (in progress).
+- 2014-11-26 e4499d7a2 [BUG_FIXED] Fix an infinite loop due to smart indent.
+- 2014-11-29 019f5eea7 [UPDATE] fix some uninitialized variables issues.
+- 2014-11-30 b1f84d278 [NEW] Add some menu accelerator. [UPDATE] Fix some typos and syntax issues.
+- 2014-12-01 80da43da5 [NEW] Allow users to disable easter eggs in Notepad++ by adding noEasterEggs.xml in Notepad++ installed directory.
+- 2014-12-04 724586149 [BUG_FIXED] Fix a smart indent bug.
+- 2014-12-07 134920648 [BUG_FIXED] Make "Text Direction RTL" command and "Text Direction LTR" command work without reloading file.
+- 2014-12-07 428df19cb [NEW] Document map follows the current text direction (RTL/LTR).
+- 2014-12-09 d2651832e [BUG_FIXED] Fix undo actions on unsaved snapshot file removing the dirty state bug.
+- 2014-12-11 83acdc542 [BUG_FIXED] Fix a crash issue while the opened document is deleted/moved from outside.
+- 2014-12-14 5463e69c5 [RELEASE] Notepad++ 6.7 Release.
+- 2014-12-15 9cd871686 [BUG_FIXED] (Author: Yobo XIE) Fix crash issue on GotoLine.
+- 2014-12-15 1ebef477c [BUG_FIXED] Fix reloaded file on dirty status issue.
+- 2014-12-16 88a8889c1 [BUG_FIXED] Fix the bug that ] and } don't be skipped if "auto-insert ()" is disabled.
+- 2014-12-17 6594f4801 [BUG_FIXED] Fix a crash issue while typing Page up / Page down.
+- 2014-12-19 611736b95 [NEW_FEATURE] auto-insert skipping character feature works for "" and '' now.
+- 2014-12-21 21d9cfb47 [BUG_FIXED] Fix a regression due to a new feature of MRU (the feature is removed).
+- 2014-12-21 bf76a3f5e [RELEASE] Notepad++ 6.7.1 Release.
+- 2014-12-23 36a6f0931 [BUG_FIXED] Prevent auto-insert of {} [] () "" and '' from inserting in column mode.
+- 2014-12-24 15542d7c8 [BUG_FIXED] Fix NPPM_LAUNCHFINDINFILESDLG API regression issue.
+- 2014-12-24 04cd96d11 [ENHANCE] (Author: Andreas Jonsson) Improve readability by using RAII to reset events.
+- 2014-12-26 8e63a6a49 [BUG_FIXED] Fix saving theme modified styles not working problem (Copy theme files in %APPDATA% to avoid UAC problem).
+- 2014-12-26 24c1dab2c [BUG_FIXED] (Author: Andreas Jonsson) Fix the bug that "Function parameters hint on input" checkbox in preferences dialog is not initialized correctly.
+- 2014-12-27 51a5fbfd5 [BUG_FIXED] Fix the crash issue while config.xml and stylers.xml are not loaded.
+- 2014-12-27 0041757cb [ENHANCEMENT] Improve the usability of User Defined Language dialog: reduce dialog's height.
+- 2014-12-27 c420316fe [RELEASE] Notepad++ 6.7.2 Release.
+- 2014-12-28 395110c26 [BUG_FIXED] Fix the regression for the translation: remap the sub-menu entry for the added command "Mark...".
+- 2014-12-29 8df763506 [BUG_FIXED] Remove a language which makes Notepad++ crash.
+- 2014-12-31 9de1967bf [BUG_FIXED] Fix a crash issue for old processors due to SSE2 instruction.
+- 2015-01-01 600e09b72 [RELEASE] Notepad++ 6.7.3 Release.
+- 2015-01-01 581581760 [RELEASE] Notepad++ 6.7.3 Release with change.log
+- 2015-01-10 00f664188 [RELEASE] Notepad++ 6.7.4 Release - Je suis Charlie edition
+- 2015-02-01 b09a7c17f [NEW_FEATURE] Add new possibility to launch the auto-typing text from command line: -qnQuoterName -qfQuoteFileNameFullPath -qtQuoteText
+- 2015-02-01 a7074ee7b Back to the regular release mode.
+- 2015-02-01 b1b6f01f3 [BUG_FIXED](Author: Pavel Nedev) Remove erroneous use of FreeLibrary(_hUser32).
+- 2015-02-02 b1d9ffe83 [BUG_FIXED] Fix a crash bug while file not found for -qf argument on start up.
+- 2015-02-04 b75fb7cb4 [BUG_FIXED] Fix crash bug on loading dropbox settings.
+- 2015-02-04 435b1001b [BUG_FIXED] Fix auto-insert bad behaviour.
+- 2015-02-06 b7edd3c8e [ENHANCEMENT] (Author: Mike Cowperthwaite) Enhance Incremental search. (part 1/2)
+- 2015-02-06 3d2f570ab [ENHANCEMENT] (Author: Mike Cowperthwaite) Enhance Incremental search. (part 2/2)
+- 2015-02-06 9a54f9031 [EN[ENHANCEMENT] Enhance Incremental search: make highlighting follow typing.
+- 2015-02-09 bab1575d2 [BUG_FIXED] (Author: Mike Cowperthwaite) Restore focus to editor when a panel is closed.
+- 2015-02-09 c922089e2 [NEW] (Author: Mike Cowperthwaite) Python lexer: enable EXTRAWORDS.
+- 2015-02-09 9db6d61b2 [BUG_FIXED] (Author: mittmemo) Fix Auto-indent in new code block not respecting current EOL bug.
+- 2015-02-12 68fdd209b [ENHANCEMENT] (Author: Eduard Braun) Installer remembers user's choices of last installation.
+- 2015-02-13 d5f8a23a0 [NEW) (Author: Michael) Allow drop files onto doc switcher and other side panels.
+- 2015-02-13 deb3b8fcf [BUG_FIXED] (Author: Andreas Jonsson) Fix the crash issue while user Ctrl + double click on an empty document.
+- 2015-02-14 6420dfb67 [NEW] (Author: Korikulum) Adds a message showing the total number of matches in the current document to the Incremental Search bar.
+- 2015-02-17 78bbeb462 [ENHANCEMENT) (Author: pinchy) Make keystroke ENTER trigger the shortcut editor dialog in Shortcut Mapper.
+- 2015-02-19 d9299e644 [ENHANCEMENT] (Author: Pavel Nedev) Show progress window during FindInFiles and ReplaceInFiles.
+- 2015-02-21 f224c673b [NEW] (Author: Pavel Nedev) Add notification for plugins : NPPN_BEFORESHUTDOWN NPPN_CANCELSHUTDOWN NPPN_FILEBEFORERENAME NPPN_FILERENAMECANCEL NPPN_FILERENAMED NPPN_FILEBEFOREDELETE NPPN_FILEDELETEFAILED NPPN_FILEDELETED
+- 2015-02-23 aa7461f06 [ENHANCEMENT) (Author: Pavel Nedev) Enhance displaying of searching files on the progress bar while finding files.
+- 2015-02-24 8d3583ccf [MODIF] Code clean up: make code adapt the coding convention.
+- 2015-02-28 473769cd5 [BUG_FIXED] (Author: Pekka Pöyry) Filename rendered incorrectly on tab bar while it contains '&' character.
+- 2015-03-05 31f81b215 [UPDATE] Update the command line argument display content.
+- 2015-03-10 8ec487d66 [RELEASE] Notepad++ 6.7.5 Release.
+- 2015-03-14 55099cb4b [BUG_FIXED] (Author: Alexander Riccio) Fix several bugs.
+- 2015-03-30 47a2a4e8d renamed readmeFirst.txt to readme.md
+- 2015-04-04 1f8ad1e75 [BUG_FIXED] Fix a regression that system64 files cannot be opened by Notepad++.
+- 2015-04-06 73f47a2c0 [BUG_FIXED] Fix Setting on Cloud for dropbox not working issue.
+- 2015-04-06 3ed1e767b [BUG_FIXED] Fix Settings on Cloud Google Drive not working issue.
+- 2015-04-07 ce9810ecb [NEW_FEATURE] Add "Restore last closed file" (Ctrl+Shift+T) feature.
+- 2015-04-14 515932b33 [UPDATE] Update change log.
+- 2015-04-15 faca774c5 [RELEASE] Notepad++ release 6.7.6
+- 2015-04-15 8d4003c52 updated installer translations
+- 2015-04-15 9114f1da3 updated GUP for notepad++
+- 2015-04-15 a65854772 updated debugging information database
+- 2015-04-15 7e61afffb Merge branch 'master' of https://git.iwi.me/npp/notepad-plus-plus
+- 2015-04-15 549200335 [TEST] npp.pdb
+- 2015-04-16 c683b344e Merge branch 'master' of https://github.com/donho/notepad-plus-plus
+- 2015-04-16 e2f19f30c [BUG_FIXED] Fix "Restore last closed file" (Ctrl+Shift+T) display bug.
+- 2015-04-16 fdf47cd30 [RELEASE] Notepad++ v6.7.7
+- 2015-04-17 679724a0b Update bulgarian.xml
+- 2015-04-18 ee2dbc251 Merge pull request #1 from rddim/master
+- 2015-04-19 586766889 [UPDATE] Update incorrect language code
+- 2015-04-20 7f0d3084f Update ukrainian.xml
+- 2015-04-20 f11ac8f4a Update ukrainian.xml
+- 2015-04-20 e4944cdfd Update ukrainian.xml
+- 2015-04-21 5be453b6f [FIX] Fix readme.md formatting
+- 2015-04-22 ac61c43d1 [UPDATE] Update ADA language keywords.
+- 2015-04-23 0f6d80b8d Let's ignore some files.
+- 2015-04-24 5bacca360 Fix ampersands in find dialog status bar.
+- 2015-04-24 43879e64e Fix plurals in find-replace dialog.
+- 2015-04-25 930464fb8 Cleanup after comments in pull review.
+- 2015-04-25 31f6bf839 When hiding tab bar via command-line parameter, don't affect settings.
+- 2015-04-28 8ed68c382 [FIX] More readme.md formatting and path fixes
+- 2015-04-28 ec2bb7f8b [UPDATE] "Split Lines" uses the edgemode if enabled
+- 2015-05-01 6bf823d3f [BUG_FIXED] Fix Tab close button too small issue with a very high resolution display.
+- 2015-05-01 a92d14291 Merge pull request #5 from dail8859/readme-format
+- 2015-05-01 f43a4025b Merge pull request #1 from donho/master
+- 2015-05-02 532ec666c Merge pull request #10 from MAPJe71/master
+- 2015-05-02 46cb58069 Merge pull request #8 from andreas-jonsson/plurals
+- 2015-05-02 2fe9845db Merge pull request #7 from andreas-jonsson/find_ampersands
+- 2015-05-02 1c49679fc Merge pull request #4 from stenox/patch-1
+- 2015-05-02 b03eb6a8d Merge pull request #3 from rddim/master
+- 2015-05-04 5456a45d4 [DOCS] add hyperlinks to readme
+- 2015-05-04 3ce1ac28f Create CONTRIBUTING.md
+- 2015-05-05 ea8bf8813 Remove unused code piece
+- 2015-05-06 078cf2886 Merge pull request #28 from pnedev/unused_code_remove
+- 2015-05-06 68ad9c4b4 Merge pull request #22 from kmb32123/patch-2
+- 2015-05-06 055481ab3 Update CONTRIBUTING.md
+- 2015-05-06 a2a75be11 Merge pull request #21 from kmb32123/patch-1
+- 2015-05-06 9aa5d708e [BUG_FIXED] Fix a annoying regression about "the buffer passed to GetFullPathName was too small!" message dialog.
+- 2015-05-07 572f67f51 Merge pull request #9 from andreas-jonsson/tabbar
+- 2015-05-05 352965b2e go to next indicator broken with only one char
+- 2015-05-08 91f9751a8 [BUG_FIXED] Fix Setting on cloud for Google drive unrecognized regression.
+- 2015-05-08 c40a6fc38 [UPDATE] Make project recompilable on VS2005
+- 2015-05-08 b02adce94 Merge branch 'master' of https://github.com/donho/notepad-plus-plus
+- 2015-05-08 4e065b2d3 [UPDATE] Conform to GitHub project standard format.
+- 2015-05-08 1f4a1fb2e Optimize sort.
+- 2015-05-09 4f7752e4a Add more const.
+- 2015-05-09 00c2e09d9 Merge pull request #40 from andreas-jonsson/optimize_sort
+- 2015-05-09 c926e18f4 Use more const.
+- 2015-05-09 01c1667b0 Use TCHAR instead of _TCHAR.
+- 2015-05-09 351b9b6bf Rename quickSortLines -> sortLines.
+- 2015-05-09 6e84be21f Fix newline bug when not sorting all lines.
+- 2015-05-09 eee7c4f16 Sort numerically (not lexicographically) if all lines are integers.
+- 2015-05-09 0eca4db94 Improve numeric sorting. No need to read lines from Scintilla, we already have them in a vector.
+- 2015-05-09 bcbe48b13 Make stoi_CountEmptyLinesAsMinimum more restrictive. It now only accepts digits and possibly a single minus character as the first character. Ordinary std::stoi has too much special magic, e.g. it converts "1 a" to "1".
+- 2015-05-09 e258bcb3a Speed up numeric sorting by 10x. Convert strings to int, sort, then convert back to strings.
+- 2015-05-09 6f004d86a Rename sortAllLines -> sortEntireDocument.
+- 2015-05-09 4b3fbdd57 Don't throw pointers (MFC habit).
+- 2015-05-09 83c16755a Don't cache int->string conversion, it doesn't speed up anything.
+- 2015-05-10 501ce1d68 Make reference signs consistent.
+- 2015-05-10 dd846658e Use new kind of loop.
+- 2015-05-10 60505765c Remove ScintillaEditView::getLine, no longer used.
+- 2015-05-10 936d9c56f When sorting, reserve enough space for work + output.
+- 2015-05-10 ee225f5ca Handle empty lines properly in numeric sort.
+- 2015-05-10 f4132c163 Add "repeat" option to column editor.
+- 2015-05-10 2968fb9a2 Translate "Restore Recent Closed File"
+- 2015-05-10 ba0e08f06 Conform to translation file format
+- 2015-05-10 22f2e101a Added the "config" extension for XML files.
+- 2015-05-11 83de4a9da Use long long in numeric sort (ie 64 bit numbers).
+- 2015-05-12 d98232b76 Fix the file status auto-detection setting not being set correctly
+- 2015-05-12 cf0f8df7a Retain field values when disabling status auto-detection
+- 2015-05-12 4ab13f02c Merge pull request #52 from oneill/fix-auto-detect-settings
+- 2015-05-12 c3c0cc4a2 Merge pull request #47 from prclx323800/translation
+- 2015-05-13 3a301ee6a Merge pull request #48 from laugel/master
+- 2015-05-15 b6d5c2b45 Merge pull request #35 from cmeriaux/goToNextIndicator
+- 2015-05-15 72c8f0b4a Merge pull request #44 from andreas-jonsson/more_optimize_sort
+- 2015-05-15 014c06c89 Remove const.
+- 2015-05-15 98cafadc3 Remove const.
+- 2015-05-08 c033d58cb [UPDATE] Remove outdated user manual from release package.
+- 2015-05-15 6b853cf3d [UPDATE] Update WinGup to version 3.0 and several localization files.
+- 2015-05-15 50410cc74 [BUG_FIXED] Fix compiling problem in debug mode
+- 2015-05-16 5c272a881 [RELEASE] Notepad++ 6.7.8 release.
+- 2015-05-17 4d8e731d3 Add const to NativeLangSpeaker::messageBox().
+- 2015-05-17 d0bafb7fb Add more options for sorting.
+- 2015-05-17 ad2cc85c0 Simplify NativeLangSpeaker::messageBox.
+- 2015-05-17 0e42d3348 Fix handling of negative numbers + empty lines.
+- 2015-05-17 be230c1a2 Add a version of std::stod which takes locale.
+- 2015-05-17 91da641ad Use initializer list in ISorter.
+- 2015-05-17 5c69e5918 Enable multiprocessor build
+- 2015-05-18 7b9c342bd Fix outdated comment.
+- 2015-05-18 eca9471ba This file is not intended to be committed
+- 2015-05-19 a76ff09ac [RELEASE] Notepad++ 6.7.8.1 release (WinGup bug-fix: remove the dependency of msvcr120.dll)
+- 2015-05-19 2ef5e5eca Support compilation in VS2015.
+- 2015-05-20 626dc02c4 Use old-style loop to be compatible with VS2010.
+- 2015-05-20 f867f40cb Add warnings description.
+- 2015-05-20 3644983bc Add more xml file extensions
+- 2015-05-21 7c3376ae6 Use a rectangular selection as sort key.
+- 2015-05-22 f74bb0813 Merge pull request #95 from NN---/patch-1
+- 2015-05-22 d3c7ade18 [NEW] Prevent from launching updater under XP due to the obsolet security layer
+- 2015-05-23 b85fc0284 [RELEASE] Notepad++ 6.7.8.2 release
+- 2015-05-23 4bd32caa5 Remove OPENFILENAMENPP structure.
+- 2015-05-23 687036803 Update gitIgnore file.
+- 2015-05-23 99eca7b1b Merge pull request #90 from rcdailey/multi-processor-build
+- 2015-05-24 ec105d7b5 [UPDATE] Remove solution file from git index.
+- 2015-05-24 0628508ef [REMOVE] Remove solution file from git index.
+- 2015-05-24 e70eb054b Merge pull request #46 from andreas-jonsson/repeat
+- 2015-05-24 f7e5be4e2 Merge pull request #12 from dail8859/splitlines
+- 2015-05-25 b8adf4648 Add jsm to the Javascript extensions
+- 2015-05-25 af664e49c Merge pull request #112 from Croydon/master
+- 2015-05-25 ec9712665 Merge pull request #104 from NN---/patch-2
+- 2015-05-25 bdb06f386 [UPDATE] Update a quote.
+- 2015-05-25 a7e00affb Merge pull request #110 from andreas-jonsson/remove_struct
+- 2015-05-08 ccee6ea29 Refresh N++ window on Finder creation
+- 2015-05-08 43ac186d2 Auto-fit filename in FindInFiles progress window
+- 2015-05-08 440927718 Display find progress status on cancel operation also
+- 2015-05-08 df7ddabff Make FindInFiles progress window behave like modal
+- 2015-05-08 d6b321d2d Properly position on screen FindInFiles progress window
+- 2015-05-25 e2472bce8 Optimize font quality for LCD
+- 2015-05-25 7ead0542c Add special project for VS2015
+- 2015-05-25 f43c9875b Fix menu options.
+- 2015-05-25 805ab2b9f Merge pull request #86 from andreas-jonsson/decimal_sort
+- 2015-05-26 07968d7ed Merge pull request #116 from jay1109/master
+- 2015-05-26 56ceaf554 Merge pull request #117 from NN---/VS2015
+- 2015-05-26 2beb7e2df Update .gitIgnore file
+- 2015-05-26 2a7ef2ecf Guard long-running operations with a mutex
+- 2015-05-26 5b28e27b3 Add "static" to get internal linkage.
+- 2015-05-27 ad5788d26 Merge pull request #114 from pnedev/findinfiles_1
+- 2015-05-27 2216c19dd Update CONTRIBUTING.md
+- 2015-05-27 084d3c60a Update CONTRIBUTING.md
+- 2015-05-27 4d694ea70 Add patch from http://sourceforge.net/p/notepad-plus/patches/648/ by  Xileer Torias with comment:
+- 2015-05-27 311c7d578 Further x86, x64 compatibility fix by reinterpret_cast<LONG_PTR> instead of reinterpret_cast<LONG> for SetWindowLongPtr
+- 2015-05-27 c3697d205 Cleanup usage of remaining Pre-Unicode interface usage of SetWindowLongPtrW, SetWindowLongPtrA -> SetWindowLongPtr; GetWindowLongPtrW -> GetWindowLongPtr
+- 2015-05-27 c123fd1a0 [CODE_ENHANCEMENT] Init some uninitialized vars.
+- 2015-05-28 7f6dd17f0 [CODE_ENHANCEMENT] Code enhancement.
+- 2015-05-28 39ccda99c More XML based formats
+- 2015-05-28 c8e094328 Synchronize VS2015 project with VS2013.
+- 2015-05-28 9d50da76b [CODE_ENHANCEMENT] Code enhancement.
+- 2015-05-28 f45f58b4b Correct build issue on donho master
+- 2015-05-28 c8254f89d renamed missed CallWindowProcW Unicode version also to CallWindowProc
+- 2015-05-28 e1d8e055c Merge branch 'master' of https://github.com/chcg/notepad-plus-plus into GWLP_648
+- 2015-05-28 62120359e Merge remote-tracking branch 'base/master'
+- 2015-05-28 1f5f5db14 Add .vs folder to ignore
+- 2015-05-29 14a9ec6d1 [UPDATE] Add Section "Coding Style"
+- 2015-05-29 7bde130c0 Merge pull request #131 from NN---/master
+- 2015-05-29 7fec9fa07 Merge pull request #130 from NN---/patch-2
+- 2015-05-30 da262dd97 [FIX] Fix not compling issue.
+- 2015-05-30 0ce219566 ScitillaComponent: Buffer: fixed an uninitialized variable in ctor
+- 2015-05-30 8976240dc Merge pull request #138 from milipili/master
+- 2015-05-30 3ca488d0b Also sync when pasting.
+- 2015-05-30 17e8ca3c1 Merge pull request #120 from andreas-jonsson/tempfix_corruption
+- 2015-05-30 bc0b68b2b Fixed extra space between UNTITLED_STR and document number when creating a new document through the function FileManager::newEmptyDocument()
+- 2015-05-30 3319bcc58 Fix incorrect thread procedure prototype. It has to be __stdcall. Remove unnecessary casts.
+- 2015-05-30 6adc3b35f scintilla: buffer: fixed invalid read in the stack when loading a file
+- 2015-05-30 d09947d22 Scintilla: Buffer: fixed invalid read via strlen when loading a file
+- 2015-05-30 9f5f8d13c documentmap: ViewZoneDlg: fixed uninitialized variables
+- 2015-05-31 b35e759d1 [UPDATE] Unprecompile headers
+- 2015-05-31 ebd90df66 Merge branch 'master' of https://github.com/donho/notepad-plus-plus
+- 2015-05-31 41c2d9932 ignore scintilla generated files
+- 2015-05-31 25b3a712f fixed minor memory leak when exporting the parameters to XML
+- 2015-05-31 e9e710a3d [UPDATE] Unprecompile headers (part 2)
+- 2015-05-31 6d654bef5 Merge branch 'master' of https://github.com/chcg/notepad-plus-plus into GWLP_648
+- 2015-06-01 7f2af7a26 Merge pull request #146 from milipili/fix-documentmap-uninitialized-variables-drawzone
+- 2015-06-01 4979760b5 Merge pull request #148 from milipili/gitignore-scintilla-generated-files
+- 2015-06-01 57664ff70 Merge pull request #142 from NN---/thread
+- 2015-06-01 2002ecfbd Merge pull request #140 from Morange21/master
+- 2015-06-01 54c8fd7ac  Make case of "all" consistent.
+- 2015-06-01 d6081a5f3 Improve copy functionality in find results window
+- 2015-06-01 933aae4fc Improve str2Clipboard.
+- 2015-06-01 23ac5e3da Mark some methods as const.
+- 2015-06-01 f3934fadb Fix array termination error.
+- 2015-06-01 485c7f21d Use correct prototype of EnumFontFamExProc.
+- 2015-06-01 dbb43a729 DlgProc returns INT_PTR and not BOOL. Use correct prototype and remove casts. See https://msdn.microsoft.com/en-us/library/windows/desktop/ms645469(v=vs.85).aspx
+- 2015-06-01 c18101823 Add missing files. Add warning 4091 to be ignored. Define _CRT_NON_CONFORMING_WCSTOK globally.
+- 2015-06-01 6df7762c1 Merge pull request #144 from milipili/fix-invalid-stack-read-when-loading-file
+- 2015-06-01 ed8a51334 Merge pull request #150 from andreas-jonsson/finder_copy2
+- 2015-06-01 f1d5c9f08 Merge pull request #145 from milipili/fix-invalid-read-via-strlen-when-loading
+- 2015-06-01 ea4b409c3 Merge pull request #149 from milipili/xml-memory-leaks
+- 2015-06-01 3f1e3da7d Merge pull request #153 from NN---/VS2015
+- 2015-06-02 246c8bd16 [UPDATE] Unprecompile headers (part 3)
+- 2015-06-02 708902200 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-06-03 bc94d0776 [UPDATE] Unprecompile headers (part 4 - final)
+- 2015-06-03 d11cba679 merge with master and resolve confilcts
+- 2015-06-03 4a1496009 correct whitespace merge difference to master
+- 2015-06-03 6de87e3ec Add _WIN32_WINNT=0x0501 to defines list.
+- 2015-06-03 def595221 Merge branch 'master' into DlgProc
+- 2015-06-03 90229782a Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-06-03 10d1c91c3 Merge branch 'master' of https://github.com/chcg/notepad-plus-plus into GWLP_648
+- 2015-06-04 0774106a4 Update langs.model.xml
+- 2015-06-05 c3037a91d [TYPO] Fix a typo.
+- 2015-06-05 4cca41267 [NEW_FEATURE] Save in new instance with admin privileges.
+- 2015-06-06 33fd37a6f Merge pull request #157 from NN---/VS2015
+- 2015-06-06 76b77ac8c Merge pull request #152 from NN---/DlgProc
+- 2015-06-06 3ff0ad484 Merge pull request #151 from NN---/EnumFonts
+- 2015-06-06 40bb92c0a Fix Uninitialized read in tinyxmlparser
+- 2015-06-06 3ef870227 Use unordered_map
+- 2015-06-06 92df4f684 Add "let" and "of" for JavaScript lang
+- 2015-06-07 aa944fdfe Merge pull request #105 from NN---/unordered_map
+- 2015-06-07 a2acbede5 Merge pull request #165 from Rikk/patch-1
+- 2015-06-07 4ac665d0c [UPGRADE] Upgrade Scintilla from v3.34 to v3.56.
+- 2015-06-07 7edd53a53 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-06-08 251e987a7 [NEW_FEATURE] Add 2 context menus on status bar
+- 2015-06-08 73dee04de Further changes for x64 builds
+- 2015-06-08 6ec31f4f8 avoid x64 pointer issues, leading to crash on tab resorting
+- 2015-06-08 581c7b2a7 enable common controls als for amd64\x64 architecture, otherwise xp style is not available and bitmap buttons are not working correctly
+- 2015-06-08 edfa987f4 x64 issue, replace int for bufferid by bufferid itself, otherwise x64 crashes as bufferid aka buffer * differs from int under x64
+- 2015-06-08 a371ddf82 avoid level 2 warning about variable size mismatch for x64
+- 2015-06-08 e8dfab671 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-06-08 10dfc331b merge with master
+- 2015-06-08 324a29a84 Merge branch 'GWLP_648' of https://github.com/chcg/notepad-plus-plus into x64_build_adaptions
+- 2015-06-08 dcfcd13a3 Add more keywords to JS auto-complete
+- 2015-06-11 2a9b099a0 - avoid build issue for unicode: 2>..\lexers\LexUser.cxx(1406): error C2664: 'void GenerateVector(vvstring &,const char *,char *,int)' : cannot convert argument 3 from 'const wchar_t [3]' to 'char *' 2>          Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+- 2015-06-11 e0bc440df - avoid compiler warning about unused parameter
+- 2015-06-11 4cfdd4049 avoid build issue due to difference between declaration and definition INT_PTR vs. BOOL
+- 2015-06-11 9d9be045a avoid access violation with empty string s -> length == 0
+- 2015-06-11 0d1297b9c added x64 build target, copied from win32 version, relaxed treat warning as error, as multiple errors show up due to x64 type truncations on assignments
+- 2015-06-11 a6e0dd9a5 adapted scintilla vs project to notepad++ naming of build configurations from Debug -> Unicode Debug and Release -> Unicode Release, to hav a consistent look in VS solution Used same ToolsVersion="12.0" and <PlatformToolset>v120_xp</PlatformToolset>
+- 2015-06-11 fdd2dbc21 - add npp boostregex dir/sources and define SCI_OWNREGEX - add boost via nuget package
+- 2015-06-11 a8a6f2c88 - avoid some compiler warning - build also without SCI_OWNREGEX
+- 2015-06-12 0ee535b26 [BUG_FIXED] Make retro-compatibility with xp sp2
+- 2015-06-12 acb713d9e [RELEASE] Notepad++ 6.7.9 release
+- 2015-06-12 34c6a542e [UPDATE]Bulgarian language update
+- 2015-06-12 9ad71107e [BUG_FIXED] Lock some operations for data integrality.
+- 2015-06-12 5cd9a6f58 Added Gitter badge
+- 2015-06-13 bf36bb35b Merge pull request #188 from gitter-badger/gitter-badge
+- 2015-06-13 c0cd924c1 [BUG_FIXED] Fix js block not recognized in HTML
+- 2015-06-14 4ace901a0 [UPDATE] Method getContextMenuFromXmlTree refactoring
+- 2015-06-14 856924658 [NEW] Add "Google Search" in the context menu.
+- 2015-06-14 fed0ff5b7 Merge pull request #167 from Rikk/patch-1
+- 2015-06-15 798636624 Add missing Mutex files to VS2015 project :)
+- 2015-06-15 8b0c4c073 Update ukrainian.xml
+- 2015-06-15 f1cdc425b Merge pull request #229 from BrainJelly/VS2015_Project_Missing_Files
+- 2015-06-16 4dfd9b63b Update CONTRIBUTING.md
+- 2015-06-18 c14f87c4b [UPDATE] Replace "Forum" command by "Live Support" one.
+- 2015-06-18 d1ed7683f [UPDATE] Change the print default option
+- 2015-06-18 1c25ae96e Correct issue with missing text in keyboard shortcut mapper grid
+- 2015-06-18 d6c72fa3f Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus into x64_build_adaptions
+- 2015-06-19 3f7dedfeb Add CSS to languages that are auto-indented
+- 2015-06-20 0d768dd28 Update langs.model.xml
+- 2015-06-20 2147bcc0d [UPDATE] Bulgarian language
+- 2015-06-21 e3450defc [RELEASE] Notepad++ release 6.7.9.1
+- 2015-06-21 83964662b Japanese localization for Notepad++ 6.7.7　(same version as english.xml)
+- 2015-06-22 2ad0a7df5 Add "php" string to PHP auto-complete
+- 2015-06-23 b828ed21d [NEW_RELEASE] Notepad++ 6.7.9.2 release.
+- 2015-06-24 14b2fe133 Merge pull request #283 from Rikk/patch-3
+- 2015-06-24 b0ec01b19 Merge pull request #278 from hrwatahiki/Japanese-localization
+- 2015-06-24 3df3636f0 Merge pull request #268 from Rikk/patch-2
+- 2015-06-24 4f0896df3 Merge pull request #231 from stenox/master
+- 2015-06-24 95d7f45ff Merge pull request #184 from rddim/master
+- 2015-06-24 c6e101b65 Merge pull request #178 from chcg/x64_build_adaptions
+- 2015-06-24 7f7d2809c Merge pull request #132 from NN---/patch-3
+- 2015-06-24 223caa25d Merge pull request #164 from turbanoff/master
+- 2015-06-24 36b08b551 updated CONTRIBUTING.md (closes #241)
+- 2015-06-24 6690079c4 [UPDATE] Change the guidelines
+- 2015-06-24 cb15091e0 Translations: encoded all translation file using utf-8 (#307)
+- 2015-06-24 a3656c194 Translations: fixed utf-8 encoding for arabic (#307)
+- 2015-06-24 0617b20e6 Translations: encoded all translation files using utf-8 - 2nd attempt (#307)
+- 2015-06-26 e10294a34 Merge tag 'new-history' into pre-2009-04-24
+- 2015-06-26 7af2cc58d Merge branch 'pre-2009-04-24'
+- 2015-06-26 f0fa5e74b Update README.md
+- 2015-06-27 b31e213b7 Update README.md
+- 2015-06-27 6fa86f17d Additions to `README.md` for clarity & comprehension (closes #352)
+- 2015-06-25 1f3662fef Improve Swedish translation (closes #315)
+- 2015-06-24 70bb9c1fd Fix spelling of "Icelandic" (closes #314)
+- 2015-06-25 eb02c73e8 translations: update english.xml (closes #313)
+- 2015-06-17 031f4b065 Scintilla new requires UTF-8 font-names (closes #220)
+- 2015-06-29 c329442ed translations: Updated turkish.xml (closes #358)
+- 2015-06-25 a9ed6b436 HTML auto-completion: Additions to HTML lang and auto-complete (fixes #222, closes #336)
+- 2015-06-25 759fc1b0f ui: only set font quality if ClearType is enabled (fixes #216, closes #311, closes #327)
+- 2015-06-29 9a776f9f1 Added missing standard include <iso646>
+- 2015-07-01 928e859fd README: restored the previous badge for Notepad++ Comuunity
+- 2015-06-21 8c18baf06 Add vsixmanifest as XML (closes #274)
+- 2015-06-17 11a51aa05 Removed the extra space in default document name at startup (closes #254, fixes #97)
+- 2015-07-01 f2e99474c Synchronize VS2015 project.
+- 2015-07-05 e591c5dfa translation: updated Hungarian (closes #410)
+- 2015-07-05 18f1f9e05 translation: updated czech (closes #412)
+- 2015-07-02 5fa40fbf7 Add more extensions to highlight (closes #409)
+- 2015-07-06 c64f434a8 tinyxml: added missing include <cassert>
+- 2015-07-06 5e240147c [MODIF] Remove settings on cloud dependency
+- 2015-07-06 24ca971c2 adding yaml file extension in languages (closes #418)
+- 2015-07-07 aa12ea577 translation: update italian.xml (closes #423)
+- 2015-07-08 b72b0f3b9 translation: updated turkish.xml (closes #433)
+- 2015-07-08 6ec3d55b6 translation: arabic: removed invalid slash
+- 2015-07-01 684a6d114 build: Synchronize VS2015 project (closes #379)
+- 2015-07-10 07fc127ea empty files line endings
+- 2015-07-10 2a589c820 Merge pull request #1 from g3candy/g3candy-empty-file-endings
+- 2015-07-11 259b605e5 translations: updated Italian language (cloud settings) (closes #467)
+- 2015-07-10 beecea39a translations: updated german.xml for 6.7.9.2  (closes #458)
+- 2015-07-09 77a00e343 build: removed sqlite3.c and sqlite3.h from VS2015 project (closes #445)
+- 2015-07-11 c6f206082 User defined commands: using https instead of http for search engines
+- 2015-07-11 e58ae0389 User defined commands: fixed typo for searching in the php documentation
+- 2015-07-13 6b0485f45 Update CONTRIBUTING.md
+- 2015-07-14 8254d32cb Update new community budge
+- 2015-07-15 ed0a0a68f COMTRIBUTING: Prefer C++11/14 coding style
+- 2015-07-10 8bec63630 Added missing macro commands (fixes #374, closes #454)
+- 2015-07-13 3e5de6194 langs.model.xml: Additions to PHP highlight (closes #488, fixes #459)
+- 2015-07-15 f00f5eb14 translation: updated italian language 15.07.2015 (closes #499)
+- 2015-07-15 0cd514de1 Added some missing extensions to File Associations (closes #306, fixes #375)
+- 2015-07-15 23cd14419 Applied coding style / cleanup
+- 2015-07-15 4d0597136 Fixed compilation error introduced by 0cd514de
+- 2015-07-11 1a8548e56 translations: updated settings on cloud in czech.xml (closes #473)
+- 2015-05-15 d2f0649c9 Add .gitattributes file (closes #122)
+- 2015-07-16 0557e8ccc translations: updated italian.xml (closes #509)
+- 2015-07-16 38c29e181 Removed .gitattributes for now
+- 2015-07-10 861cac695 translation: repaired and updated Ukrainian locale (closes #464)
+- 2015-07-16 7164d4f51 [ENHANCEMENT] Make smooth font optional
+- 2015-07-18 91992d0b7 [ENHANCEMENT] Use "Source Code Pro" as default font
+- 2015-07-19 e8bb6bded [UPDATE] Update gitIgnore file
+- 2015-07-19 125aee20f [REMOVE] Remove VS 2005 project
+- 2015-07-19 fb452e0c6 [MODIF] Remove DSpellCheck from the package
+- 2015-07-20 fe2defb53 Increased static buffer size and forced initialization (#514)
+- 2015-07-10 d930f1033 Fixed Context menu not shown regression bug (closes #492, fixes #383)
+- 2015-07-21 1b8bdfb6e [RELEASE] Notepad++ release 6.8
+- 2015-07-16 428b4f159 Improve readability of CONTRIBUTING.md (closes #513)
+- 2015-07-23 0774345d3 [TYPO] Fix a typo.
+- 2015-07-22 fdd69b77f translationsd: update dutch localization (closes #537)
+- 2015-07-22 90ce99432 translations: Hungarian translation update (closes #541)
+- 2015-07-01 4acf228f6 Adjust x64 build paths
+- 2015-07-22 25edab9de translation: update czech.xml (closes #536)
+- 2015-07-25 809500f1c Create scintillaUpdatingWorkFlow.txt
+- 2015-07-25 11ad9f699 [BUG_FIXED] Fix a regression of Preferences dialog (closes #570)
+- 2015-07-27 550246ffc Change splitter percent value to double (fixes issue #405) Prevents round-off error when resizing splitter
+- 2015-07-27 cfd946eeb [BUG_FIXED] Change splitter percent value to double (closes #585, fixes #405)
+- 2015-07-28 a958b019f [BUG_FIXED] Fix "Restore recent close file" text disappears (closes #346)
+- 2015-07-28 7c2b6e73c Merge remote-tracking branch 'upstream/master'
+- 2015-07-28 1e1f447ec Set initial macro menu state (fixes issue #172)
+- 2015-07-29 21b5d6d27 [UPDATE] Update to the modern terminology for Unicode
+- 2015-07-29 16b4113af Add forgotten parenthesis.
+- 2015-07-29 9bb3c7d5b [ENHANCEMENT] Improve the usage of Source Code Pro font
+- 2015-07-30 c2cf84e77 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-07-30 40019fd5b [ENHANCEMENT] bat launches x86/64 NSIS
+- 2015-07-30 209058ed4 [UPDATE] ignore the font files
+- 2015-07-30 efbea233d [ENHANCEMENT] Enhance the bat script: use the variables instead of hard coded constant strings.
+- 2015-07-30 9b4e8888b [TYPO] Fix "disply" typos.
+- 2015-07-29 e63f5d390 [BUG_FIXED] Fix snapshot file after saving being always dirty (closes
+- 2015-07-30 c902f94d5 Merge remote-tracking branch 'remotes/hypherion2/master'
+- 2015-08-01 bdb0c4876 Added `+x` on `ChangeIcon.exe` (fixes #590, closes #591)
+- 2015-08-02 77e816439 [UPDATE] Enlarge File Association dialog's extension field. (closes #535)
+- 2015-07-23 513e2569f [UPDATE] Update dutch localization for Notepad++ 6.8 (closes #550)
+- 2015-07-25 2df4c7693 [UPDATE] Update bulgarian.xml (closes #575)
+- 2015-07-24 5aa4c22d3 [UPDATE] Update russian translation (closes #559)
+- 2015-08-02 fefca9f9b Added missing `+x` attribute for executables
+- 2015-08-02 5e3dfd867 Merge remote-tracking branch 'base/master'
+- 2015-08-02 1948df23c Add _CRT_NON_CONFORMING_WCSTOK define.
+- 2015-08-02 53c479106 Merge remote-tracking branch 'base/master' Add _CRT_NON_CONFORMING_WCSTOK define.
+- 2015-08-02 1082cd1f3 Merge branch 'master' of https://github.com/NN---/notepad-plus-plus
+- 2015-08-02 5e052c5bd Build: VS2015 project update (closes #628)
+- 2015-08-03 24c557392 [BUG_FIXED] Fix inconsistant untitled name issue.
+- 2015-08-03 a36b4f781 [UPDATE] Update localization files
+- 2015-08-03 5748fdb49 [BUG_FIXED] Fix the inconsist code (closes #624)
+- 2015-08-03 f6b7bb046 [RELEASE] Notepad++ 6.8.1 release
+- 2015-08-04 7a4315493 Update CONTRIBUTING.md
+- 2015-08-04 660951bdf Coding style / Code cleanup
+- 2015-08-04 05183aeec Avoid useless redraws at start up, especially useful when numerous tabs are opened
+- 2015-08-06 ba5d36e2b [BUG_FIXED] Fix a visual glitch on exit
+- 2015-08-06 366a393f1 minor code cleanup for future refactoring
+- 2015-08-03 95b2ada22 Improve space usage in File Association dialog (closes #637, #654)
+- 2015-08-06 4a20a4c41 Fixed buffer overrun when opening a recent file (fixes #558)
+- 2015-08-06 85c728573 Visual Studio Project: added more checks in debug
+- 2015-08-06 4991fb130 [BUG_FIXED] Fix panel caption display
+- 2015-08-06 5464e6206 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-08-07 af2708175 Updated year in copyright (#638, closes #666)
+- 2015-08-07 01c419ae9 Removed the no longer used OTF version of the `Source Code Pro` font (#638, #666)
+- 2015-07-24 39395c39d translation: update of German language file (closes #566)
+- 2015-07-24 b28bb9774 Reorder of escape sequences (search-and-replace dialog) (closes #574)
+- 2015-08-03 927d7310a translation:uUpdated german.xml for 6.8 (closes #635)
+- 2015-07-30 b779f5e64 Fix for detecting C/C++ in function list (fixes #457, closes #609)
+- 2015-08-03 4d2090298 Disable the unused gripper of toolbar (fixes #633, closes #667)
+- 2015-08-08 61842a675 [BUG_FIXED] Fix list column width and item height
+- 2015-08-08 ae29f305e Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-08-10 0844123b4 [BUG_FIXED] Fix Preferences dialog loses focus issue (closes ##674)
+- 2015-08-09 dfc24b191 Toolbar: properly refresh when switching over small/big icons (fixes #673, closes #692)
+- 2015-08-08 685971e3f translation: updated turkish.xml (closes #688)
+- 2015-08-12 cb0ad2786 [ENHANCEMENT] Remove incorrect assert statement
+- 2015-08-13 ef27d7db6 [REMOVE] Remove Sourc Code Pro font for several regressions.
+- 2015-08-13 7198ac745 [REMOVE] Remove Source Code Pro font from vs project file
+- 2015-08-13 f6aae43fb [REMOVE] Remove Source Code Pro font (forgotten file)
+- 2015-08-14 3fb1d9667 Some warning fixes
+- 2015-08-14 2ad6ba5a4 Code: using enum class for FormatType
+- 2015-08-14 dc3ef779c SplitterContainer: removed useless code
+- 2015-08-14 d56d42269 Code: remove useless code
+- 2015-08-14 a30de2e60 Build: revert changes on platform toolset
+- 2015-08-12 e4b0b8c0b Fix: manually selected language not persistent when opening file in a new instance
+- 2015-08-12 ee563e5db Remember line and column when opening file in a new instance
+- 2015-08-13 592bd7624 [BUG_FIXED] Fix "Open in/Move to new instance" issue (closes #709, fixes
+- 2015-08-14 a53c25499 Code simplification
+- 2015-08-14 6e6ca7fe1 Parameters: fixed alignment (indent with tabs, align with spaces)
+- 2015-08-14 9c857ed81 Parameters: using nullptr instead of NULL, added static
+- 2015-08-14 f2bb34ccb Code simplification
+- 2015-08-15 2739a973d [RESTORE] Add back "Notepad++ Community (Forum)" menu item
+- 2015-08-17 b94767f5e [UPDATE] Update english.xml for v6.8.2
+- 2015-08-07 da1abe066 [UPDATE] Update portuguese.xml
+- 2015-08-17 7b352fb43 Fix some typos
+- 2015-08-18 4ebd2d6c6 [UPDATE] Update localization files
+- 2015-08-19 54b04cd28 [RELEASE] Notepad++ v6.8.2 released
+- 2015-08-20 234e0615d [RELEASE] Notepad++ 6.8.2 release
+- 2015-08-20 6c93399c6 C/C++: Add uint{8,16,32,64}_t and size_t data types (closes #750)
+- 2015-08-20 d39f11a57 ASM: Add movsxd and cdqe instructions (closes #751)
+- 2015-08-19 55a2a38b3 translation: updated albanian.xml (closes #748)
+- 2015-08-18 c914c5a32 translation: update of Ukrainian lang (closes #742)
+- 2015-08-20 ec66bc059 UNIX: Add a list of commonly available Linux commands (closes #753)
+- 2015-08-05 3319612a2 Fix word count regex to include words separated by newline (fixes #640, closes #653)
+- 2015-08-11 3ed63d2b0 langs.model.xml: Add some extensions
+- 2015-08-11 ea8c4f21f langs.model.xml: Additions to PHP highlight (closes #700)
+- 2015-08-22 091082c31 [REMOVE] Remove unpopular file extensions
+- 2015-08-25 dc4897c8f [BUG_FIXED] Fix the crash by using wide card to open files on cmdline.
+- 2015-08-25 6db831fcd [ADD] Add assert.
+- 2015-08-28 d7ca1eaaf Fix the problem of display refresh missing in exit (closes #800)
+- 2015-08-29 4fc06e2bc Fix plugin shortcut configuration lost problem by using option -noPlugin. (closes #589)
+- 2015-08-30 429dfb0ab Fix Norwegian localization bad display and wrong encoding. (closes #561)
+- 2015-08-23 d8acff80d Add final and override for c++ 11 in fuctionList (closes #790)
+- 2015-08-17 bd6d650e8 Fix functionList display problem  under high DPI (closes #739, fixes #733)
+- 2015-09-02 8e9fe9750 Update shell/bash keywords (closes #839)
+- 2015-09-02 ffaa74c15 Update Obsidian theme for diff/patch syntax highlighting (closes #841)
+- 2015-08-28 7621ca2a9 Update translation ukrainian.xml (closes #818)
+- 2015-08-25 db658ff50 Update RUSSIAN translation for v.6.8.2
+- 2015-08-22 e0cfa3abc Update german.xml (closes #779)
+- 2015-08-21 35b9f5e37 Update Chinese (Simplified) translation (closes #770)
+- 2015-08-21 286a65851 Update turkish.xml (closes #767)
+- 2015-08-20 5c48338f4 Update Hungarian translation for Notepad++ 6.8.2 (closes #758)
+- 2015-09-03 ea548169c Fix a display regression in functionList Panel.
+- 2015-09-03 40c902425 Update localization files
+- 2015-09-04 2854de22e [RELEASE] Notepad++ release 6.8.3
+- 2015-09-11 44e9a0310 Fix the restoring problem from system tray when running in admin mode (closes #884)
+- 2015-09-14 ae324bd97 Remove NppFTP
+- 2015-09-14 27787fa06 Remove bad asserts.
+- 2015-09-01 4df21f16d Fix macro save problem on exit. (closes #831, fixes #830)
+- 2015-09-16 69a57e5e8 Fix user command save problem on exit.
+- 2015-09-16 9b91480ec Add language auto-detection for php, xml, html and bash
+- 2015-09-16 11b49e6ad Remove wrong committed file
+- 2015-09-19 46e810aa5 Add JSON language support; Add auto-detection for xml, php and bash.
+- 2015-09-21 37c4eb123 Enhance bash auto-detection.
+- 2015-09-22 7a25c9827 Make tabbar higher
+- 2015-09-24 1fd41dbeb Merge remote-tracking branch 'base/master'
+- 2015-09-26 be057973b Remove unpopular xml file extension from lang.xml file.
+- 2015-09-22 dd31ea2e6 Fix auto-insert for xml comment incorrect insertion (closes #598, fixes
+- 2015-09-29 d738f80d7 Make file save dialog modern style
+- 2015-09-30 4836f4b00 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-09-22 02b342f44 Fix x64 crash in Find all files (closes #954, fixes #953)
+- 2015-10-01 37c0a5958 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2015-10-02 fefdda75f Update CONTRIBUTING.md
+- 2015-06-08 f02e567c9 Fix slow tab switching while folding restoring.
+- 2015-10-04 46e6bed22 Merge remote-tracking branch 'base/master'
+- 2015-10-04 bd54295e1 64-bit fixes
+- 2015-09-19 90afac88c Fix Save All button is still enabled problem while no file to save.
+- 2015-09-21 52dda771d Remove non-existing files from vcxproj.
+- 2015-10-05 ff8949d65 Review changes
+- 2015-10-06 35adb1910 Enhance auto-insert
+- 2015-10-07 981ee5ed7 Fix macro playback inseting/removing characters randomly.
+- 2015-10-09 34307173f Applying language by using file extension as 1st indicator.
+- 2015-10-09 e5493a721 Update bengali.xml
+- 2015-10-11 963d7fc88 Enhance Javascript syntax highlighting
+- 2015-10-13 e81ac898c Enhance auto-insert for quotes and double quotes
+- 2015-10-13 bb2f771cb Merge remote-tracking branch 'remotes/NN---/x64'
+- 2015-09-24 2cbc6a7a9 Make WarningAsError true for 64-bit builds
+- 2015-10-13 2c80fc301 Fix file content detection for xml/html/php/bash
+- 2015-10-14 657173123 Enhance auto-insert for parenthesis, bracket and Braces
+- 2015-06-12 037b41e29 Fix smart highlighting not working in some case.
+- 2015-09-11 2edee1dbb Removed space before ellipses in German translation
+- 2015-09-13 3a9c2b2dd More fixes in menu texts (consistent wording, unique accelerators)
+- 2015-09-13 3678644a9 More clarifications and consistency edits in menus and dialog windows
+- 2015-09-29 6b16ba2ef Update German translation
+- 2015-09-07 4c9566923 Update polish.xml
+- 2015-10-16 8e103d837 [RELEASE] Notepad++ 6.8.4 release
+- 2015-10-18 986492e47 Fix Javascript autocompletion not working regression.
+- 2015-10-18 828e14aca [RELEASE] Notepad++ 6.8.5 release
+- 2015-10-19 49260a1de Fix functionlist not working for Javascript regression.
+- 2015-10-22 751069ab8 changed the semantics for fallback line endings.  When the file format (line endings), can't be deduced (empty files, files without any newlines), then the buffer uses the setting for the Newdocument
+- 2015-10-22 f632bc3b9 Merge remote-tracking branch 'origin/master'
+- 2015-10-19 6526dd0b2 Improve the language detection at the beginning of a file
+- 2015-10-21 8ac0aba68 Improve the language detection at the beginning of file content
+- 2015-10-22 ae7c93305 Merge remote-tracking branch 'remotes/g3candy/master'
+- 2015-10-22 0b9ea49d5 Make it conform to the coding standard.
+- 2015-10-24 17e5e4ea6 Update italian.xml (6.8.2)
+- 2015-10-20 6f9c845c1 Update catalan.xml
+- 2015-10-23 7781f1d03 Fix possible file corruption during macro playback
+- 2015-10-13 8ba3a46b8 Synchronize VS2015 project
+- 2015-10-25 ef38c0209 Fix reload file but document marked as unsaved bug
+- 2015-10-25 c2eb1e191 Update english.xml
+- 2015-10-24 459d59f8b Update DocMap when setting user or external lexer
+- 2015-10-26 14edff689 Fix maintain indent not working in javascript regression
+- 2015-10-25 2fd963d93 Fix wrong EOL mode for big files
+- 2015-10-27 280ddcd49 Make the EOL type more explicite
+- 2015-10-27 7e8218f73 Fix wrong EOL detection for big files while reloading
+- 2015-10-27 fe62ff989 Make function naming more explicite
+- 2015-10-28 88e390fbc Fix 3 bytes file open issue
+- 2015-10-29 3733d9714 [RELEASE] Notepad++ 6.8.6 release
+- 2015-10-31 94bddd5a8 Fix crash due to backups and session snapshots
+- 2015-10-31 5bb6c8161 Move position to center when using "-n" option
+- 2015-11-01 e8af7b077 Update CONTRIBUTING.md
+- 2015-11-01 43a7f39d4 Make "change Cace To" translation correct.
+- 2015-11-13 54cf3ca3a Let user choose to keep DSpell or not in Installer
+- 2015-11-09 71edfb2db Fix out-of bounds read access issue for smart highlighting.
+- 2015-11-20 08bc46ddf Fix user defined keywords no effect in Javascript.
+- 2015-11-20 8e43715ba Fix tab settings not working in javascript
+- 2015-11-02 7fbdb31de Add back-quoted string support for javascript
+- 2015-11-22 c866bb7e9 Make several language names right
+- 2015-11-22 5d369194d Make the name CMake right
+- 2015-11-20 14c84f68e Update GetWindowsVersion installer script to 4.1.1
+- 2015-11-01 5b8f8ac80 Fix Chinese wrong translate.
+- 2015-11-04 91b9503be french.xml typos + improve
+- 2015-11-10 7c791956c Update brazilian_portuguese.xml
+- 2015-11-10 0b1832e2b Update ukrainian.xml
+- 2015-11-24 d24d3bc33 Add a new translation and update some translation
+- 2015-11-23 735e01938 Remove scintilla deprecated calls SCI_SETSTYLEBITS
+- 2015-11-26 d7b0eb9eb Enhance language detection while "Save as"
+- 2015-11-23 d8f6ac67e Remove scintilla deprecated calls/defines
+- 2015-11-26 89cd163cc Fix crash issue while moving Find In Files progress window
+- 2015-11-26 b61170d66 Restore file extension feature in save dialog
+- 2015-11-26 9a419cec5 [RELEASE] Notepad++ 6.8.7 release
+- 2015-11-06 48238b704 Fix some bugs and inconsistencies in installer
+- 2015-11-29 901f772e5 Small cosmetic enhancement in preference dialog
+- 2015-11-29 da144f468 Update CONTRIBUTING.md
+- 2015-11-01 5b7f900ce Improve and simplify drawing of tabs in TabBarPlus
+- 2015-12-01 0e6e84c0e Fix a regression of link style in html/php
+- 2015-11-30 accf7da2d Fix find in files progress window alway on top issue.
+- 2015-11-24 6a91b26af Add styles for preprocessor comments
+- 2015-11-24 5b45ddb7d Add style for Python decorator
+- 2015-11-24 378673da9 Add styles for Lua label and identifier
+- 2015-11-24 4fee79907 Add styles for Powershell
+- 2015-11-29 7b2b64035 Add styles for additional strings in D
+- 2015-11-25 e37354842 fixes highlighting for tags inside comment, needs improvement
+- 2015-11-27 d96f8890f Changed testing of whether or not position is within comment section through xml definition of system versus self testing character sequence
+- 2015-11-27 e800e7efb Removed unneccessary, refactored out code left in as comments for review
+- 2015-11-27 32b45e16d Minor coding style fix, removed unecessary comment
+- 2015-12-04 6c7ca02fe Add no editor border edge option
+- 2015-12-05 48e9b84bb Enhance the version detection capacity
+- 2015-12-06 773397d6e Add Debug Info feature
+- 2015-12-09 c54bc72b9 Enhance debug info display message
+- 2015-11-28 45ea13584 Update Italian translation for v6.8.7
+- 2015-12-09 53809d8ef Fix Slovenian translation not working problem
+- 2015-12-09 232ccc7d4 Revert 735e0193822f9f39db6816e0d63e27650753e975 for preventing from regression
+- 2015-12-10 2d7ae96a6 [RELEASE] Notepad++ 6.8.8 release
+- 2014-12-09 715a64a32 Make GCC/MinGW build work again and support cross-building under Linux
+- 2015-12-25 6f4140a28 Fix Notepad++ hanging issue while user uses touch screen to activate Notepad++ windows
+- 2015-12-26 5c48259ae Clean up
+- 2015-12-20 fc0664d15 Update catalan.xml
+- 2015-12-18 03c8e0c80 Add identifier style to R
+- 2015-12-18 bc4603ef0 Add FreePascal/Lazarus pascal files extensions
+- 2015-12-20 a459d10e0 Show dialog before printing via toolbar icon
+- 2016-01-03 a1b55e505 Update italian.xml to version 6.8.8
+- 2015-12-03 374d66994 Add file extension of JS based languages
+- 2016-01-04 9636431f9 Update License
+- 2016-01-05 70175ee8b Add YAML keywords and indentation
+- 2015-12-23 0d35d607b Enhancement: better error messages when plugins fail to load
+- 2015-12-11 90ec3f10d Remove "triple" from the list of Python keywords
+- 2015-11-30 35933c1fc Update czech.xml translation to v6.8.7
+- 2016-01-08 a088675c3 Make simplified Chinese translation more understandable.
+- 2016-01-09 7bad38836 Update chineseSimplified.xml
+- 2016-01-08 09d505ab1 Enhance JS keywords and JSON in Zenburn theme
+- 2015-10-28 6091910dd Add lex file extension for treating lex sources as C files
+- 2016-01-09 4c53179c5 Update english.xml
+- 2015-06-13 1c84051d9 Allows user defined extension to associate workspace files
+- 2015-12-02 624e5fa1a Add new API NPPM_SAVEFILE to save any file.
+- 2015-10-30 74a0c8c39 Prevent HTML tags with no closing tags from being autocompleted.
+- 2015-10-28 4423ed152 Add new keywords in C and C++
+- 2016-01-10 7213ee053 Update italian.xml
+- 2015-08-14 7fc86fb3c Make behavior of SHIFT+END and SHIFT+HOME more consistent when word wrapping is enabled
+- 2016-01-10 96fd7947a Enlarge text control items to fit translated texts
+- 2016-01-11 6f0b57ed0 Update swedish.xml to v6.8.2
+- 2016-01-13 7ba01cb7f [RELEASE] Notepad++ 6.8.9 release
+- 2016-01-16 f2cd77906 Fix crash issue due to the bad fix of touchscreen hanging issue
+- 2016-01-19 576de36a1 Add Objective-C++ file extension "mm" for Objective-C
+- 2016-01-23 07ce6c251 New feature: File browser
+- 2016-01-25 a1c608ba6 File browser (in progress)
+- 2016-01-28 0ad1964d1 File Browser (in progress)
+- 2016-02-01 fb189fa24 File Browser (in progress)
+- 2016-02-02 81deab055 File Browser (In progress)
+- 2016-02-06 7d0d87429 File Browser (New name: Folder as Workspace) - in progress
+- 2016-02-08 058c9d592 Folder as Workspace (implementation done)
+- 2016-02-09 3dbdb5244 Folder as Workspace - Bonus: Shell Execute command
+- 2016-02-11 ae4503ebb Folder as Workspace enhancement
+- 2016-01-14 faf107a4e Use built in Scintilla commands for moving lines up/down
+- 2016-01-14 5e3313d8a Selection start is gauranteed to return the smaller of the two positions
+- 2016-02-11 c53d7ea10 Add unique 0 to verilog keyword list
+- 2016-02-04 d7a0649c1 Adds string styles to other themes for D
+- 2016-02-12 951c51a32 Fix a GUI bug of "Folder as Workspace"
+- 2016-02-13 1b29aeff2 IE never dies, it just fades away
+- 2016-02-14 b349dbdc1 Add 3 missing translatable items to master XML for 6.8.8
+- 2016-02-20 877e10f70 Code signing
+- 2016-02-21 5197dcd63 Update localization files
+- 2016-02-21 1305d44be Remove 2 unfunny jokes
+- 2016-02-22 ecfbf906c [RELEASE] Notepad++ 6.9 release
+- 2016-02-25 96fc4bc71 Fix "copy" command bug in find result panel
+- 2016-02-26 19476bbba Fix debug assert problem
+- 2016-02-27 86f3a953d Fix crash bug in debug mode due to mismatch() function.
+- 2016-02-29 8aeb6f3f2 Fix html tag auto-completion bug
+- 2015-08-09 cfa57b681 Notepad++ support both SCLEX_FORTRAN and SCLEX_F77
+- 2016-02-24 016e9775d Add Ctrl+Shift+Z for Redo
+- 2016-03-01 ac45b04be Update Chinese translation
+- 2016-03-03 338b98dee Enhancement: Add "Find in files" command in "Folder as Workspace"
+- 2016-02-19 7d76a18ec Let Scintilla deal with some of the folding functionality
+- 2016-02-17 24c11375c Use SCI_SETTARGETRANGE where possible
+- 2016-02-21 ce0c298c3 Minor performance enhancement to autocomplete
+- 2016-03-10 d983212c0 Fix bad detection of sub-folder in Folder as Workspace
+- 2016-03-08 940152b5c Update chineseSimplified.xml
+- 2016-03-04 86c1138a7 Fix cfa57b6
+- 2016-02-17 0112f4457 Update czech.xml translation to v6.9
+- 2016-02-14 4f6c58d59 Hungarian translation update for Notepad++ 6.8.8
+- 2016-02-14 6c70948c4 Fix VS2015 compilation errorrs due to Folder as Workspace
+- 2016-03-15 24bb021d7 Restore commit history prior to 2009-04-24
+- 2016-02-25 76bf262c2 Fix Find In Files progress bar position bug
+- 2016-02-28 d19c35ed7 Update japanese.xml
+- 2016-02-17 51cc22fb3 updated polish.xml to 6.8.2
+- 2015-11-15 86ab42031 Avoid GetLongPathName() call for files with long name
+- 2016-01-10 4a89971ee Improvements for JSON highlighting
+- 2016-03-18 77858aac6 Fix a crash problem of Folder as Project in debug build.
+- 2016-03-19 93c704c85 Add "Open Folder as Workspace" command in file menu
+- 2016-02-22 e32d67870 Continuous integration with Appveyor
+- 2016-03-20 84652665d Updatee italian.xml to current release (6.9.x)
+- 2016-03-20 77c98318a Enhance C# keywords
+- 2016-03-24 cf48975b1 Add 2 philosophic deep thought quotes
+- 2016-03-24 5b8a7f3fe Update README.md
+- 2016-03-24 2acac9852 Update README.md
+- 2016-03-24 9a47f14a5 Update README.md
+- 2016-03-25 287ce9ec1 Add a geek joke
+- 2016-03-31 50c7e228f Add new feature: Find in Finder
+- 2016-04-24 2ff03fe25 New feature: Log Mornitoring (tail -f)
+- 2016-05-07 6c4f9a64d Add new API to disable auto-updater
+- 2016-05-11 4268349bf Fix crash bug in Log Monitoring while monitoring a large file
+- 2016-05-12 d9e62f1af Fix an incoherent behaviour in Log Monitoring
+- 2016-04-02 4c6e5af48 Safely convert EOLs
+- 2016-03-27 91c9897ba Exception treatment: throw object instead of pointer
+- 2016-03-31 4d829ae37 Update german.xml
+- 2016-05-14 e584c4742 Fix several typos
+- 2016-02-21 8113476dd Fix Selected line count is 0 while the selection is on one line
+- 2016-04-05 48d3a8ee0 Fix smart highlighter issue after zoom / code folding change
+- 2016-04-04 620a3c16a Update Swidish translation
+- 2016-03-31 163c8a0e5 add missing additional dirs from filebrowser feature also for x64 builds
+- 2016-03-29 4dcbc7891 Update czech.xml translation to v6.9.1
+- 2016-04-21 3ff59b2a7 Update themes' styles for fortran.
+- 2016-03-29 0273917bb Fix open in explorer problem while  path contain unusual characters
+- 2016-01-20 d6c2d6cc9 Fix not localized caption of FindReplaceDlg
+- 2016-05-12 7b596fa48 Fix some out of index errors
+- 2016-05-16 7e299fdd3 Fix status bar display bug in high dpi environment
+- 2016-05-18 52392a0b8 [RELEASE] Notepad++ 6.9.2 release
+- 2016-05-21 e3c18f61e Add "Never" button in auto-updater prompt dialog
+- 2016-03-25 d26f910ec Add nighty build in AppVeyor
+- 2016-04-19 9708382bf Add new command line optio -p : Scroll to indicated position on given filePath
+- 2016-05-22 3aa44ce9e Fix a build problem in Appveyor
+- 2016-05-24 80219be9a Upgrade WinGup to 3.3
+- 2016-06-05 64d7535be x64 ready
+- 2016-06-05 2c0b66da4 Remove duplicate line in gitIgnore
+- 2016-06-06 59a23f038 Fix a crash issue due to CmdLineParams
+- 2016-06-06 561713e46 Put warning as error in Release x64 build
+- 2016-05-22 4c26009a2 Installer Enhancement
+- 2016-05-29 15561c8d6 Fix file saving crash due to invald buffer
+- 2016-06-12 cb25cd6dc Add a tech fact
+- 2016-06-15 5a5582b97 Make Scintilla 64-bit built with boost's pcre
+- 2016-06-17 9835445c8 Detect x32 and x64 compatibility between plugins and Notepad++
+- 2016-03-13 c059cc03d Show Notepad++.exe bitness in about box
+- 2016-06-17 c15a0deb3 Make bitness available in DebugInfo
+- 2016-06-20 a82ad53e9 Update given examples
+- 2016-06-30 3f09ebc97 Fixed crash issue due to unsigned variable
+- 2016-05-16 2b87e3a85 Correct "JavaScript" capitalization in themes
+- 2016-07-03 15d4dd16e Fix x86 build error
+- 2016-06-22 cf4d3d259 Add xml entity style
+- 2016-06-25 ed4143bbd Skip attempt to auto-complete when closing XML comment
+- 2016-06-25 e2ec03c35 Add ellipsis to "Open Folder as Workspace"
+- 2016-06-22 918328192 Skip auto-complete of <?xml> tag
+- 2016-06-29 bb0eea56e translation: Removed cloding parenthesis in text 47004
+- 2016-06-22 87757e1a3 translation: updated catalan
+- 2016-06-20 ec9bcf00a translation: updated Brazilian Portuguese
+- 2016-05-29 5b92b4b9c translation: updated italian
+- 2016-05-28 bf2a987ad translation: updated russian
+- 2015-07-03 aa0bb7398 Adapt .gitignore for Scintilla GCC/MinGW build
+- 2015-07-03 6dab6621b Make Scintilla build properly with GCC/MinGW
+- 2016-07-04 e770aff94 translation: fixes for polish.xml
+- 2016-01-20 ec433863c translation: updated turkish
+- 2016-06-20 a3bb9d294 Report the correct crashed plugin
+- 2016-07-06 3b1e722ba Fix typo
+- 2016-07-09 472d54d7c Fix crash in x64 due to C style cast
+- 2016-07-09 59238e5a2 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2016-07-10 1e38c628b Use C++ type conversion instead of C-Style conversion
+- 2016-07-11 2573f4b49 Some code enhancements
+- 2016-07-12 79028b334 Appveyor artifacts debug and release for x86 & x64
+- 2016-07-10 79a9f42e3 Update czech.xml translation to v6.9.2
+- 2016-06-14 fe7257faf Fix the crash issue in UDL
+- 2016-07-15 38ddd32ac Added some error checking during file saving.
+- 2016-05-31 ddf81ecc0 Update old themes to use the correct style IDs for Pascal
+- 2016-07-18 797765173 Improve code quality by using static code analysis tool (cppchecker)
+- 2016-07-07 ace8a4cf5 Revert "Skip auto-complete of <?xml> tag"
+- 2016-07-17 daafd77c5 Skip auto-complete of XML processing instructions
+- 2016-07-06 2fb505b5a translation: updated polish translation to 6.9.2
+- 2016-04-12 7f1fb4622 Updated functionList.xml to support Ruby
+- 2016-07-19 13e44916e Add SCI_LINEENDEXTEND to Parameters.cpp
+- 2016-07-19 bd373788a Add thousands separator for Summary and Statusbar
+- 2016-07-20 2e4defe45 Simplify word detection for SmartHighlighter
+- 2016-07-23 30bd15f04 Use C++ conversion instead of C style cast
+- 2016-07-23 83f291acf Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2016-07-08 52df792cd Fix bug of monitoring not working for files under root
+- 2016-07-25 80ddd0519 Create ISSUE_TEMPLATE.md
+- 2016-07-11 1abac1579 Enhancement: add conflict detection to Shortcut Mapper
+- 2016-06-30 7fcc20f84 Improved Single Line Comment
+- 2016-06-30 f6e47cd53 Added more Change Case variants
+- 2016-06-30 9cf45dea2 Add commands for moving the current file tab Forward/Backward
+- 2016-06-30 9fe39017c Added new Option: Enable scrolling beyond last line
+- 2016-07-11 c76981421 Add Scroll Tab Bar with mouse wheel capacity
+- 2016-08-01 6397ba51e Fix a regression that opened file is not selected
+- 2016-07-30 c547dce79 Add doxygen keywords for C++ lexer
+- 2016-07-29 27d80432d Add thousands separator for FindReplace dialog
+- 2016-06-02 8b0f5165d Added a -quitOnEmpty command line flag
+- 2016-08-03 f8a24efa9 Fix DLL Hijacking Vulnerability
+- 2016-08-03 e76c92913 Safer C++ conversion
+- 2016-08-06 2e82a9964 Lost in translation
+- 2016-08-10 37ed29974 Lost in Translation 2
+- 2016-08-03 a21196d35 Unify line ending terminology
+- 2016-08-11 d4bcec1c0 Lost in Translation 3
+- 2016-08-13 3f4816b03 Update some binaries and script file
+- 2016-08-11 871c5abe5 Save wordchar list during hotspot click
+- 2016-08-10 5f3225b82 Improve tab alignment in Shortcut Mapper
+- 2016-05-29 318a6207e Update english.xml, chinese.xml : Add 41022 "Open Folder as Workspace" and 44085 "Folder as Workspace"
+- 2016-07-25 54f8367c1 Update Brazilian Portuguese
+- 2016-07-20 300a48659 Update MATLAB keywords
+- 2016-02-13 311c4e58c Fix autocompletion for PHP function class_alias()
+- 2016-06-27 f3abc30c7 Recognize new file type via its file extension when file is created from the command line
+- 2016-08-15 60105c932 Reduce the installer size by 30~35%
+- 2016-08-14 3bf382f16 Make margins dpi aware
+- 2016-08-17 40509ccb3 Update CONTRIBUTING.md
+- 2016-08-15 438926bbd Make Task List dpi aware
+- 2016-05-02 b14d3d5f7 Prohibit TAB size 0 in TAB settings.
+- 2016-08-17 c15ff9dc1 Update english.xml
+- 2016-08-18 a43e2db58 Minor code enhancement
+- 2016-08-19 fe01f7501 Update translations
+- 2016-08-22 863c4e90c Add open file on selection & open container on selection commands
+- 2016-08-29 e451efbd2 Add "Search on Internet" for selected words as build-in command
+- 2016-08-30 fae21ebde Add missing commands in shortcut list
+- 2016-09-01 6b3e562d6 Fix crash issue in x64 version while launching Styler Configurator
+- 2016-09-05 000e447cb Fix "Folder as Workspace" not updating regression
+- 2016-09-08 a136ec238 Add a philosophical quote
+- 2016-09-09 fc014595a Make x32 and x64 packages
+- 2016-08-27 0f44c299f Change repository URls
+- 2016-09-10 f71fd6c63 Make command name more accurate
+- 2016-09-11 e31e37ebc Change quitOnEmpty trigger from command line to settings
+- 2016-09-13 6bbfc7a09 Add an option to restore the old behaviour while dropping a folder
+- 2016-09-15 027855427 Update translations
+- 2016-09-16 4b18a878e Fix NSIS compiling warning
+- 2016-09-17 c5645d009 Update Croatian & Russian translations
+- 2016-09-15 a361c8cec Corrected typo in nsis script
+- 2016-09-15 b491ef0f6 Remove extra slash in Urdu Localization
+- 2016-09-15 ee2604341 Added Description for Localization in installer
+- 2016-08-20 c0c80c28d Updated Hindi Translation
+- 2016-09-12 78750e917 Update batch keywords
+- 2016-09-08 d0c528e99 Add "void" to PHP keywords
+- 2016-09-11 d9a601acf Update Italian translation to version 7.0
+- 2016-09-06 92453d0da Update czech.xml translation to v7
+- 2016-09-06 3cdc9470d Update Ukrainian translation
+- 2016-08-22 79277dcd5 Update polish translation.
+- 2016-08-21 51797bf59 Update german.xml to version 7.0
+- 2016-09-20 53ca639b1 Adapt wingup new version 4.1 to distinguish between 32 and 64 bit for update
+- 2016-09-21 6d2b1e4f5 Remove the old icon
+- 2016-09-21 f3d88284d Make NSIS String more readable
+- 2016-09-21 1a0cde027 Remove unecessary component (ChangeIcon.exe)
+- 2016-09-22 8777d752a Notepad++ release 7
+- 2016-09-23 517d82a29 Fix x64 crash on UDL dialg
+- 2016-09-23 8e9e8c04c Fix a x64 crash issue on macro recording
+- 2016-09-11 27216901d Fix poor performance of hex XML entities
+- 2016-09-13 eddafe55e CallTip text uses start/stop/separator settings
+- 2016-09-15 10c6dc017 Skip auto-complete of tags within HTML script
+- 2016-09-21 38c13ca2d Update CSS keywords
+- 2016-09-21 0a7122a6a Align checkbox
+- 2016-09-25 0fa10cb9f Translation: remove invalidated entries
+- 2016-09-24 df9124423 Distinguish between x64 and x86 installer
+- 2016-10-01 181b48752 Fix 64-bit installer's uninstallation problem.
+- 2016-10-02 f3fcb5001 Fix uninstaller bug to not remove themes files from APPDATA
+- 2016-10-03 5c031d9f8 Fix a regression of themes installation
+- 2016-10-04 bb01b0f52 Ask user for keeping userr data during uninstallation
+- 2016-10-06 7ee63496d Add 64-bit/32-bit installer detection ability
+- 2016-09-28 7853876fa Completely clear bookmarks when they are toggled off
+- 2016-09-26 d64a525f3 Sort plugin menu by plugin name
+- 2016-09-26 5f8ba93b7 Check plugin architecture before loading
+- 2016-09-09 d63170852 Enhance Smart Highlighting feature
+- 2016-09-27 a59f49a99 Reshow CallTip text on separator character
+- 2016-10-01 98a246c1e Add option to skip numbers during word completion
+- 2016-10-03 91e81d9f5 Set SQL lexer property after setting lexer
+- 2016-10-07 c364144c3 Ignore numbers for autocompletion by default
+- 2016-09-10 029cb0989 Fix Folder as Workspace toolbar icon inconsist behaviour
+- 2016-09-25 5d438aa08 Normalize functionList.xml
+- 2016-09-18 11c71210b Fix some text display problems on preferences dialog
+- 2016-10-01 9265620ce Avoid Auto-Close HTML tags
+- 2016-09-26 7ebc5baad Update czech.xml translation for v7
+- 2016-09-24 8c7151a40 Update chineseSimplified.xml to version 7.0
+- 2016-09-23 fd5c706f1 Update german.xml to version 7.0
+- 2016-08-07 ae0f870ee Improve About OK button look
+- 2016-10-09 b849edc92 Update CONTRIBUTING.md
+- 2016-09-25 a7c87b8e7 Fixed UI issue for RTL layout
+- 2016-09-26 63ae2a9e9 Add Corsican translation for Notepad++ 7.0
+- 2016-10-09 8bf3decf2 Integrate Corsican language
+- 2016-10-10 4fec26530 Reorganization of preferences dialog
+- 2016-10-12 e1f01e00b Add C# type keywords to style configurator
+- 2016-10-12 addc9b483 Add contextual keywords to C# word list
+- 2016-10-13 66c6aca75 Enhance smarthighting UI
+- 2016-10-14 b6b11d9f6 Update english.xml
+- 2016-10-14 ae660ab4d Update german.xml to version 7.0 - 14.10.16
+- 2016-10-15 150f36d1e Update translations
+- 2016-10-15 c070fd307 Update farsi.xml to 7.1
+- 2016-10-15 17b6a47f7 Update slovenian.xml to v7.1
+- 2016-10-16 76f6ba8cb Notepad++ 7.1 release
+- 2016-10-16 5edc47b23 Updated hindi.xml
+- 2016-10-21 76bc03fc9 Update config.model.xml
+- 2016-10-23 0746d1f4f config.xml is generated by notepad++
+- 2016-10-23 39df01dab Add SmartHighLight node for config.xml generation
+- 2016-10-22 3e3cbe0c2 Fixed disable smart highlihgt inconsistent behaviour
+- 2016-04-17 b3f56a47c Add .profile, .bash_profile, and .bashrc extensions.
+- 2016-10-18 a82d9f998 Ensure backup directory exists
+- 2016-10-28 3924190fb Add smart highlighting extension to anothe view option
+- 2016-10-29 1b66acd5e Fix a regression of double click on several zones of status bar.
+- 2016-10-30 2897dee54 Fix a tab settings regression
+- 2016-10-30 c58043ea0 Fix uninstaller silent mode issue
+- 2016-10-31 80092ea90 Fix Installer for 64-bit fails with argument "/D"
+- 2016-10-25 f9d1341cf Change styler to make makefile more readable
+- 2016-10-24 5a96eb68b MinGW GCC update
+- 2016-10-18 8dd7eecb4 Japanese translation update
+- 2016-10-12 01e9ab480 Update Ukrainian translation
+- 2016-10-11 752c1329e Update catalan.xml
+- 2016-10-02 a4b03a1f5 Fix Encoding radio button issue in New Document
+- 2016-10-24 b39c9a184 cmake config update
+- 2016-10-31 da5932755 Update translations
+- 2016-11-02 6baac0afd Notepad++ release 7.2
+- 2016-11-03 5f3654b36 Expand environment variables in backup path
+- 2016-11-08 490ed5be9 Update readme.txt
+- 2016-11-08 bc38c74c3 Improve Javascript string readability
+- 2016-11-08 6fdfd0470 Small tune on Run Macro dialog UI.
+- 2016-11-04 2c2c80a26 Remove 32bit shell dll from 64bit installer
+- 2016-10-15 decc9645e Remove post installation leftover files from temp
+- 2016-11-10 5af1c055d Correctly identify when a macro is playing
+- 2016-11-14 e6fad9bd4 Fix x64 installer install in "C:\Program Files (x86)" regression
+- 2016-10-20 2007cac5a Fix incorrect type conversion
+- 2016-11-14 642fdb421 Fix double click after double clicking hotspot
+- 2016-10-04 4c5a1f96b Add an accelerator key in Find dialog
+- 2016-10-28 407fccba6 Added new VB keywords
+- 2016-11-01 06e05939a Update czech.xml translation to v7.1
+- 2016-11-05 9645f9871 Update italian translation to v7.2
+- 2016-11-14 8372082b5 Update swedish.xml
+- 2016-11-14 bd6f7b4d2 Make installer Unicode again !!
+- 2016-11-18 2b27a5f33 Write additional uninstaller information
+- 2016-10-17 44d90cd22 CMake: use WIN32 variable
+- 2016-11-04 f0cb49226 Update german.xml to v7.2
+- 2016-11-21 7ee1a5d93 Notepad++ v6.2.1 released
+- 2016-11-26 1ce7df040 Restore "Find All in Current Document" buttons none shorcut status
+- 2016-11-26 591a07110 Add Plugin Manager default behaviour
+- 2016-11-21 009943827 Update chinese.xml and chineseSimplified.xml
+- 2016-11-21 3bf377853 Update bulgarian.xml
+- 2016-11-23 a07fcd8f9 Fixed auto-updater setting toggles between startups bug
+- 2016-11-21 5045b02fa Remove duplicate keywords from langs.model.xml
+- 2016-11-27 9b4ceae15 Update translations
+- 2016-11-27 4c23de61b Notepad++ 7.2.2 release
+- 2016-11-14 911fd9a7b Simplify determination of URL at click location
+- 2016-12-18 ac871cacd Get back Find dialog while you lost it
+- 2016-12-11 746c3da88 Add to recent file history only if file is removed from all the views
+- 2016-12-04 c95e09850 Fix the problem of launch Notepad++ with Admin right after installation.
+- 2017-01-01 8fc1a2ed3 Add MD5 functionalities
+- 2017-01-01 8efadf9bf Notepad++ v7.3 release
+- 2017-01-04 cad87a012 Fix "Don't check at launch time" not working problem
+- 2017-01-04 e838758e9 Fix geneation of MD5 on Unicode bug
+- 2017-01-08 f98686d9f Add some functions for future use
+- 2017-01-10 b0a625913 Fix the shadow declarations & make VS2015 compile again
+- 2017-01-10 035bcfeb2 Fix VS 2015 post build error
+- 2017-01-15 6a05bedd0 Enhancement of  "Word characters list"
+- 2017-01-16 f49133a1d Update 3 translations
+- 2017-01-16 d923ece38 Fix an issue due to VS2015 compiling result (bug)
+- 2017-01-16 80004ebe7 Add new language Breton
+- 2017-01-04 444840f2d Update chineseSimplified.xml
+- 2016-12-29 b7cf7271f Add some missing AutoIt keywords
+- 2017-01-02 6834191d0 Update german.xml to 7.3.1
+- 2017-01-05 6f00f73b5 Update bulgarian.xml
+- 2016-12-01 6a0b7653b Improve Folder Browse And Save Dialog
+- 2017-01-17 f3db69816 Fix warning display for Word char list bug
+- 2017-01-17 8f2977a01 Notepad++ v7.3.1 release
+- 2016-11-11 c235e17f7 Add Plugins Administrator (UI part, in progress)
+- 2017-01-22 f62bf83bc Make VS2015 compile again
+- 2016-12-17 22df4c473 update japanese.xml to v7.3.1
+- 2017-01-13 4fd376058 Update ukrainian.xml to v7.3.1
+- 2017-01-03 246c1147c Update italian to v7.3.1
+- 2017-01-02 eb0d5ed75 Hungarian translation update for 7.3.1
+- 2016-12-10 96ed68c24 Language VHDL updated
+- 2017-01-21 4e14e1489 Update danish.xml to 7.3.1
+- 2016-12-15 1b1265302 Enable Scintilla Lexer SCLEX_BAAN (BaanC Language)
+- 2017-01-23 1a0e6d761 Fix the regression in settings
+- 2016-11-24 9dc109f59 FunctionList Update 2
+- 2017-01-27 6e3726950 Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2017-01-18 f2756c228 Go to correct position after word completion
+- 2017-01-25 f9aac2e58 Updated Hindi Translation
+- 2017-01-22 e3f1a31a5 Update czech.xml translation to v7.3.1
+- 2017-02-04 754b92871 Fix Word char list bug
+- 2016-12-11 1ee8cbd21 Retain the caret position between document move
+- 2016-11-17 05e75b139 Added elif to the list of Inno Setup (.iss) preprocessor directive keywords.
+- 2017-01-29 01da32e28 Update Ukrainian translation
+- 2017-01-27 b939ec9c7 Treat Arduino .ino extension as C++
+- 2017-01-27 6c340a318 Update breton.xml
+- 2016-11-29 7f98067c1 Add error notification on run dialog
+- 2017-02-05 9fa163760 Update vb.xml
+- 2017-01-31 1caa457aa Disable couple of File menu items when it's needed.i
+- 2017-01-30 2119b171a Fix crash issue on clomn mode editor
+- 2017-01-30 286a33dc1 Fixed localization installation issue.
+- 2016-03-24 389524d23 Fix check sign in Language menu not shown
+- 2017-02-07 7ad86ad68 Enhance 'Open File' command - open file without selecting whole path.
+- 2017-02-08 e5babc3d2 Add StringBuilder keyword for Java API
+- 2017-02-05 131716121 Update belarusian.xml
+- 2017-02-09 67b0ed9b4 Minors fixes
+- 2017-02-10 1d59e3ed0 Plugin Admin (in progress)
+- 2017-02-10 3dfe52601 Show OS platform (32/64 bit) in Debug Info.
+- 2017-02-06 73ee4426e Fix uncomment in block for line comment bug
+- 2016-12-30 896d0ab69 Fix toolbar not showing issue while launching Notepad++ from system tray
+- 2016-06-20 28eedd86d Detect "Vagrantfile" as Ruby file.
+- 2017-02-12 343aae1f7 Update Russian translation
+- 2016-04-27 6dacca950 Fixed fontname and font size in Obsidian.xml
+- 2017-02-12 2d138e975 Update Swedish.xml to version 7.3.1
+- 2017-02-12 cc4b47975 Update translation files
+- 2017-02-14 2f2b56eb4 Notepad++ release 7.3.2
+- 2017-02-17 f524dfaf0 Fix add char into word char list bug
+- 2017-02-17 ee5601960 Activate clicable URL by default
+- 2017-02-18 bd70dcbe0 Change 2 default settings
+- 2017-02-18 637322266 Updated slovenian.xml
+- 2017-02-18 4a0e88055 Fix the command "Empty recent files list" doesn't restore menu width
+- 2017-02-17 bc84b83af Correction of bufferID for iface document
+- 2017-02-16 2f7667a22 Fixed Text clip issue on preference->Print->Print Line Number
+- 2017-02-16 24a3acfcc Retain Delimiter selection on several lines setting
+- 2017-02-15 4ac288a94 Add NPP icon for uninstaller as well
+- 2017-02-12 f787d22a7 Update Bulgarian language
+- 2016-12-07 855e581e4 Add Support Highlight for 3.5.0+ Syntax.
+- 2016-10-15 c36ee6ec9 Make uninstaller cleaner again!!
+- 2017-02-18 6388d48e0 Enhance Load/Save Session Feature
+- 2016-09-16 7ab645897 Add shortcut mapper clear command
+- 2017-02-19 3d6fc3f2d Add Ctrl+Shift+W fshortcut or Close All
+- 2016-05-14 9967c5991 Enhance multiline tabs
+- 2017-02-22 82dd554c4 Move xsd file
+- 2017-02-23 e1125f0bb Improve multi-line mode for tab interface
+- 2016-06-23 a435e6816 Add Find dialog enhancement
+- 2017-02-23 a482cbd21 Add tip in Find dialog for informing users the usage of Shift+Enter
+- 2017-02-23 9faa97a6f Fix a regression of hidden status bar due to the enhancement of tab interface
+- 2017-02-24 3ba1b100f Refactoring and clean up for tab interface
+- 2017-02-24 3f81828b6 Estonian translation
+- 2017-02-24 701d1f79d Add Shift+Enter tip translations
+- 2017-02-24 beda685dc Fix flickering issue if Doc is modified outside Notepad++
+- 2014-12-13 6b6b81278 Integrate lexers for several hex file formats
+- 2017-02-26 cf32cb0ed Add keywords for MS SQL Server
+- 2016-04-07 53c3a2ab0 Add new PHP7 functions to syntax highlight
+- 2017-02-26 61bc5e27b Add more keywords for Assembly syntax highlighting
+- 2017-02-24 ffe2ddace Fix flickering issue if Doc is deleted from outside
+- 2017-02-24 03ff54910 Estonian translation
+- 2017-02-27 f4bddcac3 Add new function names for Java auto-completion
+- 2017-03-01 5b3818288 Remove BOM from langs4Npp.nsh
+- 2017-02-21 739593fb6 Update HTML attribute wordlist
+- 2017-03-05 97573c80a (In progress) New feature: check content via Document Map while mouse hovering on a inactivated tab
+- 2017-02-27 07da57eac Update german.xml to v7.3.2
+- 2017-02-25 e82110395 Update Hindi translation
+- 2017-02-25 24c47fd17 Update Bulgarian translation
+- 2017-03-05 ae5cd0410 Update chineseSimplified.xml
+- 2017-02-25 eaf8f8e0e Remove ANSI version of: Hungarian (ANSI), Slovak (ANSI)
+- 2017-02-22 b335fd156 update docu from udl v2.0 to v2.1
+- 2017-02-22 a3a7fadac Incorrectly translated "space" to Dutch "ruimte"
+- 2017-02-26 71b3c499a Update belarusian.xml
+- 2017-03-01 133977da6 Fix the mouse wheel to task list scroll crash issue
+- 2017-03-08 b86916360 Check SciLexer.dll certificate
+- 2017-03-08 7aa7788af Add clean up for isCertificateValidated() function
+- 2017-03-08 e5f4344f6 Add Crypto lib in vcproj to make Notepad++ compiled under VC2013
+- 2017-03-08 388c430e2 Notepad++ v7.3.3 release
+- 2017-03-13 fe463dc03 Check content via document map on hovering (in progress)
+- 2017-03-14 6a3d9e994 Fix a minor bug in "Show content in doc map on mous hover"
+- 2017-03-14 568248b12 Disable undone feature
+- 2017-03-13 eba913d88 Scintilla Namespace
+- 2017-03-19 1205ab980 Clean up
+- 2017-03-18 07a565e93 Add two functions: one correctly switches to the active tab, the second swaps tab item data when given two tab indexes
+- 2017-03-18 b7a560c01 Fix text on active tabs being clipped (multi-line)
+- 2017-03-18 96c0943ad Fix tab switching hotkeys in multi-line (shift+MW, ctrl+MW, shift+ctrl+MW)
+- 2017-03-18 e94036114 Hijack shift+MW hotkey to move tabs rather than switch to them (while drag and drop enabled)
+- 2017-03-18 518488016 Fix drag and dropping tabs with multi-line enabled.
+- 2017-03-20 a308ea57b Fix a typo
+- 2017-03-09 6947bf390 winmain: add newline at the end of file
+- 2017-03-14 fe45f2e9b Remove duplicate code for checking certificate
+- 2017-03-19 73a928aa5 Update Bulgarian translation
+- 2017-03-14 7755542b3 Added missing js es2017 keywords
+- 2017-03-13 5fe42667e Some fixes
+- 2017-03-12 330a47d75 README.md cleanup
+- 2017-03-09 315a161ae update japanese.xml to v7.3.3
+- 2017-04-06 c63673a1d Fix buffer overrun for wordchar list
+- 2017-04-16 14639c01a :)
+- 2017-04-16 f57a565b6 Fix typos and grammar errors
+- 2017-04-18 20e669ff0 Add document snapshot feature (in progress)
+- 2017-04-18 c1f6b9e7d Fix VS2013 compiling error
+- 2017-04-25 a43c9b974 Add snapshot on document map feature
+- 2017-04-27 8752bcad5 Add UI part for Document snapshot feature
+- 2017-04-27 257cdf281 FIxed Preference(MISC) UI Issue
+- 2017-04-15 80083c738 Updates localizationCode for Corsican
+- 2017-04-15 6d28c81a6 Add Corsican as Installer Language
+- 2017-04-26 ea87ffd7d Support RTL for header & footer printing
+- 2017-04-22 e10847b42 Improve whitespace visibility
+- 2017-03-21 336992ea7 Activate buffer after reload
+- 2017-03-29 cb2c8e102 Remove excess margin with multi-line.
+- 2017-04-20 adf02ca9e Fix right clicking tabs with multiline enabled
+- 2017-04-11 d81758498 shortcuts.xml: Reword `Trim Trailing and save`
+- 2017-04-08 4c03c3eab Update turkish.xml
+- 2017-03-06 a9de79a55 Apply the new file custom encoding to an opened empty file
+- 2017-03-10 74c24cf6b Fix issue with clicking links in html/js/asp/php
+- 2017-05-02 f4228f5e5 Add "droppong folder as workspace" warning while both files and folddrs are being dropped.
+- 2017-05-08 6b0a3c8e6 Enhance certificate check
+- 2017-05-08 5c714043f Fix compiliing issue in VS2013
+- 2017-05-08 76395bb5e Add copyright information
+- 2017-05-05 ca3c2a601 Make "Window->Windows...->Sort Tabs" more user friendly
+- 2017-03-14 3661527fc Enhancement for saving workspace file
+- 2017-03-14 65a90fd91 Fixed regression for save session file
+- 2017-03-31 b2e46391a Putting unused javascript.js type2 keywords into instre2 keywords
+- 2017-03-11 675d58684 Update Portuguese translation
+- 2017-05-09 11accf92e Fix issue of lossing syntax highlighting during "save as"
+- 2017-05-10 e2329fd15 Improve certificate verifying method
+- 2017-05-10 bfb672d8b A small modification regarding the certificate checking function
+- 2017-02-08 23dd7228d Fixed file attribute managing in FileManager::saveBuffer
+- 2017-05-04 23cdf9492 Add ip(6)tables.* commands for bash.
+- 2017-02-20 f917abd1f Setting fold.quotes.python in setPythonLexer
+- 2017-02-27 3c1a7dd43 Updgrading from 32bit to 64 bit and vice versa does not remove app registry key
+- 2017-02-24 b45b10385 Make folding style visible using proper color
+- 2017-05-01 08fd2cfbd Update Corsican translation for Notepad++ 7.3.3
+- 2017-04-15 7e5afd862 Don't open change.log everytime
+- 2017-05-14 481a275ad Notepad++ 7.4 release
+- 2017-05-14 66d91d93b Notepad++ release 7.4 - make name right
+- 2017-05-14 a98c88447 Notepad++ release 7.4 - fix typo in change.log
+- 2017-05-15 2befd1321 Change to the right name
+- 2017-05-16 8aa6562ac Fix the opened zero length file not saving bug
+- 2017-05-16 caee89096 Refine the empty file as UTF8 encoding feature
+- 2017-05-16 8dbd95634 Disable the certification chain verification
+- 2017-05-17 a067de8ce Improve Document Peeker performance issue for large files
+- 2017-05-18 71ffe870c Notepad++ 7.4.1 release
+- 2017-05-23 85216fe57 Fix repeated requests of reloading from disk
+- 2017-05-30 a00a91375 Fix a crash issue while doing a column insertion on a CJK unicode document
+- 2017-05-28 6b0977b0b Fix rapid swapping between two tabs during tab drag and drop.
+- 2017-06-04 8e4b7014f :)
+- 2017-06-11 dbe2b698b Fix replace in files regression.
+- 2017-06-11 eb43167fb Disable document peeker as default
+- 2017-06-11 e8e325b7c Fixed Toolbar initialization code
+- 2017-05-13 a78046b5d Translation for new strings for Hindi & English
+- 2017-05-19 d936d0e37 Fix a typo in Spanish translation
+- 2017-05-17 ffa22adee Update czech.xml translation to v7.4
+- 2017-05-16 f4d1dd81b Update catalan.xml
+- 2017-05-14 2f5a79dad Update german.xml to v7.3.3
+- 2017-05-15 cb3df2a3a Update Bulgarian translation
+- 2017-06-07 b3be0b448 Make FindReplace dialog resizable horizontally
+- 2017-06-06 694fd80fa Fix visual glitchy on clicking on tab due to Document Peeker.
+- 2017-06-14 6d542a404 Fixed NULL Pointer Dereference
+- 2017-06-14 39b2386b3 Fixes identical sub-expressions for certificate verification
+- 2017-06-15 6f84824c2 Fix verifying certificate function passes empty string to compare
+- 2017-06-01 9f421eb2a Find previous and next instead of combo direction Down/Up
+- 2017-06-15 4f81261a8 Make button size & position right in find replace dialog
+- 2017-06-17 c8969b773 Add SWIFT language support
+- 2017-06-15 0b7065a4b Update chineseSimplified.xml
+- 2017-06-12 caf45e6f1 Update Swedish to v7.4
+- 2017-05-27 bcae36349 Update for document peeker, version 7.4.1
+- 2017-06-06 f48255d64 Installer shows installation size as 0 for minimalist
+- 2017-06-18 5b35000c3 Notepad++ 7.4.2 release
+- 2017-06-18 3d76ab73a Notepad++ 7.4.2 release - fix a typo
+- 2017-06-28 f6d4d0c82 Remove a duplicated entry for shortcut mapper
+- 2017-06-28 fb998007d Update English & Hindi translation
+- 2017-06-19 269a065bb Fixed memory leak.
+- 2017-06-19 cc04476df Update spanish.xml
+- 2017-06-19 f15e136fa update japanese.xml to v7.4.2
+- 2017-07-02 f162181fb Update translations
+- 2017-06-17 e7a5c7246 Restore empty "Replace with" and "Filters" in the next session
+- 2017-07-09 19f24d1d6 Add new installer argument /allowAppDataPluginsLoading
+- 2017-07-09 2c9f096d6 Make plugins loadable from %LOCALAPPDATA%\Notepad++\plugins\
+- 2017-07-10 4c2e41b64 Plugin name should match to plugin folder name
+- 2017-07-13 77d9a9959 Add /noUpdater argument for installer
+- 2017-07-13 a0bc7ac5f Remove Plugin Manager from the package
+- 2017-07-10 7d8b11945 Update catalan.xml to v7.4.2
+- 2017-07-09 d27a7fc01 Fixed typo
+- 2017-07-09 55b8bad2a Update italian translation for 7.4.2 version
+- 2017-07-08 50c2a300e Fixed Folder as Workspace toolbar button not activated issue
+- 2017-07-08 feff20893 Fixed saved duplicated file in the same view issue
+- 2017-07-07 7aef4a6b6 Fix file not dirty while its content changed on the hard drive.
+- 2017-07-02 3aa8535d5 Update german.xml to v7.4.2 with newest fixes
+- 2017-06-19 0d90ad137 Fix text selection in combo boxes of find/replace dialog problem on resize
+- 2017-07-15 d0d1bd947 Merge remote-tracking branch 'refs/remotes/AndresTraks/master'
+- 2017-07-15 b85930314 Fix the original cmd line modified problem
+- 2017-07-04 ee6953182 Fixed cppChecker reported issues
+- 2017-07-03 a9adc4835 Remove some useless codes
+- 2017-06-22 9128cba49 Update Bulgarian translation
+- 2017-07-03 d2f8ccce1 Update Swedish translation to 7.4.2
+- 2017-06-01 164e2c673 Fix click on tab close file issue
+- 2017-06-28 0a54214a1 Fix TAB key wired behavior on find window
+- 2017-05-19 639fbad4e Make some Spanish traduction correct
+- 2017-07-17 c748d8d18 Update chineseSimplified.xml
+- 2017-07-20 29bbf3ce8 Update chineseSimplified.xml
+- 2017-07-01 a476b885e Fix some incoherent codes
+- 2017-06-23 e76b5dc86 Add foreground colours for diff in Monokai.xml
+- 2017-07-23 cb7d6070f Fix a crash issue (regression)
+- 2016-11-13 02bdd1170 Add new languages support
+- 2017-06-15 5861d416e Fix a memory leak
+- 2017-07-22 194376d6d Fixed monitoring related issuse and corrected code
+- 2017-07-21 8342da3df Fix multi-line tab button stay pushed issue while swiching off.
+- 2017-07-27 385746de0 Rename variables & clean up
+- 2017-07-27 afb3889ff Fix a regression regarding b85930314847727ee8070d1417e674afd1bb24ab
+- 2017-07-28 ecc9258d4 Fix the long time bug that non-exist folder to pass via command line is not opened without warning
+- 2017-07-30 3fbd53737 Fix command line argument parsing regression
+- 2017-08-06 1d58c1d3d Add function list export feature
+- 2017-08-07 1f89110b0 Add "-quickPrint" command line argument
+- 2017-08-07 78ea2110d Fix export fuctionlist bug
+- 2017-08-08 c94fe0dd6 Fix a typo
+- 2017-07-27 9600bbd2f Corrected typo
+- 2017-07-26 1381ae055 Add "Fortran (fixed form)" in compact Language menu
+- 2017-07-23 f55b137cc Update czech.xml translation to 7.4.2
+- 2017-08-12 4d921b7ff Roll back from 2 find buttons to 1 find button
+- 2017-08-13 2593d64fb Update translation files
+- 2017-07-30 fbbe9344d New feature: Opens file in its default viewer
+- 2017-08-01 295cbafe7 Code improvement
+- 2017-08-08 6f872ebb7 Corrected/updated Hindi localization
+- 2017-08-13 c6e76fc57 Update Bulgarian translation
+- 2017-08-13 14a8b510b Update Korean translation
+- 2017-08-15 f1bb57c60 Update Russian translation
+- 2017-08-15 be610b402 Merge branch 'translation' of https://github.com/rddim/notepad-plus-plus
+- 2017-08-13 67ea1025f Update german.xml to v7.5
+- 2017-08-15 040ad04c5 Notepad++ 7.5 release
+- 2017-08-18 bd025df18 Fix some excluded language cannot be remembered bug
+- 2017-08-18 aa64edadd Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2017-08-19 bc1561730 Update Corsican translation for Notepad++ 7.5
+- 2017-08-18 28d3c59e7 update japanese.xml to v7.5
+- 2017-08-20 dca3f7dee Update croatian.xml
+- 2017-08-20 086f7b273 Update localization files for v7.5 modification
+- 2016-09-16 a7c1e354b Shortcut Mapper improvements - add cathegory
+- 2017-08-04 d5b01d61b Improve file extension movement between ListBox in Preferences dialog
+- 2017-08-03 cc397f8c7 Make double click work for language menu disabling/enabling in preference dialog
+- 2017-08-22 2efd5682e Fix a localization regression
+- 2017-08-22 193ecfd6d Replace '\r' by real carriage return
+- 2017-08-23 440577f64 Fix restore back language menu item on the wrong position
+- 2016-02-02 854acae4a Add Visual Prolog language support
+- 2017-08-26 f7dc09b5e Add a philosophy quote in easter eggs
+- 2017-08-25 e6c049298 Update Bulgarian translation
+- 2017-08-23 ef654d033 Update Ukrainian translation
+- 2017-08-22 c34d8d0a8 Update danish translation to 7.5
+- 2017-04-12 de648eff6 Add batch auto-completion
+- 2017-08-27 5b5dfb90a Fix the bug that Notepad++ create %appdata%\local\notepad++\ folder even in doLocalConf mode
+- 2017-08-26 478bb6f24 Update chineseSimplified.xml
+- 2016-11-27 60b4aa6b7 Enhance Function List for PHP and JavaScript
+- 2017-08-29 d7f64d202 Notepad++ 7.5.1 release
+- 2017-09-02 1c191ee14 Fix un installer issue
+- 2017-09-03 21adc62ee Add 1 quote and delete some.
+- 2017-09-06 405d4240c Update spiritual quotes
+- 2017-09-11 b033d907b Export function list in json format
+- 2017-09-11 ef3ad5d90 Use VS2015 for appveyor instead of VS2013
+- 2017-09-11 59234b91a Switch to VS 2015
+- 2017-09-17 e2f5f51fb Read plugin list as json format (in progress)
+- 2017-09-17 840f4b31c Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2017-09-15 509c9c27d Better disply of installer components page description
+- 2017-09-15 97fce27cf Nitpicking - quotations
+- 2017-09-02 3cb8bc85a Fix certificate checking error message issue
+- 2017-08-30 ad959ac82 Fixed typo in help text
+- 2017-08-30 461936ef4 Fix the issue that batch.xml is missing from installer
+- 2017-09-19 505d2452d new easter eggs quotes
+- 2017-09-12 2d1eee8b4 fix feedScintKeys when more than two shortcuts are configured
+- 2017-09-09 cacc1500a Add version badge
+- 2017-09-24 1c5e6191b Adapt json format for Plugin admin
+- 2017-10-01 40163e033 switch from VS2013 to VS2015 & VS2017
+- 2017-10-09 cc76d7a37 Update Arabic language file
+- 2017-10-16 7476ada22 Enhance Plugin Admin UI
+- 2017-10-16 28c9bb6d3 correct appveyor.yml VS vcxproj after rename
+- 2017-10-29 8a01e5e29 Make mouse hook functions right
+- 2017-10-29 9181f70d4 Fix static analyzer message "Expression is always true"
+- 2017-10-29 bdcc386a3 Fix static analyzer issue "An exception should be caught by reference"
+- 2017-10-29 81847599d Fix static analyzer issue "The enumeration constant 'inactiveText' is used as a variable of a Boolean-type."
+- 2017-10-29 29f28098a Fix static analyzer issue "A virtual function was overridden incorrectly"
+- 2017-10-29 c304b3b87 Fix static analyzer message "The ternary operator always returns constant"
+- 2017-10-30 d975bc24a Fix compiling warning problem
+- 2017-11-23 4005bf418 Add DSpellCheck plugin into distribution
+- 2017-11-19 9f0ba4450 Added more C# keywords for auto-completion
+- 2017-11-15 7c61bf274 Update turkish.xml
+- 2017-11-06 8fc25d878 Update romanian.xml
+- 2017-09-27 3278822f7 Update Italian translation to version 7.5.1
+- 2017-09-07 c65363426 Update german.xml
+- 2017-09-21 7ee052258 Update catalan.xml
+- 2017-09-05 e9ebed957 Update czech.xml translation to v7.5.1
+- 2017-10-09 c978a1889 Update spanish.xml
+- 2017-09-29 dfeaa578f Fixed hang issue while opening JavaScript file
+- 2017-11-25 5eee71f49 Prevent from crash in TAB settings
+- 2017-09-21 60f113727 Remove unused/empty encoding from shortcut mapper
+- 2017-09-19 c8a15a522 Add version and other info into installer
+- 2017-10-24 16b62c9f4 Add BaanC Sections in functionlist.xml
+- 2017-11-25 dd6101ea1 Upgrade wingup to fix the problem of connetion for updating
+- 2017-11-27 e339c0f60 Notepad++ 7.5.2 release
+- 2017-11-28 5dcb0efed Fix a crash issue in Plugin Admin
+- 2017-12-04 7faaa1bb2 Fix installer issues
+- 2017-12-05 48b3613d3 Fix DSpellCheck incomplete installation
+- 2017-12-06 b2c3e82ce Notepad++ release 7.5.3
+- 2017-12-27 2390b1970 Fix a crash bug due to eventual disordered notifications sent to plugins
+- 2017-12-09 a73c45db5 Fix 9f0ba445 typo
+- 2017-12-09 8f848b7b2 Remove duplicate keywords for autocompletion
+- 2017-12-28 250ca9e6e Improve installer
+- 2017-12-11 100286514 Fix broken indicies in EncodingMapper
+- 2017-12-10 5aff254c7 Hungarian translation update for 7.5.3
+- 2017-12-10 5cf0292da Added keywords auto-completion for CoffeeScript
+- 2017-12-28 2c4e5b260 Add Auto Completion for BaanC
+- 2017-11-26 06e42023b Fix spanish translation for "tail"
+- 2017-12-29 6fff9837c Merge branch 'nsis_ImproveInstaller' of https://github.com/SinghRajenM/notepad-plus-plus into SinghRajenM-nsis_ImproveInstaller
+- 2017-12-29 58d70b46b Merge branch 'SinghRajenM-nsis_ImproveInstaller'
+- 2017-12-29 92d962782 Fix typo in French translation
+- 2017-11-25 f07ebbf80 Autompletion enhancement: remove unwanted symbols
+- 2017-11-21 999b1cfa7 Improve smart highlighting performance
+- 2018-01-01 1725c8f8c Notepad++ release 7.5.4
+- 2017-12-13 c97b35c81 Fix highlighting of <script> tags in XML files
+- 2018-01-28 3101a2f39 Plugins Admin (in progress)
+- 2018-01-28 c05f24a3f Fix a typo
+- 2018-01-19 e0c401198 Added .coffee extension to CoffeeScript
+- 2018-01-01 46d0f12c3 Fix line ending changes are not detected in reloaded changed files issue
+- 2018-01-20 8104d8ae0 Make UI Right To Left when Farsi & Uyghur are loaded
+- 2018-01-20 440c9c57f Use reversed header image for RTL installer
+- 2018-01-15 fcb3ce31a Code improvement
+- 2018-01-14 7132a8540 Add commandline support for few more languages
+- 2018-01-04 fc9f0de77 Update localization files (English & Hindi)
+- 2018-01-04 2a15c216a Update japanese.xml to v7.5.4
+- 2018-01-23 926a5f530 Fix menu items' state is not maintained due to save macro command
+- 2018-01-12 2c4a389f5 Fix encoding not sync (on status bar) after reloading
+- 2018-02-01 0e60bd895 Restore "Find Previous" & "Find Next" button in Find dialog
+- 2018-01-12 7a0dae591 Fix a crash by improving cutString() function
+- 2018-02-03 683c358e8 Fix 2 different files whose canonic names are the same can't be opened in the same time issue
+- 2018-02-04 1f7f00b60 Add forgotten translation entries
+- 2018-02-04 1a86603a0 Make more dialog strings translatable
+- 2018-02-06 37b30dd39 More translatable dialogs
+- 2018-02-08 70f7287e5 More translatable entries for Folder as Workspace
+- 2018-02-10 fb17638de Enhance Shortcut Mapper and make it translatable
+- 2017-09-30 b47de8048 Shortcut Mapper is resizable and maximizable
+- 2017-10-02 360d45db1 Add filter capacity in the shortcut mapper
+- 2018-02-14 213af5338 Add more translations
+- 2018-02-19 bd0867ee6 Add new language and update translations
+- 2018-02-03 e40320410 Simplify and fix memory leak in getSpecialFolderLocation
+- 2018-02-05 16fa79f05 Warning/error fixes as per VS2017 code analysis
+- 2018-02-14 6fba3ac06 Fix tab sticks to mouse pointer problem after external update of a file open in Notepad++
+- 2018-02-17 0b66932ab Update ukrainian.xml
+- 2018-02-16 87feb9677 Update occitan.xml localisation to v.7.5.5
+- 2018-02-11 883045d96 Keep Doc Switcher's ordering in sync with Tab bar
+- 2018-02-12 7572015bd Enhance ShortcutMapper resizing
+- 2018-02-18 3de756117 Update catalan.xml
+- 2018-02-18 744ec4c3f Update czech.xml translation to v7.5.5
+- 2018-02-17 8b2f0f6c5 Update Turkish localization
+- 2018-02-02 803917dd0 Update german.xml to 7.5.5
+- 2018-02-20 a1b4628b8 Fix the wrong integer replacement (instead of string)
+- 2018-02-02 065b6f9e1 Update danish.xml to 7.5.5
+- 2018-02-20 55f061ebb Fixed the czech.xml v7.5.5
+- 2018-02-20 bf9416d17 Minor enhancements for Kurdish language
+- 2018-02-20 6e315e076 Updated Hindi localization
+- 2018-02-03 721f7f060 Update Bulgarian translation
+- 2018-02-14 556901b83 Make Unix style path (slashes) work in open file dialog (optional)
+- 2018-02-22 f9c8a0e22 Change the label of one option to match Unix style path on open dialog
+- 2018-02-25 a242214a2 Disable DSpellCheck by default due to some performance issues
+- 2018-02-24 13801e354 Make column names translatable in Window->Window...
+- 2018-02-25 5719420c3 Update translations
+- 2017-11-10 182063f31 Fix for "Monitoring" doesn't detect changes
+- 2018-02-07 9951fcd08 Add new keywords of javascript for auto-completion
+- 2018-02-03 332ac2865 update japanese.xml to v7.5.5
+- 2018-02-13 0fa26f4ba Update chineseSimplified.xml
+- 2018-02-20 511915c98 Update german.xml to v7.5.5
+- 2018-02-20 034232a9d Update romanian.xml for version 7.5.5
+- 2018-02-22 ae49acb80 Update belarusian translation
+- 2018-02-24 6896c801a Update Bulgarian translation
+- 2017-11-03 166cb3fc9 Fix for "Toggle Single Line Comment" malfunctioning with HTML/XML
+- 2018-02-26 d6daac243 Update chineseSimplified.xml
+- 2018-02-27 abcbec181 Change the EOL
+- 2018-02-27 7bf117dfe Fix a label display glitch in Preference
+- 2018-02-27 f0a8c61d0 Notepad++ release 7.5.5
+- 2018-02-27 8c84e9234 Fix EOLs
+- 2018-03-02 789cf387d Make new entries translatable
+- 2018-03-04 9b565319e Fix macro playing back crash issue
+- 2018-03-04 d9f3cfd82 Remove the TODO to prevent from the useless modification
+- 2018-03-07 f0e1ecdc7 Add ghost typing Unicode capacity
+- 2018-03-10 5df6e9bbf Ghost typing enhancement
+- 2018-03-10 d9b9fb604 Add a message from outer space
+- 2018-03-01 22abebefe Update chineseSimplified.xml
+- 2018-03-01 ecba7be9e Update english.xml & chineseSimplified.xml
+- 2017-11-17 86aa5e648 Fix GDI objects leak problem
+- 2018-01-22 a724cc49a Function List enhancement: Highlight the current function based on cursor position
+- 2018-03-08 1e0b0b2cd Fix crash on styler dialog of User Defined Language dialog
+- 2018-03-03 7969e3084 Update german.xml to v7.5.5
+- 2018-02-27 a808e3fd9 Update czech.xml for v7.5.5
+- 2018-03-13 a3be39a3a Quotes clean up
+- 2018-03-12 fab3db50d Change english.xml to match to GUI texts
+- 2018-03-16 3332aa918 Add more funny quotes
+- 2018-03-16 ef0777771 Update german localization
+- 2018-03-15 93142b12c Hungarian translation update for 7.5.5
+- 2018-03-13 d99ce6ff0 Update Ukrainian translation
+- 2018-03-12 092413453 Update Swedish localization
+- 2018-03-11 51b7eb1b5 Update Dutch translation for 7.5.5
+- 2018-03-11 03abfc8f7 Update Corsican translation for Notepad++ 7.5.5
+- 2018-03-11 2291bb3a7 Update Turkish localization
+- 2018-03-04 d4d403dab Update Bulgarian localization
+- 2018-02-28 543dce894 Update Hindi Localization
+- 2018-02-27 af1cc71b2 Fit access keys of the main manu to English behavior
+- 2018-03-05 9685f4622 Update french.xml
+- 2018-03-17 5fa7a718e Update French localization
+- 2018-03-17 6c9a5a2af Fix typos in translation entry string
+- 2018-02-26 58fa70b58 Fix file status detection issue under Windows XP (32-bit only)
+- 2018-02-03 460564554 Major improvements to C# intellisense
+- 2018-03-19 9733729bf Notepad++ 7.5.6 release
+- 2018-04-04 01cfe5d08 Rename label in functionlist output json
+- 2018-04-09 985fa654b Fix Javascript not working regression in Function list since 2016
+- 2018-04-13 3aaf083c1 Add unit tests for function list feature
+- 2018-04-13 c4cf9165a Update Russian translation
+- 2018-04-13 ce1ffd441 Update stylers.xml model
+- 2018-04-17 9210bd37b Fix a typo in French translation
+- 2018-04-05 e9c0ee486 Fixed UDL export extension issue
+- 2018-03-19 f0e0e0248 Various fixes in french.xml
+- 2018-03-25 92e65f33e Updated Slovak language file for the latest Notepad++ version.
+- 2018-04-10 0f4b0ec9a Fix typo to make translation work.
+- 2018-04-05 094fbabe0 Updated Hindi Translation
+- 2018-03-26 bdae39ff2 Update dutch.xml
+- 2018-03-03 6890e9495 Fixed a code in ReadDirectoryChangesPrivate.cpp
+- 2018-03-31 a4ac43f14 Update italian.xml to version 7.5.6
+- 2018-04-25 7cf523205 Make new file system of plugin works on installation directory
+- 2018-04-30 454f92af4 Adapt new plugin file system structure for the future release.
+- 2018-04-23 ddb886c66 Update Indonesian.xml
+- 2018-04-21 f4460075e Update Russian translation for 7.5.6
+- 2018-03-18 08b0d390e Small fix in german.xml
+- 2018-04-27 2e4b01cd3 More improvements in C# intellisense
+- 2018-04-14 e65b4c37b Fix Sort Lines as Integers issue: use Natural Sort algorithm
+- 2018-05-07 3a52ab1af Remove unused method
+- 2018-05-18 07b765316 Remove Updater binaries
+- 2018-05-20 9391fa764 Enhance Notepad++ installation packaging
+- 2018-05-07 8848c3151 Update turkish.xml
+- 2018-05-17 0a6b19fed Fix toolbar display bug in big icon mode issue
+- 2018-05-24 ab903c455 Cleanup in context menu and Run entries
+- 2018-03-26 a99fa9ae5 Installer enhancement: Place program shortcut in top-level Start folder
+- 2018-06-12 c30c0de0f Refactoring Plugin Admin codes
+- 2018-06-13 c94319e86 Enhance installed list in Plugin Admin
+- 2018-06-13 2b7cd0509 Restore the needed functions
+- 2018-06-19 32c1427c1 Add run process sync method & Plugin Admin's operations
+- 2018-06-12 0c55b381d Fix a bug where the document map highlights incorrectly when the view is scrolled past the end of the file.
+- 2018-06-03 1482420fc Fixed pointer truncations reported after removing /Wv:18
+- 2018-05-26 a83fa30de Fixed the macro deletion bug
+- 2018-03-26 bac637ddf Fix Open File Dialog error for a long path
+- 2018-06-24 593cf451f Clean up
+- 2018-05-29 26a3af946 Update catalan.xml
+- 2018-05-23 b69c36b55 Make carret line always visible on click from Finder panel
+- 2018-04-14 06fb4dd99 Remove "from" which is not a reserved JavaScript keyword
+- 2018-02-05 08eb29e3d Force cpp standard const char pointer on string literals
+- 2018-05-31 9cb8fce85 Migrate timestamps from time_t to FILETIME and store them in UTC universally
+- 2018-05-31 a9d203a60 Deprecate wstat/stat in favour of WinAPI GetFileAttributesEx - unifies code and behaviour between Windows versions
+- 2018-06-25 632611566 Use automatic variable with static size instead of dynamical allocation
+- 2018-06-26 ef1390220 Use corret name for length variable
+- 2018-06-27 587d3494c Fix the compiling failure on x64 build
+- 2018-06-25 6b5144d17 Fix format specifier warnings - /Wv:18 can now be removed
+- 2018-06-28 85e3c53a2 Fix hanging problem while shutingdown and backup file is absent
+- 2018-06-30 97467eb80 Notepad++ 7.5.7 release
+- 2018-07-19 7ce0ab04e include the newest version of winGup
+- 2018-07-19 eb4edb50e Plugin Admin - in progress
+- 2018-07-19 75e326895 Update a localization file
+- 2018-07-07 da35cf966 Update brazilian_portuguese.xml
+- 2018-07-06 3246a47fd Fixed DoCloseOrNot translation
+- 2018-07-04 5c72d8902 Update swedish.xml
+- 2018-05-31 c4d442884 Update german.xml
+- 2018-07-02 388e874bf Fixed a crash when trying to launch a secondary instance with string commandline arguments
+- 2018-07-22 43b2344b2 Fix Folder as Workspace not updating regression
+- 2018-07-22 1c60f3f93 Fix "Explorer Here" from "Folder as Workspace" problem if folder name contains comma
+- 2018-07-21 14b5e161c Fixed crash issue by checking & unchecking "Disable extension column" in preferences dialog
+- 2018-07-23 89fbbad94 Notepad++ 7.5.8 release
+- 2018-07-25 9aebe5baf Add a new file extension for cpp
+- 2018-07-31 e75cf910b Add new brhaviour of checking Plugin List's certificate
+- 2018-08-12 f3c17e988 Fix Plugin Admin installing plugins issues.
+- 2018-08-19 3325da03a Fix a plugin installation problem
+- 2018-08-22 e1ad5ccf4 Update german.xml
+- 2018-08-19 f92d5e69a Update Swedish localization
+- 2018-07-31 e32d89c62 Big Update of the Translation of Chinese (Trad.)
+- 2018-08-11 ab3f5e565 Update Arabic language to v7.5.5
+- 2018-07-23 2439a4eec Update russian.xml
+- 2018-08-03 4969f377a Fix backup not fully disabled issue
+- 2018-08-06 b48c08683 Fix wrong backup file deleted isuue
+- 2018-09-13 71dd261a5 Plugin Admin: Change the way to remove & update plugin
+- 2018-09-19 74e89bdf5 The best easter egg I could hide ;)
+- 2018-09-19 6510889ba Add version management for Plugins update in Plugin Admin
+- 2018-09-20 bfff12fd9 Add the load capacity after installing the plugins in Plugin Admin.
+- 2018-09-21 da4974943 Define the plugin-list's path for Plugin Admin
+- 2018-09-24 6fb78db41 Fix a passing argument to wingup bug for Plugin Admin.
+- 2018-09-27 b662bcf5a Add checking MD5 ability in Plugin Admin
+- 2018-09-29 f0d130bbc Make plugin installer threadable.
+- 2018-09-30 d2c32ddc1 Add 2 more spitural quotes
+- 2018-10-01 050ba58a8 Add new quotes.
+- 2018-07-02 40192bda0 Fix scintilla restoring wrapped buffer issue
+- 2018-09-27 c6e1a9509 Fix Tab non-responding after dragging bug
+- 2018-08-02 abc6bc144 Fix possible file corruption during backup or power loss or other abnormal N++ termination
+- 2018-08-01 90ab58aea Fix last active tab is ignored on N++ restart issue
+- 2018-09-13 55394cfb0 Improve Hindi translation
+- 2018-10-03 456ff7055 Fix issue with wrong smart highlighting when it is disabled
+- 2018-10-04 17190009b Fixed Typo in localization files
+- 2018-10-03 efbc3b216 Fix Tail moniotoring incoherent status after deleting a monitored file
+- 2018-07-22 84938b7b0 Add new plugin API NPPM_REMOVESHORTCUTBYCMDID to allows plugins to remove unneeded shortcuts
+- 2018-09-22 fe458a707 Fix hanging problem while switching back a fully-folded document by using shortcut (Ctrl-TAB)
+- 2018-08-18 0bdbf348d Fix Plugin directories not removed regression after uninstalling Notepad++
+- 2018-06-25 f159a6216 Update Russian translation
+- 2018-07-02 74d39b1ce Greatly simplify commandline parsing
+- 2018-07-02 f0821d983 Add stripIgnoredParams to implement "Wish: "ignore first item" command line argument (for replacing Notepad)"
+- 2018-10-08 0db302953 Add -notepadStyleCmdline for Notepad-style command line processing (/p -> -quickPrint and joining paths)
+- 2018-10-12 45812764c Update "wingup for Notepad++" to version 5.0.3
+- 2018-10-15 312ddff83 Notepad++ 7.5.9 release
+- 2018-10-22 ec340000c Make command line more clear.
+- 2018-10-24 e919d4d05 Remove getFileContain function's limitation.
+- 2018-10-24 519fecbb8 Add SHA-256 implementation and use sha-256 instead of md5 in Plugin Admin
+- 2018-10-25 ef5d07771 Fix checking plugin crash issue due to plugin packaging error.
+- 2018-10-25 c531a4d42 Send NPPN_READY notification to loaded plugins after their installation by Plugin Admin
+- 2018-10-27 b01a39666 Remove SHA-256 hash checking from Plugins Admin
+- 2018-10-29 ab8b5dc7a Shift the post installation (checking if the plugin is deployed correctely) responsability to WinGup
+- 2018-10-31 fdf954f71 Revert "Fix scintilla restoring wrapped buffer issue" due to a serious performance issue
+- 2018-11-01 ee763ca0a Change Plugins Admin installation behaviour
+- 2018-11-03 7e555b67f Remove the legasy plugin loading way and apply only the new plugin loading method
+- 2018-11-03 e9a489c5c Remove allowAppDataPlugins.xml detection.
+- 2018-11-03 113212547 Remove allowAppDataPluginsLoading option from the installer
+- 2018-11-04 e61fe03d8 Install default plugins into new location
+- 2018-11-06 4fa910c74 Add nppPluginList into the installer.
+- 2018-11-07 8dea25feb Refactoring for optimizing/simplifying the code for getting plugin root path
+- 2018-11-07 a87e89ea9 Add new Plugin message NPPM_GETPLUGINHOMEPATH in API
+- 2018-10-31 2d81570be added lua autoCompletion
+- 2018-10-22 0aafe91be Fixed Typos in quote eastereggs
+- 2018-10-18 5685a50e5 Polish translation: Ampersand fix
+- 2018-10-21 11e479326 Update chinese.xml
+- 2018-10-14 ac0985765 Fix UTF-8 detection for 4 byte characters
+- 2018-10-14 bfb7e863c Update uchardet to 0.0.6 to improve UTF-8 detection quality
+- 2018-10-31 6cdac077f Add autoit autoCompletion
+- 2018-11-08 fd51703ad Fix a performance issue for swiching back to folded document.
+- 2018-11-06 08b015647 Fix auto-indent issue by typing Enter on empty line.
+- 2018-11-04 b9b3faf30 Fix crash issue due to Unix style path input in Open file dialog.
+- 2018-10-19 94cf9d53c Fix tool tip in document switcher showing the old name issue (after being renamed).
+- 2018-10-13 acb30b9e6 Fix "Close all but this" behaviour if multiple views are present and some files are dirty.
+- 2018-11-12 0abde2544 Clean up GUI in Plugins Admin
+- 2018-11-12 17ac06f83 Fix a regression of fail removing different architecture plugins
+- 2018-10-21 fd52450d1 Fixed memory leaks
+- 2018-10-23 8ea3c4fe5 Make installer DPI-aware
+- 2018-11-13 f1534118e Add a spiritual quote into Installer
+- 2018-11-13 40fbf0da6 Notepad++ 7.6 release
+- 2018-11-13 5251bdd6d Because some people don't love sex...
+- 2018-11-14 1ef92c6cc Fix a "Frenglish" issue.
+- 2018-11-14 3465cac7c Fix Installer HI-DPI GUI glitch.
+- 2018-11-17 f03ce289d Fix "Import plugins" not working issue.
+- 2018-11-21 116f40075 Add thee new capacity to load plugins from %ALLUSERSPROFILE%
+- 2018-11-24 61402a354 Add elevation capacity for wingup if plugins are installed in %PROGRAMDATA%
+- 2018-11-24 44baa33d1 Add the option to installer for installing the plugins in %PROGRAMDATA%
+- 2018-11-10 7f1cbfea8 Update chinese.xml
+- 2018-11-17 c0fb9f357 Update Hebrew for menu bar
+- 2018-11-17 6cf238a6a Update Brazilian Portuguese translation
+- 2018-11-27 78a0f57ed Make Plugins Admin translatable
+- 2018-11-27 5080fdf2d Add Plugins Admin translation entries into english.xml
+- 2018-11-28 b466e5bf0 Add Pig latin language
+- 2018-11-28 5df59ba2f Add Pig latin language in installer
+- 2018-11-28 c919dc627 Notepad++ won't load plugins from %LOCALAPPDATA%\Notepad++\plugins\ anymore
+- 2018-12-01 24a839434 checked all files of the APIs dir for xml syntax issues and corrected the broken files
+- 2018-12-02 f8aba0122 Make %PROGRAMDATA%\Notepad++\plugins\ as default plugins installation location
+- 2018-12-01 6c5e4db08 Add Japanese translations for Plugins Admin
+- 2018-11-30 0a8a33716 Update brazilian_portuguese.xml
+- 2018-11-30 5c227b25c Update portuguese.xml
+- 2018-11-29 4128e8f04 D language keywords update
+- 2018-11-30 505e7a05e Update spanish.xml
+- 2018-11-30 37e67c098 Update occitan.xml
+- 2018-10-29 c85f9f217 Swedish translation typo
+- 2018-10-27 77cdbe717 german.xml: fix typo
+- 2018-11-28 06743d8db Update german.xlm (Plugins Admin)
+- 2018-11-28 db8b20dd1 Update Hindi translation
+- 2018-11-13 0f9aaf162 Update russian.xml
+- 2018-11-28 6e4f591bd Fix typo and remove unecessery files
+- 2018-12-02 67b5fcd8c Update Italian translation
+- 2018-10-16 087add649 Remove DIRECTIVE from VHDL styles table
+- 2018-11-25 ef1b04b6f Adjust displayed name for Swift language in stylers
+- 2018-11-28 f632002c6 Fix a entry of Pig latin
+- 2018-12-02 ef29c7894 Merge branch 'xml_syntax_issues' of https://github.com/chcg/notepad-plus-plus into chcg-xml_syntax_issues
+- 2018-12-02 678321df9 Merge branch 'chcg-xml_syntax_issues'
+- 2018-11-17 b4f012985 Add new JavaScript API for auto-completion
+- 2018-11-28 d7507013e Enhance pluginsAdmin.h
+- 2018-11-27 184a6f6ce PHP: Add styler entry for complex variables
+- 2018-11-20 4f67c0985 Make text display right in summary panel
+- 2018-12-04 775d204ef Change loading plugin list location
+- 2018-12-06 15ef9bd05 Change nppPluginList.dll installation locaion
+- 2018-12-08 03daf5559 Make installer more coherent for the option doLocalConf.xml
+- 2018-12-07 41fa7f6d9 Add and reorder keywords in Python
+- 2018-12-07 0686435d1 Fix invalid xml syntax issue from #4572
+- 2018-12-06 9175b55ff Update Czech Translation
+- 2018-11-10 6c73e5cba Fixed printer header footer font issue
+- 2018-10-25 6c6a4d5bb Updated Turkish.xml
+- 2018-12-09 e9563aeb8 Remove unecessary message boxes from some NPPM API
+- 2018-12-11 b709bc9f1 Fix installer's plugins copy issue under Linux (by using WINE)
+- 2018-12-13 e7b04a6a1 Notepad++ 7.6.1 release
+- 2018-12-16 647651b7e Add generation of SHA-256 hash feature
+- 2018-12-17 a079013c2 Fix the plugin crash issue due to the inexistent path
+- 2018-12-17 412c5986a Fix a compiling error due to bad formatted ressource file.
+- 2018-12-08 4f24f81eb Add new feature: double click splitter resets panes to equal size
+- 2018-12-22 6eabece7a Make Plugin Admin excluded from Windows XP because wingup doesn't work under XP
+- 2018-12-23 699b9b08e Add Plugins Admin module into zipped package
+- 2018-12-23 d6f5b7b13 Change folder location of auto-completion
+- 2018-12-23 90c724ae4 Change folder location of auto-completion for zipped package
+- 2018-12-23 a76843cf6 Remove auto-completion files from the old location while update
+- 2018-12-24 62bfef46e Remove unused "plugins\disabled" folder
+- 2018-12-25 589e21151 Change the access right of folders via installer
+- 2018-12-20 a8f3ef12d Updates rust keywords and primitive types for 2018 edition
+- 2018-12-26 953919c40 Make new added SHA-256 hash features translatable
+- 2018-10-24 1bc50df4e Update Bulgarian localization
+- 2018-12-27 8c0306635 update japanese.xml to v7.6.2
+- 2018-12-28 3f2126c75 Update german.xml (48503, SHA-256, ...)
+- 2018-12-21 b1285e7b1 Add Zulu localization
+- 2018-12-30 bb09cda27 Updated italian to 7.6.2
+- 2018-12-14 e335050fb Update belarusian.xml
+- 2018-12-12 201b5afab Update ukrainian.xml
+- 2019-01-01 70dee50dc Notepad++ 7.6.2 release Gilet Jaune Edition
+- 2019-01-14 fd32585c1 List plugins in alphabetical order in Plugins Admin dialog
+- 2019-01-14 0f936707a [EU-FOSSA] Fix a security issue: RCE via unsanitized command line in "Open containing folder"
+- 2019-01-08 694415f8a Make exception error more clear
+- 2019-01-17 5b1f53020 [EU-FOSSA] Fix crash issue due to heap overflow in clipboardHistoryPanel.cpp
+- 2019-01-18 ac2ac8cb4 Fix x64 build error
+- 2019-01-18 b9ce84888 [EU-FOSSA] Fix EXE Hijacking of gup.exe launched by Notepad++
+- 2019-01-18 ccdf7d8d8 [EU-FOSSA] Fix stack overflow in XML Parsing
+- 2019-01-18 442116184 [EU-FOSSA] Fix stack overflow issue while affecting "ext" field on stylers.xml
+- 2019-01-19 e813f0383 Fix x64 build error
+- 2019-01-19 abf78e84b [EU-FOSSA] Fix loading unexpected dll as plugin issue
+- 2019-01-22 c1bf412f5 [EU-FOSSA] Avoid to execute eventual hijacked binaries from Notepad++
+- 2019-01-25 9fecbae03 Move plugins home from %ProgramData% to %ProgramFiles% for the sake of security
+- 2019-01-27 e5108cc0e Add Markdown language.
+- 2019-01-27 1a356c201 Notepas++ 7.6.3 release
+- 2019-01-28 c314ed1d8 [EU-FOSSA] DLL hijacking of plugins\Config\Config.dll loaded by Notepad++
+- 2019-01-30 5eaf67b64 [EU-FOSSA] Fix stack overflow issue on User Define Language dialog
+- 2019-01-30 c906af27b [EU-FOSSA] Fix stack overflow in exts2Filters function
+- 2019-01-31 e691370e4 [EU-FOSSA] Fix stack overflow in extractSymbol function
+- 2019-02-01 51f10bdba Add "Remove Duplicate Lines" feature
+- 2019-02-07 dfb9b5e33 Enhance User Defined Language System for supporting more than one UDL file.
+- 2019-02-08 cdd13ecad [EU-FOSSA] Fix stack buffer overflow on CB_GETLBTEXT
+- 2019-02-08 043844719 [EU-FOSSA] Fix stack buffer overflow on LB_GETTEXT
+- 2019-02-09 58037e07b [EU-FOSSA] Fix stack buffer overflow on wsprintf in WordStyle dialog
+- 2019-02-09 494b4bc0d Fix crash on exit after creating or importing a UDL
+- 2019-02-10 ea1fd44ff [EURO-FOSSA] Fix stack buffer overflow on strcpy
+- 2019-02-10 b381ea535 Make name more explicite: "Remove Duplicate Lines" to "Remove Consecutive Duplicate Lines"
+- 2019-02-11 7fe3cda1d [EU-FOSSA] Use wcscpy_s instead of lstrcpy to prevent from buffer overflow
+- 2019-02-13 1ab162480 Fix a crash regression due to a bad length count for a replacement of wcscpy_s
+- 2019-02-13 501980782 [EU-FOSSA] Check Updater's certificate before launching it
+- 2019-02-13 7aa953c55 Fix a crash (a regression) due to replacement of lstrcpy by wcscpy_s
+- 2019-02-15 fbffdd882 Load nppPluginList.dll as resource instead of binary for the sake of security
+- 2019-02-11 17c40213c Tab context menu bug fixes
+- 2019-02-16 c4ff9f76a Make "new #" document drag-and-drop operation among instances right.
+- 2019-02-17 3546268c2 Add the capacity to rename non-existing document's tab
+- 2019-02-17 011aa960f Fix a regression on c4ff9f76a35775b865c01e3ec7142bf222c2d95a
+- 2019-02-18 194475ce6 [EU-FOSSA] Fix a crash bug on Macro execution with arbitrary parameters
+- 2019-02-18 0adc06322 [EU-FOSSA] Fix buffer overrun in Print dialog
+- 2019-02-18 188565fd4 Fix x64 compiling error
+- 2019-02-19 5bcf55c59 Add stackoverflow as search engine
+- 2019-02-20 b90be4a05 [EURO-FOSSA] Fix a vunerability from "Search on Internet" command
+- 2019-02-20 4472620f3 Remove "Get More Plugins" menu item
+- 2019-02-21 70cd3e5ea [EU-FOSSA] Check if the command is macroable before playing the recorded macro
+- 2019-02-22 bd7816755 [EU-FOSSA] Replace lstrcat by wcscat_s to avoid crash
+- 2019-02-22 eec82cc2a [EU-FOSSA] Replace "lstrcpy" by "wcscpy_s" in "BabyGrid.cpp" to avoid the eventual crash
+- 2019-02-22 5085d9c95 [EU-FOSSA] Check string length to copy to avoid crash in purgeMenuItemString function
+- 2019-02-23 d7c942ee2 Fix auto-update detection issue due to wrong version number used
+- 2019-02-24 da2d14436 [EU-FOSSA] Enhance the macroable detection to avoid crash
+- 2019-02-24 1f5ba1803 Fix compiling error
+- 2019-02-27 3baef4907 Add SHA256 checking of the authentity of used modules
+- 2019-02-25 2a4a70ed2 Pass the arguments by reference instead of by copy to improve the performance
+- 2019-01-30 c3f96d6b9 Hungarian translation update for 7.6.3
+- 2019-01-11 1dfa92c4b Add 'Open Plugins Folder...' command
+- 2019-03-01 c22f181d8 Add hashes (32/64) of nppPluginList.dll new release
+- 2019-03-01 94c4608cc Fix a typo & add some comments
+- 2019-02-24 21d73d44f Fixed macro playback junk char display issue on Find dialog
+- 2019-02-18 02096e93b Update Hindi localization
+- 2019-03-01 627c00b43 Replace file extension r in Rebol by r2 & r3
+- 2019-01-02 b08d08b38 Fixed issue of splitter panes not being equal
+- 2018-12-31 ff0d53bfb Update turkish.xml
+- 2019-01-01 f5f2f4a12 Update chineseSimplified.xml
+- 2019-03-01 1aeddf10d Update Bulgarian localization
+- 2019-01-11 150ce13cd Update chinese.xml
+- 2019-01-08 2587fdf91 Update danish.xml to 7.6.2
+- 2019-01-02 280eb2e7b Update catalan.xml
+- 2019-01-02 b630f300e Update Pig latin
+- 2019-01-03 d14e6bd5a Updated Russian translation (ShortcutMapper, SHA)
+- 2019-01-30 b9f01afdd Update romanian.xml to version 7.6.2
+- 2019-01-26 52ed9af68 Fix "Find in files" tab translation issue on initial dialog call
+- 2019-01-12 ea8514a15 Updated slovak.xml to version 7.6.2
+- 2019-03-02 5423b5063 Fixed regression and support localization for "Open Plugins Folder..."
+- 2019-03-01 50e9e87e4 Use the reference parameter instead of copy parameter and some clean up
+- 2019-03-02 aba4716c7 Update Bulgarian localization
+- 2019-01-28 ea08e037d Remove autocomplete directory on uninstall
+- 2019-03-03 dcd394236 Fix Markdown not working in installer package of v7.6.3
+- 2019-03-03 496e93e1b Minor change for the installation
+- 2019-03-03 c4f493a7c Fixed file open hang issue in old style mode
+- 2019-02-17 ae980ce4d Don't allow restricted characters for tab file rename
+- 2019-01-28 eb8eb2579 Make naming homogeneous in xml file
+- 2019-01-01 dd8ae0542 Add shift + scroll for horizontal scrolling
+- 2018-12-21 acd2cc6ba Adde missing styles to Zenburn theme for PowerShell
+- 2019-03-04 157846c60 Fix a small regression on Find dialog status bar
+- 2019-03-04 da3a17e91 Support More localization
+- 2019-03-05 103409464 Remove DSpellCheck due to some performance issues
+- 2019-03-05 8b0a85bd5 Use new style open/save file dialog by default
+- 2019-03-06 faa2fb4e8 Notepad++ release 7.6.4
+- 2019-03-09 6580255a2 Fix a regression: double-clicking on a "find all in current document" result for an unsaved doc prompts to save it
+- 2019-03-10 a2e942166 Fix renamed new tab incorrect behaviour
+- 2019-03-10 3f5f69c6a [EU-FOSSA] Enhance external call code to avoid eventual arbitrary commands execution
+- 2019-03-11 e4f977835 [EU-FOSSA] Fix crash issue on shorcut command while its length exceed 260
+- 2019-03-13 5356f648c Remove some ugly coding styles
+- 2019-03-04 1af4d0f7f Remove duplicate quote and fix a typo
+- 2019-03-08 0cddeaa9f Remove BOM from 2 localization files
+- 2019-03-16 6dfd22d52 Add "View Current File in Browser" for Firefox, Chrome, IE & Edge
+- 2019-03-16 52a4e21af Remove ugly coding style
+- 2019-03-06 54350715e Remove some duplicate entries from lang files
+- 2019-03-06 ba60fbdd7 Enhance "File status Auto-Detection" to avoid switching editing tab off behaviour
+- 2019-03-17 193c4ecc5 Clean up - remove dead code.
+- 2019-03-17 23bd8e484 Use new "File Status Auto-Detection" option by default
+- 2019-03-18 0f933b16c Update localization files
+- 2019-03-18 0c5a42153 Remove unecessary cast
+- 2019-03-08 455fcb2da Add "Multi-Select Next Occurence" feature
+- 2019-03-19 a7c59e177 Add "Multi-Select Next Occurrence" into menu
+- 2019-03-19 d7d733613 Add GPG Public Key Fingerprint in readme
+- 2019-03-20 90609f6b4 Update README.md
+- 2019-03-20 2062ba25d Update README.md
+- 2019-03-20 55e67a95a Update README.md
+- 2019-03-20 469f4a2c6 Update README.md
+- 2019-03-21 28f87ca6d Make better UI for the file status auto-update enhancement
+- 2019-03-18 f7645fe27 Fixed crash due to "File status auto-detection" enhancement
+- 2019-03-04 dd718442b Update Bulgarian localization
+- 2019-03-21 c22690d54 Update Italian localization to 7.6.5
+- 2019-03-21 b0b29c2ad Updated Hindi Translation and corrected typo in English
+- 2019-03-20 f92bedaad Update brazilian_portuguese.xml
+- 2019-03-17 393955128 Add Hindi support for installer.
+- 2019-03-05 11a45b592 Update german.xml to 7.6.3
+- 2019-03-05 95c7868ca Update Turkish localization
+- 2019-03-21 1360ff82b Revert "Add "Multi-Select Next Occurence" feature"
+- 2019-03-21 32f1dafe7 Remove unused command
+- 2019-03-22 f7d92eb99 [EU-FOSSA] Fix crash issue of User Define dialog while deleting a unallocated entry
+- 2019-03-22 63d3a42c6 [EU-FOSSA] Fix crash issue by command "On Selection->Open File"
+- 2019-03-22 4d58027f1 [EU-FOSSA] Add an enhancement to prevent from the eventual crash.
+- 2019-03-05 9d7e55328 Update japanese.xml to v7.6.5
+- 2019-03-14 a660c60d2 Delete autoCompletion folder on uninstall correctely
+- 2019-03-25 486e2188b Revert "Update uchardet to 0.0.6 to improve UTF-8 detection quality"
+- 2019-03-26 6ceda544a Use new NppPluginList release 1.0.8
+- 2018-10-21 ab4c2edde Fixed Read-Only flag (user read only) flag issue
+- 2019-01-01 b75ccd29e Added close unchanged tabs command
+- 2019-03-26 54d2bc552 Update English translation modele, + French & Chinese
+- 2019-03-26 cfa702a8a Retain read only flag state in session
+- 2019-03-26 cf3516849 Allow some more characters (up to 64 char) in UDL name
+- 2019-03-28 017e09a23 Refactoring loadFileData()
+- 2019-03-28 198cf90c1 Allow undo after file reload and don't purge undo buffer
+- 2019-03-29 0467b7d6c Fix a bug in command "Remove Consecutive Duplicate Lines"
+- 2019-03-30 a7d2b6ea6 Fix "Remove Consecutive Duplicate Lines" not working on old Macintosh EOL
+- 2019-03-31 6e791965b Notepad++ 7.6.5 release
+- 2019-04-02 9443e2e8f Fix a crash issue due to cfa702a8a87272c276e4cb46c8979f2418ef25e2
+- 2019-03-26 64898cafe Update Bulgarian localization
+- 2019-03-26 9b946ada8 Update german.xml to v7.6.5
+- 2019-03-27 b575a50c6 Update japanese.xml to v7.6.5
+- 2019-03-29 c1c8a4d25 Update corsican.xml for Notepad++ 7.6.5
+- 2019-04-04 aaa743ea3 Notepad++ 7.6.6 release
+- 2019-04-04 f0593f1a8 Fix crash while right clicking on DocSwitcher's column bar
+- 2019-04-04 70300154e Add Notepad++ GPG public key
+- 2019-04-04 f55c4e3d2 Update README.md
+- 2019-04-06 784eea3ef Remove the test of null pointer for delete
+- 2019-04-06 d94ad58d9 Remove unnecessary sub-projects
+- 2019-04-06 3e36c1ed8 Update catalan.xml
+- 2019-04-05 fbfa15378 Fix '\' display problem in CSS while using themes
+- 2019-04-03 b714338e3 Update Turkish localization
+- 2019-04-09 59cdab098 Add some awesome quotes in easter eggs
+- 2019-04-09 7e716a57f Add Ctrl+R shortcut for "Reload from disk" command
+- 2019-04-11 4c548d187 Add "Count in selection" option in Find dialog
+- 2019-04-12 bbb21cd29 Make some strings longger for fitting translation
+- 2019-04-13 7b198fc95 Update 4 localization files
+- 2019-04-14 db02d7f12 Fix a regression of enlargement string label commit
+- 2019-04-15 b2d4430df Force Python files to use spaces instead of tabs
+- 2019-04-16 687c6486a Fix cursor flickering after double clicking on URL
+- 2019-04-17 b2191e9e6 Fix unexpected behaviour after double clicking an URL
+- 2019-05-04 37c4b894c Upgrade Scintilla from v3.56 to v4.14
+- 2019-05-08 2d90b3879 Upgrade Scintilla - integrate boost's PCRE in 64 build
+- 2019-05-08 d22d1609a Upgrade Scintilla - Adaptation of PowerEditor part
+- 2019-05-08 f548db82e Upgrade Scintilla - Update Scintilla build informtion
+- 2019-05-10 01d8349b1 Security: switch from component sha256 checking to certificate checking.
+- 2019-05-09 3fb6db3e5 Uupdate for build with updated scintilla 4.1.4 and vs2017
+- 2019-05-07 3c5e03188 Update ukrainian.xml
+- 2019-04-17 4a9b693c9 Update czech translation to v7.6.6
+- 2019-04-14 97bae85cb Update Bulgarian localization
+- 2019-04-24 ace66fac7 Update chineseSimplified.xml
+- 2019-04-08 1bce41a69 Russian lang - revision and fixes
+- 2019-05-08 448144c22 Update french.xml
+- 2019-05-13 f07ae664b Revert "Allow undo after file reload and don't purge undo buffer"
+- 2019-04-27 2e25741a2 Fix all plugins being removed problem while Plugin Admin romoves an old plugin (of old system).
+- 2019-05-16 1cd454a8d Fix the regression: "Replace all" and "Mark all" work partially
+- 2019-05-16 4988ee3fd Fix file manager memory leak in case of out of disk space.
+- 2019-05-16 1a438ddc6 Fix some coding styles
+- 2019-05-19 6d365d89c One more country in which same-sex marriage is legal. Congrats Taiwan!
+- 2019-05-19 23dd65549 Notepad++ 7.7 release
+- 2019-05-23 c9e5b0b1e Add comment doc style to SQL lexer
+- 2019-05-23 133211051 Update AutoIt keywords
+- 2019-05-23 9a2dfeb26 Add literal string style to SQL lexer
+- 2019-05-24 492870be0 Use SCI_TARGETWHOLEDOCUMENT and SCI_COUNTCHARACTERS
+- 2019-05-25 6ae03f64e Add Python literal string interpolation
+- 2019-05-26 1a76bd591 解決『一個shortcut，各自表述』的困擾
+- 2019-05-28 e5de0c6d4 Set embedded ASP default language to VB
+- 2019-04-08 8a048b095 Enable Scintilla Virtual Space Option change from macro
+- 2019-05-27 43893e5a2 Add CMake new keywords.
+- 2019-05-16 44fdad944 Update romanian.xml for v7.6.6
+- 2019-05-11 4c27f55ac Add Tcl 8.6 keywords
+- 2019-04-18 3e993ff4c Adjusted a few Swedish shortcuts in the Find dialog to avoid clashes.
+- 2019-04-20 ff20c264d Fix crash while sorting lines with numbers longer than 20 digits
+- 2019-04-28 074a4bca9 Add "Copy File Name" command in context menu of "Folder as Workspace"
+- 2019-04-27 36230cb31 Fix Plugin Menu is not localized issue When no plugin installed
+- 2019-05-17 155c93d3b Fix "unhide lines" markers disappears issue
+- 2019-04-24 b1c57b183 Update marathi.xml
+- 2019-05-31 d14cb43e9 Remove VS2013 project file.
+- 2019-06-09 344850aed Fix assert in `AutoCompletion::isAllDigits` methode
+- 2019-06-11 cc2d246ae Fix Cyrillic, Turkish and other languages input issue in ANSI mode.
+- 2019-06-05 a86870d8a Update Bulgarian localization
+- 2019-04-27 ad72f7c36 Fix Reload dialog displaying issue during File Monitoring
+- 2019-06-12 1a97d3c85 Workarround to MS ReadDirectoryChanges bug
+- 2019-06-13 895c315df Fix drag and drop tab regression
+- 2019-06-16 04174b17a Restore conventional chameleon icon
+- 2019-06-20 4aec70273 Notepad++ 7.7.1 release
+- 2019-06-17 6d3606074 Fix tab dragging issues under WINE and ReactOS
+- 2019-06-10 fa254e579 Fix an issue in IDM_EDIT_CLEARREADONLY
+- 2019-04-20 690fd45f0 Fix splitter resizing issue
+- 2019-02-25 17628b7dd Fix Python folding collapse isuue
+- 2019-06-23 d1256c3c8 Fix indent indicators continue to following code blocks for Python
+- 2019-06-25 eef1bf0ae Fix x64 compiling issue
+- 2019-06-25 57a49c3ba Add the commandline argument to open folders in "folder as workspace" panel
+- 2019-06-13 9539a892e Code quality improvement: pass string by reference instead of value
+- 2019-06-25 3f114a557 Use only SC_IV_LOOKFORWARD for Python like folding.
+- 2019-06-25 105dcebb9 Improved isAllDigits algo
+- 2019-06-25 027a1dda7 Update CONTRIBUTING.md
+- 2019-06-25 34cd6db3b Update README.md
+- 2019-06-26 bfd8cd070 Initialize a member value correctly to prevent from crash
+- 2019-07-03 3f7956dc1 Add "No to All" and "Yes to All" options in Save dialog
+- 2019-07-03 d98ecfbb8 Fix a typo
+- 2019-07-02 8449d9f5e Add more OS information to debug info
+- 2019-07-02 6c034985a Fix crash when sorting out_of_range columns
+- 2019-06-14 31ae81328 Allow plugins to load private DLL files from the plugins folder
+- 2019-07-04 401dbbc7d Disable integrity checks in Debug
+- 2019-04-21 e9277deaa Localize "Restore recent close file" command
+- 2019-06-27 8b151ac99 Fix Sort Line as Integer regression
+- 2019-07-05 4ebcf6191 Enhance Save dialog GUI
+- 2019-07-06 6ddbca3a6 Make Save dialog not resizable
+- 2019-07-08 2d15d90e0 Fix local variable shadows outer variable issues
+- 2019-07-04 9acf6e302 Fix Document Peeker constantly changing focus
+- 2019-07-08 eed0c620b Update Bulgarian and add missing entry in english.xml
+- 2019-07-12 607999c8b Update French & Chinese localization
+- 2019-07-04 dc6bd2a8d Fix commandline parsing issue
+- 2018-04-04 6a30c31e0 Add 2 new columns for HTML Code in the Character Panel
+- 2019-07-18 d239c3d73 Make ASCII Codes Insertion panel's title shorter
+- 2019-07-18 6f3166c86 Improve GUI in Find dialog
+- 2019-07-19 0db7c75ff Merge branch 'find-dlg-enhance-GUI'
+- 2019-07-22 8fd691a3b Change shortcut for avoiding the clash
+- 2017-11-05 69da7a765 Make context menu key work in Project Panel
+- 2019-07-21 92bad0a60 Upgrade Scintilla from 4.1.4 to 4.2.0
+- 2019-07-22 4c7e18fd5 Fix PowerEditor compiling error
+- 2019-07-23 cfcca9f54 UI position tuning
+- 2019-07-23 21939308b Add NppExport 64 bits plugin in the distribution
+- 2019-07-25 4a80a125c Fix the crash due to NPPM_DESTROYSCINTILLAHANDLE message
+- 2019-04-27 418d03acf Add capabilty to translate file summary dialog info
+- 2019-07-27 e50236f55 Remove redundant information in File Summary dialog
+- 2019-06-27 dbc9d79df Small grammar correction
+- 2019-07-28 3cb9a594f Update README.md
+- 2019-07-04 3282e5f4a Fix french.xml
+- 2019-07-30 fb7785eea Disambiguate 5 entries regarding encoding
+- 2019-07-30 99c861077 Update italian.xml
+- 2019-07-31 ac1d9deed Update french.xml to 7.7.2
+- 2019-06-25 c37525cd9 Updated Zenburn theme to contain all the languages supported by 7.7
+- 2019-06-12 6adac5f4f Update Arabic language to v7.7.2
+- 2019-06-16 87602bcd9 Update russian.xml
+- 2019-06-17 9c2f89789 Update Japanese translation
+- 2019-06-22 e8ae016f3 Update dutch.xml to 7.7.2
+- 2019-06-28 580a1c406 Make a better translation for Chinese traditional.
+- 2019-07-21 4521194c7 Update Hindi localization
+- 2019-07-07 8bfa0671d Update corsican.xml for Notepad++ 7.7.1
+- 2019-07-18 34611c2eb Update Bulgarian localization
+- 2019-07-27 48ac04acc Add "hasOwnProperty" method to the JavaScript autocompletion
+- 2019-07-29 6c765044b Update czech.xml to v 7.7.2
+- 2019-07-08 e55b3501d Update Turkish localization
+- 2019-06-27 1ba68b044 Updated polish.xml
+- 2019-08-02 b61ad0c37 Update chineseSimplified.xml
+- 2019-08-02 9f1deb482 Update german.xml to V7.7.2
+- 2019-06-27 b3a6638b9 '-nosession' must not overwrite config.xml (Fix #3938)
+- 2019-08-02 61abf06bf Make 'Clear all marks' and 'Inverse Bookmark' macroable
+- 2017-12-14 a5ec6be8a Enhance COBOL language support - function list & auto-completion
+- 2017-09-15 d901c73f7 Add PL/SQL to FunctionList
+- 2017-09-14 053823e8c Fix check sign in Encoding menu not shown issue
+- 2017-06-06 dd401f137 Fix folding in user-defined languages for non-windows line endings
+- 2019-08-04 c35a2b570 Make Combobox font monospace in Find dialog
+- 2019-08-06 cd9f76129 Make backward-dir checkbox be shown on Find window's Mark tab
+- 2019-08-05 9d79d6c01 Fix "preventing Find All Curr Doc working in macro" issue
+- 2017-10-01 ab4cf8833 Fix Folder as Workspace crash and "queue overflow" issues
+- 2019-08-08 2a7a35a4a Make "Command Argument Help" MessageBox modal
+- 2019-08-08 0922512eb Make "Remove Consecutive Duplicate Lines" to be macro recordable
+- 2019-08-01 d269fda5b Add new entries and improve French translation
+- 2019-08-08 fc9dfc86f Make EncodingMapper singleton "new-less"
+- 2019-08-10 3dbb2c4b8 Make NppParameters singleton "new-less"
+- 2019-08-11 3643a1875 Make 2 singleton "new-less"
+- 2019-08-11 938dae9b2 Improve singleton
+- 2019-08-13 f80b0ed29 Add Npp Pugin List update capacity (in progress)
+- 2019-08-14 48f83a9d0 Code improvement for EncodingMapper
+- 2019-08-14 2c764d722 Code improvement for FileManager
+- 2019-08-14 bbc55d06f Code improvement for WcharMbcsConvertor
+- 2019-08-14 06db9ee33 Code improvement for NppParameters
+- 2019-08-14 67305b978 Remove unecessary qualification
+- 2019-08-16 77da70620 Code enhancement: remove goto label
+- 2019-08-17 66fc97730 Pass VS Toolset from v140_xp to v141
+- 2019-08-14 d38559b33 Code enhancement: add base class template qualifier
+- 2019-08-15 e74cb34e2 Code enhancement: remove use of deprecated function std::bind2nd
+- 2019-08-15 0bf3eea08 Code enhancement: add std qualificator
+- 2019-08-16 3a1244177 Code enhancement: Function arguments pass by reference
+- 2019-08-18 c34d3c9a4 Make standard conformance for C++
+- 2019-08-19 93a9962fd Code enhancement: Use C++11 =default & =delete for the constructor & destructor
+- 2019-08-12 f6d6e42ac Fix "clear all marks in find dialog also removes bookmarks" issue
+- 2019-08-12 132441867 Bookmark all lines of multiline match
+- 2019-06-20 025236be6 Enhance BaanC language support
+- 2019-08-04 b93347663 Update lisp API
+- 2017-11-18 0d87d37d3 Handle Ctrl+A keyboard shortcut in MD5/SHA256 Generators
+- 2019-08-22 ab46fe080 Code enhancement: remove duplicated code
+- 2019-08-19 e102ecb91 Fix find 2 occurrences in original/clonned doccuments issue
+- 2019-08-21 d5c0ef2c7 Increase Keyword Set for the adaptation of new updated Scintilla
+- 2019-08-25 ec5fa6d2c Remove ATL (part one)
+- 2019-08-25 3439071c3  Remove ATL (part two)
+- 2019-08-25 581aff630 Use standard C++11 mutex
+- 2019-08-28 8d082d3ee Fixed inverted words in brazilian_portuguese.xml
+- 2019-08-09 b6a5b69b0 Improve Italian translation
+- 2019-08-17 7e74162c8 Update Turkish Localization
+- 2019-08-09 5e2d06e47 Fix tag-names in slovenian.xml
+- 2019-08-04 5604833e5 Update Bulgarian localization
+- 2019-08-04 ae459831d Update german.xml - fix typo
+- 2019-08-02 34159ced7 Updated Hindi
+- 2019-08-29 797fdc340 Fix File-Rename failing when new name is on a different drive
+- 2019-09-15 53d2ca4dd Add a good geek joke
+- 2019-09-12 718fa641c Update danish.xml to 7.7.2
+- 2019-09-06 c92b3ca57 BaanC Add keyword lists and respective langs & styler xml tags
+- 2019-10-02 fcaef7376 Fix macro playback crash issue
+- 2019-10-02 7651d703a Fix include new release files problem
+- 2019-10-03 10f6ff6c1 Fix a crash (regression) due to "new-less" of NppParameters
+- 2019-10-05 5cf296ee1 Remove Author from About and add Online Document to menu
+- 2019-10-05 445dc5ebc Fix a memory leak for NppParameters
+- 2019-10-07 29919bea2 Fix indent guideline bug regarding Python-like languages and non-Python-likes ones
+- 2019-10-11 45d4c8d35 Notepad++ 7.8 release
+- 2019-10-13 a739eade8 Plugin list updater (in progress)
+- 2019-10-13 c16f7bbc1 Fix a regression regarding notepad replacement issue
+- 2019-10-16 bd95534ab Put an item of Preferences dlg in its right place.
+- 2019-10-17 dde38183d Make monospaced font in Find dialog optional
+- 2019-10-17 50a4fc8ad Fix localization in Preferences dialog
+- 2019-10-18 e5d83dbc0 Update some localization files
+- 2019-10-19 8e7830795 Fix initialization of _monospacedFontFinfDlg parameter
+- 2019-10-19 88a2f68f0 Fix typo
+- 2019-10-21 b96f91c39 Fix x64 installer option issue
+- 2019-10-21 e15bd1866 Update README.md
+- 2019-10-15 3b77016db Update English (hotkey menu)
+- 2019-10-23 461aabb6a Update some localization files
+- 2019-10-23 5f5e4efca Update README.md
+- 2019-10-23 42356e09a Update japanese.xml to v7.8.1
+- 2019-10-19 4337f6e7e Update dutch.xml to 7.8.1
+- 2019-10-22 26f797cd4 Updated Hindi language
+- 2019-10-20 0596e7ed6 Update Bulgarian localization
+- 2019-10-18 c423543aa Update russian.xml for v7.8
+- 2019-10-23 f05fedda7 Fix issue for Alt+Tab doesn't show Notepad++ (Windows 7)
+- 2019-10-20 4cd917d07 Update czech.xml translation to v7.8.1
+- 2019-10-05 8d251e053 Update italian.xml for version 7.8.1
+- 2019-10-02 415fe5ce4 Fix Portuguese localization
+- 2019-10-14 56599eeb7 Update brazilian_portuguese.xml to 7.8.1
+- 2019-10-27 a156bf105 Change the motivational quote of the installer to a better one
+- 2019-10-19 52bbd2fc9 Update german.xlm to V7.8.1
+- 2019-09-27 e6f9d31d2 Update ukrainian.xml
+- 2019-10-29 3ee5615c5 Notepad++ new release v7.8.1
+- 2019-11-01 721684972 Add 8 story
+- 2019-09-17 f477c095a Remove association check before enabling 'View Current File In' menu items
+- 2019-11-02 6a334b151 Update localization files
+- 2019-11-06 fce74dd89 Revert "Fix multi-line tab button stay pushed issue while swiching off."
+- 2019-11-01 1377cc6c0 Fix typo in spanish translation
+- 2019-11-06 cf7e373dc Add shortcuts to Save or not dialog
+- 2019-11-07 bbd5bae46 Update Korean
+- 2018-02-01 c741f83bd Update makefile for mingw gcc builds
+- 2019-11-07 604d65319 Merge branch 'master' of https://github.com/yunbj/notepad-plus-plus into yunbj-master
+- 2019-11-07 d5a72b647 Merge branch 'yunbj-master'
+- 2019-11-02 19517944f Update corsican.xml for Notepad++ 7.8.1
+- 2019-11-06 bdd9acb0f Make end-of-line conversion operations macroable
+- 2017-11-25 9bba1291d Update of cmake config to reflect the vs proj changes since the last update
+- 2019-11-12 f826c1180 Fix Notepad++ blocked in notification zone issue
+- 2019-11-09 485b5aa7c Add disable In-Selection when multiple selections active for Count, Replace-All and Mark-all commands
+- 2019-11-01 4d5c1b656 Improve 'Close all to the left' and 'Close all to the right' user experience
+- 2019-11-10 36c90c609 Fix XML syntax in korean.xml
+- 2019-11-09 3011612c7 Update chineseSimplified.xml
+- 2016-03-20 98f4b1503 Fix GCC compile errors under Linux due to case sensitivity in #include
+- 2019-03-28 5ac062e73 Update Verilog / SystemVerilog keywords
+- 2019-11-15 2b0f5dd6f Enhance "Close all but This" functionality
+- 2019-11-16 ebe0b1b18 Use "#pragma once" instead of "#ifndef"
+- 2019-11-16 30e545a5f Code enhancement: Make Globallock and GlobalUnlock symetric
+- 2019-11-16 4dc8717c4 Fix a typo in easter eggs
+- 2019-11-17 f8cf4f388 Update contribution rules.
+- 2019-11-18 b5322b104 Revert "Revert 'Fix multi-line tab button stay pushed issue while swiching off.'"
+- 2019-10-27 8e361c5dc Fix tab dragging issues
+- 2019-11-16 8cbf3c7e2 Update dutch.xml to 7.8.1
+- 2019-11-13 9e37a167f Make open Explorer with expeacted path in Folder as workspace
+- 2019-11-13 b694ff23b Fix issue of showing save dialog twice
+- 2019-04-05 de64bef97 Use https instead of http for shorcut www.php.net
+- 2019-11-10 2458812a4 Add a submenu item in Languages menu to open UDL folder
+- 2019-11-19 302b88e0e Isolate UDL language application menu from UDL actions
+- 2019-11-21 3220eaaa3 Refine "Open UDL folder" command & make it translatable
+- 2019-11-21 f780e22d6 Add shortcuts to Save dialog for translation files
+- 2019-11-20 dc48cee5f Add find in files filter excluding ability
+- 2019-11-21 90176b21a Make 'Clear all marks' respect 'In selection' choice
+- 2019-11-22 f44c35799 Add tooltip for filter usage in Find in Files dialog
+- 2019-11-25 c858a2ab5 Make 'Purge for each search' respect 'In selection' for 'Mark All' op
+- 2019-11-28 87aa81085 Update Japanese translations for v7.8.2
+- 2019-11-25 3baed7ffb Update brazilian_portuguese.xml
+- 2019-11-25 9d8abb7a0 Update danish translation to 7.8.1
+- 2019-11-21 e5e7b988e Update Bulgarian localization
+- 2019-11-25 68088e687 Update Korean translation
+- 2019-11-22 c67cacf68 Update Russian lang for 7.8.2
+- 2019-11-23 eab9aae72 Update german.xml
+- 2019-11-22 ee1a0b4a0 Update dutch.xml
+- 2019-11-22 c5eb6f757 Increased size the field for localizations.
+- 2019-11-18 6f56b4411 Add python keywords
+- 2019-11-19 f184de734 Update ukrainian.xml
+- 2019-11-19 339f451e1 Update belarusian.xml
+- 2019-12-03 17872080a Fix mistyped Item id in slovenian.xml
+- 2019-12-04 b3419ad00 Fix a typo
+- 2019-12-05 5a2147ef3 Notepad++ release 7.8.1
+- 2019-12-05 ec5b854bd Update dead Link.
+- 2019-12-08 ff8e42ca1 Update readme.txt
+- 2019-12-07 9729fa749 Fix "Close All Unchanged" for sub-view
+- 2019-12-11 1c4157109 Eliminate garbage displaying in Find-result fold margin
+- 2019-12-13 53452d96e Fix too small buffer issue during add text macro playback
+- 2019-12-12 bc2b5ac2c Add feature to select/show current file in Folder As Workspace
+- 2019-07-22 f02d16608 Enable two more SQL keyword list
+- 2019-12-14 62622afae Make MinGW gcc build work again
+- 2019-12-15 1929cce41 Fix auto-insert bug
+- 2019-08-06 4228c315f Make cmd cli ("Open Containing Folder in cmd") customizable
+- 2019-12-17 d5ec3a1c0 Update localization files
+- 2019-12-17 ef4425a47 Update Spanish translation
+- 2019-12-18 b41a480d6 Ask not what Notepad++ can do for you - ask what you can do for Notepad++
+- 2019-12-17 e0d995c1a Add "Fold All" toolbar command in Folder As Workspace
+- 2019-12-17 c8b70dacd Make for loop conform to C++11 style
+- 2019-12-18 998ad2aa8 Optimize the recursive folding in TreeView
+- 2019-12-18 fbde7d218 Add expand all capacity into TreeView class
+- 2019-12-18 703a49b32 Add the Expand All capacity into Folder as Workspace
+- 2019-12-20 b76bf9e4d Make doSaveOrNot dialog simpler when there's a single file to save
+- 2019-12-21 be6f797e6 Improve Json syntax highlighting
+- 2019-12-22 41ca5289b Improve langs.model.xml
+- 2019-12-23 934ded9ac Fix a minor cosmetic problem
+- 2019-12-25 c2f84b4cc Coding style improvement: better indentation in Notepad_plus.rc
+- 2019-12-25 7a1096de5 Make filling find field of Find dialog with selected word(s) optional
+- 2019-12-25 a1d048fdd Update localization files for a new option
+- 2019-12-27 14074e148 Disable file association settings when Notepad++'s no admin right
+- 2019-12-27 ab207db6f Update localization files
+- 2019-12-28 22ea82b80 Improve the format of CONTRIBUTING.md
+- 2019-12-28 b0c5de10f Fix API comment error
+- 2019-12-28 326733ec7 Reformat langs.model.xml & add "mk" as file ext of makefile
+- 2019-12-31 f51ae85d3 Prevent from setting Updater's Proxyas Notepad++ is not in Admin mode
+- 2019-12-31 cbd1e83c0 Update localization files
+- 2019-12-18 12bb0efc7 Fix incremental search bar option bug
+- 2018-11-01 9387dcdae Fix restoring line position issue while document is wrapped
+- 2020-01-06 563530379 Better comment
+- 2020-01-06 062ec3e72 Simplefy the commit 9387dcdaef19289af87f24639bf7336526d027f5
+- 2020-01-06 b338282f9 Add Visual Studio project file extension as xml file
+- 2019-12-21 4b587fe6c Update Bulgarian localization
+- 2020-01-06 c91b2a88a Update breton.xml to v7.8.3
+- 2020-01-02 005df921b Update czech.xml to v7.8.3
+- 2019-12-26 e345919f6 Update brazilian_portuguese.xml
+- 2019-12-03 6c591cb26 Add "Encoding > Character Set" localization items
+- 2019-12-03 02972ecbf Update dutch.xml to 7.8.3
+- 2019-12-14 6b6ce475d Update Turkish Localization
+- 2019-12-19 e2150e2f5 Update spanish.xml to v7.8.3
+- 2019-12-31 f2b4078e2 Update russian.xml to v7.8.3
+- 2019-12-31 4fb2cffa2 Update Japanese translation to v7.8.3
+- 2019-12-27 767fcb420 Update ukrainian.xml
+- 2020-01-08 78d0a4fee Update chineseSimplified.xml
+- 2020-01-06 6eeb755a7 Update italian.xml to v7.8.3
+- 2019-12-22 30bf62985 Add Venetian localization
+- 2019-12-05 1cb54aa4e Update corsican.xml
+- 2020-01-09 87d6cd1d0 Adapt VS2019
+- 2020-01-10 638ff65ba Reformat some codes
+- 2019-12-30 430efb374 Update german.xml to v7.8.3
+- 2019-12-07 ac2fb5c03 Update catalan.xml
+- 2019-12-30 0732fa8f7 Update korean
+- 2020-01-01 cce217acb Update polish.xml
+- 2020-01-05 222b30a69 Update polish.xml
+- 2019-12-28 2d35273f3 Update localization files (move Item 6115)
+- 2020-01-12 648889dcb Remove a warning of compiling
+- 2020-01-15 8fdfc4c2a Notepad++ release 7.8.3
+- 2020-01-20 5d1dcc125 Fix regression of double clicking a found in files result while Word-Wrap is on
+- 2020-01-24 87c4bb348 Update english_customizable.xml
+- 2020-01-22 21fba0f74 Update czech.xml translation
+- 2020-01-12 331d2f7d2 Update german.xml
+- 2020-01-11 3b0fcb96c Update polish.xml
+- 2020-01-13 d9dbe08ef Update Turkish localization
+- 2020-01-13 c8e51af30 Update brazilian_portuguese.xml
+- 2020-01-11 1c786b6cc Update Venetian translation 7.8.3
+- 2020-01-22 0db5b6d3d Fix HashFromDlg title bar localization issue
+- 2020-01-27 230cd415d Merge branch 'master' of https://github.com/notepad-plus-plus/notepad-plus-plus
+- 2020-01-28 6e6341cc6 Make some codes conform to the defined coding style
+- 2020-01-30 1eb5f4388 Notepad++ release 7.8.4
+- 2020-01-31 c2c94b985 Update Slovenian and Spanish localization files
+- 2020-01-31 5c069cfa2 Add Irish localization file
+- 2020-01-31 401360912 Update irish.xml
+- 2020-02-01 a6b02b580 Add a quote from Alexandria Ocasio-Cortez
+- 2020-02-03 9089b643f Update CONTRIBUTING.md
+- 2020-01-31 bfa9eb69a Hungarian translation update for 7.8.4
+- 2020-02-05 409336963 Add 2 entries in README.md
+- 2020-02-05 ca1ec9b50 Make README.md more readable
+- 2020-01-25 5512b90da Update Swedish localization
+- 2020-01-12 33a8fc86a Update korean
+- 2020-02-06 a674f96cf Update ISSUE_TEMPLATE.md
+- 2020-02-02 3491d3f3e Fix Venetian translation
+- 2020-02-05 fcf00c7f5 Fix broken link
+- 2020-01-28 4cc6215e6 Implement issue 905 to make Find window remember its position across runs
+- 2020-02-05 4eac7d8e9 Make Count command respect Backward-direction and Wrap-around options
+- 2020-02-14 f3261f862 Fix auto-updater disabling not working
+- 2020-02-15 1c55e0daa Fix loading localization file (-L) not working regression
+- 2020-02-15 d3cb2ceb3 Add external sound control capability for unsuccessful search bell
+- 2020-02-18 cfa3041c4 Enhancement of preventing from null pointer exception of localtime
+- 2020-02-17 7c40030a1 Fix an entry in german.xml
+- 2020-02-18 4d5abdf1c Make some Chinese translation more accurate
+- 2020-02-24 62efa463b Fix Notepad++ doesn't exit correctly while Windows 10 update restart
+- 2020-02-23 8de226dca Make view-in-browser commands macro recordable
+- 2020-02-25 e309ec23e Fix duplicate names in stylers.model.xml
+- 2020-02-22 66893f980 Fix "Monitoring" not detecting all file changes issue
+- 2020-02-26 40b49d0b6 Make better variable names & coding style
+- 2020-02-23 521ff8666 Remove unneeded IDC_FINDPREV and IDC_FINDNEXT from macros
+- 2020-02-27 e9b0cfedf Update Korean translation
+- 2020-02-23 b9af79f86 Add the document size column to the Windows Selection dialog
+- 2020-02-28 5f3457900 Enlarge 2 last columns in Windows Select dialog
+- 2020-03-01 eb6da8195 Fix new added size info translation issue in Windows dialog
+- 2020-03-03 f98667d5e Update Bulgarian localization
+- 2020-03-01 ae96df5f9 Update Venetian translation
+- 2020-03-01 b64587519 Update german.xml
+- 2020-03-04 5c7660b7b Fix inaccurate sorting result in Windows dialog
+- 2020-03-06 32fc08c7e Notepad++ 7.8.5 release
+- 2020-03-08 b5bd5bb02 Make Replace-in-Files confirmation dialog modal
+- 2020-03-10 c6fdb89f8 Add support of smart-indenting for Perl and Rust
+- 2020-03-10 2f9f395ef Fix Chinese translation order issue
+- 2020-03-17 3ca82bebf Make retro-compatible to 7.8.4 and older versions for recorded macro
+- 2020-03-20 d36ea6124 Editing tab closure activates MRU tab instead of rightmost tab, if MRU behaviour enabled
+- 2020-03-22 0c80bf8cb Apply the better style on previous commit
+- 2020-03-26 585cc27b1 Make TreeView sorting unrecursivable
+- 2020-03-24 13f0717a1 Improve compatibility for IDC_FINDNEXT and IDC_FINDPREV macros
+- 2020-03-27 cb8fd0c43 TreeView refactoring
+- 2020-03-28 3a8b744df Folder as Workspace: Add dynamical sorting feature
+- 2020-04-01 ae6765372 Change shortcut key of "Save All" to prevent from the duplication
+- 2020-04-01 fc371a1ff Remove invald shortcut in Find dialog
+- 2020-04-04 3de506bf4 Update copyright
+- 2020-04-08 a09c0a17d Fix folding state lost on the next starup issue
+- 2020-04-09 bf2cd8e05 Changes localization file name "chinese.xml" to "taiwaneseMandarin.xml"
+- 2020-04-04 cc2c9b774 Implement multi-line edge feature
+- 2020-04-13 5483ad13d Update Englsh, French and Taiwanese Mandarin localization
+- 2020-03-10 8862042bf Updated CSS Keywords
+- 2020-03-09 bbb579856 Add C language keywords
+- 2020-03-13 b693be75a Added powershell styles for Monokai theme
+- 2020-03-14 edfd1f687 Update chineseSimplified.xml
+- 2020-03-03 6ac1a24f2 Update venetian.xml
+- 2020-03-16 f1ebf8c40 Update russian.xml to v7.8.6
+- 2020-03-10 bc2afd8fc Update slovak.xml
+- 2020-03-07 f09a5fd0c Update dutch.xml to 7.8.6
+- 2020-03-06 ce964e555 Update japanese.xml to v7.8.6
+- 2020-03-06 4dbe7b78f Update Turkish localization
+- 2020-04-14 8a37faa70 Fix typos
+- 2020-04-16 905feb8dd Fix vertical edge mode problem
+- 2020-04-17 c3ec0cbf6 Make vertical edge (column marker) usage easier
+- 2020-04-17 ffda03c41 Update localization files
+- 2020-04-15 73f5492d0 Fix strncmp return type and first parameter
+- 2020-04-17 3474b8b11 Update localization for fixing the incorrect removal
+- 2020-04-17 40b866639 Update localization files
+- 2020-04-17 78d42fbd2 Update localization files
+- 2020-04-15 01d82bf57 Update Bulgarian localization
+- 2020-04-17 3a46a6c23 Change the icon in About box
+- 2020-04-18 126b55b06 Fix a minor bug for vertical edge
+- 2020-04-21 0323ed342 Revert "Change the icon in About box"
+- 2020-04-21 9ec6b58bd Notepad++ 7.8.6 release
+- 2020-04-28 66c882a6d Add 2 funny quotes
+- 2020-04-29 d05bf6384 Add Nepali localization
+- 2020-04-22 d20e11b93 Update langs.model.xml to support VHDL-2008
+- 2020-04-21 4be846e7e Fix bug of Mark clearing in selection mode
+- 2020-04-24 fbf6668a8 Fix Find/Replace history lost issue
+- 2020-04-23 924e4b23f Make ReplaceInFiles confirmation prompt translation capable
+- 2020-04-30 85c0b3d69 Update French & Taiwanese Mandarin translation
+- 2020-04-21 9f23e1aad Add count of files searched to 'Find result' output
+- 2020-05-05 2b345c8f3 Make Find result panel translatable
+- 2020-05-05 ef2b5880d Assign ctrlm as default shortcut for invoking mark dialog
+- 2020-05-06 f637901db Fix a typo error in english.xml
+- 2020-05-07 8a6000093 Add a security advice.
+- 2020-05-07 de6eb92c5 Found out the author of security advice of the previous commit
+- 2020-05-08 8917d42e6 Merge branch 'ctrlm_invokes_mark_dialog_6022' of https://github.com/sasumner/notepad-plus-plus into sasumner-ctrlm_invokes_mark_dialog_6022
+- 2020-05-08 80256710c Merge branch 'sasumner-ctrlm_invokes_mark_dialog_6022'
+- 2020-05-07 1c92779c2 Improve DebugInfo area of issue creation template
+- 2020-05-07 c80a5c13f Fix Doc switcher icon state update issue for cloned documents
+- 2020-05-10 ade01204c Fix minor coding error & remove unused variables
+- 2020-05-10 6b51bb464 Fix incorrect macro name
+- 2020-04-30 801a3f584 Update perl keywords & auto-completion API
+- 2020-05-11 076804794 Fix a typo
+- 2020-05-11 c4851a49a Fix a grammatical error
+- 2020-05-11 2b713fb75 Reword some labels in Find & Replace Dialog
+- 2020-05-12 5a951531a Disable RegExpr up direction search
+- 2020-05-04 bdb9b2842 Add new DansLeRuSH dark theme
+- 2020-05-14 920fc5c3d Add a new theme in installer
+- 2020-05-11 9f29015a7 Allow user to skip *.* when adding only excluding Filters for Find/Replace In Files
+- 2020-05-13 4738c9631 Fix clickable links break syntax highlighting issue
+- 2020-05-14 4003d6d92 Disallow backward regex searches due to sometimes surprising results
+- 2020-05-14 a42c1674e Fix file reading failure (network problem) not detected issue
+- 2020-05-15 08c11816c Fix Document Map shows on all virtual desktops issue
+- 2020-05-18 7bfaa042b Fix Document map overlay stuck to first monitor
+- 2020-05-19 80c8ee59c Fix current range of the Document Map sticking on mouse pointer after resizing Document Map window issue
+- 2020-05-19 fdcd11ccc Update CONTRIBUTING.md
+- 2020-05-20 e27d1a94c Prevent suggestion of autocompletion while word modifying
+- 2020-05-23 3a9a31afb Include current ANSI codepage into debug information
+- 2020-04-23 cf2175e47 Fix wrong project panel at start by openning a project via command line
+- 2020-05-20 bb6b24ce5 Improve Document Map precision
+- 2020-05-24 edd746d31 Improve save (new style) dialog by adding file extension automatically
+- 2020-05-26 93f785333 Update a checkbox label and its translations
+- 2020-05-26 b037bb5c9 Update Slovenian localization file
+- 2020-05-25 3f0627b75 Display file name as root of workspace instead of "Workspace"
+- 2020-05-26 e9e9e8daa Remove Irish translation due to its bad quality
+- 2020-05-26 aba75b564 Automatic file extensions for session/workspace while opening
+- 2020-04-19 51518aeca Update ukrainian.xml
+- 2020-05-12 64229ee00 Update russian.xml
+- 2020-05-15 4fbdaa256 Update Turkish Localization
+- 2020-05-03 f938bcbb4 Update dutch.xml to 7.8.7
+- 2020-04-30 e8873823e Update Bulgarian localization
+- 2020-04-23 dbf14b80a Update Czech translation to v7.8.6
+- 2020-05-28 23c5abc79 Update CONTRIBUTING.md
+- 2020-05-28 ac6841518 Fix a grammatical error
+- 2020-05-28 9f1455a5a Update slovak.xml
+- 2020-05-28 24252c02e Update Corsican translation for Notepad++ 7.8.7
+- 2020-05-26 7cf43795a Add right-click context menu to bookmark margin
+- 2020-05-01 9b36ba102 Update japanese.xml to v7.8.7
+- 2020-05-27 b73721f0b Add sub-menu bullets for cascaded Encoding and Language menus
+- 2020-05-28 f821f7311 Fix Document Map regression under Windows 7
+- 2020-04-14 a8bde7fda Update german.xml to 7.8.6
+- 2020-05-30 d4124108b Enhance Save file dialog
+- 2020-05-30 a49f02719 Mutual Recursion
+- 2020-05-31 fce153a5f Fix x86 build error
+- 2020-06-01 c891c593d Fix clickable link regression
+- 2020-06-01 20a20c41a Update BUILD.md
+- 2020-04-23 42c89df51 Update belarusian.xml
+- 2020-06-01 c1d7898c2 Update belarusian.xml
+- 2020-06-01 f22952488 Exclude a file from git tracking
+- 2020-06-03 fa51c2af6 Make URL hover foreground colour work again
+- 2020-06-03 69ef27b65 Improve new style save file dialog
+- 2020-06-02 aec68999b Update venetian.xml
+- 2020-06-02 a28dcb56e Update belarusian.xml (7.8.7)
+- 2020-06-03 18105aa88 Make cpp the first extension for C++
+- 2020-06-03 766a38032 Update polish.xml to 7.8.7
+- 2020-06-05 5e262c812 Add an non-UI option to allow regEx backward search
+- 2020-06-09 b9c526dfc Notepad++ 7.8.7 release
+- 2020-06-11 660284011 Fix block selection cursor position after TAB
+- 2020-06-11 97a6862d8 Remove outdated quotes
+- 2020-06-12 723a55588 Update Spanish localization
+- 2020-05-27 0a821b60e Add an option to improve rendering special Unicode characters
+- 2020-06-13 8bbe8c571 Update Slovenian localization
+- 2020-06-13 592acc3a6 Exclude PowerEditor/bin/themes/ for git
+- 2020-06-04 5e76ba238 Fix function list focus problem on double clicking
+- 2020-06-04 58ded005b Fix Folder As Workspace double clicking issue
+- 2020-06-04 87dc9cc5d Fix Load project file by dragging doesn't work
+- 2020-06-13 71b98a7a2 Add ability to find-all in selected text
+- 2020-06-06 fb5c30002 Add Ctrl+Backspace ability to delete word for comboboxes in Find dialog
+- 2020-06-12 f65761888 Fix URL underline always black, invisible in dark themes
+- 2020-06-17 abadbc6b2 Remove outdated comment
+- 2020-06-14 95c6d1ea1 Make regex zero-length-match calltip transatable
+- 2020-06-16 6f09695c2 Fix three small focus issues
+- 2020-06-19 f7efc2abc Fix the focus not on the opening new file issue
+- 2020-06-20 c5a0ed7c1 Fix accented characters not found in "find in files" issues
+- 2020-06-21 68d66a560 Fix compiling warning
+- 2020-06-19 19bdbd093 Add confirmation prompt to Replace-in-all-opened-docs command
+- 2020-06-19 d13795a37 Fix wrong treatment of backslashes as escape sequences in autocompletion
+- 2020-06-17 4e4e40c33 Allow scope of Remove Empty Lines to be limited by an active selection
+- 2020-06-23 c655a605a Update French and Taiwanese Mandarin localization files
+- 2020-06-23 07b2a11e0 Add a new translation unit
+- 2020-06-23 584b3fead Add "URL Hovered" style for themes
+- 2020-06-13 8e73a728b Update Bulgarian localization
+- 2020-06-08 1314af7d6 Fix  russian.xml for v7.8.7
+- 2020-06-28 26d360dd9 Notepad++ 7.8.8 release
+- 2020-06-29 331530305 Fix URL Hovered colour disappears after modifying any Clickable Link Settings regression
+- 2020-06-30 930873a95 Update Spanish localization
+- 2020-06-25 5e2e167d3 Fix Save function in Windows dialog
+- 2020-06-30 7bdb3706f Add "COMMENT LINE BANG" for VHDL
+- 2020-06-29 53b03cc5c Fix Find-result window output tab-width incoherent issue
+- 2020-06-25 267da64d3 Fix wrong horizontal scroll bar position after restoring Window position
+- 2020-06-23 5a2cabf14 Fix stream sort of selected text doing one too many lines
+- 2020-06-25 b935bc6bf Fix URL is not clickable in certain stuation while wrapped is enabled
+- 2020-07-01 4bf662d03 Fix condition where Split Lines does one too many lines
+- 2020-07-01 8b93240c5 Fix condition where Join Lines does one too many lines
+- 2020-07-03 d18faf13f Fix Found line may not be centered if word wrap is on
+- 2020-07-04 8920dc40b Fix Flickering cursor after double-clicking a found line
+- 2020-07-07 4b8d83a8f Fix the regression of jump line failure via command line (-n)
+- 2020-07-04 3961cbc2e Update venetian.xml to 7.8.8
+- 2020-06-28 c9c900db5 Update chineseSimplified.xml
+- 2020-06-24 b538db08a Update japanese.xml to v7.8.8
+- 2020-06-23 745d30030 Update german.xml to 7.8.7
+- 2020-06-10 e02a0c12b Update catalan.xml
+- 2020-06-07 8f1b4aa6c Update italian.xml 7.8.7
+- 2020-07-07 acb4e5ae1 Add ability to limit removal of consecutive duplicate lines to selected text
+- 2020-07-16 3b2d2bb30 Notepad++ v7.8.9 release
+- 2020-07-17 efd7b56af Make label length fit better on About box
+- 2020-07-18 b724a04ee Fix URL is opened inadvertently when clicking white space outside document
+- 2020-07-13 d42f13071 Do not modify doc if sort when doc is already sorted
+- 2020-07-09 202f6de4e Allow 'Remove Consecutive Duplicate Lines' command to be mapped via Shortcut Mapper
+- 2020-07-12 1182371e0 Allow user to start making a stream selection and then change to column block
+- 2020-07-15 7d289139e Add keyboard navigation ability to Column Editor
+- 2020-07-08 84ea510b6 Add 'Searching' subpage to Preferences for Find-Replace-Mark settings
+- 2020-07-30 c119dd41a Update French & Taiwanese Madarin translation for 84ea510b67dec193eee605a1cca723151ef80448
+- 2020-07-30 d55350b4b Fix mouse cursor flicker while hovering
+- 2020-07-27 5adb75dc8 Prevent redundant line-data copy when using Finder's rclick-Copy
+- 2020-07-29 64ba8d785 Add some c++20 keywords to language model.
+- 2020-08-05 a82819972 Fix "Close All BUT this" looses current document data issue
+- 2020-07-30 5ba7f9959 Add search scope to Find window status bar output
+- 2020-07-14 f1b059414 Add an option to prevent right-click from canceling selection
+- 2020-08-07 b8ee9fcc8 Add SQL keyword (ACTION)
+- 2020-08-07 1efac7dac Add a new easter egg
+- 2020-08-07 ca3d51472 Add ability to sort lines randomly
+- 2020-08-06 5271b88fc Fix sorting by column key using incorrect key values
+- 2020-08-09 1eb7d2bef Fix "Close all BUT this" regression
+- 2020-08-05 6e5a2d5be Fix URL detecting issue
+- 2020-08-09 f74e4ae15 Fix URLs not underlined immediately after copy/paste
+- 2020-06-19 a74877f26 Fix false hit result in Find-in-Finder
+- 2020-07-06 783798e1a Enable project panels toggle from menu
+- 2020-08-12 1581833f9 Fix a typo
+- 2020-07-31 33f042932 Make (Find) dlgAlwaysVisible a true Preference setting
+- 2020-08-06 e0f0dc14d Update post-search tracking column for future caret offline movement
+- 2020-07-27 7c28a120d Improve single-line indentation and dedentation functionality
+- 2020-08-07 3a2edb99c Add word-wrap option to find-results context menu
+- 2020-08-08 394f762d6 Add SCI_SETCARETLINEBACKALPHA to the list of macroable commands in isMacroable function
+- 2020-08-12 03eebf849 Add RTL capability to localized msgbox function
+- 2020-08-11 ddd2e5fd2 Improve some ambiguous commands naming in Shortcut Mapper
+- 2020-08-16 47bb08ee6 Add Irish localization
+- 2020-08-13 209ccb97e Add confirmation preference for Replace All in All Opened Documents operation
+- 2020-08-15 b072479bb Fix column key sort with col block starting in col1 bug
+- 2020-08-16 0fe971ca8 Add keyboard shortcuts for switching to panels
+- 2020-08-21 30d4516d2 Fix an empty hole in Preference dialog if there's no GUP.exe
+- 2020-08-15 84430809d Add back hovered blue underlined URLs
+- 2020-07-02 ffd6bb088 Add VHDL to functionList.xml
+- 2020-08-26 a1a8b1354 Add a new easter egg.
+- 2020-08-25 34357a46c Unit-tests for function-list
+- 2020-08-27 0488e92e9 Remove notepad++ statement to prohibit rewrapping practice from License
+- 2020-08-27 95a924f4f Make valid perl unit tests for function list
+- 2017-10-01 303874fee Fix Function list Python parser bad function name detection
+- 2020-08-28 fad747300 Update python unit-tests files
+- 2020-08-28 71b532710 Fix Python the variable "def" not working correctly in Function List
+- 2020-08-28 f9fa72b9d Fix unit tests problem for Python
+- 2020-08-29 38037035e Fix some Perl functions not being recognized in function list issue
+- 2020-08-29 f3370ad46 Make Notepad++ invisible on startup while printing and unit-testing
+- 2018-12-29 e72d4855d Update functionList.xml C++ parser
+- 2020-08-31 56e429050 Add the ability to have more than 1 unit-test per language
+- 2020-09-01 509c46b8f Make expected result corrected for C++ parser unit test
+- 2020-05-13 230c7ef23 Add "nameof" reserved word of C# in auto-completion
+- 2020-08-16 7c7dcd8fc Fix an issue in Window dialog
+- 2020-08-18 00d75495c Disable ClearAll in FindAllInTheseFoundResults context menu
+- 2020-08-23 d9959c1a7 Enhance side panels behaviour: close a single panel instead of the entire stack
+- 2020-09-04 e44ed3143 Add the ability to open the target file of a Shortcut (.lnk)
+- 2020-08-28 3fd3e85a5 Enable and disable controls correctly for reg exp search mode in find-in-finder
+- 2020-08-29 4ca25503b Enhance info provided in Sel portion of main status bar
+- 2020-09-01 5bcbd9e5a Add Escape keypress in functionlist searchbox clears its text
+- 2020-08-22 8f3d7c102 Disable controls on unshown tabs of Find dialog
+- 2020-09-06 399452167 Revert "Enhance info provided in Sel portion of main status bar"
+- 2020-08-26 648e6eb89 Integrate unit-tests for function list into appveyor CI
+- 2020-08-26 a19dc7752 Fix hovered indicators issue in Scintilla
+- 2020-07-31 281352b75 Update german.xml to 7.8.9
+- 2020-07-30 56c218eb4 Update Bulgarian localization
+- 2020-07-20 8a4f646d2 Update Turkish localization
+- 2020-07-08 02658f1ab Update Corsican translation for Notepad++ 7.8.8
+- 2020-07-31 058f7ca7d Update japanese.xml to v7.8.9
+- 2020-07-11 d42e3c7dd Update polish.xml to 7.8.9
+- 2020-09-09 55d671719 Fix a shortcut causing a bug in Column editor dialog
+- 2020-09-09 423bfcf28 Fix miss-placed Alt-F shortcut for Polish & German
+- 2020-07-09 0432e1d15 Update italian.xml
+- 2020-08-02 87467d41f Update russian.xml to v7.9.0
+- 2020-09-09 cc75e6b95 Fix a typo
+- 2020-08-26 736bf89f5 Update chineseSimplified.xml
+- 2020-07-31 8bfe6c2d5 Update slovak.xml
+- 2020-09-06 97f5cb364 Update Venetian.xml to 7.8.10
+- 2020-09-09 6d939d3e7 Add some languages for -L flag of command line
+- 2020-08-05 f853d306e Update korean 7.9
+- 2020-09-09 2f3594da2 Update czech.xml to v7.8.9
+- 2020-09-09 ee3555b96 Update german.xml to v7.9
+- 2020-09-10 009563f52 Update 2 localization files
+- 2020-09-11 c607e427f Fix auto scroll to last line after update not working
+- 2020-09-12 c5e594e3e Fix Monitoring not scrolling to the last line with word wrap enabled
+- 2020-09-12 00841d5a2 Fix build warning issue by using v140_xp
+- 2020-09-14 fe18e41d5 Fix inaccurate line margin update with word wrap enabled
+- 2020-09-14 8e73f5d11 Simplify the logic and improve the performance
+- 2020-09-14 d82aba7b0 Improve the computing of number of digit in line number margin display
+- 2020-09-06 93ae69e92 Scroll visible area horizontally so a FindNext match is fully viewable
+- 2020-09-17 f3fce2de4 Fix Escape key on FunctionList's text field causing bell sound
+- 2020-09-19 a2264e5b3 Restore Folder as Workspace's latest selected item of last session on start up
+- 2020-09-20 95dec01e2 Fix 2 typos in all stylers files
+- 2020-09-23 e4d45436b Change the comment symbol of properties file to the standard one
+- 2020-09-23 85914b3c6 Change the package name for the future releases
+- 2020-09-24 a66e8a264 Fix release binary name format
+- 2020-09-28 30ab54719 Notepad++ v7.9 release
+- 2020-09-24 b0b119411 Add ^data- to langs.model.xml to support data-prefixed attributes in HTML
+- 2020-09-22 320aca73b Add "Open Containing Folder as Workspace" command
+- 2020-09-24 174ae29f1 Add ESC keystroke shortcut to close Search Results Window
+- 2020-09-28 2f90a0de1 Update Slovenian localization file
+- 2020-09-22 1a37b64fe Avoid unnecessary notifications
+- 2020-09-18 61bf9bd3c Add case insensitive lines sorting
+- 2020-09-16 98c499017 Add new VHDL-2019 keywords into langs.model.xml
+- 2020-09-16 861f863ef Fix closing file in 2nd view not removed from Doc Switcher
+- 2020-09-19 de202d9a1 Add C# 9.0 keywords for auto-completion
+- 2020-09-23 aaa93025f Add ESC key in Function List to switch to edit window
+- 2020-09-29 79a4183ea Update Slovak translation
+- 2020-09-29 aabba6845 Update Slovak translation
+- 2020-09-19 79cf60f49 Add alternative icon set for tab bar
+- 2020-09-30 285172e36 Make alternate icons of Tab bar changing dynamically
+- 2020-09-30 bb175082d Fix the build error
+- 2020-09-30 522b0b6b4 Update Slovak translation
+- 2020-09-30 8516c7b48 Update Spanish localization file
+- 2020-09-29 80d98f05b Add tab stops in Function List
+- 2020-09-30 8c1e15377 Add missing SCI_VCHOMExxx to Shortcut Mapper
+- 2020-10-01 fc470152e Remove TreeView Beep when pressing return key
+- 2020-10-02 c94f84000 Remove beep while ESC & TAB keystroke in Function list
+- 2020-09-26 139e4d492 Fix smart-highlighting not applying to cloned view
+- 2020-09-19 5da0817ec Allow setting of background color for bookmark margin
+- 2020-09-17 9ab554a12 Add ability to copy marked text to the clipboard
+- 2020-09-27 a08784fa4 Fix bug with smart highlight of data and end-of-file
+- 2020-10-03 1c9c4afe5 Update Slovak translation
+- 2020-09-27 5e632dfbe Fix find-all-open-docs not finding all matches in ANSI files
+- 2020-10-03 5aab1ddbf Make tray icon work again in administrator mode
+- 2020-09-29 401bfcb0c Add new URL parser to replace inaccurate regex detection
+- 2020-10-03 c306555db Fix file path truncated issue in save confirmation dialog
+- 2020-10-04 bbde64c30 Add preference for save type of normal text files
+- 2020-10-05 dedaac8a2 Update Slovak translation
+- 2020-09-09 8426c9ccd Enhance Sel info provided in main status bar
+- 2020-10-05 a10315177 Fix NUL file-corruption bug after Windows shutdown brutally
+- 2020-10-11 9d5b4182a Update Slovak translation
+- 2020-10-09 e2a650ec1 Fix blue link-type number input boxes cut off issue
+- 2020-10-07 9151d0a7d Add "KEY" for ini and properties files in stylers.model.xml
+- 2020-10-12 2770539de Restore complex variables in strings for PHP
+- 2020-10-08 ae2479efd Add Delete key to remove selected root from Folder as Workspace
+- 2020-10-14 469fa62c0 Improve FileManager::saveBuffer()
+- 2020-10-12 e32462188 URL parser improvements
+- 2020-10-06 013305f30 Add copy styled text to clipboard commands to menu
+- 2020-10-16 9eecb1da1 Remove an obsolete command and its translation
+- 2020-10-17 814ecd20d Add some explanations for showing the messages in english.xml
+- 2020-10-17 edea32333 Update Slovak translation
+- 2020-10-15 ecab99b60 Fix double clicking on find result line not working
+- 2020-10-12 fa0ded9fe Widen length/lines part of status bar
+- 2020-10-20 875a397c1 Add Hong Kong Cantonese localization
+- 2020-10-21 8c219896c Add Hongkonger localization into installer
+- 2020-10-18 785c68eea Add clean note to scintilla build instructions
+- 2020-10-21 29daee800 Update BUILD.md
+- 2020-10-19 0a2093933 Fix URLs losing the underlines occasionally issue
+- 2020-10-21 c2ebb1459 Fix missing quotation mark
+- 2020-10-11 c0c070aba Split functionList.xml into multifile in "functionList" Folder
+- 2020-10-18 4830b770d Increase untruncated Find-result window line length to 2048
+- 2020-10-05 41d619d9b Fix Floating dockable panels don't minimize to system tray issue
+- 2020-10-22 71ae2cfce Fix dialogs remain issue after minimizing to systemtray
+- 2020-10-22 62b8d0fc8 Fix build warning error
+- 2020-10-22 6db7b94df Fix a regression: not exit after saving a modified file
+- 2020-10-18 77d460696 Add ability to remove any duplicate lines in a document, keeping the first occurrence
+- 2020-10-23 dcc7ac551 Update 3 localization files
+- 2020-10-23 073f0bc8c Enable auto-Indent for PowerShell
+- 2020-10-08 a9783b741 Update japanese.xml to v7.9.1
+- 2020-10-03 b93f49a67 Update Bulgarian localization
+- 2020-10-24 9bf08ce30 Update Slovak translation
+- 2020-10-25 c2159afa9 Update markdown UDL XML file
+- 2020-10-24 e97ee70c0 Remove old markdown UDL
+- 2020-10-16 bd3e8214b Update german.xml to v7.9.1
+- 2020-10-24 b1880cde6 Update polish.xml to 7.9.1
+- 2020-10-13 620ee0f29 Update Turkish Localization
+- 2020-10-07 84b81f398 Update czech.xml to v7.9.1
+- 2020-10-05 b01e3071f Update russian.xml to  v7.9.1
+- 2020-09-30 4b738ba91 Update italian.xml
+- 2020-09-30 027ccfd8b Update venetian.xml
+- 2020-10-24 63e10f116 Merge branch 'patch-5' of https://github.com/kubalav/notepad-plus-plus into kubalav-patch-5
+- 2020-10-24 9a6ce288e Merge branch 'kubalav-patch-5'
+- 2020-09-17 d62221fd7 Update Corsican translation for Notepad++ 7.9.1
+- 2020-10-14 08190bbe9 Fix RegEx look behind operations and \A and and \b and \z
+- 2020-09-03 210ae7e1d Fix Find-result rclick-Copy incomplete data bug
+- 2020-10-25 9cd6e6513 Test tool to verify URL parser
+- 2020-10-22 a2233b105 Fix incorrect icon for monitoring status in Document list panel and in Document switcher
+- 2020-10-06 0689a9445 Fix user set SCI_SETYCARETPOLICY erase by find result
+- 2020-10-27 3c9d58176 Fix the regression of mark margin colour for dark theme
+- 2020-10-28 21e66936e Update Uzbek localization
+- 2020-09-29 5d6e5c6e9 Update Danish translation to 7.9.1
+- 2020-10-07 3c68f0ae2 Update ukrainian.xml
+- 2020-10-29 13d2fdadb Add "Bookmark margin" into GlobalStyles for all themes
+- 2020-10-29 2ff50ec9b Update themes to v7.9.1
+- 2020-10-29 7bcb34b84 Add some missing items to Visual Studio project
+- 2020-10-29 91e359483 Remove some unused files from project
+- 2020-10-31 5965b3d35 Project structure improvement:  Move TreeView files in the right place
+- 2020-11-02 c189cc757 Notepad++ v7.9.1 release
+- 2020-10-21 c28116a04 Add color samples on menu items for styling features
+- 2020-10-31 47419910f Fix crash while exit command issued by plugin
+- 2020-11-01 2aac88e3b Improve URL parser: fix apostrophe in an URL issue
+- 2020-11-02 cfe3f3b64 Make "Clipboard History" and "Character Panel" togglable
+- 2020-11-03 6284680e3 Update Spanish localization to v7.9.1
+- 2020-10-27 2e3952578 Fix tab close button remain pushed issue
+- 2020-10-26 f5dcfc196 Make UI text consistent regarding search results
+- 2020-11-04 820708411 Fix several bugs of PHP parser rule for function list
+- 2020-11-05 8640fd669 Move 'Normal Text' to top in Languages Menu
+- 2020-11-05 3657df7eb Fix a wrong translation
+- 2020-11-03 776fa414b Update spanish.xml
+- 2020-11-06 f91246e31 Fix regression of auto-Indent
+- 2020-11-06 d80816f93 Fix bug where search-results won't open 'new 1' file
+- 2020-11-08 d17c30366 Fix "SCI_NEWLINE" inside a macro not working issue
+- 2020-11-07 1961f708c Add ellipsis to Rename and Print on tab bar context menu
+- 2020-11-09 7399257f5 Fix docked panels appear with "-nosession" cmd line parameters
+- 2020-11-09 79d7521f0 Add -L argument for hongKongCantonese.xml
+- 2020-11-10 070630a24 Add tooltips for Folderas Workspace 3 commands
+- 2020-11-10 5813e4d8e Clean up
+- 2020-11-11 bbeb66aa5 Fix crash issue while passing argument "-export=functionList"
+- 2020-11-11 c58f3f7cb Fix an exception with -export=functionList while absence of config.xml
+- 2020-11-11 0405e230e Remove redundant unitTestLauncher.ps1 command
+- 2020-11-08 f75f8b8d4 Prevent names of untitled tabs from duplication
+- 2020-11-09 f027e9271 Disallow Goto dlg offset option from moving to position inside multibyte char or between CR and LF
+- 2020-11-12 b54b8ee54 Improve indent guidelines on non-brace control block languages
+- 2020-11-12 26428bd2b Prevent corruption possibility when using -p command line parameter
+- 2020-11-14 daa31c1a9 Fix "Go to..." dialog wrong Offset value in empty files
+- 2020-11-14 9f8932b37 Add "Copy selected text" and rename "Copy" cmd in Search Results Pane
+- 2020-11-14 bfa44f5db Fix bug where -p0 cmd line arg causes wrong positioning
+- 2020-11-15 f304a239c Publish MinGW Build Instructions
+- 2020-11-15 94673532c Use right terminology
+- 2020-11-15 b7d148f49 Fix Find in found results dialog launch failure after macro execution
+- 2020-11-14 d155f0326 Add context menu with "Copy link" ability
+- 2020-11-17 1d75c0630 Update localization files
+- 2020-11-19 7874f8dab Add new API NPPM_GETSETTINGSONCLOUDPATH for plugins
+- 2020-11-19 cabf72677 Fix single-quoted string being badly recongnized as attribute value in XML
+- 2020-11-20 a7f866b89 Update English file with missing strings
+- 2020-11-19 a7f8056c2 Fix Wrap Around shortcut in Korean.xml
+- 2020-11-22 5168bdb7c Allow custom URL schemes
+- 2020-11-22 4b2997116 Add GUI in preferences dialog for adding URI customized schemes
+- 2020-11-27 814e6591b Fix function list is empty with new user profile issue
+- 2020-11-25 ecf44bd08 Folder as Workspace: Change folder images after "Expand/Collapse All"
+- 2020-11-22 876a0c4c5 Update the build instructions
+- 2020-11-28 b2387286b Fix find in files failure issue due to directory path with leading/trailing spaces
+- 2020-12-02 053266c70 Create new Margin/Border/Edge sub-page in Preferences
+- 2020-12-03 fefdbc9ca Fix command line arguments -p, -n & -c negative value's undefined behaviour
+- 2020-12-06 c9c2d1e37 Add an option for displying constant line number width
+- 2020-12-07 59a0c7c3d Fix menu check marks not being removed after closing the panels
+- 2020-12-08 a0221c483 Update taiwaneseMandarin.xml
+- 2020-12-08 e3455a0f7 Make "Line" preceding each line number on Search Results translatable
+- 2020-12-09 2f6454a08 Fix Search result line number highlighting inaccurate issue
+- 2020-12-09 6c3ecacdb Enhance localization of "Line" of Search result
+- 2020-12-10 4768fec82 Remove obsolete code
+- 2020-12-11 db4a6f5ec Fix dockable panels display issue in RTL direction
+- 2020-12-12 edaa67db2 Make the text direction of search result window follow the direction of main edit zone
+- 2020-12-12 5e96dd016 Make the text direction of finder's search result follow the main edit zone's one
+- 2020-12-13 241393407 Fix Search result's text direction not always synchronized with main edit zone's one issue
+- 2020-12-14 bf62bda85 Fix a typo
+- 2020-12-15 21e923920 Make find in finder result's text direction follows the search results' one
+- 2020-12-13 a0ffb6b6f Fix Plugin admin display UTF-8 issue in its description
+- 2020-12-15 5e0e7a7f7 Update nlohmann's json.hpp from v2.2.1 to v3.9.1
+- 2020-12-14 7aafa2e8f Fix scroll to last line problem after main window resize
+- 2020-12-10 435834651 Add the number of total documents on windows dialog's title bar
+- 2020-12-16 0546f75a7 Make "total documents number" feature in Window dialog translatable
+- 2020-12-15 8f38707d3 Improve text selection after Replace All In Selection operation
+- 2020-12-21 b6a66ba2b Add "-settingsDir" argument for overriding default settings path
+- 2020-12-21 f61732500 Enhance ghost typing command line argument feature
+- 2020-11-20 10b5302fc Update Corsican translation for Notepad++ 7.9.2
+- 2020-11-18 62e131105 Update russian.xml to v7.9.2
+- 2020-11-06 141e893af Update Turkish localization
+- 2020-11-06 7408f3436 update japanese.xml to v7.9.2
+- 2020-11-08 34c54c944 Update Slovak translation
+- 2020-11-23 2c872b0fa Update korean.xml (7.9.2)
+- 2020-12-22 8cd4d9d06 Update polish.xml
+- 2020-11-13 18f482619 Update Bulgarian localization
+- 2020-11-07 f77b03f82 New Update for german.xml v7.9.1
+- 2020-12-22 528712f05 Update chineseSimplified.xml
+- 2020-12-12 916bbfc7f Update venetian.xml
+- 2020-11-05 1a9c28dac Update ukrainian.xml
+- 2020-12-27 413762c39 Add "Toggle" for Character Panel & History Clipboard in Shortcut mapper
+- 2020-12-31 9c8497a99 Fix regression of URL double click issue
+- 2020-12-31 0472052f8 Make installer override all the function list files on the installation
+- 2020-12-31 a68805b7f Make user defined overrideMap.xml not overridable during installation
+- 2021-01-01 0762af5ce Notepad++ 7.9.2 release
+- 2021-01-01 3373756af Fix a regression in Chinese Simplified localization
+- 2021-01-02 edfd2b8a9 Fix the regression of copying line data from search results
+- 2021-01-02 aca736b76 Fix logic bug in NPPM_SETLINENUMBERWIDTHMODE
+- 2021-01-02 d17fa02a6 Check XML validation in Notepad++ build system
+- 2021-01-03 e24ad94dd Move script validator_xml.py to "Test" folder
+- 2021-01-04 52e8c68f9 Change XML encoding from Windows-1252 to UTF-8 (config.xml and others)
+- 2021-01-04 cb3d32866 Fix invalid UTF-8 XML files
+- 2021-01-04 9f635b22a Fix invalid XML file
+- 2021-01-05 d6c941034 Make find/replace in files progress translatable
+- 2020-12-31 b9f498f04 Add "save Folder as Workspace in session" option in save session dialog
+- 2020-12-31 d5ad02521 Improve option for setting save dialog filter to All Types
+- 2021-01-10 38f6319f4 Fix "Print Line Number" preference is ignored for printing regression
+- 2021-01-09 b58a5cc22 Use the mordern browse folder dialog to get folder path
+- 2021-01-10 a55d46d17 Fix incompatible plugin not being deleted issue
+- 2021-01-11 e26199ab5 Make 1 section name of Preferences more explicit.
+- 2021-01-10 1364b199b Improve high-dpi display
+- 2021-01-11 41c4180b2 Make "Save Folder as Workspace" in Save Session dialog translatable
+- 2021-01-15 67234d226 Fix dockable panels 0 width/height in multi-instance mode regression
+- 2021-01-16 477dd1dbb Update contribution rules related to PR
+- 2021-01-17 a2ee3e625 Fix a memory leak issue in NppParameters::writeSession
+- 2021-01-13 5003a4530 Make split-lines work with multi-edge rightmost specified edge
+- 2021-01-11 b5ec511c3 Add ability to delete from Find combobox history
+- 2021-01-19 45912a332 Drop Windows XP support for IFileDialogCustomize
+- 2021-01-19 051b17ca4 Enhance copy/move file Win32API functions to avoid system cach
+- 2021-01-20 3bf17ec69 Fix build error in MinGW
+- 2021-01-19 ce0012ab5 Fix possible empty snapshot session on Windows reboot/shutdown
+- 2021-01-21 0004981ff Improve size calculation of value dialog
+- 2021-01-22 ca1bcb1ec Drop XP in installer
+- 2021-01-21 fed1803c7 Fix Switch-To keyboard shortcuts cannot be used in context menu
+- 2021-01-23 ab5c1d3e2 Upgrade Notepad++ License
+- 2021-01-17 e7079d57c Enhance FileDialog for allowing UNIX stile file path
+- 2021-01-26 aca37f150 Remove localization of "Use new style dialog" with id="6430"
+- 2021-01-23 7d105cb74 Add guidelines for supporting legacy systems
+- 2021-01-26 3cf65ade8 Fix typo in ScitillaComponent directory name
+- 2021-01-26 9ca3c6935 Update .gitignore with MinGW build outputs
+- 2021-01-27 adce1a8ea Update localization files to v7.9.3
+- 2021-01-27 ec465516b Update polish.xml to v7.9.3
+- 2021-01-19 d773f4bb0 Update Corsican translation for Notepad++ 7.9.3
+- 2021-01-17 27b68e06c Update localization: Hong Kong Cantonese
+- 2021-01-07 1916fba77 Update Bulgarian localization
+- 2021-01-04 34e73c3f5 Update german.xml v7.9.2
+- 2021-01-28 5872d779d Update russian.xml to 7.9.3
+- 2021-01-28 e2d6cb235 Update Slovak translation to 7.9.3
+- 2021-01-09 ad3a86d60 Update japanese.xml to v7.9.3
+- 2021-01-14 a838607e2 Update czech.xml to v7.9.3
+- 2020-12-23 8e19014df Update venetian.xml
+- 2020-12-28 5a7755363 Update ukrainian.xml
+- 2021-01-28 c677b15d8 Update dutch.xml
+- 2021-01-28 5a45674c3 Fix miss-treating browsing folder as saving file issue in FileDialog
+- 2021-01-30 821e3edfb Update italian.xml v7.9.3
+- 2021-02-05 541b4d1c7 Add new localization file abkhazian.xml
+- 2021-02-06 a4d7f7701 Fix regression of installer which cannot be launched
+- 2021-02-07 5155dfed9 Synchronize GUP localization file with Notepad++ in installer
+- 2021-02-07 3419a749d Change Notepad++ binary description
+- 2021-02-10 4b30d1b78 Fix typo in French localization file
+- 2021-02-10 949a777ee Fix the issue that zip/7z packages contain still GPL v2
+- 2021-02-15 994b10c18 Notepad++ 7.9.3 release
+- 2021-02-15 16c819891 Update Slovenian localization to v7.9.3
+- 2021-02-16 f576559ea Add some spiritual quotes
+- 2021-02-12 69e6eb26a Make JSON auto-indent for brace
+- 2021-02-12 ea33a0cb7 Add JSON syntax highlightning to the Obsidian theme
+- 2021-02-14 6e43ba6ea Add an option to mute all sounds in preferences dialog
+- 2021-02-07 35584b379 Make tab splitter menu and incremental search translatable
+- 2021-02-20 1eaaf45d8 Add needed space in "Window dialog"
+- 2021-02-20 dbac42edd Use unary operator '!' instead of "not"
+- 2021-02-20 41cfc7e1d Improve contributing guidelines by excluding not, and, or.
+- 2021-02-21 d7819cf60 Upgrade Scintilla from v4.2.0 to v4.4.6
+- 2021-02-10 75bcb7c53 Fix file not turning dirty (with Session Manager plugin) issue
+- 2021-02-16 f96d81af1 Fix extension appending issue in file dialog
+- 2021-02-20 26dad277c Fix shortcut name more than 64 characters makes an empty name issue
+- 2021-02-21 064d844a4 Fix handling of network path (UNC path) in CustomFileDialog
+- 2021-02-23 91a570a30 Fix folder picker not displying as the given directory is invalid issue
+- 2021-02-24 d6c6a49d1 Include Boost in appveyor build
+- 2021-02-27 10b091b54 Use the generated SciLexer.dll which contains regExpr of Boost
+- 2021-02-18 5c884a80c Add "Find in Projects" features
+- 2021-03-03 4b0010c4c Fix regression in "Find Result" field due to Scintilla upgrade
+- 2021-02-17 47ca5281f Revert "Improve high-dpi display"
+- 2021-03-05 22e87184a Update CONTRIBUTING.md
+- 2021-03-06 a044cefe7 Fix Project workspace changes lost on save cancel
+- 2021-03-07 68c537f69 Fix Find in Projects replace confirmation message localization problem
+- 2021-03-07 2e7c5e3e8 Update localization files
+- 2021-03-07 b4d8b1d5b Update Venetian.xml v7.9.4
+- 2021-03-07 03332eca8 Update polish.xml to 7.9.4
+- 2021-02-25 e1df2ed03 Update russian.xml to v7.9.4
+- 2021-02-24 663b6471d Update Corsican translation for Notepad++ 7.9.4
+- 2021-02-19 cc17f69a3 Update dutch.xml
+- 2021-02-17 c6088dbcd Update Turkish localization
+- 2021-03-06 63760073e Update Czech translation to v7.9.4
+- 2021-03-08 e27c125ef update italian.xml to v7.9.4
+- 2021-02-27 7c73faba5 Fix a interface error(missed a "$" symbol) in Chinese localization
+- 2021-02-22 1f2c63cce Update japanese.xml to v7.9.4
+- 2021-03-07 4f6459776 Fix wrong translation ID in 2 localization files
+- 2021-03-09 ed347fae9 Update chineseSimplified.xml
+- 2021-02-28 1ef9b9458 Update german.xml
+- 2021-02-20 3a4d1acad Update Bulgarian localization
+- 2021-03-10 c0760e49c Update nppGpgPub.asc
+- 2021-03-10 8c6dc79df Update README.md
+- 2021-03-14 aaab4607c Fix Find button not enabled in Find in Files section regression
+- 2021-03-09 b1ba14b92 Update localization: Hong Kong Cantonese
+- 2021-03-15 58f0a6177 Notepad++ 7.9.4 release
+- 2021-03-18 f44e6c4c0 Fix SaveAsAdmin plugin incompatibility with Notepad++ 7.9.3 issue
+- 2021-03-16 cd738bcff Fix UNC path with quotes handling in folder & file Open/Save dialog
+- 2021-03-09 3d6bb7ae0 Fix some inaccurate translation in kazakh.xml
+- 2021-03-09 39b760410 Update german.xml
+- 2021-03-10 9c471cd0a Reorder translation item nodes in Italian.xml
+- 2021-03-18 805ff42cd Update slovenian.xml
+- 2021-03-19 ad3a6ea2f Fix file doesn't save as extension type on Windows 7
+- 2021-03-21 aa22ee21c Add a new quote
+- 2021-03-22 633dcbad5 Fix installer error if problematic plugin is absent
+- 2021-03-22 4399c1343 Notepad++ 7.9.5 release
+- 2021-03-23 0c0a5d209 Add 2 new easter eggs for the upcoming Easter Sunday
+- 2021-03-23 854f49c61 Fix typo: FINFER -> FINDER
+- 2021-02-23 926e6e97d Catch regex search exceptions and show exception message
+- 2021-03-25 488ea5799 Update CONTRIBUTING.md
+- 2021-03-12 6bfe9d289 Widen Default Language control in Preferences for New Document
+- 2021-03-20 f308539ab SaveAs moves original path to recent files history
+- 2021-03-06 dc106a4c9 Add Cloud Config and Command Line Arguments to Debug Info
+- 2021-03-03 38bf76e84 Fix UTF-16 decoding/encoding for code points above U+FFFF
+- 2021-03-26 6834d796a Replaced UCS-2 by UTF-16, removed unused UniConversion.*
+- 2021-03-19 da61b1d94 Add an option in installer to install COBOL autocomplete
+- 2021-03-13 874f0d014 Add ability to avoid accumulating multiple search results
+- 2021-03-20 bdae2aef9 Fix view file in Edge failure issue if name contains spaces
+- 2021-03-24 cae2f77da Add command line parameter for adding specified string to app title bar
+- 2021-03-24 c29240d78 Fix "Reload Workspace" menu command not working issue
+- 2021-03-22 09d624168 Fix sort with column key selection that appears after tab characters
+- 2021-03-22 436971892 Add ability to style only current instance of text
+- 2021-03-30 70762b1a0 Fix Auto-Complete ignore case issue
+- 2021-01-31 ca07ac69c Enhance Folder as Workspace performance while adding/removing files in bulk
+- 2021-03-31 5bc3ccf46 Fix dragged out UDL file is not applied to UDL in the new instance
+- 2021-03-25 4cdd96f02 Add ada, fortran, fortran77 & haskell in function lists
+- 2021-03-27 86c66bba9 Improve character case handling in RegEx
+- 2021-04-03 f6cb772e6 Reword Run menu entry name
+- 2021-04-06 a349764b4 Remove unnecessary const
+- 2021-04-06 1ae39c2dd Make new tab name translatable
+- 2021-04-06 62d07f7f7 Fix wrong global locale setting committed in 86c66bb
+- 2021-04-07 92038c165 Make struct VisibleGUIConf conform to coding standard
+- 2021-04-09 cbf3d2c9c Add new feature "Distraction Free Mode"
+- 2021-04-11 1a9307b02 Add padding options in the edit zonze
+- 2021-04-12 55de911be Fix the 1st document title "new 1" is not translated
+- 2021-04-13 90016a8dc Enhance Distraction Free mode by hidding another view
+- 2021-04-14 432ad0610 Enhance Distraction Free mode: make dockable panels free
+- 2021-04-14 94dffc6da Fix inacurate ratio in Distraction Free mode
+- 2021-04-15 af5671307 Change name of programming language from Nimrod to Nim
+- 2021-04-04 e3dbeda4c Add "Append extension" checkbox to Save As dialog
+- 2021-04-16 15b7a26c8 Remove unecessary const type qualifier
+- 2021-04-12 9c66ff9c7 Fix Copy command in Search result is available as there's no selection
+- 2021-02-28 ab58c8ee3 One button to compile them all
+- 2021-04-17 b09fb1e71 Remove SciLexer.dll from the packaging
+- 2021-04-17 fd81dab21 Update Build.md
+- 2021-04-21 6e7b47faf Fix typo in installer for Fortran
+- 2021-04-21 4207e2516 Add ARM64 support to NppShell
+- 2021-04-21 266ca2986 Add ARM64 packages for the official distribution
+- 2021-04-21 a45952365 Fix Notepad++ ARM64 version refusing to load plugins in ARM64 version
+- 2021-04-22 f6856626e Fix ARM64 installer copying binaries to 32-bits applications' folder
+- 2021-04-22 d0afc5162 Add ARM64 support for auto-update feature
+- 2021-04-15 acdc2517c Fix regression: Handle "Default Directory" setting correctly in Open/Save File Dialog
+- 2021-02-22 5a3bf49c8 Add Dark Mode for not attracting bugs
+- 2021-04-24 6750be343 Fix for darkmode build with mingw
+- 2021-04-24 9734d81f3 Fix a special character in UTF16 file crash issue (regression)
+- 2021-04-24 f249fc590 Fix for 'Match Whole Word' option being enabled in Regular Expression Search
+- 2021-04-25 a0177e8d0 Add pref setting to allow Replace to stop after replacement
+- 2021-04-24 0dbdef320 Add MarkAll Preference settings for case and word
+- 2021-04-23 bd6dbd4bb Add dark mode in find/replace dialog
+- 2021-04-26 85aaef2fb Dark Mode independent of OS setting
+- 2021-04-27 8339de66d Remove obsolete logic with wholeword and MarkAll
+- 2021-04-29 44b2bef69 Allow selected text foreground color to be changed
+- 2021-05-01 cd1a468b1 Make select text foreground color setting optional
+- 2021-04-27 7d2539424 Add new toolbar icons (Fluent UI)
+- 2021-05-05 dc3428414 Make toolbar compatible with current plugins
+- 2021-05-01 4b7e1ac79 Improve performance of Search results Open all
+- 2021-05-01 b657f5858 Add "Copy Pathnames" command to Search results context menu
+- 2021-05-04 666f22802 Fix function List button tool tips mixed up issue
+- 2021-05-06 db27172ca Add Fluent UI icons for Dark mode
+- 2021-05-10 4aa459ef4 Switch to default dark theme as dark mode is enabled
+- 2021-05-09 1089e239b Add the capacity to customize the color of Notepad++ (not only dark)
+- 2021-05-10 bae09252c Fix build error
+- 2021-05-10 2d4640ce4 Update croatian.xml
+- 2021-05-11 c230ccf1b Fix toolbar icons switching in dark mode makes incoherence in Preferences dialog
+- 2021-05-11 a0f258610 Fix x64 build error
+- 2021-05-11 69a543867 Simplify dark mode user interface
+- 2021-04-27 582a424d5 Add "curlopt_ssl_verifystatus" keyword for PHP
+- 2021-05-09 84402e755 Fix Python Function List not showing functions
+- 2021-05-12 70515c878 Update localization files
+- 2021-05-07 ddd444819 Add ability to reverse line order
+- 2021-03-24 5b83f21df Update dutch.xml
+- 2021-03-29 8df5dc41c Update russian.xml
+- 2021-03-28 6162e1ed5 Update Corsican translation
+- 2021-05-08 58b33ecbd Update Turkish
+- 2021-04-17 bcb691152 Update localization: Hong Kong Cantonese...
+- 2021-04-07 d75068f62 Update Portuguese translation
+- 2021-05-13 50d204f2a Update polish.xml
+- 2021-01-27 70d7b8504 Update C keyword list
+- 2021-03-24 ddc551e0d Update Bulgarian localization
+- 2021-05-06 a1abe867b Add Ctrl+C and Ctrl+A standard keyboard accelerators to Search results context menu
+- 2021-04-09 d173b24f6 Update czech translation
+- 2021-05-03 7196c1ab7 Update basque.xml (full translation)
+- 2021-03-28 f42748d4b Update german.xml
+- 2021-03-26 37863f47a update japanese.xml to v7.9.6
+- 2021-03-24 b2f3d573f Update Slovak translation
+- 2021-05-14 e248e29f7 Update lacalization files (Taiwanese Madarin & French)
+- 2021-03-18 a26b1f443 Update Italian.xml
+- 2021-04-21 93c1edd93 Update finnish.xml
+- 2021-05-15 71fabb156 Remove the access of Live Support on Gitter
+- 2021-05-15 e623e76d0 Rename sort randomly menu item, move it and reverse lines out of sorting section
+- 2021-05-15 da352ef5a Fix duplicated words in Auto-Completion pop-up window
+- 2021-05-16 0faa13923 Revert "Fix for 'Match Whole Word' option being enabled in Regular Expression Search"
+- 2021-05-16 6c19e8824 Fix "Match Whole Word" option being enabled in RegEx Search
+- 2021-05-18 19c3035d5 Fix Dark mode default theme not being applied bug
+- 2021-05-18 6d25b8b90 Add DarkModeDefault.xml into installation package
+- 2021-05-16 32dce9b54 Add access keys to non-keyboard-accessible menu items
+- 2021-05-18 585608b45 Update english_customizable.xml
+- 2021-05-20 156bde258 Fix the tabbar incoherent alternate icons settings while switching in dark mode
+- 2021-05-22 9a2dcaa5f Fix plugin icons added on toolbar not taking effect for Fluent UI icon sets
+- 2021-05-27 51207a4fe Refactoring some code of Dark mode
+- 2021-05-27 5758b99b3 Fix crash on Dark mode under Windows 8
+- 2021-05-29 f7a04caca Update uzbek.xml
+- 2021-05-29 46b3e3c7b Fix wrong plugin toolbar icon display if the ICO format is absent
+- 2021-05-28 ceca91557 Fix disabled checkboxes in dark mode
+- 2021-05-30 219dfda6b Remove HexEdit via installer due to its crash
+- 2021-05-31 8a898bae3 Add new API NPPM_ADDTOOLBARICON_FORDARKMODE for darkmode
+- 2021-06-02 5908166a6 Invert lightness of toolbar icon for dark mode
+- 2021-06-03 066b694d5 Remove unecessary codes
+- 2021-06-02 60cd6c463 Update Slovak translation
+- 2021-05-31 2c1b01f7c update japanese.xml
+- 2021-05-29 0221639cc Update Hong Kong Cantonese: Update access keys on menu
+- 2021-05-28 e524a64b3 Update russian.xml
+- 2021-05-23 17b7a0eaf Update greek.xml
+- 2021-05-22 3ef5f11aa Updating spanish.xml
+- 2021-05-20 2ce57b88c Update Corsican translation
+- 2021-05-16 e211cbaa2 Update Bulgarian localization
+- 2021-05-16 511893680 Update dutch.xml
+- 2021-05-31 f9d6fb9e3 Close all tabs in stack with single action
+- 2021-06-03 0e1a4663d Fix append extension feature not working in save dialog
+- 2021-06-06 06657c82b Remove Microsoft Bing from search engines for Search on Internet command
+- 2021-06-07 c6d14e924 Notepad++ v8 release
+- 2021-06-08 ea8c9779c Remove Gitter badge
+- 2021-06-08 aa17a4bc7 Fix Open dialog with "Save" label for OK button
+- 2021-06-09 7e139e1ba Remove menubar white line under dark mode
+- 2021-06-12 2f51902e9 Fix Notepad++ crash on dark mode while starting up
+- 2021-06-07 467870d66 Add DarkMode Tooltips
+- 2021-06-15 5b86023d3 Fix auto-completion performance issue introduced with switch to static linkage of libSciLexer
+- 2021-06-06 bfd9c2d32 Update german.xml
+- 2021-06-05 b8398b18e Update italian.xml to 8.0.0
+- 2021-06-14 fee55b06d Update Corsican translation for Notepad++ 8.0.0
+- 2021-06-05 c5ba7320c Update venetian.xml to 8.00
+- 2021-06-04 4bf1fd1fb Update Turkish localization
+- 2021-06-03 ac7a7af0c Update czech.xml to v8.0.0
+- 2021-06-03 52dbd5225 Update Bulgarian localization
+- 2021-06-08 b09190c76 Update Korean localization file
+- 2021-06-05 47d780b86 Hungarian translation update for 8.0
+- 2021-06-03 d11353134 Update portuguese.xml
+- 2021-06-03 94c6d2408 Update dutch.xml
+- 2021-06-15 9c13d657c Better look & feel in dark mode
+- 2021-06-16 fc94015bf Fix plugin icons not displayed regression
+- 2021-06-15 acf91fc2c Make multiline and vertical tabs work in dark mode
+- 2021-06-17 33d771233 Notepad++ 8.1 release
+- 2021-06-17 1db798fb1 Update finnish.xml
+- 2021-06-17 fd5bfe425 Update slovenian.xml
+- 2021-06-19 263910a9a Fix compiler warnings when building Notepad++ solution
+- 2021-06-08 c2534ee8f Make the Search Results Window locked (grayed) until the first search
+- 2021-06-20 bef4da61b Provide the whole set of arguments to initialize "Colors" structure
+- 2021-06-17 ffbf3af02 Make DarkMode title bar to apply on all dialog on dark mode
+- 2021-06-20 a6bbdeb92 Make line above panel toolbar dark in dark mode
+- 2021-06-19 e4ebeed6f Make Project Panel toolbar conform to dark mode
+- 2021-06-22 5df7c97f9 Clean up: remove unecessary code for dark mode
+- 2021-06-22 c8be679cd Use Explorer theme for list- and tree-views
+- 2021-06-23 296e1c695 Fix root menu item mouse hover color issue while being back in light mode
+- 2021-06-19 6a4ef408f Fix GCC compiler warnings in Notepad++
+- 2021-06-23 f27e56137 Apply dark mode to function list's toolbar
+- 2021-06-23 219cec800 Allow dynamic dark/light mode change for tooltips
+- 2020-09-06 2e0d358cd Adapt for VS2019 builds with toolkit v142
+- 2021-06-25 7d65bb950 Use toolkits v141 still for a while
+- 2021-06-24 034666894 Adapt docking tab for dark mode
+- 2021-06-27 da0fc02c5 Update some Fluent UI Icons for both dark & light mode
+- 2021-06-27 334704459 Fix edit zone not being applied to dark mode issue
+- 2021-06-24 1da707128 Fix regression: disable Explorer Theme for TreeView
+- 2021-06-18 5398df227 Update japanese.xml to v8.1
+- 2021-06-29 36ea7e8b3 Make column headers of ASCII panel & doc switcher apply to dark mode
+- 2021-06-30 60105d68f Fix Doc Switcher panel not follow theme in dark mode
+- 2021-06-29 75643560a Improve dynamic switching for scrollbars.
+- 2021-07-01 4ae106377 Fix dark mode applied correctely only for 1 project panel issue
+- 2021-07-01 f65f00c63 Fix ASCII panel display problem in dark mode + light theme (default styler.xml)
+- 2021-07-04 ea09b9f19 Notepad++ 8.1.1 release
+- 2021-07-04 88665b5d1 Add an xkcd's quote
+- 2021-07-04 7bb39a08f Open a file from command line by applying an existent UDL via UDL name
+- 2021-07-04 203415042 Update taiwaneseMandarin.xml
+- 2021-06-30 27524e1d4 Improve link to user manual on questionmark menu
+- 2021-06-06 80c285ee2 Add a Save all confirm dialog
+- 2021-07-03 a0472fd7f Use current file directory in File Rename dialog
+- 2021-07-05 ae56255be Enhance listview column header in dark mode
+- 2021-07-05 14a0a43b1 Add global regex unitTest via UDL way
+- 2021-07-07 4642be549 Add local unit-test launcher
+- 2021-06-19 2794c927b Fix the warnings issue during Scintilla's compiling
+- 2021-07-07 eac8c4094 Override unit-tests needed files while copying them for local unit-tests script
+- 2021-07-08 066ef8a4a Make dark mode restartless
+- 2021-07-09 39b9090b9 Make Notepad++ dark mode colors customizable
+- 2021-07-09 fb91093cc Activate dark mode in Windows 11
+- 2021-07-11 b3fdfdd06 Improve DarkMode toggling
+- 2021-07-13 8d425bd4f Drop the support of Windows 8
+- 2021-07-11 831d3ba9c Add customizing dynamically dark mode colors capacity
+- 2021-07-14 599f1852c Update localization files
+- 2021-07-13 5e28b47ff Fix corrupted encoding text on status bar
+- 2021-07-14 4cd293a0b Change "not" usage to "!" in contribution guideline
+- 2021-05-13 e87e94a6c Add latest ES/JS keywords for auto-completion
+- 2021-07-05 9048c8586 Update dutch.xml
+- 2021-07-12 6d34d658a Update portuguese.xml
+- 2021-07-08 f2d47ef5f Update Hebrew localizaton
+- 2021-07-05 7be30516d Update russian.xml v8.1.2
+- 2021-07-11 f215b85cc Update Bulgarian localization
+- 2021-07-05 badc59c59 Update Brazilian Portuguese translation
+- 2021-07-08 62031f8ab update japanese.xml
+- 2021-07-06 73d945bfe Update Slovak translation
+- 2021-07-05 8d1d8cfcb Update german.xml
+- 2021-07-15 52e6911bb Update czech.xml to v8.1.2
+- 2021-07-09 2c95c5b2d Update localization Hong Kong Cantonese
+- 2021-07-01 6127825b8 Fix "Enable Multi Editing" in venetian.xml
+- 2021-07-01 a279d83c5 Update italian.xml
+- 2021-07-15 93d91c3ee Fix a typo
+- 2021-07-15 33fa3b619 Edge Enhancement
+- 2021-07-16 53f1e6bff Make the translation more accurate
+- 2021-07-19 fdb2951e0 Notepad++ 8.1.2 Release
+- 2021-07-16 aa69711d4 Add the capacity to switch among Find/Replace/FiF/Mark via their shortcuts
+- 2021-07-16 81b21aae2 Enhance combobox & edit field in dark mode
+- 2021-07-18 8e38b9dab Add copy file names capacity from Windows dialog
+- 2021-07-20 264e1924b Restore Splitter appearance in dark mode
+- 2021-07-21 1182976cc Fix narrow splitter under a high DPI environment problem
+- 2021-07-21 8bf11be0b Restore edit zone border in dark mode
+- 2021-07-21 a4cfd2a12 Dark find and replace dialog enhancement and fixes
+- 2021-07-21 7b1e6546a Make Document List Panel togglable and shortcutable via View menu
+- 2021-07-23 1c548901f Update translation files
+- 2021-07-23 0f15c207d Update localization files (change tag)
+- 2021-07-21 3e69de487 Improve docking tab visual
+- 2021-07-22 e627de438 Apply dark mode on Style Configurator
+- 2021-07-23 a3ba150e8 Apply dark mode on Windows dialog
+- 2021-07-24 50dfdb2a8 Add link text color in customized dark colors of Preferences dialog
+- 2021-07-19 3482673fd Add filter capacity in Shortcut mapper by shortcut key combination
+- 2021-07-18 46a264e2d Fix Functions list scrolling to the top on file save
+- 2021-07-24 5b9e3b640 Changed english.xml's "Document List " entry id from 44081 to 44070
+- 2021-07-24 89d835a56 Apply dark mode on all find dialogs
+- 2021-07-25 8a6dafb89 Fix Find in file progress bar display problem under High DPI
+- 2021-07-25 6d0600060 Apply dark mode on column editor
+- 2021-07-25 a0c15274f Fix file name edit box not functional on Windows Vista
+- 2021-07-25 f412a2d6f Apply dark mode on go to line dialog
+- 2021-07-25 af99d4c97 Apply dark mode on find char in range dialog
+- 2021-07-25 8e84f5fbc Apply dark mode on rename tab dialog
+- 2021-07-25 b12c8ea54 Apply dark mode on run dialog
+- 2021-07-25 a9002c81e Apply dark mode on value dialogs
+- 2021-07-25 b0d4e776c Apply dark mode on hash dialogs
+- 2021-07-25 7c4a428e4 Make dark colors consistent
+- 2021-07-26 7c82c523b Add "Switch to Document List" command for shortcut
+- 2021-07-26 934c98887 Make Shortcut mapper display correctly under high DPI
+- 2021-07-26 baae30102 Apply dark mode on preferences dialog
+- 2021-07-27 5721b10da Improve About dialog display under high DPI mode
+- 2021-07-27 eebc9d146 Tune up the logo size
+- 2021-07-27 a8a802df2 Fix doc list file ext. column display under high DPI
+- 2021-07-27 5edc7500e Update some dark/light icons for panels
+- 2021-07-28 121431983 Don't reset style & icons, when changing dark tone
+- 2021-07-27 31c72b738 Apply dark mode on color popup
+- 2021-07-27 14da158ca Apply dark mode on run a macro multiple times dlg
+- 2021-07-27 1ac1b1183 Apply dark mode on shortcut dialog
+- 2021-07-28 1b6cd7c3f Apply dark mode on UDL, styler dlg
+- 2021-07-29 6894e96ad Fix UDL dialog color picker display issue under high DPI
+- 2021-07-29 7c9f4204e Refactoring: Improve the code organization for color picker displaying
+- 2021-07-28 bf6cb36d4 Apply dark mode on document switcher
+- 2021-07-28 fcea83ba9 Apply dark mode on plugins admin
+- 2021-07-27 52c73f92d Remove "Unicode" from build configuration names
+- 2021-07-29 1dad7c7e7 Increase macro, user command and plugin command number capacity
+- 2021-07-29 2bb40b1ab Fix Plugin Admin display issue under high DPI
+- 2021-07-30 19f40fdea Fix 2 panels' toolbar icons display issue under high DPI
+- 2021-07-30 53576f5b1 Change logo in About dialog and make it dark-modable
+- 2021-07-31 87bda092c Fix a compiling error in MinGW
+- 2021-07-31 b8f23a107 Update French & Taiwanese Mandarin localization
+- 2021-07-30 17290fadb Update Corsican translation for Notepad++ 8.1.3
+- 2021-07-27 4eef48b32 Update russian.xml
+- 2021-07-30 3eb71d87b Update localization: Hong Kong Cantonese
+- 2021-07-18 1e2672224 update japanese.xml
+- 2021-08-01 ab02e3f9d Update Slovak translation
+- 2021-08-01 8417d3fb4 Update portuguese.xml
+- 2021-08-01 318a566ae Apply explorer style on treeview
+- 2021-08-01 1c1a0c487 Update about dialog icons
+- 2021-07-16 96e985dea Update dutch.xml
+- 2021-08-01 121f19d8f Fix crash when several instances of the file dialog are shown
+- 2021-08-02 242530c1f Make margin width display correctly under high DPI
+- 2021-07-23 61bcbbd90 update korean.xml 8.1.3
+- 2021-08-02 db62ce2e3 Update polish.xml to 8.1.3
+- 2021-07-15 a91d0d7b8 Update brazilian_portuguese.xml
+- 2021-07-25 1479b130f Update Bulgarian localization
+- 2021-08-02 2dc31d0d2 Update czech.xml to v8.1.3 (2nd attempt)
+- 2021-08-02 ef1ecaa93 Update Turkish localization
+- 2021-08-02 90485aaa2 Use CRLF line ending in Copy command from Windows dialog
+- 2021-08-03 8a77b07d9 Fixed detection of shorcut key conflicts when filtering
+- 2021-08-03 32965d554 Update german.xml to v8.1.2
+- 2021-08-03 a7ede53c2 Add and remove some quotes
+- 2021-08-03 14a104ad4 Fix shortcut conflict detection error in shortcut mapper
+- 2021-08-07 733c7e73d Fix 2 RTL issues: wrong path in tooltip and file drag & drop Bug
+- 2021-08-04 13623669a Make title, button, progress bar dark again
+- 2021-08-03 5c2c31735 Fix Function list current empty lost issue while Sort/Unsort/Save/Reload
+- 2021-08-06 a36a12257 Add more quotes
+- 2021-08-06 4cc3d9fd1 Add Markdown UDL of dark mode in release packages
+- 2021-08-09 f5ea4898c Fix the regression: absence of toolbar tooltip
+- 2021-08-12 2b0620b07 Notepad++ 8.1.3 Release
+- 2021-08-10 686bf4fba Fix security flaw issue
+- 2021-08-07 2576bf884 Substitute "Mark" for "Style" in the menu entries
+- 2021-08-09 9a3152faa Add TypeScript language
+- 2021-08-12 141fef9a4 Fix LICENSE text display problem in installer
+- 2021-08-13 f50061981 Add support DarkMode, function list & auto-completion for TypeScript
+- 2021-08-15 92b45d48c Include TypeScript files into installer
+- 2021-07-29 5e899f2a6 Enhance dialog visual look & feel
+- 2021-08-16 302bab894 Make plugins' toolbar icons display in light/dark mode
+- 2021-08-15 0c16f87a1 Fix Find-in-Files "Follow current doc" not working issue when absolute Default Directory set
+- 2021-08-18 0733e6f24 Add Insert Date Time commands
+- 2021-08-17 8f123f8cc Fix file dialog append extension with RTL language
+- 2021-08-19 6844df039 Fix boost REGEX performance issue
+- 2021-08-20 45831ac05 Update English localization file to v8.1.4
+- 2021-08-14 0b98ae56e Update dutch.xml
+- 2021-08-20 79ab11ee8 Update Slovak localization file to v8.1.4
+- 2021-08-20 4831cb80b Update russian.xml  v8.1.4
+- 2021-08-14 8ac13d906 Make dark mode compatible with Windows 11
+- 2021-08-16 e057e3ea8 update japanese.xml
+- 2021-08-20 d42c6a58a Update Corsican translation for Notepad++ 8.1.4
+- 2021-08-25 390f7631f Notepad++ 8.1.4 release
+- 2021-08-25 a720b88e5 Update localization files to v8.1.4
+- 2021-08-25 a391161e3 Add the info of TypeScript in overrideMap.xml
+- 2021-08-22 deab93f9b Make "Confirm Save All" dialog more clear
+- 2021-08-21 e12b161d4 Make Incremental Search panel translatable
+- 2021-08-21 68d293e71 Allow custom color for Document Map
+- 2021-08-26 cd8e479ff Update README.md
+- 2021-08-22 d41b4e164 Fix current directory not applied bug after changing current directory option
+- 2021-08-28 84c1505fa Add custom date time insert
+- 2021-08-31 c1cce29c8 Fix build system error
+- 2021-08-31 88ee2eddb Fix the crash regression due to the array size increase
+- 2021-08-31 7006714c1 Update AboutDlg.cpp
+- 2021-08-31 f6488cdc7 Update english.xml
+- 2021-08-31 dab02db97 Add non MSC info into debug info
+- 2021-08-30 5c52aff7a Fix inconsistency of Document List context menu
+- 2021-08-31 ed5c2631c Fix asan(address sanitizer) issue with no plugins
+- 2021-08-07 f428fbab1 Fix building MinGW release twice in appveyor builds
+- 2021-09-01 55f264495 Fix regression: no error message when locked file could not be saved
+- 2021-09-01 ef8522e4a Enable/disable ext column from Document list directely
+- 2021-09-04 e31eb8ea2 Add missing element in PHP dark mode styler
+- 2021-09-05 d4781bd4a Update abkhazian.xml
+- 2021-08-31 156784722 Make number of languages and and styles unlimited and independent
+- 2021-09-04 cddcbb5d6 Fix CSS pseudo-elements not recognized issue
+- 2021-09-04 241238df5 Fix xml writing issue in gcc build
+- 2021-09-06 bd31dbb68 Remove "#pragma once" from rc files
+- 2021-09-08 aff77e27d Fix incremental search panel not translated after startup issue
+- 2021-09-09 495d202a4 Fix Find dialog display mess-up
+- 2021-09-09 1c9009e9b Fix open file crash via open file dialog
+- 2021-09-10 36d13f3ad Sort Preferences->New Document->Default language combobox
+- 2021-09-11 36d0d29cc Add path column in Document list panel
+- 2021-09-12 e5a800722 Make code more sanitary
+- 2021-09-12 f6bea3200 Update uzbek.xml
+- 2021-09-10 73b41ec74 Fix docked/float panels in RTL layout issue
+- 2021-09-04 049ededf9 Add gcc 32-bit build and improve build process
+- 2021-09-13 a3116818e Code enhancement: Initialize variable member's value of struct/class
+- 2021-09-14 f6282f4f1 Update localization files
+- 2021-08-28 9342da488 Update Corsican translation for Notepad++ 8.1.5
+- 2021-09-15 f658c2226 Update polish.xml to 8.1.5
+- 2021-09-14 3c464e49b Update Vietnamese translation
+- 2021-09-12 748db1be3 Update russian.xml v8.1.5
+- 2021-09-07 7a6eb0da3 Update czech.xml to v8.1.5
+- 2021-09-01 56b0af3c8 Update Slovak translation to 8.1.5
+- 2021-08-31 114107957 update japanese.xml to v8.1.5
+- 2021-08-29 3d0225607 Update Portuguese translation to v8.1.5
+- 2021-08-22 1d71e90a6 Update german.xml to v8.1.4
+- 2021-08-21 e1e180397 Update Bulgarian localization
+- 2021-08-31 0ad4912eb Enhance Insert Custom Date command by using MS datetime format
+- 2021-09-16 6ee3bd3c4 Make more room for the translation of custom format label
+- 2021-09-04 827bcc1d0 Hungarian translation update for version 8.1.4
+- 2021-09-04 ad40663fb Update chineseSimplified.xml
+- 2021-08-31 8d7aa6b06 Update dutch.xml
+- 2021-09-17 94788503d Update chineseSimplified.xml
+- 2021-09-18 c7e1da48f Align dark mode styles with light mode styles
+- 2021-09-20 bc2e68918 Add Insert Date/Time commands shortcut & macro capacities
+- 2021-09-20 635f1d41a Fix a typo & add a pun
+- 2021-09-21 a7a700145 Fix a regression of pluginsAdmin
+- 2021-09-26 2f7490aba Fix tab settings in UDL regression
+- 2021-09-27 45693d130 Notepad++ 8.1.5 release
+- 2021-09-25 d11d2c7f2 gcc: fix warnings during Scintilla build
+- 2021-09-23 d939e4a6e Fix floating panel movement issue in RTL mode
+- 2021-09-27 2159126d8 Initialize the values of Gripper's varible member
+- 2021-09-20 19cf5c903 UDL: preserve DarMode-ness upon saving
+- 2021-09-21 531bef28d Fix docked window sizing direction problem in RTL mode
+- 2021-09-27 4d57f5071 Make modified code conform to the coding style
+- 2021-09-25 49c3e5d55 UDL lexer: fix potential infinite loop
+- 2019-09-19 9aa9ecb66 Fix NUL file-corruption issue after system shutting down brutally
+- 2021-09-29 f1837474c Fix Print Preferences GUI bug issue
+- 2021-10-01 11b2dd0f6 Fix previous session lost issue after MS update restarting Windows
+- 2021-10-01 682a8edaf CFile (Win32 API IO) Refactoring
+- 2021-09-30 78a2f3269 Fix status bar text display issue in dark mode
+- 2021-10-03 97ad1d922 Update translations
+- 2021-10-04 6c3031f01 Fix file can be marked as saved even it's been deleted outside
+- 2021-09-29 5de59d7e4 Update swedish.xml
+- 2021-10-04 b4d94f577 Make markdown UDL work in evry dark theme
+- 2021-10-06 6a3d6e05d Add new quotes
+- 2021-09-23 d692b5060 Update Turkish localization
+- 2021-10-09 35e3fb968 Fix white flash on Notepad++ startup in darkmode issue
+- 2021-10-13 c1dac5983 Notepad++ 8.1.6 release
+- 2021-10-08 add1c145a Fix "Run macro until the end of file" command skipping the last line issue
+- 2021-10-12 4cf1267af Fix white flash in dark mode on CMD launch with position data
+- 2021-10-11 324a7ab8c Enhance dark themes for some programming languages
+- 2021-10-11 e82a451ec Fix docking problem for dockable panel in RTL mode
+- 2021-10-12 6526094ee Fix tooltip layout and position in RTL mode
+- 2021-10-07 85ea1e643 Update dutch.xml
+- 2021-10-15 540fbeddd Add JSON syntanx highlighting in the dark themes
+- 2021-10-07 4c34652e1 Add VHDL unresolved numeric_std types highlighting
+- 2021-10-14 6cae886dd Fix empty file not being saved regression
+- 2021-10-15 d80b0b254 Notepad++ 8.1.7 release
+- 2021-10-17 5d086f93a Workaround Microsoft dark mode API bug of Windows 11
+- 2021-10-19 386366d7f Fix config files (XML) saving performance regression
+- 2021-10-19 0c2508d3d Notepad++ release 8.1.8
+- 2021-10-17 38de8b230 Fix language list not being reloaded issue in Style Configurator
+- 2021-10-21 1a02319a8 Fix empty file with non-Unicode encoding cannot be saved issue
+- 2021-10-22 abd1ea43c Notepad++ 8.1.9 release
+- 2021-10-24 d192f58b5 Make icons in Function list/Project panel/Folder as Workspace display correctly under high DPI
+- 2021-10-25 09711cee2 Fix phantom docked panels issue after restoring from systray
+- 2021-10-28 40fbae1f7 Enable backup on save (simple) feature by default
+- 2021-04-10 1d2f662f7 Add Java sealed classes-related keywords
+- 2021-03-18 0fd0e5dab Add "when" reserved word of C# 6.0 in auto-completion
+- 2021-10-29 91a7cc6d3 Add plugins' description into installer
+- 2021-10-31 0fd8cecf8 Fix UDL Styler UI not load bg & fg color completely
+- 2021-10-31 32d5307ed Make UDL generic dark mode possible via UI
+- 2021-11-04 8c3c30efa Fix VHDL comments highlighting
+- 2021-11-08 eeaa4576f Add Auto-Updater icon
+- 2021-11-07 311246693 Fix obsolete way of struct declaration
+- 2021-11-09 20990d319 Fix a regression of saving problem
+- 2021-11-12 df396b9e6 Fix reload false alarm from the network drive
+- 2021-10-29 bd082e820 Update german.xml with mainly the date time translations
+- 2021-11-13 aa06651a3 Notepad++ 8.1.9.1 release
+- 2021-11-15 a22a0bfed Fix UDL generic dark mode via UDL UI bug
+- 2021-11-14 f52c2b022 Fix crash in regex search
+- 2021-11-18 990c92540 Fix fallure of erasing & saving server logs (of network drive) issue
+- 2021-11-18 9662b2e7d Remove unnecessary file
+- 2021-11-18 c7140f279 Fix disabling alnative icons on tab in dark mode issue
+- 2020-02-10 3a33c8376 Fix UDL folding breaking with delimiters issue if UNIX EOL
+- 2021-11-15 ce2de092c Update korean.xml 8.1.9.1
+- 2021-11-13 240134958 Update Bulgarian localization
+- 2021-11-14 b28ea17a9 Update russian.xml v8.1.9.1
+- 2021-11-21 dc082ba2f Fix dark mode not working on Windows 10 2H22
+- 2021-11-21 21dd62bb0 Notepad++ release 8.1.9.2
+- 2021-11-23 add9f6410 Add "Notepad++ User Defined Languages Collection" project website access command
+- 2021-11-24 7aa0a5632 Update english.xml
+- 2021-11-25 567e0456b Support "Taggle line comment" command for LaTeX
+- 2021-11-23 e7bf582ff Add some new PHP 7.3 function keywords
+- 2021-11-26 bab3573be Fix detection of backup file restored back problem
+- 2021-12-01 e87342fef Fix Notepad++ dockable panels lose bg color issue when swiching it back
+- 2021-11-28 12a13b1c0 Fix saving file and false alert on network drive issues
+- 2021-11-30 feac01814 Add lua function list capacity
+- 2021-12-04 1039c10ba Add lua function list into installer
+- 2021-12-02 acb8a9db4 Add logs for nul content corruption issue
+- 2021-11-20 50ed14367 Update portuguese.xml v8.1.9.1
+- 2021-11-22 1ae749009 Update Corsican translation for Notepad++ 8.1.9.3
+- 2021-11-24 a4c29c96c Update Bulgarian localization
+- 2021-11-25 1574deb57 Update Slovak translation to 8.1.9.2
+- 2021-11-28 e99d2eb69 update japanese.xml to v8.1.9.2
+- 2021-12-04 4facc4db4 Update polish.xml to 8.1.9.3
+- 2021-12-04 b41cb7d65 Update czech.xml to v8.1.9.3
+- 2021-12-04 09890daa5 Update danish.xml
+- 2021-12-04 bf732c999 Fix dirty status after reloading file
+- 2021-12-05 0f4010ead Refactoring for the readability
+- 2021-12-06 5d2fc0d8c Fix log written under wrong condition
+- 2021-12-08 6df3db124 Notepad++ release 8.1.9.3
+- 2021-12-06 3d5aa49cd Fix build 32-bit binary failure under unix-like shell (Git Bash)
+- 2021-12-12 ee884f87b A comprehensive fix for background clipping of dock panels
+- 2021-12-09 556fe39cb Update boost regexp from v1.76 to v1.78
+- 2021-12-15 1c8178888 Add a new keyword "nameof" in C#
+- 2021-12-16 ac52f406f Fix no focus on edit zone regression
+- 2021-12-20 b5d646b4c Add exclude folder(s) capacity in Find in Files
+- 2021-12-16 31799472b Add new keyword "var" in Java
+- 2021-12-14 85d6108a6 Fix Build not work under path with space
+- 2021-12-23 30c586d94 Fix wrong language name in installer
+- 2021-12-24 a563a8b81 Open "crontab" file by using syntax highlighting of bash
+- 2021-12-22 a16930fff Add auto save loaded session on exit feature
+- 2021-12-25 33a0587a6 Fix incorrect folding behaviour in C, C++ & Javascript
+- 2021-12-27 ae09024e6 Fix UTF-8 detected wrongly as TIS-620 issue
+- 2021-12-27 4a7a33f01 Fix Document List icons unchanged issue after switching to dark mode
+- 2021-12-29 c0989d472 Enlarge your name field size!
+- 2021-12-29 79fa0abc8 Fix memory leak when toggling to and from Dark Mode
+- 2021-12-28 87db9d195 Fix caret left-right inverse moving in R2L mode issue
+- 2021-12-26 234d142ca Update portuguese.xml
+- 2021-12-26 492d27996 Update Bulgarian localization
+- 2021-12-26 35dc1f8c4 Hungarian translation update for 8.1.9.3
+- 2021-12-26 13d92c614 Update japanese.xml
+- 2021-12-24 cb441d8a5 Update Slovak translation to 8.1.9.3
+- 2021-12-24 9debacde9 Update russian.xml to v8.1.9.3
+- 2021-12-23 35c26e3ad Update Turkish localization
+- 2021-12-22 1ad973fa2 Update Ukrainian translation
+- 2021-12-21 66eddf250 Update basque.xml
+- 2021-12-05 61eff45bd Update Vietnamese translation
+- 2021-11-27 5dd868cf4 Update german.xml to V.8.1.9.2
+- 2021-12-30 5d1bbc05e Update 3 localization files
+- 2021-12-31 3c89b5716 Installation: Let users decide to keep or not HexEdit plugin
+- 2022-01-01 573a3db6e Notepad++ release 8.2
+- 2022-01-04 a79082284 Add Windows 11 on the supported OS list
+- 2021-12-28 0dd0a9586 Support both MingGW multilib versions
+- 2022-01-04 23b2a3fa8 Fix Recent Files List not revised issue after "Save As" command
+- 2022-01-02 d9ef4be57 Update english.xml
+- 2022-01-05 a4bd52663 Fix French localization
+- 2022-01-04 9be4eeb4e Add copy name/path commands to DocList and Edit menu
+- 2022-01-07 44c9a0561 Fix "Save As" command cannot be used as "Save" issue
+- 2022-01-07 78c6554e9 Add missing translation for folder browser title
+- 2022-01-08 9929160a0 Update French & Taiwanese localization
+- 2022-01-08 9f08013d0 Fix installer x64 not detected the previous installation location
+- 2022-01-09 36cbfb45c Better clean on unstallation
+- 2022-01-09 9208ed2ab Make 1 entry of French translation shorter
+- 2022-01-10 e40aec0b3 Friends are just like trees
+- 2022-01-10 ed40f1151 Fix loaded session being empty on exit
+- 2022-01-10 68d339d22 Auto-completion currently use both ENTER and TAB to insert the selected item, in some circumstance people have to ENTER twice to have 1 newline feed.
+- 2022-01-11 5dada1184 Fix Debug information wrong OS information detected with windows 11 issue
+- 2022-01-11 e048f8342 Make menu folders on context menu translatable
+- 2022-01-12 3ce90f56d Fix wrong keywords (of preprocessor in C) highlighting in Java
+- 2022-01-13 7ebb1e367 Add Find/Replace text swap button in Find replace dialog
+- 2022-01-13 029a09ab5 Remove obsolete localization entries
+- 2022-01-14 cb7bbef4f Fix "File is too big to open" message isn't modal issue
+- 2022-01-19 8befad775 Update Hong Kong Cantonese localization
+- 2022-01-13 88e660ab1 Update czech.xml to v8.2.1
+- 2022-01-11 44150ea67 Update polish.xml to 8.2.1
+- 2022-01-11 67cda6211 Update portuguese.xml to v8.2.1
+- 2022-01-07 5a382cb64 Update German translation
+- 2022-01-05 bf3b974ed Update russian.xml to v8.2
+- 2022-01-05 441b9aa94 Update Corsican translation for Notepad++ 8.2
+- 2022-01-05 5edbed748 update japanese.xml
+- 2022-01-05 95ced9ffa Update Slovak translation to 8.2
+- 2022-01-02 aa998a7f0 Update Bulgarian licalization
+- 2022-01-01 953fea562 update venetian.xml to 8.2.0
+- 2022-01-01 4f0be8965 Update Italian.xml to 8.2.0
+- 2022-01-19 234941c18 Fix regression of bg/fg color disabling visual glitchy
+- 2022-01-24 2b9937216 Notepad++ v8.2.1 release
+- 2022-01-21 fcfa034cc ESC key clears function list filter & search result
+- 2022-01-22 7df6af7e2 Fix Find dialog visual glitch
+- 2022-01-22 5b5dbbd3f Fix ARM64 build doesn't contain 64 bits information
+- 2022-01-16 961a133a6 Remove 2GB file open restriction for x64 binary
+- 2022-01-26 2132505cb Fix unsaved untitled files not being opened on the next session regression
+- 2022-01-26 edabe4400 Disable Word Wrap while load a 2GB+ file
+- 2022-01-27 44004d41d Enhance large file loading: disable 4 features for large files
+- 2022-01-28 db3308329 Fix crash on opening file with wild card characters
+- 2022-01-28 774321e09 Improve 200MB+ files loading/editing performance
+- 2022-01-28 4077ec2f6 Fix crash regression in UDL dialog
+- 2022-01-29 6d311e102 Fix 2 logic error (wrong copied/pasted)
+- 2022-01-31 993506af0 Fix Find in Files crash
+- 2022-01-31 720bb3f74 Remove unstable 64 bits plugins during the installation
+- 2022-01-31 807271f98 Fix NSIS build error
+- 2022-02-02 bf82faea5 Adapt Installer script for the unstable plugins
+- 2022-02-03 1c6055ecf Better management for unstable plugin
+- 2022-02-03 ae6361fa3 Notepad++ release v8.3 (Boycott Beijing 2022)
+- 2022-02-04 73a4cdc10 Fix XML tag mark deletion crash Notepad++ v8.3
+- 2022-01-30 c0be50494 Fix NPPM_RELOADFILE with 8.3 path containing bug
+- 2022-01-29 9fccc3798 Fix Dark Mode Customized tone link part is not persistent
+- 2022-02-05 deb99ae45 Fix cmdline '-n' param not working and wrong cursor position regression
+- 2022-02-06 bbe8a7db2 Restore auto-completion insert selection default setting (ENTER & TAB)
+- 2022-01-17 b5a5baf13 Fix file dialog "Append extension" checkbox not working in empty dir
+- 2022-01-25 c394a890a Add icons on function items of auto-completion to distiguish from word items
+- 2022-02-07 6c345e907 Optimize setting image call in auto-completion
+- 2022-02-07 9baaef786 Fix Path Completion not working regression
+- 2022-02-01 85e7207ee Enhance error handling while opening file
+- 2022-02-08 f815b7057 Revert "Enable backup on save (simple) feature by default"
+- 2022-01-27 2c1090e55 Update english.xml
+- 2022-02-08 6392508cd Solve the confilt in english.xml
+- 2022-02-08 987a944ad Update french.xml & taiwaneseMandarin.xml
+- 2022-02-01 dee3bad29 Make variable list combobox translatable in printing preferences
+- 2022-02-09 2e9342ae2 Code enhancement: Initialize member variables
+- 2022-02-09 785453147 Inialize all memebers of struct (instead of its 1st member) to zero
+- 2022-02-09 94154b0f0 Code enhancement: Fix comparison of different signs integers
+- 2022-02-10 d372894e7 Fix typo and reword contribution note
+- 2022-02-08 fc1365ea9 Fix target directory parameter ignored by x64 installer issue
+- 2022-02-11 c2af4a8b3 Update Turkish localization
+- 2022-01-21 79d1a2230 Update danish.xml
+- 2022-01-19 0c83175b5 Fix conflicting German translations
+- 2022-01-27 8be6bcc70 Update russian.xml to v8.3.1
+- 2022-01-28 5d78c7f08 Update czech.xml to v8.2.2
+- 2022-01-30 30651e94f Update belarusian.xml
+- 2022-02-01 f3b11d16d Update Corsican translation for Notepad++ 8.3.1
+- 2022-02-08 bde3da46f Update Slovak translation to 8.3.0
+- 2022-02-08 2d9545dd3 update japanese.xml
+- 2022-02-08 4612d0aaf Update Bulgarian localization
+- 2022-02-10 c5f692815 Update dutch.xml
+- 2022-02-10 92eb49f6a Update portuguese.xml
+- 2022-02-15 5c0250599 Notepad++ v8.3.1 release
+- 2022-02-16 51b1c9377 Fix incorrect message on double click on search result regression
+- 2022-02-16 2df765e18 Code enhancement: prevent from signed integer overflow
+- 2022-02-17 47481c76e Update CONTRIBUTING.md
+- 2022-02-17 010ce6f0f Update CONTRIBUTING.md
+- 2022-02-17 637f470b6 Add more Easter Eggs for the coming Easter Sunday
+- 2022-02-18 e1ccd9874 Remove old version of XMLTool via installer to prevent Notepad++ from crash
+- 2022-02-18 4555db8f9 Update localization files
+- 2022-02-18 2321e648a Fix regression: file can't be saved if it's set to other charset before
+- 2022-02-17 b233c0c3e Fix saving problem (regression) with "Sysnative" alias in x86 binary
+- 2022-02-19 60df9e5f0 Exclude NppTaskList via installer due to crash issue on Npp x64
+- 2022-02-19 de43eca30 Exclude NppTaskList v2.3 and older versions only, crash fixed in 2.4
+- 2022-02-12 726ad7f58 Fix autocomplete case insensitive not working issue
+- 2022-02-12 1c8b86739 Add "Sort By" commands under Window Menu
+- 2022-02-21 5917fdefb Fix translation problem for "Sort By"
+- 2022-02-21 efcb3d047 Update localization files
+- 2022-02-17 80ba58773 Fix auto-completion sort order problem due to fx icon
+- 2022-02-19 60f42199d Update swedish.xml
+- 2022-02-21 27ade5d88 Update russian.xml to v8.3.2
+- 2022-02-21 456d3fceb Update Corsican translation for Notepad++ 8.3.2
+- 2022-02-21 fc064d325 Fix UDL dialog crash issue on over 30 created UDL
+- 2022-02-21 456fdaa68 Simplify the localization in codes
+- 2022-02-21 ee765135b Add "Windows..." localization entry
+- 2022-02-22 58e404650 Remove not used codes
+- 2022-02-21 3de15f551 Enhance performance on exit with certain settings
+- 2022-02-21 e839b81e8 Refine autosaving session on exit behaviour
+- 2022-02-21 9c19bae7c Update czech.xml to v8.3.2
+- 2022-02-21 ca8c30280 Support better 2GB+ file (cmdline & session file adaptation)
+- 2022-02-22 052b27e3d Add API NPPM_GETCURRENTLINESTR & RunDlg's variable $(CURRENT_LINESTR)
+- 2022-02-22 2d1ba0199 Update japanese.xml
+- 2022-02-23 11128e5c3 Update and fix czech.xml
+- 2022-02-24 bfbad49cf Fix incoherence about supporting 2GB+ files
+- 2022-02-23 9e5ab5190 Update Slovak translation to 8.3.2
+- 2022-02-23 2c9ef0419 Update Bulgarian localization
+- 2022-02-23 0872c69ea Update french.xml
+- 2022-02-24 8132f4f3b Update Taiwanese Mandarin translation
+- 2022-02-25 3482ed97e Fix UDL comment config input fields broken regression
+- 2022-02-25 bb8eea13d Update norwegian.xml
+- 2022-02-25 1b0400698 Update localization: Hong Kong Cantonese
+- 2022-02-24 72602b62e Update french.xml
+- 2022-02-26 ca5a272ea Update portuguese.xml
+- 2022-02-27 30b6b18d1 Notepad++ 8.3.2 release - Declare variables, not war
+- 2022-03-01 c435625d3 Add a new Easter Egg
+- 2022-02-23 ebabed554 Fix deleting the folded line makes folded (hidden) content disapeared
+- 2022-02-28 c869357c0 Include C# 9.0 nint/nuint
+- 2022-03-02 4b9aa66ae Add extension "aspx" for ASP
+- 2022-03-01 c19033c91 Make the silent uninstall of N++ via 'winget' possible
+- 2022-03-02 a419b41ed Fix crash regression due to ca8c302805f882ed61717bb26efbc141a6991ea7
+- 2022-03-02 0affe35bc Re-enable possibility to center the FindReplaceDlg on Notepad++ main window
+- 2022-03-04 a06b40470 Add Notepad++ compatible versions in plugin list
+- 2022-02-23 9cbd03c30 Add more API for custom auto-indentation and current macro status
+- 2022-02-26 f285c5983 Update stylers.model.xml
+- 2022-03-06 f9118dd13 Use plugin list's plugin compatibility info for loading plugins
+- 2022-03-05 c3daf4448 Fixed blurry disabled static texts of Preferences in Dark mode
+- 2022-03-07 f6ea35d52 Fix RTL alignment bug in preferences dialog when dark mode enabled
+- 2022-03-07 4593293b4 Fix Plugin Admin close issue after typing ENTER
+- 2022-03-07 53cbe1c22 Fix append extension when saving with Return (win 7)
+- 2022-03-08 a84cbe8f6 Add new ability for filtering incompatible plugins
+- 2022-02-28 c802f86d3 Update danish.xml
+- 2022-03-02 3286b3120 Update dutch.xml
+- 2022-03-01 9a1a999be Add new AutoComplete icon for distinguishing functions from normal keywords
+- 2022-02-25 e04daf8b9 Update german.xml
+- 2022-03-11 dc10d821e Update french.xml
+- 2022-03-11 d6b736aac Add warnings keyword for Perl
+- 2022-03-12 4e97469d8 Fix a small regression due to c3daf4448ddc21a8733e250f2020137c3aad2757
+- 2022-03-14 6892bcbf3 Fix Inslaller bad checkbox display under high DPI (250%)
+- 2022-03-15 a29cfa8d2 Notepad++ release v8.3.3
+- 2022-03-17 9465925cd easterEggs++;
+- 2022-03-14 dddffcf0f Layout improvement in FindReplaceDlg
+- 2022-03-15 10ec94480 Fix wrong xml structure in 2 Auto-completion files
+- 2022-03-17 d9c568863 Fix file saving critical bug under Symantec encryption desktop
+- 2022-03-19 6086e819f Fix dark mode disabled static text color in Column Editor and Style configurator
+- 2022-03-19 32580e6a8 Fix Document list not sync with tab order after sorting
+- 2022-01-05 a61b03ea8 Update Scintilla from v4.4.6 to v5.2.1 and add Lexilla v5.1.5
+- 2022-03-29 41a5bf024 Remove the external lexer support
+- 2022-03-31 7a2f809e6 Fix syntax highlighting regression with cmdline argument
+- 2022-04-01 2871ee519 Revert "Fix syntax highlighting regression with cmdline argument"
+- 2022-04-01 252468c29 Revert "Remove the external lexer support"
+- 2022-04-03 121a396bf Make external language library work again after upgrading to Scintilla5
+- 2022-04-04 2113e782f Use string lexer ID instead of numeric ID for Scintilla 5
+- 2022-03-23 66ca02a01 Update Bespin theme website url
+- 2022-03-26 48ee390cd Fix doc being wronly marked as saved bug after converting its encoding
+- 2022-04-01 ee28051a7 Fix flashing box (autocompletion empty list) whilst Typing issue
+- 2022-03-28 4426f43cf Update NSIS keywords file and autocompletion file
+- 2022-03-24 b3296a1fd Update Inno Setup keyword list
+- 2022-04-05 04e17b737 Fix JSON, JavaScript and BaanC syntax highlighting not working regressions
+- 2022-03-29 44bcf1cff [MinGW] Place the Scintilla build intermediate files separate from the source files
+- 2022-04-06 658b62625 Update BUILD.md
+- 2022-03-28 64bfa72bd Add default sorting ability in Function list
+- 2022-03-30 88ed85147 Add virtual space ability
+- 2022-04-05 b4a58429c Make Find in Files Search Result line number aligned
+- 2022-04-03 7fa6fb083 Scrolling Document List automatically to make the selected tab item visible
+- 2022-04-06 46ce9c31d [MinGW] Restore the original Scintilla makefile
+- 2022-04-07 b88e2fe57 Apply darkmode on missing preference dialog items
+- 2022-04-08 ad39c6861 Fix dark mode square edges around buttons for Windows 10
+- 2022-04-09 2474cbeaf Sort languages alphabetically in Style Configurator
+- 2022-04-09 00abd511b Remove the binary committed by ad39c6861136dce3bd77b43f5e94b88a892e443e
+- 2022-04-09 6d929e187 Shorter Croatian name in localization menu
+- 2022-04-10 a16f08468 Fix RTL regression after upgrading Scintilla from v4 to v5
+- 2022-04-06 721f994df Fix "Sort Lines as Integer" not considering negative number
+- 2022-04-10 3afbf0ca1 Fix light mode disabled text color using dark mode customized color
+- 2022-04-10 e094e9969 Fix "Enable current line highlighting" not working correctly
+- 2022-04-02 4ffd1e985 Fix lossing characters issue after case-conversion (UPPER/lower)
+- 2022-04-11 3f1a582a3 Add dark mode support for autocomplete list & calltip
+- 2022-04-13 0ee65fd82 Fix x64 build error in 3f1a582a36db175a4f86b35dcd47f3aa5bf331fa
+- 2022-04-10 235d9dea7 Update Deep Black.xml
+- 2022-03-13 f30fbcbee Update german.xml
+- 2022-03-17 016d0fcc7 update korean.xml 8.3.3
+- 2022-03-21 d656c19de Update polish.xml to 8.3.3
+- 2022-04-13 2dbc25f91 Add initial dark mode support for Shortcut Mapper
+- 2022-03-29 bee712d86 Update portuguese.xml
+- 2022-03-31 57730801d Update russian.xml v8.3.4
+- 2022-04-07 e76a5c397 Update Slovak translation to 8.3.3
+- 2022-04-07 b6a62fc3f Update french.xml
+- 2022-04-07 2f329b0e4 Update Corsican translation for Notepad++ 8.3.4
+- 2022-04-07 ae75245a7 Update Bulgarian localization
+- 2022-04-09 23de2e68c Update Turkish localization
+- 2022-04-09 20644933a Update croatian.xml
+- 2022-04-10 4b6889b85 update japanese.xml
+- 2022-04-13 0b54cb4da Update localization: Hong Kong Cantonese...
+- 2022-04-07 054e3d0ae Installer: Remember the chosen language in the previous installation
+- 2022-04-19 5d5d2025a Fix HTML document syntax highlighting not working regression
+- 2022-04-14 4f002c86b Fix cropped text in Shortcut mapper's status area issue
+- 2022-04-18 cbd17386e Update ukrainian.xml
+- 2022-04-19 292c057f6 Update polish.xml
+- 2022-04-26 f6ade2c91 Notepad++ 8.4 release: Keep Standing up for Ukraine
+- 2022-04-20 0505bda86 Sort "Search result" to the bottom in language list of Style Configurator
+- 2022-04-19 c40c90e8a Make the dark mode color scheme palatable for ini, json & props files
+- 2022-04-13 d3e77c0e6 Add "Framed current line" option beside of "Highlight current line background"
+- 2022-04-26 c32da953c Update localization files
+- 2022-04-15 1dffb05e0 Add file monitoring command line argument [-monitor]
+- 2022-04-17 1eb5b10e4 Add DarkMode usage detection support for plugins
+- 2022-04-19 87f4249d6 Add support for dark tab updown control
+- 2022-04-16 c94d50842 Fix file name field highlighted while focus is on type combobox in Save As dialog
+- 2022-04-28 3b0d5242a Fix unfocused selected text background color changed problem
+- 2022-04-13 100d45f7c Update Scintilla from 5.2.1 to 5.2.2 and Lexilla from 5.1.5 to 5.1.6
+- 2022-04-28 2fbac354e Fix HTML syntax highlighting in PHP files regression
+- 2022-04-23 dfc9fb6f3 Highlight dark mode combobox border on focus
+- 2022-04-23 77fcedbd1 Fix "Find progress bar" UI clipping
+- 2022-04-29 9cc01de97 Fix "Reload from disk" loosing syntax highlighting regression
+- 2022-04-26 b57254aec Minor cosmetic touchups to Preferences & Style Configurator UIs
+- 2022-04-17 3f322faf6 Fix a crash in UDL
+- 2022-04-27 664d46084 Override "current line indicator" style in "Search results"
+- 2022-05-01 ef9e83690 Add border to dark mode tabs
+- 2022-05-03 ccbf08dc9 CustomFileDialog: Focus the file name when file already exists
+- 2022-05-05 77d62496d Update localization files
+- 2022-04-27 d84be6c2f Update Corsican translation for Notepad++ 8.4.1
+- 2022-04-25 feeda4799 Update tamil.xml
+- 2022-04-28 b8b5a9bc5 Update Slovak translation to 8.4
+- 2022-04-28 b6876663b Update czech.xml to v8.4.1
+- 2022-05-05 bc0545713 Update portuguese.xml
+- 2022-04-29 5d55e9bdd Update german.xml to v8.4.1
+- 2022-04-30 305076637 Update Bulgarian localization
+- 2022-04-30 7b327c583 update japanese.xml to v8.4.1
+- 2022-05-01 8d1a294bf Update russian.xml v8.4.1
+- 2022-05-01 fcd88d73b Update basque.xml
+- 2022-05-02 bdf60d80f Update croatian.xml
+- 2022-05-07 ef609c896 Add a new format argument/option "ADD_ZERO_PADDING" to NPPM_GETNPPVERSION
+- 2022-05-08 82c03424b Fix a typo and update version number
+- 2022-05-08 6e83e6810 Restore auto-completion & calltip default fg/bg colors (no theme)
+- 2022-05-07 a1eed7795 Update localization: Hong Kong Cantonese...
+- 2022-05-11 62e916ede Notepad++ v8.4.1 release
+- 2022-05-05 ad8b1791b Add edge highlight color in customized dark colors of Preferences dialog
+- 2022-04-29 74395977b Improve "Deep Black" theme
+- 2022-05-12 77a53ebd2 Show installed plugin versions in Debug Info dialog
+- 2022-05-14 67297397d Make Alternate Icons behaviour in dark mode consistent
+- 2022-04-26 0f8d5724a Add command line argument for plugin, a related notification and an API
+- 2021-06-13 a630b63c9 Add encoding context menu via right/double click on encoding display zone of status bar
+- 2022-05-16 2aa85006d Fix crashes by re-invoking with command line argument "-udl"
+- 2022-05-16 c72dac69c Add dark mode support on shortcut mapper entirely
+- 2022-05-17 def3aba4e Fix dark mode tab left-right control for floating docking containers
+- 2022-05-14 df438ea94 Fix crash on "Copy Binary Content" command without selection on edit zone
+- 2022-05-17 8a37bed44 Make file description shorter to suit the context menu
+- 2022-05-17 c9b177bb9 Fix a memory leak in "Copy Binary Content" comment
+- 2022-05-18 a57756469 Make dark mode groupbox edge to use edge color
+- 2022-05-19 10f48e36a Fix typos
+- 2022-05-18 b3a9ec5df Fix a small regression of DebugInfo
+- 2022-05-19 3750cf8fa Fix horizontal scrolling with scroll wheel on Logitech MX issue
+- 2022-05-20 e701c208a Fix regression in Alt icons settings
+- 2022-05-19 05dae4a72 Make fold/unfold current line commads togglable
+- 2022-05-24 d85b9a746 Make toolbar icons customizale
+- 2022-05-24 96590a6f9 Fix win32 build due to the previous commit
+- 2022-05-15 ee707ca67 Update french.xml
+- 2022-05-25 e8817eacd Update localization files
+- 2022-05-20 d6595ad83 Make Plugins Admin work with MinGW in debug mode binary
+- 2022-05-25 ddbb75f0f Make Plugin Admin exception message more clear
+- 2022-05-23 3b208743b Display the accurate OS version in DebugInfo (for Windows build 21H1 and greater)
+- 2022-05-13 0b41f4f5c Update portuguese.xml
+- 2022-05-14 d491bb431 Update Slovak translation
+- 2022-05-17 44e7f283e update japanese.xml to v8.4.2
+- 2022-05-17 91fdc8b1d Update russian.xml to v8.4.2
+- 2022-05-25 c55026cd4 Update Corsican translation for Notepad++ 8.4.2
+- 2022-05-22 4487171c3 Add gui4cli keywords and fix style IDs in stylers.model.xml
+- 2022-05-26 b25f37646 Update czech.xml to v8.4.2
+- 2022-05-27 fa3ba7e38 Fix customizing toolbar icon messed with dark mode
+- 2022-05-21 dc0e5740c Update swedish.xml
+- 2022-05-14 6613a6da1 Update Bulgarian localization
+- 2022-05-26 bcebfe15e Update polish.xml to 8.4.2
+- 2022-05-22 5354f61f8 Update localization: Hong Kong Cantonese...
+- 2022-05-26 8498e0619 Fix Debug builds missing
+- 2022-05-29 b5479bb9b Fix Plugin Admin not showing on menu due to certificate checking problem
+- 2022-06-03 2d47c8d34 Fix an order error in toolbarIcons.xml
+- 2022-06-03 a02a254ea Notepad++ 8.4.2 release
+- 2022-05-31 b204be901 Fix a small regression in DebugInfo dialog
+- 2022-05-22 d3b026bfe Add dark mode support for plugins
+- 2022-06-05 33ab65239 Make dark mode support for plugin by default
+- 2022-06-01 2c0134ef5 Add plus and arrow (drop down list of opened files) buttons on menu bar
+- 2022-06-01 d65967dea Use edge colors in dark mode for listbox border
+- 2022-06-07 b6efff415 Fix Selected text changes color issue when editor window loses focus
+- 2022-06-07 82b78ff7b Fix error from commit b6efff4
+- 2022-06-06 f517c6c05 Enhance dark mode support for plugins
+- 2022-06-09 79e766755 Make EOL (CRLF) display customizable
+- 2022-06-13 2d7b2093a Fix font definition for languages regression in Style Configurator
+- 2022-06-13 d1347d501 Use "Max Speed" compiling optimization instead of "Full" compiling optimization
+- 2022-06-14 d0b2a9ff9 Skip save all warning dialg if only current editing file is dirty
+- 2022-06-14 f69a9093f Fix x64 build error
+- 2022-06-13 f1ed4de78 Add NPPM_CREATELEXER message for plugins to instantiate lexers
+- 2022-06-18 3b0479309 Fix Find in files performance regression since updating Scintilla 5
+- 2022-06-17 08128ee36 Add an option allows to show only 1 entry per found line in search result
+- 2022-06-26 225827478 Update localization files
+- 2022-06-22 9d69db9b1 Fix a crash issue due to opening an empty .NFO file
+- 2022-06-24 7917d0d97 Fix "CMD Here" command open Explorer issue
+- 2022-06-27 e8ed195aa Exclude an unstable version of one plugin from the installer
+- 2022-05-10 9cc7bddd2 Update dutch.xml
+- 2022-05-28 9de65fb6f Update chineseSimplified.xml
+- 2022-05-28 6643e1a17 Update german localisation
+- 2022-06-07 0d6958a5a Update french.xml
+- 2022-06-07 2d1874de4 Update Slovak translation to 8.4.2
+- 2022-06-07 4a8d7b11d Update portuguese.xml
+- 2022-06-08 f50ddf829 Update Bulgarian localization
+- 2022-06-10 e6dab70ec update japanese.xml
+- 2022-06-12 226a41e79 Update russian.xml for v8.4.3
+- 2022-06-13 27d57e8ca Update Corsican translation for Notepad++ 8.4.3
+- 2022-06-15 7ec8aa285 Update croatian.xml for 8.4.3
+- 2022-06-16 ed545cb24 Update localization: Hong Kong Cantonese...
+- 2022-06-22 5b1c2c194 Update Turkish localization
+- 2022-06-23 355e06591 Update czech.xml to v 8.4.3
+- 2022-06-26 3a2ef5cff Update ukrainian.xml
+- 2022-05-25 ed4bb1a93 Update lexilla to 5.1.7 & Scintilla to 5.2.3
+- 2022-06-30 980cbcccc Fix search results are wrongly positioned in CJK languages
+- 2022-06-30 059bca331 Fix 1 entry per line in Search result UTF8 marked wronly issue
+- 2022-06-28 1bd22fae7 Update french.xml
+- 2022-06-30 9781b34bc Update chineseSimplified.xml
+- 2022-06-30 965f81223 Update Slovak translation to 8.4.3
+- 2022-06-29 4a32234e5 Update localization: Hong Kong Cantonese
+- 2022-07-02 5c6fbd331 Fix "Style Configurator..." command makes Notepad++ crash
+- 2022-07-04 de75f5667 Processing WM_CLOSE with the right return value
+- 2022-06-30 09df963a1 Update croatian.xml
+- 2022-06-28 2a7552c88 Update Bulgarian localization
+- 2022-07-05 0b5785cbe Fix a fording perf issue in Search result windows
+- 2022-07-04 5bab2b574 Update czech.xml for v8.4.3
+- 2022-07-06 c63169eab Restore Search result folding's old behaviour
+- 2022-07-06 bcb103594 Update polish.xml to 8.4.3
+- 2022-07-06 c284534e0 Hungarian translation update for 8.4.3
+- 2022-07-08 c7c5db7c5 Notepad++ v8.4.3 - Unhappy Users' Edition
+- 2022-07-08 e6fe568bb Fix crash during Search result
+- 2022-07-11 57bb83846 Add "Notepad++ Online User Manual" into the shortcut mapper
+- 2022-07-12 67ab4d552 Add some shortcuts in Styler Configurator to preferences dialog
+- 2022-07-14 68e35dadf Update german.xml
+- 2022-07-14 bf6294a7e Update japanese.xml
+- 2022-07-14 a44b9b6cf Update russian.xml
+- 2022-07-12 1834662ef Update Bulgarian localization
+- 2022-07-09 49f6ee389 Update Slovak translation
+- 2022-07-08 dcf8b790a Update portuguese.xml
+- 2022-07-15 0379a5deb Update russian.xml to v8.4.4
+- 2022-07-15 b77faf77a Update polish.xml to 8.4.4
+- 2022-07-15 08acfe99b Notepad++ v8.4.4 - Happy Users' Edition
+- 2022-07-15 e90284ea4 Fix various typo in French localization file
+- 2022-07-12 bbf3adb9b Fix dark mode visual glichy in explorer panel under Windows 8.1
+- 2022-07-20 f85a9c45e Add reduce mode in Find/Replace dialog
+- 2022-07-24 13350a3d2 Fix minor error
+- 2022-07-25 7a64fd516 Enhance very long line's performance
+- 2022-07-25 607760438 Fix erasing part of content make hanging issue
+- 2022-07-30 7d5516e0a Add an option for hiding the ＋ ▼ ✕ from the menu bar
+- 2022-07-30 70660eb60 Add carret block after option
+- 2022-08-03 2e66fe000 Fix drag n drop documents crash between 2 instances
+- 2022-07-31 f2c4ecd7e Fix crash on Wine
+- 2022-08-12 30f027b6a Fix Notepad++ crash due to calling NPPM_GETLANGUAGENAME with WPARAM -1
+- 2022-08-15 851900334 Add cycling function hints ability by ALT-UP/DOWN shortcuts
+- 2022-08-26 6263ce5de Fix detected language not being applied issue
+- 2022-08-14 6a33bf6c4 Update to Scintilla 5.2.4 and Lexilla 5.1.8
+- 2022-08-05 9809e2fc2 Add option to turn off selecting text when Field dialog is invoked
+- 2022-08-28 adcace338 Improve performance for "Find in Files" and ""Find all in..."
+- 2022-08-30 5f60ee70d Fix a grammar error & add an easter egg
+- 2022-08-02 4444d2409 Update Slovak localization
+- 2022-07-18 5a2db2610 Update brazilian_portuguese.xml
+- 2022-08-02 3856f765f Update Bulgarian localization
+- 2022-08-30 51b05136d Update czech.xml to v8.4.5
+- 2022-07-31 1014a5517 Update russian.xml to v8.4.5
+- 2022-08-06 be1c1ae62 Update localization: Hong Kong Cantonese...
+- 2022-07-18 e86671549 Update Corsican translation for Notepad++ 8.4.5
+- 2022-08-07 786e377af Update polish.xml
+- 2022-08-31 31f8a5750 Update polish.xml to 8.4.5
+- 2022-08-12 d937e62ee Update korean.xml to 8.4.5
+- 2022-08-08 b96b7ef1b Update portuguese.xml
+- 2022-08-01 1df1954eb Update japanese.xml
+- 2022-08-08 27e489623 Update dutch.xml
+- 2022-08-31 d6ca0198e Revert "Update portuguese.xml"
+- 2022-08-31 1aa93bd85 Update portuguese.xml
+- 2022-09-02 39ab226c8 Fix button text in dark mode regression from Wine crash fix
+- 2022-09-02 95cb564c2 Don't use memset to initialize tTbData
+- 2022-09-02 4ddd2d4a4 Remove unneeded subclass
+- 2022-09-01 6d36d9d39 Update croatian.xml to v8.4.5
+- 2022-09-07 ea1e9295e Notepad++ v8.4.5 release
+- 2022-09-03 ebe7648ee Code improvement, remove unnecessary part
+- 2022-09-04 15e5da6f7 Unify the terms "Fold/unfold" on menu
+- 2022-09-07 85d7215d9 Fixes security vulnerability
+- 2022-09-06 5a94263be Add incompatible (unloaded) plugin list in Plugin Admin
+- 2022-08-02 ce85323a9 Add last supported version for Win2k in SUPPORTED_SYSTEM.md
+- 2022-09-09 a5c201f79 Fix Windows 11 OS version not detected in getWindowsVersion
+- 2022-09-09 82055985f Add Plugin list repository link and its version in PluginAdmin dialog
+- 2022-09-08 233c69718 Fix gcc reorder warnings
+- 2022-09-04 42d863dd9 Add setting colour ability for individual tab
+- 2022-09-10 2da5c5b39 Code enhancement
+- 2022-09-11 aad36afc6 Change to menu name to the "normalized" terms on Internet
+- 2022-09-12 6322562cf Revamp tab context menu
+- 2022-09-12 9455684b4 Renumber Notepad++ marks for preparing Scintilla 5.3.0's integration
+- 2022-08-27 1646ea613 Update to scintilla 5.3.0 and lexilla 5.1.9
+- 2022-09-12 d03b11ebf Add dark mode support to ColourPicker/ColourPopup's ChooseColor dialog
+- 2022-09-12 84b8c6494 Fix NPPN_DARKMODECHANGED wrong return value to plugins
+- 2022-09-11 43c8d8115 Code improvement, remove unnecessary part
+- 2022-09-15 4cb63ff01 Complete localization files with missing entries
+- 2022-09-13 3295cc8d2 Code improvement
+- 2022-09-13 fc32fbdcc Add Change History markers for saved/unsaved/undone modification
+- 2022-09-15 1ac1b1150 Code enhancement
+- 2022-09-17 ead6fb6b8 Fix gcc linux build and cmake build issues under ubuntu
+- 2022-09-19 6a801cc0a Make Change History margin colour configurable
+- 2022-09-18 d3b630841 Fix horizontal bar showing issue while resizing document list's height
+- 2022-09-19 b29a9ce14 Code enhancement - removing gcc warning
+- 2022-09-04 c3c410506 Update chineseSimplified.xml
+- 2022-09-07 e0afc7a28 Update brazilian_portuguese.xml
+- 2022-09-09 b54481350 Update Corsican translation for Notepad++ 8.4.6
+- 2022-09-13 aebab9330 Update japanese.xml to v8.4.6
+- 2022-09-13 26f80a7d3 Update portuguese translation
+- 2022-09-13 514c9a462 Update german.xml
+- 2022-09-14 d5a89ed92 Update russian.xml v8.4.6
+- 2022-09-07 a064015c0 Update Turkish localization
+- 2022-09-15 b48af08e8 Update french.xml
+- 2022-09-21 36bfe59d2 Update polish.xml to 8.4.6
+- 2022-09-08 1d07d4717 Update Slovak translation
+- 2022-09-18 0dd975674 Update italian.xml to 8.4.6
+- 2022-09-07 5a24dc77f Update Bulgarian localization
+- 2022-09-22 848b412cf Fix Change History margin visual glichy under dark mode
+- 2022-09-22 0c121a172 Update czech.xml to v8.4.6
+- 2022-09-22 466053dc9 Update crotian.xml to 8.4.6
+- 2022-09-24 18971709f Change colours for applying to tab more distiguishable
+- 2022-09-23 0ce3bc08d Fix rebol syntax quote issue
+- 2022-09-24 32b6cae4b Update BUILD.md
+- 2022-09-22 7df3d7362 Update russian.xml  hotfix  for v8.4.6
+- 2022-09-23 bfc7c302c Update localization: Hong Kong Cantonese
+- 2022-09-22 6d5efab7d Update italian.xml
+- 2022-09-25 155d75414 Update localization files
+- 2022-09-24 2d4af44f5 Fix plugin admin UI overlapping
+- 2022-09-25 e3a5f76af Fix clickable link bad display regression
+- 2022-09-29 6750d4dbb Notepad++ release 8.4.6
+- 2022-09-26 4b3ee9c4e Fix line hiding issues
+- 2022-09-24 dfa6c19d8 Make ESC Key abort "Move to Recycle Bin" confirmation prompt
+- 2022-09-30 11884bd97 Fix long filters get truncated in Find in Files feature
+- 2022-10-03 83ee8f09b Clean up NPPM_ALLOCATEMARKER API
+- 2022-10-03 4d5069280 Add new API for getting bookmark ID
+- 2022-10-01 2041c515c Update appveyor.yml
+- 2022-10-01 99321d0d4 Update with boost to 1.80.0
+- 2022-10-01 20b14b8e4 Updated nlohmann json to 3.11.2
+- 2022-09-28 23fc940a2 Enhance N++ EndSession logging
+- 2022-10-05 af0bc2e11 Revert "Fix detected language not being applied issue"
+- 2022-10-04 a610387fb Fix language detected from content not applied if default language is set
+- 2022-08-31 06a082d35 Add Python missing option in theme files
+- 2022-10-05 4c96f8697 Update build environment
+- 2022-09-24 4b539b4d5 Build project using C++20
+- 2022-10-05 c64049a1e Fix CI system error due to the project build env update
+- 2022-10-06 3cbbb4293 Revert "Fix CI system error due to the project build env update"
+- 2022-10-06 3b8446d8c Fix CI system error due to the project build env update
+- 2022-10-06 bcaf0f00b Update CI env to have GCC 12 for using c++20
+- 2022-10-06 e73fca5a8 Use c++20 function ends_with()
+- 2022-10-06 f57c69aac Fix output from makefile and correct cmake for c++20
+- 2022-10-05 a26599794 Refactoring & optimizing open/save large files time
+- 2022-10-07 49e5a1737 Enhance "Go To" dialog: update line/position data dynamically
+- 2022-10-11 9bec8f546 Fix extra background colors on printing due to Change History
+- 2022-10-10 8ff003412 Make large file limit (for styling) configurable
+- 2022-10-12 a6a1442ba Installer enhancement: remember "Don't use_%APPDATA%" option
+- 2022-10-14 1be004466 Installer enhancement: prevent arm64 installer from installing on non ARM64 system
+- 2022-10-17 c02c23b7d Add tooltips in performance section to make features more explicit
+- 2022-10-10 546745fe3 Increase hash font height
+- 2022-10-20 6755daf22 Enhance Large File Restriction UI
+- 2022-10-20 7e080a46b Fix brace match not working in Large File Restriction
+- 2022-10-21 cd6a6ac3b Add "Allow clickable link" option in large file restriction
+- 2022-10-23 50a50cce3 Remember Column Editor settings through the sessions
+- 2022-10-27 b4f569b8b Add back an misdeleted entry
+- 2022-10-28 c3ffe3549 Enhance "Allow clickable link" option for Large File Restriction
+- 2022-10-30 513ee3e3f Use Scitilla default 64 bits symbol
+- 2022-10-30 586702584 Fix 32 bits build error
+- 2022-10-28 a54cc861b Update czech.xml to v8.4.7
+- 2022-10-28 b8a05edcf Update polish.xml to 8.4.7
+- 2022-10-28 0ce2c2083 Update korean localization file
+- 2022-10-20 32bb1457c Update Vietnamese translation
+- 2022-10-19 39e0aa37b Update russian.xml v8.4.7
+- 2022-10-19 20771fe55 update japanese.xml to v8.4.7
+- 2022-10-16 b9bb1706b Update swedish.xml
+- 2022-10-16 8c7142ddb Update Corsican translation for Notepad++ 8.4.7
+- 2022-10-16 4cb312da5 Update Slovak translation
+- 2022-10-01 2fd55ff11 Update portuguese.xml
+- 2022-09-30 ed3189e00 Update Italian.xml
+- 2022-10-24 6000f3bb2 Fix session.xml emptying by forced Windows update restart
+- 2022-10-15 9df5859d0 Update in Brazilian Portuguese translation
+- 2022-10-30 b4c5c14cd Enlarge a control for the translation
+- 2022-10-16 2f080d82a Update Bulgarian localization
+- 2022-10-31 22489a131 Update localization: Hong Kong Cantonese
+- 2022-10-12 b502266e8 Update to scintilla 5.3.1 and lexilla 5.2.0
+- 2022-10-31 3e9413d61 Restore Scintilla header files
+- 2022-10-31 ae32f34fb Add minlength attribute for HTML
+- 2022-11-01 1d98d9830 Fix crash regression due to ABI incompatibility
+- 2022-10-22 c96be1bbe Update belarusian.xml
+- 2022-10-03 0bd8f6f7e Update spanish.xml
+- 2022-10-22 5b9cd0b2e Fix plugin admin search issue
+- 2022-11-01 713117c68 Rename a function
+- 2022-11-01 6f67656f8 Make solarized.xml up-to-date with stylers.xml
+- 2022-11-01 f3f615d52 Set PKGBUILD and APKBUILD syntax highlighting as shell script
+- 2022-11-03 a12168c3b Update croatian.xml to 8.4.7
+- 2022-11-03 e53aefcf8 Update dutch.xml
+- 2022-11-02 e5708bf3e Hotfix russian.xml  v8.4.7
+- 2022-11-08 c8816e08f Notepad++ 8.4.7 release
+- 2022-11-02 f4419f2be Fix CI 32 build failure in GCC
+- 2022-11-09 238aadb87 Adjust build GCC
+- 2022-11-08 67256a107 Update CPP keywords
+- 2022-11-12 f6b1cf3e7 Update certif/sha256 verification
+- 2022-11-12 d4719a83a Use writeLog instead of OutputDebugString for certificate checking
+- 2022-11-12 997349d05 FindReplaceDlg enhancement: Add vertical scroll bar on all combobox
+- 2022-11-10 596df7988 Update PowerShell keywords
+- 2022-11-01 bac903208 Change foreground color for ERROR in JSON to be more readable
+- 2022-10-31 bc1487881 Add localization for Length label in the Customize Maximum Length popup
+- 2022-11-10 87a53d1ed Add Pascal/Delphi for Function List
+- 2022-11-14 d53ed27bb Improve the performance of Remove Empty Lines command
+- 2022-11-14 6803b69c0 Make some styles to be more visible with the current line style
+- 2022-11-05 e2a123438 Dark mode enhancement
+- 2022-11-22 4c188c301 Fix style.xml not remember by light mode
+- 2022-11-22 11ccc415e Update localization files
+- 2022-11-22 3fcad9888 Fix localization files
+- 2022-11-22 22963f53d Add Mark Styles to theme DansLeRuSH-Dark
+- 2022-11-21 f03381e77 Autocomplete enhancement: sharpen icons
+- 2022-11-24 6b34f9ce0 Fix incorrect plugin architecture reports partially
+- 2022-11-14 891f2ed68 Add function list parser for NppExec plugin's scripting language
+- 2022-11-21 cffdf79a9 More performance optimization for the Remove Empty Lines command
+- 2022-11-28 de5f41931 Fix the tab context menu reload command's state not synchronized
+- 2022-11-27 bd4c323d7 Fix inconsistencies at OS-forced Notepad++ (v8.4.7) exit
+- 2022-11-25 785b3417b Reduce CI (AppVeyor) build time
+- 2022-11-28 aa8ae48b9 Make tab context menu customizable
+- 2022-11-30 210efa503 Fix typos in CONTRIBUTING.md
+- 2022-12-01 adf2ad0f4 Reduce CI build time (for md/txt/log)
+- 2022-12-01 c1cb0022c Add a forgotten command
+- 2022-12-01 f400b682b [xml] Include tab cm old layout in comment
+- 2022-12-02 c63cc6f21 Fix Default Language not working for the 1st empty file with empty session
+- 2022-12-02 f6d36235c Fix sorting failure in zero-length column mode selection
+- 2022-12-04 6c9f4cdff Fix inconsistencies at OS-forced Notepad++ v8.4.7 exit - 2nd part
+- 2022-12-06 e64d1efe7 [xml] Add autocompletion for PowerShell
+- 2022-12-06 8785b29e2 Update PowerShell keywords
+- 2022-12-05 8e85110b5 Make macro menu organizable with submenu
+- 2022-12-08 f1e1f6be8 Make Run menu organizable with sub-menu
+- 2022-12-09 4e4d9d95c Fix delimiter selection crash issue
+- 2022-12-11 bf34ef0dd Fix Trim Operations not working on selection
+- 2022-11-30 a755c5663 Enhance SQL function list
+- 2022-12-12 e596baad1 [xml][force xml] Optimize AppVeyor for test files
+- 2022-12-12 ee336b24c [xml] Add SQL unit tests
+- 2022-12-07 4f1aa7b00 Fix crash on Win32 Namespace prefixed file name
+- 2022-12-14 bbe70f55a [xml][force xml] Switch to Python311-x64 and use prebuild lxml for CI
+- 2022-12-12 41ebf9a2b Make some git related files apply to ini syntax automatically
+- 2022-12-15 3fb9c7195 Add more keywords and file extentions for languages
+- 2022-12-15 27e19089d [xml] Fix xml syntax error
+- 2022-12-10 fc61868cf Update to Scintilla 5.3.2 and Lexilla 5.2.1
+- 2022-12-15 c0e207328 Enhance Properties file: add/improve the syntax folding/highlighting
+- 2022-12-13 e75bd8069 Fix Go to settings for URL hovered style
+- 2022-11-26 9752c9e10 Update galician.xml v 8.4.7
+- 2022-11-27 be2c1bfbc Update spanish.xml to v8.4.7
+- 2022-11-14 109ad868b Update Slovak translation
+- 2022-12-15 4276165bb Fix themes' inconsistent behaviour after saving
+- 2022-12-04 b97305517 [xml] Update russian.xml to v 8.4.8
+- 2022-11-30 df911511a [xml] Update french.xml
+- 2022-11-23 1b22df539 [xml] Update Corsican translation for Notepad++ 8.4.8
+- 2022-11-20 d89f33895 [xml] Update german.xml to v8.4.8
+- 2022-10-02 83dcf5d57 [xml] Update ukrainian.xml
+- 2022-12-15 166b9b5c4 [xml] Update czech.xml to v848
+- 2022-12-13 e45c1fc32 [xml] Fix disabled options activated in themes issue
+- 2022-12-03 4f7ae29bf [xml] Update portuguese.xml
+- 2022-12-13 cf158689f Add Go to settings for "Change History margin" style in Style Configurator
+- 2022-12-15 901f62f94 [xml] Update polish.xml to 8.4.8
+- 2022-11-20 264082145 [xml] update japanese.xml to v8.4.8
+- 2022-12-15 1a5bd265e [xml] Fix some enties in PHP autocompletion
+- 2022-12-16 0fe063605 [xml] Add comment to help reorganizing Macro & Run menu
+- 2022-11-14 ef1cbbc7d [xml] Update brazilian_portuguese.xml
+- 2022-12-03 6a853d7f4 Update Bulgarian localization
+- 2022-11-25 4f7f48a6a Update localization: Hong Kong Cantonese
+- 2022-12-18 a0c41cc5a Revert "Fix Trim Operations not working on selection"
+- 2022-12-17 6518f3e4b Fix theme not changed issue after switching dark/light mode in some cases
+- 2022-12-17 3012cb192 [xml] Update croatian.xml
+- 2022-12-18 be9860980 Fix autocomplete/calltip colors not applied when changing themes
+- 2022-12-18 3bd262c7c Add dark autocompletion icons for dark themes
+- 2022-12-19 58416114d Add tabContextMenu_example.xml into binary packages
+- 2022-12-19 f10753d2d Make theme portable
+- 2022-12-17 4ae6736c9 Update lua.xml
+- 2022-12-20 caa4827e1 Fix search result not applying new theme
+- 2022-12-21 529693a55 Add forgotten files into the binary packages
+- 2022-12-22 11f7ba2e0 Fix a typo
+- 2022-12-24 13ddc1a33 Fix changing INI styles not working regression
+- 2022-12-24 ac8782db1 Notepad++ 8.4.8 release
+- 2022-12-25 3d1aa408d Enlarge items window in Preferences dialog for better translation display
+- 2022-12-22 ad6b9085d Fix  XML tag-matching not be case-sensitive
+- 2022-12-16 3f0f6a229 Fix trim operations for selection lines not working issue
+- 2022-12-20 571955858 Fix sorting not stable issue
+- 2022-12-20 90af76353 Fix gcc warnings
+- 2022-12-21 5a1e0898c Add two missing xml files to makefile
+- 2022-12-21 7fd8eb7f8 [xml] Update VBA keywords
+- 2022-12-22 2fb7da73d Remove "stylerTheme" attribute in config.xml
+- 2022-12-24 d1565a470 Fix memory leak, fix warnings, replace GetWindowLong with GetWindowLongPtr
+- 2022-12-26 d87e996ff [xml] Add .mjs as recognized file extension for JavaScript
+- 2022-12-26 dc3fd93f5 Fix doc switcher not using other icon sets
+- 2022-12-27 1d6fe3ff4 [xml][force compile] Add toolbarIcons.xml to the build process
+- 2022-12-28 3022a2ee2 [xml] Add .psd1 as recognized file extension for PowerShell
+- 2022-12-27 6a8a446eb Add dark mode to project panel file relocalizer dlg
+- 2022-12-28 50e95d226 Code enhancement: Replace undocumented functions
+- 2022-12-29 3ee8660c2 Replace N++ by Notepad++ and fix some typos
+- 2022-12-27 81a77f13a Add support selection for "EOL to Space" commands
+- 2022-12-24 307fd2fcd Add setting for panels to ignore '-nosession'
+- 2022-12-31 c63c0035f Fix saving 4GB+ files file size cutting off issue
+- 2022-12-28 3da880b4f Align edge with tab (dark mode)
+- 2022-12-23 359651789 Pascal function list parser enhancement
+- 2023-01-02 13dfaa96a Add -Wconversion flag to makefile
+- 2023-01-05 bdb06d5c1 Add JSON5 support
+- 2023-01-05 fd84de1ee Fix some incoherent upper/lower case in coffee.xml
+- 2023-01-03 17eba0a37 Fix docking GUI for plugin in light mode
+- 2023-01-06 b3934afd9 Fix Notpad++ hangs while deleting search results results
+- 2023-01-07 074241073 Use predefined cursor (hand) for link text
+- 2023-01-08 6078ec736 Replace macro min/max with std::min/std::max
+- 2023-01-10 662b54e28 Add property sheet in VS project and clean project file
+- 2023-01-13 df658a601 Refactoring: make code more readable
+- 2023-01-13 6c3659fe7 Fix Notepad Replacement bug by simplifying its code
+- 2022-12-31 1652236f3 Add selection support to TAB and Space conversion commands
+- 2023-01-13 7fad2a62d Fix exclude functions in comment zones of function list
+- 2023-01-17 b280db88d Add more unit tests for function list
+- 2023-01-17 d476a894c Make Pascal/Delphi functionList more efficient and more reliable
+- 2023-01-19 432dcb7f1 Use wide char version's function directely (part1)
+- 2023-01-19 614086535 Use wide char version's function directely (part2)
+- 2023-01-20 63d1bbae7 Fix v8.4.8 hanging while opening some Pascal files
+- 2023-01-18 f8593916a Fix CI problem: Some commits are treated as "XML changes only
+- 2023-01-15 8add86646 Code enhancement: use conformant code
+- 2023-01-21 535bd8fa0 Use wide char version's function directely (part3)
+- 2023-01-22 04f38a7af Fix undo "Insert Date/Time" needs 2 times to get old data back issue
+- 2023-01-22 eabf5d76c Fix cannot undo "Block Uncomment" command in one shot
+- 2023-01-22 01661acba Fix un uncomment undo regression
+- 2023-01-12 d8a3ea135 Update chineseSimplified.xml
+- 2023-01-10 88b303f12 [xml] Update portuguese.xml
+- 2023-01-07 1a85a3d7d [xml] Update localization: Hong Kong Cantonese...
+- 2023-01-03 f351f8329 [xml] update japanese.xml to v8.4.9
+- 2023-01-02 240287141 [xml] russian.xml update v8.4.9
+- 2022-12-31 31e2491c2 Update Corsican translation for Notepad++ 8.4.9
+- 2022-12-30 e99598034 [xml] Update brazilian_portuguese.xml
+- 2022-12-30 80f8540d1 [xml] Update french.xml
+- 2022-12-30 ee805cadb [xml] Update Bulgarian localization
+- 2022-12-30 867388062 [xml] Update Slovak translation
+- 2022-12-29 e8422ec9d [xml] Update german.xml to v8.4.9
+- 2022-12-28 0d22c4d86 Update Turkish localization
+- 2023-01-23 7dab5735c Update german.xml
+- 2023-01-23 4fa9aae25 Update Turkish localization
+- 2023-01-13 f526567f7 Update chineseSimplified.xml
+- 2023-01-26 6e7901ecb Fix folder display mess in non-western languges under Macro/Run menu
+- 2023-01-26 e302ea2c9 [xml] Update croatian.xml to 8.4.9
+- 2023-01-25 277ea770f [xml] Update localization: Hong Kong Cantonese...
+- 2023-01-25 92db94a35 [xml] Update polish.xml to 8.4.9
+- 2023-01-31 409c363e1 Notepad++ v8.4.9 release
+- 2022-12-30 e003f5b45 Code enhancement: Use dlg resource parameters instead of reSizeTo
+- 2023-01-21 05977f630 Get full product name for debug info for Windows 11
+- 2023-01-19 afacc8338 Fixed dock-able panels not restoring for mono instances
+- 2022-12-26 62a23a8dc Fix autocomplete to sort case insensitive issue
+- 2023-01-26 5014edfac Fix some issues in Pascal/Delphi function list parser
+- 2023-02-02 5aeb8abb5 Fix notepad replacement opening file name containing white space regression
+- 2023-02-02 07924528c Add Begin/End Select in Column Mode command
+- 2023-01-31 aaab19076 Add show non-printable characters command
+- 2023-02-05 39f32bda9 Fix panels not restored from systemtray with "Edit with Notepad++" in admin mode
+- 2023-02-06 dc99ce103 Make Non-Print Characters show by default
+- 2023-02-03 43d9f0d66 Translate 'Compact Language Menu' popup dialog
+- 2023-02-05 296a168b3 Fix Doc Switcher bottom cut off regression
+- 2023-02-05 f38195a0d Fix GCC conversion warnings
+- 2023-02-06 9285bf2d4 Fix missing items in word autocomplete
+- 2023-02-06 0d9b16634 Fix Synch H/V Scrolling commands not sync with 2 views
+- 2023-02-01 94b83158d Add middle mouse click ability to close doc in Document List
+- 2023-02-11 4d107e269 Close doc in document list on middle mouse button up
+- 2023-02-10 03a5c4795 Add new notification for lexer plugin
+- 2023-02-08 9eab1f566 Add option to make auto-completion list brief
+- 2023-02-09 43182e1d0 Update to Scintilla 5.3.3 and Lexilla 5.2.2
+- 2023-02-11 3f13957f6 Make two items in progress dialog translatable
+- 2023-02-11 dbd0c43dd Fix missing translation for the context menu items
+- 2023-02-12 63ba30cfe Code enhancement: add -Wextra flag for GCC builds
+- 2023-02-13 f7fcab4c2 Make categories in the Shortcut Mapper dialog translatable
+- 2023-02-13 0c704fd66 Make theme warning message translatable (switching unsaved theme to another)
+- 2023-02-10 37963ea21 Apply tab colors to document list items
+- 2023-02-13 d2ba9cae0 Add keywords and functions of PHP
+- 2023-02-14 f403b1226 Make Context menu in Shortcut Mapper (Modify, Delete, Clear) translatable
+- 2023-02-14 52c850de7 Fix a minor GUI glitch in Preferences lg
+- 2015-06-17 e163c6d0a Code enhancement: Secure overloads
+- 2023-02-11 4a4f96cef Code enhancement: Fix GCC warnings
+- 2023-02-14 962749404 Fix translation issue for Dock/Undock label in User-Defined dialog
+- 2023-02-15 278f694f3 Code enhancement: fix GCC implicit-fallthrough warnings
+- 2023-02-14 d30b789d6 Add support for non-printing char in main Search Result dock window
+- 2023-02-17 5e2f5d79a Code enhancement: correct parameter error to call of doOpen
+- 2023-02-17 caff51c78 GUI enhancement: replace auto-complete link mini dlg with slider
+- 2023-02-15 5c10f5821 Fix hit text in search results being out of sight issue
+- 2023-02-18 b9ab516c2 Code enhancement: fix clang warnings
+- 2023-02-17 a0caaf83e [xml] Add more pseudo-classes to CSS
+- 2023-02-16 3f3aed43e Rename commanfd "Remove Unmarked Lines" to "Remove Non-Bookmarked Lines"
+- 2023-02-16 1b65cc010 Make Select and Find (Next or Previous) always in Normal search mode
+- 2023-02-12 4fd972cda Auto-completion enhancement: reduce duplicate items in function/word list
+- 2023-02-17 b077c58b5 Make volatile Find uses least-strict option settings
+- 2023-02-18 a0031159c Add new explorer context menu entry "Edit with Notepad++" for W11
+- 2023-02-23 96030fe83 Add Bulgarian context menu entry
+- 2023-02-23 81b41be64 Translate explorer context menu "Edit with Notepad++" in Italian
+- 2023-02-21 a68963503 Make "Cannot open file" message translatable
+- 2023-02-22 0649ca9c5 [xml] Add RETURNING keyword to SQL
+- 2023-02-21 ea008dc29 Fix regression about search progress window visual glitch
+- 2023-02-19 8b3f072a3 GUI enhancement: use edit field instead of tab size link + mini dlg
+- 2023-02-24 99e7c5a84 Set english.xml version right
+- 2023-02-24 e819b6d39 Czech translation of context menu entry
+- 2023-02-24 bb260a15d [xml] Update polish.xml to 8.5
+- 2023-02-24 cbb1375f6 CI enhancement: Add ini files to exclusions
+- 2023-02-24 5a886fd60 [xml] Update czech.xml to v8.5
+- 2023-02-18 130ccd81f [XML] update italian.xml v.8.5.0
+- 2023-02-12 8444f85c1 [xml] Update russian.xml for v8.5.0
+- 2023-02-21 2bf50bc19 Add edit ctrl highlight on focus for incremental search & function panel
+- 2023-02-18 167e7fdd4 [xml] Update Bulgarian localization
+- 2023-02-16 2525c2d10 [xml] Update spanish.xml to v8.5.0
+- 2023-02-01 74101aa68 Update swedish.xml
+- 2023-02-04 dc611488e [xml] Update brazilian_portuguese.xml
+- 2023-02-05 3abd500d7 [xml] Update Slovak translation
+- 2023-02-06 07804a828 [xml] Update Corsican translation for Notepad++ 8.5.0
+- 2023-02-18 2939039db [xml] Update galician.xml to v8.5.0
+- 2023-02-25 b1e136118 Updat the translation of 'Edit with Notepad++'
+- 2023-02-25 4d217387f Fix Dock/Undock label when we change localization
+- 2023-02-25 d4d4163cb Fix an eventual memory leak
+- 2023-02-11 642a3493f [xml] update japanese.xml
+- 2023-02-24 7cc7bcf60 [xml] Update French translation file
+- 2023-02-25 7c848e89e Merge branch 'fix_13228' of https://github.com/ArkadiuszMichalski/notepad-plus-plus into ArkadiuszMichalski-fix_13228
+- 2023-02-25 235b51af6 Merge branch 'ArkadiuszMichalski-fix_13228'
+- 2023-02-10 055deeb4b [xml] Update portuguese.xml
+- 2023-02-26 cd64850ed Update SUPPORTED_SYSTEM.md for Vista & Server 2008
+- 2023-02-25 e4b18fbcc [xml] Update galician.xml
+- 2023-02-25 4648a2513 [xml] Update spanish.xml
+- 2023-02-16 d660070ac Update dutch.xml
+- 2023-02-05 8a69ab841 [xml] Update german.xml
+- 2023-02-27 081e8ad11 [xml] Update localization: Hong Kong Cantonese...
+- 2023-03-04 568075beb Fix wrong value set in Preferences->Performance->"Define Large File Size"
+- 2023-03-04 9362e782d Update indonesian.xml to v8.5
+- 2023-03-01 35dcffc33 [xml] Update polish.xml to 8.5
+- 2023-02-28 e9e5f57f8 [xml] Update italian.xml
+- 2023-02-28 d4f8aea5d Update german.xml to v8.5
+- 2023-02-27 7789c7daf [xml] Update croatian.xml to 8.5
+- 2023-02-23 892ab0850 Fix untitled document number jumping or repeated problem
+- 2023-02-17 9c0e1e455 Fix "Recent Files" menu lost translation
+- 2023-02-24 fa9504d59 Don't populate in Find what if a stream selection more than 1024 characters
+- 2023-02-25 dc0c8d651 Fix visual glitch for UDL window when changing localization
+- 2023-03-01 20f381e50 Add langCode for English and convert passed value to one format
+- 2023-02-28 f923940dc Add more translation of 'Edit with Notepad++'
+- 2023-03-06 21a78ed03 Notepad++ release 8.5
+- 2023-02-26 269e78bc1 Replace recent file ValueDlg with edit fields & fix DocSwitcher RTL problem
+- 2023-02-24 b8291d491 GUI visual enhancement: optimize dlg items redraw
+- 2023-02-25 52d3c36e3 Make tray icon context menu translatable
+- 2023-02-23 34545bedd Code enhancement: enable code analysis with custom rule set
+- 2023-03-06 c8e4e671d Code enhancement: remove some MSVS analisis warning
+- 2023-03-06 25be5dd3b Code enhancement: remove some MSVS analysis warning (Part 2)
+- 2023-03-07 0b6a8e201 Fix an eventual crash and UDL empty button issue after changing language
+- 2023-03-07 61d96cd97 Update CONTRIBUTING.md
+- 2023-03-07 f85435d96 Code enhancement: remove some MSVS analysis warning (Part 2)
+- 2023-03-08 ab5d29b6f Code enhancement: remove some MSVS analysis warning (Part 4)
+- 2023-03-08 36da61dc3 Code enhancement: remove some MSVS analysis warning (Part 5)
+- 2023-03-08 bf8b9e613 Fix x86 build error
+- 2023-03-09 399a8f302 Fix tipos
+- 2023-02-24 5251d8477 Code enhancement: remove unnecessary hidden lines separator marker
+- 2023-03-10 12f649bf5 Add ability to copy "Find what" to "Replace with" and vice versa
+- 2023-03-10 feb454ad6 Update scintilla 5.3.4 and lexilla 5.2.4 with:
+- 2023-02-20 01bbebf82 Add MS Transact-SQL
+- 2023-03-03 816fa3e41 Add GDScript language
+- 2023-03-16 e1e719626 Add several spiritual quotes
+- 2023-03-06 f9e1a0b39 [xml] updating French translation
+- 2023-03-06 d060b0f01 [xml] Update Bulgarian localization
+- 2023-03-06 ccbc757a4 [xml] Update Slovak translation
+- 2023-03-08 669bbb228 Update chineseSimplified.xml
+- 2023-03-09 a5fdb42ed [xml] Update Italian.xml
+- 2023-03-12 2fcdb6e6c [xml] Update japanese.xml
+- 2023-03-12 8cd1559d4 [xml] Update Corsican translation for Notepad++ 8.5.1
+- 2023-03-15 626cc5320 [xml] Update german.xml
+- 2023-03-16 756186429 [xml] Update russian.xml to v8.5.1
+- 2023-03-11 ce4d374a4 Add Windows 11 context menu entry "Edit with Notepad++"
+- 2023-03-16 b60231e1e [xml] Update czech.xml to v8.5.1
+- 2023-03-16 c838741f4 [xml] Update brazilian_portuguese.xml
+- 2023-03-16 9462238c0 Fix localization files structure error (already fixed in code)
+- 2023-03-17 5645ca150 Integrer new Windows 11 Explorer Context Menu Entry "Edit with Notepad++"
+- 2023-03-19 eded6099b Make MS Trasact-SQL easier to be found in Style Configurator
+- 2023-03-19 e84940680 Fix cleanup jobs problem for context menus in uninstaller
+- 2023-03-20 9c15bdc23 Fix unregister modern context menu syntax error and remove concerning binaries during uninstallation
+- 2023-03-23 c59c07b4f Notepad++ 8.5.1 release
+- 2023-03-20 1f9677675 Fix find dialog flicker
+- 2023-03-11 7f54a4b95 Add ability to do leading spaces with ColumnEditor
+- 2023-02-05 9b67c93ef Add more items and HTML Hexadecilmal column to ASCII panel
+- 2023-03-25 d21f7cbf5 Added Hollywood support
+- 2023-03-27 a049009ba Add a philosophy quote
+- 2023-03-27 641b6e71c Fix XML syntax error
+- 2023-03-28 57667d136 Update Slovenian translation
+- 2023-03-28 d37c7c396 Fix value in config.xml does not match user's preference in Column Editor
+- 2023-03-19 7e4b281b8 GUI enhancement: use split button for find dlg swap/copy button
+- 2023-03-24 5e23a8617 Fix Mark dialog's Copy Marked Text button is not macroable issue
+- 2023-03-20 24d3a69f0 Dark mode enhancement: make combobox focus more visible
+- 2023-03-29 a67a5f717 Fix unexpected column jump post brace match
+- 2023-03-29 b54b9c49c Remember "Bookmark Line" and "Purge" options in Mark dlg through the session
+- 2023-03-25 2bcc32cb9 Cleanup old NppShell & adapt the new one in installer
+- 2023-03-25 7b4e700d4 Use the right size of icon in system tray
+- 2023-03-24 508b3fabd Add hits in-progress increased number to Search Progress dialog
+- 2023-03-30 e28db0575 Fix "Edit with Notepad++" context menu needs restarting OS issue
+- 2023-03-26 37a18bf3b Fix dock panels visual glitch
+- 2023-02-27 778e1f568 Add show non-printable characters style in Deep Black theme
+- 2023-03-08 bedc92d02 [XML] Update Turkish translations
+- 2023-03-19 959bb5db6 [xml] Update croatian.xml to v8.5.1
+- 2023-03-19 baef651e9 [xml] update Italian.xml v8.5.1
+- 2023-03-19 f8ce71a5c [xml] Update spanish.xml to v. 8.5.1
+- 2023-03-20 18b8c1248 [xml] Update galician.xml to v. 8.5.1
+- 2023-04-01 38d23d36e [xml] Provide a default Dark Mode theme for MS Transact-SQL
+- 2023-04-02 444c5e5a4 [xml] Update ukrainian.xml
+- 2023-04-02 a30daeb7f [xml] Update french.xml
+- 2023-03-31 c96bcbd8b [xml] Update Corsican translation for Notepad++ 8.5.2
+- 2023-03-31 ef7b9360a [xml] Update japanese.xml
+- 2023-03-31 ecf6eba68 [xml] Update Bulgarian localization
+- 2023-03-26 c7e944017 Turn off "Match Case" and "Whole Word" options by default in Find In Finder
+- 2023-03-25 70d24706a [xml] Update Slovak translation
+- 2023-03-23 5518ec069 [xml] Update brazilian_portuguese.xml
+- 2023-03-25 c2f18fb78 [xml] Update german.xml
+- 2023-03-01 193a19ccb Add PowerShell block comment style in HotFudgeSundae.xml
+- 2023-03-27 dbe1ab2ee Update Portuguese translation for Notepad++ 8.5.1
+- 2023-04-03 0dff45568 Make uninstaller clean up better
+- 2023-04-02 810ceacb4 Add dark mode to new column editor feature
+- 2023-03-24 27600a7a6 Update korean translate (8.5.1)
+- 2023-04-02 b292e7e27 [xml] Update russian.xml v8.5.2
+- 2023-04-02 44a1a7d71 [xml] Update polish.xml to 8.5.2
+- 2023-04-02 a333e0bc1 [xml] Update czech.xml to v8.5.2
+- 2023-04-02 9d94b29b7 [xml] Update croatian.xml to v8.5.2
+- 2023-04-02 9d06762a7 [xml] Update portuguese.xml
+- 2023-04-04 9ee9046be Add the definition of "DEBUGGING"
+- 2023-04-06 28b45ccee Notepad++ v8.5.2 release
+- 2023-04-06 6326340cc Remove unecessary file
+- 2023-04-06 81db72afb Fix Column Editor OK button not disabled if Text-to-Insert is empty
+- 2023-04-07 7ee85e814 [xml] Add new guidelines, fix markdown warnings
+- 2023-04-09 14b215db7 Update slovenian.xml
+- 2023-04-05 81802e7d7 Fix search results output alignment for large file searches
+- 2023-03-06 0cad36d63 Add hide/show ability of Control Characters (C0 & C1) and Unicode EOL
+- 2023-04-09 83b0b1e4c Move uchardet file definitions from main project file to separate targets file
+- 2023-04-07 cca3eccea Fix RTL not working on FindInFiles progress window
+- 2023-04-11 6d917af8b Fix installer fails to update NppShell.dll
+- 2023-04-12 4934b46bd Fix UDL deletion issue
+- 2023-04-12 96b56f61f Fix saving wrong macro/run menu UTF8 folder name after commands modification
+- 2023-04-10 ac5657d82 Add comment line symbol for gui4cli
+- 2023-04-16 fff5f9b24 Add the UTF8 character ability for Run & Macro menu
+- 2023-04-16 de618df55 Add Hollywood function list into installer
+- 2023-04-14 59c8689ff Fix warnings in WindowsDlg.cpp, .h files
+- 2023-04-19 1a1ce04ca Fix regression about empty combobox of Run macro dialog
+- 2023-04-16 87e34c1f7 Enhance Run Macro dialog
+- 2023-04-11 15decdb3d Make 'Remove consecutive duplicate lines' support more line break
+- 2023-04-16 3cf45ec3a Reorder tab focus in Run dlg
+- 2023-04-13 bc7d6b26a Make input focus right in Shortcut dialog
+- 2023-04-21 0457a112c Fix regression: Key-Combos in Shortcuts Mapper displayed incorrectly
+- 2023-03-06 2c6c556a3 Project Workspace "Save a Copy As" confusion issue
+- 2023-04-23 c76f17853 Fix regression of macro recording
+- 2023-04-21 80b34f0ad Fix regression Run Macro Multiple Times cmd
+- 2023-04-25 c585a1ab0 Fix incosistent key accelerator cue for groupbox in dark mode
+- 2023-04-25 5f2e93ee5 [XML] Update minimal MSVC version prerequisite
+- 2023-04-20 ecb10712c Improve "Remove consecutive duplicate lines" command performance
+- 2023-04-26 5b5c30b0d Backup old version of shortcuts.xml
+- 2023-04-23 61d2d3682 Make focus on edit field in Project panel File relocalizer dialog
+- 2023-04-23 997ef821d GUI enhancement: Find Characters in Range dialog
+- 2023-04-23 7e6c4b3c6 GUI enhancement: MD5 and SHA256 Hash dialogs
+- 2023-05-02 23a0cfb3a Enhance shortcuts backup & warning
+- 2023-04-30 6b194453b GUI Enhancement: Preference Print sub-dialog
+- 2023-04-25 2d5c241e2 Fix Change history margin in black color issue
+- 2023-04-30 2a21a042d Fix GCC warnings & add initializers
+- 2023-04-23 052626ca9 GUI Enhancement: User Define dlgs
+- 2023-04-05 17fcb4d3a [xml] Update portuguese.xml to v8.5.2
+- 2023-04-09 c4563eddb Update danish.xml
+- 2023-04-11 76afd9284 [xml] Update french.xml
+- 2023-04-11 13ef27645 [xml] Update Slovak translation
+- 2023-04-12 befcbae1b [xml] Update brazilian_portuguese.xml
+- 2023-04-12 76cf3c793 [xml] Update Bulgarian localization
+- 2023-04-13 a699f09c5 [xml] Update japanese.xml
+- 2023-04-13 6b55dbd18 [xml] Update russian.xml
+- 2023-04-13 20aeb510a [xml] update italian.xml
+- 2023-04-15 97ad88227 [xml] Update dutch.xml
+- 2023-04-15 c9fa1742e [xml] Update spanish to v 8.5.3
+- 2023-04-16 d4f0fa95d [xml] Update german.xml
+- 2023-04-21 9fce39d2b [xml] Update galician.xml to v 8.5.3
+- 2023-05-06 f5afac3f9 [xml] Update Corsican translation for Notepad++ 8.5.3
+- 2023-05-08 dccab1f25 [xml] Standarize english.xml format by using XML pretty print
+- 2023-05-08 df3080d85 [xml] Update polish.xml to 8.5.3
+- 2023-05-08 8dd1f3a33 Revert "[xml] Standarize english.xml format by using XML pretty print"
+- 2023-05-08 3c15ff578 [xml] Make all the localization files pretty printed
+- 2023-05-09 f5d64151e [xml] Update czech.xml to v8.5.3
+- 2023-05-10 e6a12b6a4 [xml] Update croatian.xml to v8.5.3
+- 2023-05-11 2577594e2 [xml] Update german.xml
+- 2023-05-12 34186d2e8 Fix menu strings cut off regression for some localication
+- 2023-05-12 50b81eade Backup session file in case of its corruption
+- 2023-05-15 a561cd37d Notepad++ 8.5.3 release
+- 2023-05-14 571c815b1 Fix error message on uninstallation
+- 2023-05-05 4e0f50416 GUI Enhancement: Plugins Admin dialog
+- 2023-05-17 04e85241f Remove old context menu ini file and attributes file
+- 2023-04-24 af8b33929 GUI enhancement: Find in Finder dialog
+- 2023-05-14 8250a81d6 Fix tabContextMenu_example.xml not being deleted while uninstallation
+- 2023-05-08 41af93685 GUI Enhancement: Column Editor
+- 2023-05-09 a1d7db804 GUI Enhancement: General & Editing sections in Preferences dialog
+- 2023-05-08 779db128a GUI Enhancement: Go to Line dialog
+- 2023-05-03 1806b8994 GUIEnhancement: About, Debug, Save dialogs
+- 2023-05-24 b88456764 GUI Enhancement: Tabbar
+- 2023-04-26 e7f321f21 Add message NPPM_DARKMODESUBCLASSANDTHEME
+- 2023-05-25 e2f1662c9 GUI Enhancement: Docking Container & Function List
+- 2023-05-26 781709a02 GUI Enhancement: Tabbar part 2
+- 2023-05-25 776a3fb94 GUI Enhancement: StylerDlg & URLCtrl
+- 2023-05-16 406a77a60 Fix lexer plugin is sorted unconventionally in language menu issue
+- 2023-05-31 b93e3f4b2 Add latest support version information for Windows 95/98/ME/NT4
+- 2023-06-01 043bd4f38 Make SUPPORTED_SYSTEM.md briefer
+- 2023-06-01 b39ca37c3 Update: Scintilla 5.3.5 Lexilla 5.2.5
+- 2023-06-05 dba15cfaf Fix document language not remembered through sessions issue
+- 2023-06-05 ccf80a069 Add session.xml.fail2Load for analyzing
+- 2023-06-04 61503a2dc Add "open new blank document in addition on startup" ability
+- 2023-04-24 96ff66b22 Fix infinite loop in running macro to EOF
+- 2023-06-10 b5e2e9d73 Fix macro recording regression on Unicode character
+- 2023-06-11 e61b20a7f Small refactoring
+- 2023-06-09 b33545473 [xml] Update Ukrainian translation
+- 2023-06-07 647dd703a [xml] Update russian.xml  v8.5.4
+- 2023-05-16 f1ed6e6f4 [xml] update korean translate (8.5.3)
+- 2023-05-31 38d19095b [xml] Update Turkish localization
+- 2023-05-28 1ae574511 [xml] Update italian.xml 8.5.4
+- 2023-05-25 5694b3c40 [xml] Update Bulgarian localization
+- 2023-05-24 063a31a87 [xml] Update japanese.xml
+- 2023-05-22 8e0b326b7 [xml] Update portuguese.xml
+- 2023-05-21 ec23e4216 [xml] Update Corsican translation for Notepad++ 8.5.4
+- 2023-05-20 9bbcfd135 [xml] Update brazilian_portuguese.xml
+- 2023-05-19 15d5c1e9c [xml] Update german.xml
+- 2023-05-19 2aa6b0cff [xml] Update Slovak translation
+- 2023-06-10 fadc08305 Enable code folding in Assembly source files
+- 2023-06-10 da8e48f67 Fix EOL symbol color/appearence being reset while changing encoding issue
+- 2023-06-11 28594daef Progress window: Prefer SystemParametersInfo fonts over DEFAULT_GUI_FONT
+- 2023-06-12 b0e849fe6 Fix ignored writeStr return value in TiXmlDocument::SaveFile
+- 2023-06-13 3b823f358 Add SHA1 hash generator
+- 2023-06-17 7077e304a Add CSHA1
+- 2023-06-13 d2fdfd7b7 Fix defective detection for file read-only attribute removal via Explorer
+- 2023-06-10 af1ab5d29 Support up down control generic dark mode for plugins
+- 2023-06-12 fcb9f56df [xml] Update croatian.xml to v8.5.4
+- 2023-06-12 bdd13c083 [xml] Update czech.xml to v8.5.4
+- 2023-06-13 51bddf57a Use multiple-files Save dialog in Document list
+- 2023-06-17 b883759c8 Add SHA-1 hash feature
+- 2023-06-17 19c6895f8 Fix gcc compiling failure
+- 2023-06-18 85ba11bf7 Notepad++ 8.5.4 release
+- 2023-06-19 5b5238610 Fix menu Tools contains 2 SHA-256 item while using localization
+- 2023-06-19 32ce6b5b4 Code Enhancement: make notepadPlus.vcxproj less messed
+- 2023-06-20 4ffd897cc Add SHA-512 hash features
+- 2023-06-21 d7aee6828 [xml] Add missing entries in english.xml for SHA-1/SHA-512
+- 2023-06-21 b14810d08 Update localization files
+- 2023-06-21 6131195da Fix "Generate from selection into clipboard" crash regression
+- 2023-06-23 1943ce87b [xml] Update slovenian.xml
+- 2023-06-27 d6b5f53a0 Fix Clipboard History panel shows corrupted data issue
+- 2023-07-01 02dd1d36f Add blank document only when the sessin is remembered
+- 2023-07-01 97f9a4d96 GHSL-2023-103: apply https://gitlab.freedesktop.org/uchardet/uchardet/-/commit/94b10b9b2946ddd222ccf5f08f873a0361eca976
+- 2023-07-01 ddf4f746d GHSL-2023-102: apply https://gitlab.freedesktop.org/uchardet/uchardet/-/commit/2694ba6363d4b8555d8c57eb4e85b081f754f6d3
+- 2023-07-01 5687c4f43 GHSL-2023-112: check if the current pointer and the next one are less than the end
+- 2023-07-01 9e24ec55d Improve lines sorting memory consumption
+- 2023-07-02 d7ea26d93 GHSL-2023-092: Check if i is not bigger than datalen
+- 2023-07-03 83d203561 Fix Change History wrong display after "Reload from Disk" command
+- 2023-06-22 0786dc0ad Fix compiling on Scoop mingw-winlibs g++ 13
+- 2023-07-06 d6bdc5d3f Fix cmake build
+- 2023-06-11 a647991cd Fix some GCC and MSC warnings
+- 2022-07-13 6330a688b Fix Korean IME append extension issue
+- 2023-07-07 9011253a0 Remove "Temporary doc site:" label
+- 2023-07-05 d9b98681f Add change history navgation commands
+- 2023-07-09 ebdc910dc Fix normal.xml for Normal text auto-completion using not working issue
+- 2023-07-12 50f942c88 Fix MD5 dialog title not showing regression
+- 2023-07-13 7e353903b Add more info on save session error message
+- 2023-07-14 bf4758625 Add more info on save session error message part 2
+- 2023-07-15 38e97b179 Align URL with "Home:" label in About dialog
+- 2023-07-12 9122dc64f Fix rejection of the standard filenames with dot at the end (regression)
+- 2023-03-09 eef91b021 Enable optimization flags & CET
+- 2023-07-11 ff2179aec Remember the directory of "Remember last used directory" through sessions
+- 2023-07-21 a367fc1b7 Code enhancement: use std::wstring instead of generic_string
+- 2023-07-22 c8020647d Fix regression: the small size of Notepad++ on its very first launch
+- 2023-07-22 2804ac79f Fix "Last Used Directory" may not be saved issue
+- 2023-07-17 3bdefd88d Fix handling of URLs in JSON
+- 2023-07-27 4df27c8e8 Fix Project panel inaccurate save dialog initilized path
+- 2023-07-22 3ea789cae Fix error message of openning file with '=' as end of file name
+- 2023-07-27 c4733db0a Use better variable name & use standard type name
+- 2023-07-29 e7f7c319f Fix inaccurate find/replace in files result while using invalid regexp
+- 2023-07-31 c143a4a6c Remove "Temporary doc site:" from localization files
+- 2023-07-31 50a15f2e5 Remove extra char on top of french.xml
+- 2023-07-27 cc1a3c826 Update: Scintilla 5.3.6 and Lexilla 5.2.6
+- 2023-06-19 459f310ed [xml] Update Bulgarian localization
+- 2023-06-20 694c4101c Update chineseSimplified.xml
+- 2023-06-20 1f3cd8752 Update greek.xml
+- 2023-06-22 e827e51ed [xml] Update Corsican translation for Notepad++ 8.5.5
+- 2023-06-24 c1605852b [xml] Update spanish.xml
+- 2023-06-22 119d17f92 [xml] Update russian.xml v8.5.5
+- 2023-06-25 e894c2bac [xml] Update galician.xml
+- 2023-06-28 796ae18f0 Update swedish.xml
+- 2023-06-30 61b23dfd1 [xml] Update Romanian localization
+- 2023-07-12 0f48a82d6 [xml] Update czech.xml to v8.5.5
+- 2023-07-24 dd163e797 [xml] update korean 8.5.5
+- 2023-07-30 aefd71ca2 [xml] Update Ukrainian translation
+- 2023-06-21 8b1a49aaa [xml] Update japanese.xml
+- 2023-06-20 4b8bcb0c1 [xml] Update portuguese.xml
+- 2023-06-19 6bcc7a2a0 [XML] Update brazilian_portuguese.xml
+- 2023-06-23 feb65c42b [xml] Update Slovak translation
+- 2023-06-18 7234e1478 [xml] Update german.xml
+- 2023-08-02 891e8f936 Revert "Fix untitled document number jumping or repeated problem"
+- 2023-08-02 b09432cfa [xml] Update polish.xml to 8.5.5
+- 2023-08-02 dea388bf5 Simplify the logic in buffer creating
+- 2023-08-04 fdae99e6c Fix new document number jumps from "New 1" to "New 3" issue
+- 2023-08-05 391f4281e Fix leading & tailling spaces being allowed after renaming tab issue
+- 2023-04-24 9b7dff6fa Fix proper case conversion logic for single and smart single quotes
+- 2023-08-06 edc599e1c [xml] Update Slovak translation
+- 2023-08-06 fa0cc8a6e [xml] Update japanese.xml
+- 2023-08-05 7979c3667 [xml] Update russian.xml
+- 2023-08-05 54a7cf4f9 [XML] Update brazilian_portuguese.xml
+- 2023-08-05 18b19f30f [xml] Update croatian.xml to v8.5.5
+- 2023-08-04 d7d59401e [xml] Fix Update german.xml
+- 2023-08-09 f6e1b2cab Notepad++ 8.5.5 release
+- 2023-05-21 c49692cb4 Fix hide lines merging to avoid merging across a visible line
+- 2023-08-12 4fb884518 Fix typos
+- 2023-08-09 de25873cb Add new API: indicator allocation for plugins
+- 2023-08-13 460b2b60f Fix "Clear Change History" issue: cloned document markers are not cleared
+- 2023-08-13 a81d39fa6 Minor code improvement
+- 2023-08-13 3385eb60c [xml] Update slovenian.xml
+- 2023-08-14 c45d7aca7 Fix plugin crash regression due to CET enhancement
+- 2023-08-06 d1ceb6291 [xml] Update Corsican translation for Notepad++ 8.5.6
+- 2023-08-07 8d6df5a46 [xml]Update Bulgarian localization
+- 2023-08-11 d05b2654f [xml] Update Turkish localization
+- 2023-08-14 0ca2ade6b [xml] Update romanian.xml
+- 2023-08-14 119a25690 [xml] Update russian.xml
+- 2023-08-15 e39deab77 Notepad++ v8.5.6 release
+- 2023-08-18 ea40755e1 Fix product version value displayed in file's properties
+- 2023-08-19 fc736d8af Fix activating wrong file(s) issue after loading session file
+- 2023-08-20 3aa9e9280 Fix session file saving problem if it's read-only
+- 2023-08-18 a714b9464 Update langs.model.xml
+- 2023-08-24 734069673 Add a quote
+- 2023-08-14 f4297f1a8 Fix cloned document disassociated issue after Npp being relaunched
+- 2023-08-27 00481aadd Change the slogan in installer
+- 2023-08-28 f5c60d26c Update CONTRIBUTING.md
+- 2023-08-29 cf8ddc18c Add supperss 2GB file warning option for x64
+- 2023-08-15 d3c84b7d2 Fix VS 2022 17.7 compiling error message
+- 2023-08-31 5402622ab Merge pull request from GHSA-v2h9-jfmf-5cgq
+- 2023-09-01 fb1985def Code enhancement: fix a logic error - va_end missing
+- 2023-09-01 6567a8909 Add comment
+- 2023-09-01 4b66d80b2 Merge pull request from GHSA-cfcv-789h-3pg3
+- 2023-09-01 8c561ba74 Merge pull request from GHSA-67mm-g35x-jv47
+- 2023-09-02 ea063246f Merge pull request from GHSA-jg7c-f532-25h8
+- 2023-09-02 f8447b670 Make comment counting right
+- 2023-09-02 0e3c67666 Remove unnecessary comment
+- 2023-09-03 b62b77b3e Correct some typos
+- 2023-09-01 3c802e076 [xml] Update japanese.xml
+- 2023-09-01 df94bfae5 [xml] Update Slovak translation
+- 2023-08-31 88ba29cff [xml] Update Bulgarian localization
+- 2023-08-30 ceb930645 [XML] Update brazilian_portuguese.xml
+- 2023-08-25 e64de6cd5 Update romanian.xml
+- 2023-08-25 4276428e0 [xml] Update french.xml
+- 2023-08-16 14d8aaaa1 [xml] Update portuguese.xml
+- 2023-09-01 8afa4c6ea Fix dragging tab performance issue while Document List is displayed
+- 2023-09-05 06a2c6f37 Make variable name more explicit
+- 2023-09-03 4476432d0 Security enhancement: Sign uninstall.exe
+- 2023-09-06 f1adb46c5 [xml] Update croatian.xml to v8.5.7
+- 2023-09-06 6eb74a965 [xml] Update czech.xml to v8.5.7
+- 2023-09-06 02cc028cd Fix eventual memory leak in Utf8_16.cpp
+- 2023-09-08 5008b8a0c Notepad++ v8.5.7 release (Vulnerability fixes)
+- 2023-09-10 a511a575b Update slovenian.xml
+- 2023-09-10 e30ee852d Fix data loss issue due to no room on disk for saving
+- 2023-09-12 01ff1eb88 Fix Cleaer Read-Only Flag command not working immediately regression
+- 2023-08-23 b068aa903 Fix saving files loosing Alternate Data Stream issue
+- 2023-09-13 dca3f682f Improve document list display performance
+- 2023-09-15 113003a79 Fix  security issue CVE-2022-31901
+- 2023-09-16 c2ebb9475 Improve CONTRIBUTING.md
+- 2023-09-14 670e2f098 Fix "Next Bookmark" command not reset current-column issue
+- 2023-09-17 cb1f2d147 Check NULL pointer while opening filees to prevent Notepad++ from crash
+- 2023-09-18 39001d7a0 Fix Wrong Categories in Shortcuts Mapper
+- 2023-08-30 87efdf508 Add Win10+ OS Restart-app feature
+- 2023-09-22 939b00a61 Removing unused _isRestartedByOS member variable
+- 2023-09-25 cb3c63244 Fix some typos
+- 2023-09-26 972329fb0 Fix unconsist "In select" behaviour in Find dialog
+- 2023-09-22 cfcf82717 Update Scintilla to v5.3.7 & Lexilla to v5.2.7
+- 2023-09-25 c4c108923 Allow Window Windows command to be assigned a shortcut
+- 2023-09-27 7bbe4d1ff Fix "Single Line Uncomment" uncomments an extra line issue
+- 2023-09-27 1f3b0e6e4 Add recover search string feature after accessing search history
+- 2023-09-28 caf630389 Update the Perl keywords for Perl v5.38
+- 2023-09-30 0d8a8dff7 Revert "Add recover search string feature after accessing search history"
+- 2023-09-27 3fa51efce Store and restore just typed search text on arrow key press
+- 2023-09-28 d33e29784 Update Stylers for Perl
+- 2023-09-22 591b00e53 Make auto-checking of Find InSelection configurable (OFF or resizable)
+- 2023-10-07 b3179b5cc Dark mode tweaks and unicode size support for InSelection configurable size
+- 2023-09-24 424f4a158 Update italian.xml v.8.5.8
+- 2023-09-20 a8dd49d14 [xml] Update french.xml
+- 2023-09-17 088f46eba [xml] Update Turkish localization
+- 2023-09-14 d94e3e9d5 [xml] Update japanese.xml
+- 2023-09-13 6e61660cd [xml] Update Slovak translation
+- 2023-09-12 14ac877c2 [XML] Update brazilian_portuguese.xml
+- 2023-09-12 bab8be3f2 [xml] Update Bulgarian localization
+- 2023-09-09 27a82f4aa Update Romanian translation
+- 2023-09-08 215897d30 [xml] Update Corsican translation for Notepad++ 8.5.8
+- 2023-09-07 25759679e [xml] Update russian.xml v8.5.7
+- 2023-09-08 09833992b [xml] Update german.xml
+- 2023-09-07 20a146a7a [xml] Update galician.xml v8.5.5
+- 2023-09-07 1152780de [xml] Update spanish.xml v8.5.5
+- 2023-10-08 d972240db [xml] Update russian.xml
+- 2023-10-09 64e95cc61 fix unwanted Afrikaans installer language
+- 2023-10-13 85d5f972a Do not modify user created session even for inaccessible files
+- 2023-10-14 09499725d Fix user created session saved on exit issue if multi-Inst is enabled
+- 2023-10-13 a489388b5 [xml] Update czech.xml to v8.5.8
+- 2023-10-12 8b50f876c [xml] Update croatian.xml to v8.5.8
+- 2023-10-15 8e43b0adb Fix user created session modified in multiInst mode
+- 2023-10-17 97dd708e2 Notepad++ release 8.5.8
+- 2023-10-09 089f7d693 Make JSON5 to use JSON keywords
+- 2023-10-16 bbbf3e8df Fix empty message showing while cancelling session file saving dialog
+- 2023-09-21 4248c2ae2 Make session inaccessible files remembered (part 1/2)
+- 2023-10-23 08794510b Make session inaccessible files remembered (part 2/2)
+- 2023-10-14 72c5175b3 Fix missing session invalid error for user session & enhance NPPM_GETNBSESSIONFILES
+- 2023-10-22 e5ee4c363 Fix incoherent behaviour of "Duplicate Current Line" menu command
+- 2023-10-27 dd6140f8c Fix bugs for remembering inaccessible file of past session (placeholder)
+- 2023-10-20 5c80be766 Fix silent installer mode when Notepad++ is running issue
+- 2023-10-28 e2fb15a70 Fix docking panel crash due to messing up config.xml
+- 2023-10-29 1c27e6412 Use double quot instead of single quot
+- 2023-09-21 4ba92b04e Fix "Hide lines" command hiding unselected lines issue
+- 2023-10-30 89278e1dc Force to enable multi-select feature in Scintilla
+- 2023-10-31 cab4d40b3 Add multi-select commands
+- 2023-10-29 c5477ee21 Add Github CI build
+- 2023-11-02 7f2c303ac Update appveyor.yml
+- 2023-11-03 cecd16157 Enhance Multi-select feature
+- 2023-11-03 02e4202d6 Reduce Appveyor building time
+- 2023-10-28 37a968e6f [xml] Add Batch After Label style configuration
+- 2023-11-04 07041f456 Fix tooltip for "In Selection" edit field of preferences not closing issue
+- 2023-11-05 950236bb8 Fix 2 performance issue in Style Configurator
+- 2023-11-06 dc6bfedb9 Fix Incomplete styler.xml crashes Notepad++ issue
+- 2023-11-04 b5730eea3 Multi-edit enhancement: column mode to multi-edit on HOME/END/Arrow keys
+- 2023-11-01 e9c50ed96 Add 3 line operation (delete, copy & cut) shortcuts
+- 2023-11-07 2fb8d7fc7 Fix the shortcut bug (a regression) in commit e9c50ed
+- 2023-11-07 1fafd0dc0 Fix hasSelection wrongly detected
+- 2023-11-07 5b61cc168 Fix tab-closing crash by middle mouse button (unexpected mouse position)
+- 2023-11-05 69998ab7d Update Scintilla to v5.3.8 & Lexilla to v5.2.8
+- 2023-11-08 dadc187dc Add srcset attribute for HTML
+- 2023-11-08 4ff9d77d2 Make multi-select Copy/Paste behaviour as same as column edit's one
+- 2023-11-10 2337a7b5b Fix network shared files saving regression
+- 2023-11-11 c7e1162f2 Fix menu Paste inconsitent behaviour
+- 2023-11-13 812745d85 Make multi-select background & caret colour customizable
+- 2023-11-11 05f339b0c Enhance Find Dialog: display extra info in the status bar
+- 2023-11-14 176475866 Enhance multi-edit paste and Enter key type
+- 2023-11-15 ca403b662 Fix possible PluginsManager FindClose WINAPI errors
+- 2023-10-29 4391274b3 [xml] Update Corsican translation for Notepad++ 8.5.9
+- 2023-11-05 2905efef6 [xml] Update french.xml with latest additions + realign with english.xml
+- 2023-10-23 eb3e1a65a [XML] Update brazilian_portuguese.xml
+- 2023-10-23 931155a31 [xml] Update Slovak translation
+- 2023-10-23 4123d531a [xml] Update russian.xml  v8.5.9
+- 2023-11-16 3e7425f6b Fix a typo
+- 2023-11-16 c517985be Fix DELETE key not working in multi-editing for EOL
+- 2023-10-26 b6624f05c [xml] Update japanese.xml
+- 2023-10-20 24af65c60 [xml] Update german.xml
+- 2023-11-17 faba181e8 [xml] Remove the redundant entry
+- 2023-11-17 b85c1ebd3 [xml] Update czech.xml to v8.5.9
+- 2023-11-17 370f99556 Fix wrong German translation of multi-select features
+- 2023-11-17 a2c10cc9a [xml] Update brazilian_portuguese.xml
+- 2023-11-17 40fc7a57c [xml] Update Slovak translation
+- 2023-11-17 3f81b2457 Update dutch.xml
+- 2023-10-27 d1c335fff [xml] Update Bulgarian localization
+- 2023-10-23 6ba33563b [xml] Minor fix
+- 2023-11-18 975d29b30 Enable Direct Write Technology in Scintilla by default
+- 2023-11-18 b24734df8 Fix backspace keystroke not working for multi-editing
+- 2023-11-20 091787503 Make all SCI_SETELEMENTCOLOUR message use 32 bits color
+- 2023-11-19 0baa474f3 [xml] Update croatian.xml to v8.6
+- 2023-11-11 562c367b7 Update swedish.xml
+- 2023-11-10 64bca5fdd Update galician.xml v. 8.5.9
+- 2023-11-10 45cec73a4 Update spanish.xml v. 8.5.9
+- 2023-11-05 706dff640 [xml] Update Ukrainian translation
+- 2023-10-27 d77b27024 Update romanian.xml
+- 2023-11-21 c62e22298 Fix Multi-edit DEL keystroke delete part of Unicode character
+- 2023-11-19 9bc790b01 Prevent Direct Write being set if user uses RTL
+- 2023-11-22 2a90f1148 Add new styler entries to themes
+- 2023-11-22 84289c732 [xml] Update croatian.xml to v8.6
+- 2023-11-22 bfce07c75 [xml] Update Corsican translation for Notepad++ 8.6
+- 2023-11-22 7c592e013 [XML] Update brazilian_portuguese.xml
+- 2023-11-22 c3a8d13e5 [xml] Update japanese.xml
+- 2023-11-23 ea3afd08c [xml] Update russian.xml to v8.6
+- 2023-11-23 ff590f353 Update czech.xml to v8.6
+- 2023-11-23 e215ae2de Notepad++ 8.6 release: 20th-Year Anniversary
+- 2023-11-23 2fc7b706d Fix the error link
+- 2023-11-24 2768cf542 Update Finnish localization file
+- 2023-11-27 7deb12aee Enable Copy & Cut commands on menu all the time
+- 2023-11-28 0978b2e29 Fix visual glichy on multi-paste
+- 2023-11-30 ffc0ed251 Fix confusing memory allocation error message (reused FileTooBigToOpen)
+- 2023-11-30 2724e0ddb Make RTL per document & remembered across the sessions
+- 2023-12-03 58b2f057b Remove Appveyor Build Status from README
+- 2023-12-03 e08c54716 Fix customized extesion in Style Configurator not saved regression
+- 2023-12-05 6f2e5d272 Revert "Fix cloned document disassociated issue after Npp being relaunched"
+- 2023-12-05 a51e62c16 Fix cloned (modified & unsaved) document disassociated issue after Npp being relaunched
+- 2023-12-06 ef8ad111e Enhance the performance: disable undo collection while loading a file
+- 2023-12-03 bf37d4714 Sort language list in the Preferences dialog
+- 2023-11-19 e497ae2c0 Enhancement: add search options output to FiF Search-results
+- 2023-12-12 aef043818 Make column to multi-select be abled to be disabled
+- 2023-12-13 53b505511 Make hard-coded shortcut "Shift-DEL" be abled to be disabled
+- 2023-12-11 d9d26e598 "-loadingTime" cmdline param enhancement
+- 2023-12-15 fa82ca022 Add document tab "Move to Start" & "Move to End" commands
+- 2023-12-16 58d8043e2 Fix build error
+- 2023-12-17 4e6bbbc17 Add navigation to the 1st & last tab abilities
+- 2023-12-17 4e2903a27 Small update of english.xml
+- 2023-12-18 7419770d2 Fix regression of F3 & Shift-F3 in Incremental Search
+- 2023-12-20 08222a89d Fix the 2nd replace in cloned document for Replace in Opened Docs
+- 2023-12-22 3c4f0f9cb Make line copy/cut/delete while no selection optional
+- 2023-12-19 d1b3fe6fe Fix python wrong decorator attribute colors
+- 2023-12-25 78d0e7e12 Fix hidden results of long lines for "Find All ..." commands
+- 2023-11-19 dcc7e600c Updated to Scintilla 5.4.1 & Lexilla 5.3.0
+- 2023-11-18 55f535cd3 [xml] Update Slovak translation
+- 2023-12-05 65988cf16 [xml] Update japanese.xml
+- 2023-12-03 89f83f102 [XML] Update brazilian_portuguese.xml
+- 2023-12-28 5f13c8471 Fix dropped file being opened in the wrong view
+- 2023-12-27 d7630fa42 Fix file status in "other view" is not detected
+- 2023-12-27 fabf12967 [xml] Update galician.xml v.8.6
+- 2023-12-27 8898d0dcc [xml ]Update spanish.xml v.8.6
+- 2023-12-20 1a1d6e352 Update dutch.xml
+- 2023-12-14 211b9b733 Update swedish.xml
+- 2023-12-13 7c9312b43 [xml] russian.xml  8.6.1
+- 2023-12-13 e4d494c9d [xml] Update french.xml
+- 2023-12-13 fe17d2824 [xml] Update Corsican translation for Notepad++ 8.6.1
+- 2023-12-11 275a6853b [xml] Update romanian.xml
+- 2023-11-23 76b2ca3f4 [xml] Update Bulgarian localization
+- 2023-11-23 65701313c [xml] Update croatian.xml to v8.6
+- 2023-11-19 c1fa9273e [xml] Update german.xml
+- 2023-12-29 8ae049afb Use 64-bit positions instead of 32-bit obsolete ones
+- 2023-12-29 d1664226d Add comments in RTL localization files for explanation of "editZoneRTL"
+- 2023-12-29 d039eaa90 Add new localization entries
+- 2023-12-30 4bde0d4b5 Fix incorrect code
+- 2023-12-30 24305466b [xml] Update Bulgarian localization
+- 2023-12-30 81832b169 [xml] Update japanese.xml
+- 2023-12-29 5e13a7b12 [XML] Update brazilian_portuguese.xml
+- 2023-12-29 79fab08f0 [xml] Update croatian.xml to v8.6.1
+- 2023-12-29 026ab75b3 [xml] Update Corsican translation for Notepad++ 8.6.1
+- 2023-12-29 c664299df [xml] Update german.xml
+- 2023-12-29 03d1a5dcd [xml] Update russian.xml
+- 2023-12-29 0aebe13b3 [xml] Update Slovak translation
+- 2023-12-29 19c6489a9 [xml] Update czech.xml to v8.6.1
+- 2023-12-31 dc6f6d110 Fix deleting in column mode also delete an unexpected EOL
+- 2024-01-03 9c7bb8a08 Fix F4 not working for search result
+- 2024-01-05 6f5f24679 Notepad++ 8.6.1 release
+- 2024-01-08 eb0922c22 Fix cloned document position not remembered though sessions
+- 2024-01-06 464967e26 Fix clang compilation error
+- 2024-01-10 619b5a68e [xml] Update french.xml
+- 2024-01-09 f7de2076c [xml] Update Ukrainian translation
+- 2024-01-09 f7c44b441 Restore Shift-DEL, Ctrl-INS and Shift-INS & fix Ctrl+V can't paste into the text fields of forms for certain plugins
+- 2024-01-13 75ae73c17 Fix Copy/Cut/Paste shortcut modification conflict problem
+- 2024-01-14 7479e31fb Notepad++ v8.6.2 release
+- 2024-01-13 ae9aa2243 Fix Copy/Cut/Paste issue in Vertical Edge text field (preferences)
+- 2024-01-21 50a6cf298 Modified Notepad++ version to "Notepad++ GH_BUILD" for CI artifact
+- 2024-01-13 bb278b26f Enhance API description in comment
+- 2024-01-28 c0eaf544a Add "Plugin Communication" reference
+- 2024-02-01 f431a3796 Update SUPPORTED_SYSTEM.md
+- 2024-02-01 9e7f1e514 Make copy/cut line while no selection optional
+- 2024-01-31 cb8165b16 Fix "Open File" command not working with TAB preceded
+- 2024-02-03 ec29bc101 Update css.xml
+- 2024-01-25 bf65ba532 Added php 8.3 functions to syntax highlighting and autocomplete files
+- 2024-02-03 85af8d566 Update CONTRIBUTING.md
+- 2024-02-03 9cec6aff3 Update CONTRIBUTING.md
+- 2024-02-03 f09b653d1 Fix calltip crash due to the division by zero
+- 2024-01-17 91074da46 Fix macro recording twice for some commands
+- 2024-02-04 5e6df2594 Update README.md
+- 2024-02-05 c6e433f70 Update localization files
+- 2024-01-23 e600c35ad Enhance Function List for Python
+- 2024-02-07 0d05dae4b Add more unit tests for Function List of Python
+- 2024-02-06 044296eea Fix Replace All crash & performance issue
+- 2024-01-28 c927ee8ce Add .mjs extension to the "web script" file associations
+- 2024-02-09 76cfc5945 Fix loosing all open files after restarting as Admin to save a file
+- 2024-02-10 087430f8f Fix regression of NPPM_RELOADFILE
+- 2024-02-07 04b595f09 [xml] Update japanese.xml
+- 2024-02-06 6875e2673 [xml] Update Bulgarian localization
+- 2024-02-06 59b9257cb [xml] Update Slovak translation
+- 2024-02-06 7beb15d56 [xml] Update german.xml
+- 2024-02-05 b4a2040b7 [XML] Update brazilian_portuguese.xml
+- 2024-02-05 a0bd2f881 [xml] Update Corsican translation for Notepad++ 8.6.3
+- 2024-02-03 632dcaa47 Update portuguese.xml
+- 2024-01-16 2ef8d147e [xml] Update romanian.xml
+- 2024-02-05 be4584832 [xml] Update russian.xml v8.6.3
+- 2024-02-08 346ed36c0 Add html 5 style code in css.xml for auto-completion
+- 2024-02-11 eabd62050 [xml]Update spanish v.8.6.3.xml
+- 2024-02-11 5f95df0ae [xml]Update galician v.8.6.3.xml
+- 2024-02-05 a670b26a7 Update polish.xml to 8.6.3
+- 2024-02-10 978118dc0 Add latest ES/JS keywords for auto-completion
+- 2024-02-14 36793b516 Enable shortcut mapper to filter keycombos for scintilla commands Previously the shortcut mapper filtered the keycombo     for every other type of command, but not scintilla commands.
+- 2024-02-14 63d0f88b0 [xml] Update czech.xml to v8.6.3
+- 2024-02-14 75b239cf8 [xml] Update croatian.xml to v8.6.3
+- 2024-02-15 f2d66170f Restore multi-editing option on GUI
+- 2024-02-15 840c4e585 use ScintillaKeyMap::toString() to get all shortcuts simplifies code, also matches "or" in a list of multiple shortcuts.
+- 2024-02-16 250dfe0f8 Fix new editing dialog not in dark mode
+- 2024-02-18 511006984 Notepad++ v8.6.3 release
+- 2024-02-19 1491efd95 Add a new great refactoring
+- 2024-02-19 827b08f6f Fix regression that the view cannot be activated by mouse clicking
+- 2024-02-20 120fc5d72 Notepad++ v8.6.4 release
+- 2024-02-21 49e6957d4 Fix Replace All action not notifying plugins of modification regression
+- 2024-02-21 9a6614ea9 Enhance NPPN_GLOBALMODIFIED notification
+- 2024-02-22 d83d4c923 Fix plugins not recieving some Scintilla notification types regression
+- 2024-02-12 b30e2755c Update BATCH (Remove chcp and choice)
+- 2024-02-23 27156bdf3 Merge branch 'fix_shortcut_mapper_scintilla_shortcut' of https://github.com/molsonkiko/notepad-plus-plus into molsonkiko-fix_shortcut_mapper_scintilla_shortcut
+- 2024-02-23 ee74fe587 Merge branch 'molsonkiko-fix_shortcut_mapper_scintilla_shortcut'
+- 2024-02-19 8ffe8147c Few fixes for Finnish translation
+- 2024-02-13 f66dd9104 Fix Notepad++ blocked when closed minimized or from systray
+- 2024-02-14 fbd4a4021 Fix context menu popup location issue
+- 2024-02-23 ce8fb873a Fix possible no-GUI state when using systray
+- 2024-02-26 12548b6ab Reorganize "Editing" sections in Preferences dialog
+- 2024-02-27 13cd4acad Fix "Save a Copy As" dialog's wrong title
+- 2024-02-28 6c027d343 Modify the layout of "Editing 2" in Preferences dialog
+- 2024-02-20 40adc3820 Prevent typing control characters into document
+- 2024-02-29 35deb8a30 Make "Prevent C0 input" feature optional
+- 2024-02-29 8bfe2d7a7 Fix an error
+- 2024-03-01 2adf71213 Enhance Shortcut Mapper filter to find the command items more easily
+- 2024-03-04 060396c69 Fix NPPM_RELOADFILE API return wrong result issue
+- 2024-03-05 b3ff400cc Fix python wrong decorator attribute colors
+- 2024-03-02 fd1f785b8 Add Change History colour configuration
+- 2024-03-06 83f0232d9 Add Session Snapshot Periodic Buckup info into Debug Info dialog
+- 2021-12-25 9d09ee818 Fix a potential undefined behaviour & improve some codes
+- 2024-03-08 4e1a3eef4 Add FlushFileBuffers-fail user notification
+- 2024-03-08 9d92b0a86 Fix some gcc warnings
+- 2024-03-08 aa0be9973 Add support for Change History in the text
+- 2024-03-06 0f3ae2e3d Updated to Scintilla 5.4.2 & Lexilla 5.3.1
+- 2024-03-10 1c32e2906 Update to scintilla 5.4.3 (from 5.4.1) & Lexilla 5.3.1
+- 2024-03-12 9251955d1 Support template literal (template strings) in JavaScript
+- 2024-03-01 356d5cd07 Improve hiDPI appearance for some DM elements
+- 2024-03-13 2ac5e3a7e Update nppGpgPub.asc
+- 2024-03-14 9d848b6a4 Update Release Key Expiration Date
+- 2024-03-13 2e4ad67df Refactor FindFirstFile-FindNextFile code blocks
+- 2024-03-13 c8a2bcb6b Use undocumented dpi API to support win7
+- 2024-02-26 8216b5134 [xml] Update russian.xml v8.6.5
+- 2024-02-26 ace771cf2 Update polish.xml
+- 2024-02-26 8ddb672a0 [xml] Update Slovak translation
+- 2024-02-26 5b3774dd7 [xml] Update Bulgarian localization
+- 2024-02-26 808aeb7ea [XML] Update brazilian_portuguese.xml
+- 2024-02-27 1fbb393a9 [xml] Update Corsican translation for Notepad++ 8.6.5
+- 2024-02-27 43e84c41f [xml] Update japanese.xml
+- 2024-03-09 e7d7af898 [xml] Update Turkish localization
+- 2024-03-14 c4e37e816 [XML] Update italian.xml v8.6.5
+- 2024-03-15 7f74bc0f9 [xml] Update portuguese.xml
+- 2024-03-15 2a747e496 [xml] Update croatian.xml to v8.6.5
+- 2024-03-16 45cdbbfe1 [xml] Update czech.xml to v8.6.5
+- 2024-03-17 10305ebde Revert "Use undocumented dpi API to support win7"
+- 2024-03-17 999b4d188 Revert "Improve hiDPI appearance for some DM elements"
+- 2024-03-14 aa3777786 Remedy losing session problem after the power outrages
+- 2024-03-14 590ea74be Fix NUL characters file corruption after power outrages (1st step solution)
+- 2024-03-16 bdbd289d6 Update romanian.xml
+- 2024-02-27 6e77795f8 [xml] Update german.xml
+- 2024-03-17 13dcdd5fb [xml] Update spanish.xml
+- 2024-03-17 33ac6e7ec [xml] Update galician.xml
+- 2024-03-18 6b0274fdf Update german.xml
+- 2024-03-19 73bc79ee5 Fix launching Shortcut Mapper makes app crash
+- 2024-03-20 0bc28df61 Reformat BabyGrid.cpp for a good readibility and nothing more
+- 2024-03-20 109600aa5 Enhance losing session while power outrages remedy
+- 2024-03-21 d7011c41b Modernize BabyGrid.cpp
+- 2024-03-20 cccd99b79 Fix URLs are not detected after a "Replace All" regression
+- 2024-03-23 71a12c428 [xml] Fix & update italian.xml
+- 2024-03-22 52fa5a3b8 Fix Mouse Wheel Scrolling in Shortcut Mapper even nothing to scroll
+- 2024-03-24 12c6777bc Fix some "Go to settings" in Style Configurator go to wrong section
+- 2024-03-26 b31e7a31e Change History GUI enhancement and tweaks
+- 2024-03-26 30f48aae1 Insert "change history" styles to Style Configurator for themes if absent
+- 2024-03-28 bbeaafac8 Fix period backup crash due to the dead lock of std::lock_guard
+- 2024-03-30 26647ac9f Notepad++ release 8.6.5
+- 2024-03-30 60034edf3 Fix debug info display regression
+- 2024-03-28 243112d04 Fix Dark Mode Menu Bar cluttered issue
+- 2024-03-17 29fcd1ac9 Readd dpi API
+- 2024-03-23 0a7295878 Fix a performance issue due to URL recognization
+- 2024-04-02 2a6382b4a Enhance Notepad++ closing speed by not scanning for URLs
+- 2024-04-03 a61f3ab13 Update slovenian.xml
+- 2024-04-02 6204f00e8 Use dark theme on checkbox buttons on Windows 11
+- 2024-04-01 903d47b2e Reduce compiling warning
+- 2024-04-05 6afcb7355 Fix possible 2GB+ files loading Scintilla exception
+- 2024-04-05 1f4cbdb8b Fix close button disappeared issue in Find&Replace dialog
+- 2024-04-06 318c9a994 Merge branch 'fix_possible_2GB+_files_loading_Scintilla_exception' of https://github.com/xomx/notepad-plus-plus into xomx-fix_possible_2GB+_files_loading_Scintilla_exception
+- 2024-04-05 8d3d8aa64 Fix gcc compiler warnings\errors
+- 2024-04-05 5f93e046e Reduce CI build time for some circumstances
+- 2024-04-09 ddc080785 Merge branch 'xomx-fix_possible_2GB+_files_loading_Scintilla_exception'
+- 2024-04-06 fc52cd3f4 Use dpi scaled fonts for some controls
+- 2024-04-04 5b8e13ab9 Refactor controls in Find & Replace dialog to improve compatibility with HiDPI
+- 2024-04-09 8f24e8982 Add syntax highlighting for Go/Golang
+- 2024-04-08 e0bb72370 Improve HiDPI compatibility for tab control labels
+- 2024-04-08 18815de8a Fix multi-edit resists escape after typing issue
+- 2024-04-10 5a65b30b1 Add issue templates
+- 2024-04-11 a5e29863e Use newer version of make and show it correctly
+- 2024-01-15 906f6e438 Revert "Fix Korean IME append extension issue"
+- 2024-04-11 80e8a0dbe Add dpi messages
+- 2024-04-12 126505180 Fix potential crash when crossing the 2GB file size threshold
+- 2024-04-14 c2696001c Allow any character in title/message
+- 2024-04-14 896d78a5d You can't criticize Roman numeral 11 in China
+- 2024-04-13 7cfa79b8c Allow Ctrl-TAB to switch tabs in FindReplace dialog
+- 2024-04-14 045d21aa1 Add additional instructions to issue templates
+- 2024-04-14 35f601b66 Add ISSUE_TEMPLATE folder to exceptions
+- 2024-04-14 25c6795d0 Code enhancements
+- 2024-04-15 0e8781938 Add log while flush file buffers action fails
+- 2024-04-14 161bb4142 Add syntax highlighting for Raku
+- 2024-04-07 a92a9fd7c Fix wrong dropped file view
+- 2024-04-13 01a088f99 Use new dpi manager scaled default fonts
+- 2024-04-12 27e77cf6d Add dpi support to dialogs
+- 2024-04-16 914869936 Enhance GUI: resize checkboxes/radio buttons as text length needs
+- 2024-04-16 8672d95ca Fix user defined auto-insert not working issue
+- 2024-04-08 e6558a361 Enhance source code
+- 2024-04-19 b7ebd389c Add new DPI support to status bar
+- 2024-04-17 61083a446 Allow Ctrl-TAB to switch tabs in PluginAdmin and UDL dialogs
+- 2024-04-19 34a6bf196 Add new DPI support to dialogs
+- 2024-04-19 b476c6744 Add new DPI support to hash dialogs
+- 2024-04-19 4031339c5 Add dpi support to dialogs - FindInFinder - GoToLine - ColumnEditor - FindCharsInRange - ProjectPanel FileRelocalizerDlg
+- 2024-04-20 752777086 Add new DPI support to preference dialog
+- 2024-04-21 d43582d61 Add new DPI support to plugin admin dialog
+- 2024-04-21 018d4f9a1 Add dpi support to UDL dialogs
+- 2024-04-22 3c06d89b2 Fix wrong display of DarkMode on the 2nd monitor
+- 2024-04-10 2531b4d12 Fix issue with case sensitive files
+- 2024-04-22 560f29fc8 Add dpi support to Style Configurator dialog
+- 2024-04-23 4ffa8fcdf Small refactoring
+- 2024-04-22 89aaf4372 Use standard function (wcscmp/wcsicmp) instead home made one
+- 2024-04-24 c823ca815 Adapt new DPI support for toolbar
+- 2024-04-24 881e8c285 Update to scintilla 5.5.0 & Lexilla 5.3.2
+- 2024-04-24 592d981b5 Update to nlohman json 3.11.3
+- 2023-02-18 e877707ec Update to boost 1.85.0
+- 2024-04-27 188375e2e Adapt TabBar to new DPI management
+- 2024-04-28 c63e29f21 Make F3 & Shift-F3 work in Find Replace dialog
+- 2024-04-30 052d601e5 [xml] Update Corsican translation for Notepad++ 8.6.6
+- 2024-04-24 4c367f4de [xml] Update russian.xml v8.6.6
+- 2024-04-21 3c0e54a01 Update galician.xml
+- 2024-04-21 1183b4bb6 Update spanish.xml
+- 2024-04-04 cb9fb5c22 Update swedish.xml
+- 2024-04-02 e518c79a5 Update polish.xml
+- 2024-05-02 2d076b645 Refactoring for new DPI management: avoiod the multiple inherence
+- 2024-05-05 3609a2125 Fix same file opened 2 times with different sensitive case of path regression
+- 2024-05-05 e987f360c [xml] Update Croatian translation for Notepad++ 8.6.6
+- 2024-05-04 aa6a55cb7 Enable remaining 4 keyword lists
+- 2024-04-12 8ab9b99b7 Ada Function List improvements
+- 2024-05-05 6281227d8 Add more unit tests for Ada function list
+- 2024-04-28 c584a77e0 Fix URL enclosed in apostrophes or backtick not working issue
+- 2024-05-05 e53bb4c88 [xml] Update Bulgarian localization
+- 2024-05-06 c64d70687 Fix GCC reorder warning, use override, remove duplicated code
+- 2024-05-06 eb627b067 Enhance GUI: make sizing arrows more coherent in Find dialog
+- 2024-05-10 ec7c5cec4 Notepad++ 8.6.6 release
+- 2024-05-10 ee3aecb16 Fix a typo
+- 2024-04-26 be9453357 CI enhancement: Use cache for python modules to optimize CI build time
+- 2024-05-02 f6d304f94 Fix dialogs out of screen problem
+- 2024-05-05 da5f896de Language enhancement: allow custom tags in HTML
+- 2024-05-08 971aaf680 Fix multi-editing not showing multiple cursors in dark mode
+- 2024-05-10 9d6e6d2e0 Fix symbol '&' not showing in Document Switcher
+- 2024-05-11 973fb3604 Add auto-completion for Go & Raku, function list for Raku
+- 2024-05-12 78c7c3e64 Fix some code for WM_COMMAND outside of it in preferenceDlg.cpp
+- 2024-05-12 1e19719f8 Fix regression of multi-edit cursors placed wrongly issue
+- 2024-05-10 a1aa8682d [xml] Update Turkish localization
+- 2024-05-13 126ad0bc0 Notepad++ 8.6.7 release
+- 2024-05-03 8055b5687 Plugin dark mode customization improvement for tree view
+- 2024-05-11 88193a73f CI improvement: not using the REST API to get PR message
+- 2024-05-06 8329a9fec Build: use DIR_O in nppSpecifics.mak properly
+- 2024-05-05 3b515f124 Initial new dpi management support for Shortcut Mapper
+- 2024-05-05 4cd231114 Improve status bar resize handling
+- 2024-05-06 71914ed54 Use new dpi management for Find & Replace dialog fonts
+- 2024-05-16 e25e15b9b Refactor 'FindReplaceDlg::resizeDialogElements()' to be more compatible with HiDPI
+- 2024-05-16 5123016ba Make toolbar dark mode support better for plugins
+- 2024-05-16 bdc11a47f Make new DPI management support for Find Replace dialog
+- 2024-05-17 d0e3a1a21 Fix crash in Column Editor
+- 2024-05-19 fb086bbcd Fix moving Find dialog to center of Notepad++ bug (new DPI manager)
+- 2024-05-15 9244cd094 Add plugin commands NPPM_GETTABCOLORID
+- 2024-05-20 13eede938 Improve NPPM_GETTABCOLORID API comment
+- 2024-05-19 382c33e99 Prevent the division by 0 in getNbDigits function
+- 2024-05-19 ef840de15 Make top bar indicate applied tab color for unfocused view
+- 2024-05-21 912c5ee30 Make english language text with colon (':') consistent
+- 2024-05-20 106bdcc01 Fix negative repeat value in Column Editor causes hang issue
+- 2024-05-21 49340a870 Refactor ShortcutMapper resizing for new dpi compatibility
+- 2024-05-21 4ad57c1dd Replace GetSystemMetrics with new dpi manager's ones
+- 2024-05-22 0baac8af5 Fix extra space inserted issue with HEX mode in Column Editor
+- 2024-05-22 00ea1a908 Handle new dpi message in Shortcut Mapper
+- 2024-05-24 6c5f0009b Use gdi dpi scaling for Windows dialog
+- 2024-05-24 9c1f972ee Add new dpi support to Find in Files Progress window
+- 2024-05-19 b3b90a5dc Add auto-indent feature for Python
+- 2024-05-25 2ed6c77df CI enhancement
+- 2024-05-25 cdf32d198 Reorganize icons folder
+- 2024-05-27 0019e20f8 Make naming correct for indent settings of Preferences dialog
+- 2024-05-27 c89033bd8 Replace bmp with ico for panels with toolbar
+- 2024-05-26 b4b76ff77 Code enhancement: Nullpointer checks
+- 2024-05-29 6c660a71b Add missing monitoring icon for disabled state
+- 2024-05-30 cfcb0d73c Fix file opening issue with control characters initial appearence
+- 2024-05-31 fedaabf0f Fix toolbar pressed button visual glitch in dark mode
+- 2024-05-31 6cd6aa384 Make clang warnings flags in makefile and msvc consistent
+- 2024-05-18 bc1436a5c Update chineseSimplified.xml
+- 2024-06-04 61bcf3a2b Notepad++ v8.6.8 - Support Taiwan's Sovereignty
+- 2024-05-31 df4e8f5b7 Fix integer overflow issue in Column Editor
+- 2024-06-04 9f6e9c0cf Update English translation for v8.6.8 (indentation setting)
+- 2024-06-03 ea71d5ea4 Fix small width for "Ignore case" checkbox in UDL for some languages
+- 2024-06-05 07e95038c Add message box with information about disabled backward regex searching
+- 2024-06-06 7a401cfac Enlarge the labels of indent settings
+- 2024-06-02 e7e88a380 Add "Show All Character" context menu on toolbar button
+- 2024-06-03 8beda66cb Fixed the "lost" panels issue
+- 2024-06-07 7291823e1 Update Fluent toolbar icons
+- 2024-06-08 aea78d71e Show All Characters Icon Fix
+- 2024-06-01 83f1195bc Add installer new option '/closeRunningNpp'
+- 2024-06-10 f37f2d0ff Use new dpi scaled size for docking panel tab icons
+- 2024-05-28 721a845be Fix unsaved tab containing tab character display glitch
+- 2024-06-11 dc53d1b7a Add F13-F24 keys to Shortcut Mapper
+- 2024-06-09 f2e5739d4 Fix rectangular selection copy-paste bug
+- 2024-06-11 6cbb1273a Tweak Find in File Progress hits text position
+- 2024-06-12 7a6768b02 Add Backspace unident option
+- 2024-06-12 f2fbeadfe Refactor docking panel tab bar to improve dpi compatibility
+- 2024-06-13 7f7dd1df0 Fluent Icons - Panels Toolbar & Tab bar
+- 2024-06-13 dbdeca5b2 Add dark mode search results panel tab bar icon
+- 2024-06-13 638b5a204 Make install/update easy & quiet
+- 2024-06-13 720f5f8a8 Fluent Icons - Tab Bar
+- 2024-06-12 2e116251e Fix the Begin/End Select after deletion problem
+- 2024-06-13 eb82aac28 Fluent Icons Alignment Fix
+- 2024-06-14 c7ee70cf3 Make panel tabbar icons using BMP use transparency
+- 2024-06-15 fa2fce2b4 Fix crash of "Next Search Result" cmd on the empty search result
+- 2024-06-15 e6a173523 Fix Find Replace size is not remembered through the sessions issue
+- 2024-06-15 6102687fa Fix crash of "Next Search Result" cmd on the empty search result (2nd)
+- 2024-06-09 5b36e097c Fix status bar and tab bar flicker when updated
+- 2024-06-16 9a27df8f1 Make NPPN_FILEBEFORERENAME notification more efficient
+- 2024-06-17 ace9f4967 Fix renamed last empty clean tab cannot be closed issue
+- 2024-06-16 57a89b257 Update langs.model.xml - TCL keyword "then"
+- 2024-06-17 8760dd2c0 Replace tab bar close button BMP files with ICO
+- 2024-06-18 90762bbdd Fix a regression due to usage of double buffer
+- 2024-06-19 965e24859 Fix a regression due to usage of double buffer (2nd part)
+- 2024-06-20 46c5a0c22 Fix exception/crash on Windows Server Core 2022 (Datacenter)
+- 2024-06-20 3ee5ef020 Make LoadIcon error message more clear
+- 2024-06-21 6b441b738 Prevent DirectWrite from being ON under Windows Sever (Core)
+- 2024-06-19 25686c22e Separate imagelist for tab bar close button icons for dark/light modes
+- 2024-05-21 fcf584689 [XML] Update brazilian_portuguese.xml
+- 2024-05-25 5f5f1e7e0 [XML] Update italian.xml
+- 2024-05-28 9bd3a0f0b [xml] Update german.xml to v8.6.7
+- 2024-06-04 d2a7a765a [xml] russian.xml v8.6.8
+- 2024-06-06 bb5dbd704 Update dutch.xml
+- 2024-06-06 e106724be [xml] Update Bulgarian localization
+- 2024-06-07 88e550ef8 [xml] Update Slovak translation
+- 2024-06-07 e4431e20a [xml] Update japanese.xml
+- 2024-06-08 4a64071dd [xml] Update Corsican translation for Notepad++ 8.6.9
+- 2024-06-12 d3500f3ab Update french.xml
+- 2024-05-22 91ecc5f40 Update Swedish localization
+- 2024-06-15 2928088f0 [xml] Update romanian.xml
+- 2024-06-20 60c8baa4b [xml] Update Ukrainian translation
+- 2024-06-21 8e1f64147 Improve close button on tab in dark mode (Fluent Icons)
+- 2024-06-15 b3daf0a98 Add plugin command NPPM_SETUNTITLEDNAME to rename untitled tab
+- 2024-04-10 73ad1efc4 Fix CSS more indentation bug
+- 2024-06-21 34998e46f [xml] Update spanish v. 8.6.9.xml
+- 2024-06-21 f19557546 [xml] Update galician v.8.6.9.xml
+- 2024-06-24 c54b33db8 [xml] Update czech.xml to v8.6.9
+- 2024-06-24 84e310911 [xml] Update Croatian translation for Notepad++ 8.6.9
+- 2024-06-26 53d87d4f6 Fluent Icons Update
+- 2024-06-24 3c3e7cdad Fix Encoding "Convert to..." regression
+- 2024-06-27 dfe31e509 Update swedish.xml
+- 2024-06-27 d0f574266 Fluent Icons - Wrap - Alignment Fix
+- 2024-06-26 982f52224 Add the possibility for opening a shortcut file if change file ext
+- 2024-06-28 94af271be Remove ambiguous symbols
+- 2024-06-28 a68362b48 Fix Replace Icon
+- 2024-06-29 0842c991d Remove ambiguous symbols (part 2)
+- 2024-06-29 10deb9970 Remove ambiguous symbols (part 3)
+- 2024-06-30 97279d024 Remove ambiguous symbols (part 4)
+- 2024-06-25 4d8ef955e Update french.xml
+- 2024-06-30 3c897f892 Remove ambiguous symbols (part 5)
+- 2024-06-30 f7d9e7c09 Remove ambiguous symbols (part 6)
+- 2024-07-01 88bd09e67 Remove ambiguous symbols (part 7)
+- 2024-07-01 dc5cea894 Remove ambiguous symbols (part 8)
+- 2024-07-01 a301ffc77 Remove ambiguous symbols (part 9)
+- 2024-07-01 dbef8cea9 Solve compiling error & fix a regression of "new #"
+- 2024-07-01 c2da907f3 Fix comiling error in msys2
+- 2024-07-01 5501485c0 Add ability to pre-populate the predefined color sets to the custom tone
+- 2024-07-05 89910d0bf [xml] Update polish.xml to 8.6.9
+- 2024-07-04 955f31562 [xml] Update Bulgarian localization
+- 2024-07-02 163e2712e Update italian.xml
+- 2024-07-02 f47b0e8d2 [xml] Update portuguese.xml
+- 2024-06-24 1c47c368b [xml] Update german.xml
+- 2024-07-07 504e4ca5d Fix periodic backup's disfunction regression for the main view
+- 2024-07-14 761060819 Notepad++ v8.6.9 release
+- 2024-07-09 439bbb04d Make C-Like indent deactivatable
+- 2024-07-07 ac67f15c2 Fix closing unsaved clone document makes periodic backup lost issue
+- 2024-07-04 0858dfa4a Use GetFileAttributes instead of PathFileExists
+- 2024-06-24 108b9f0d2 Improve description for settings "Backup"
+- 2024-07-09 ea5e36a5b Add missing localization for debug info dialog and print error
+- 2024-07-18 3bca7bf27 Use L"" instead of TEXT("") - Part 1
+- 2024-07-02 8866d4b7f Add dpi support for panel tab and caption
+- 2024-07-18 a427ace34 Use explicite L to replace TEXT - part 2
+- 2024-07-18 d13c9bb94 Use wchar_t instead of TCHAR
+- 2024-07-19 4cde33048 Use std::wstring instead of generic_string
+- 2024-07-05 bdbd65182 Replace treeview bmp with ico
+- 2024-07-02 955b042fc Enhance DoubleBuffer and fix the debug assert issue
+- 2024-07-18 f05f4105d Fix Folder as Workspace for network storage sorting problem
+- 2024-07-17 19ddb91a6 Fix cannot paste issue after removing read-only via menu
+- 2024-07-20 d805dcb39 Fix typo & minor changes
+- 2024-07-22 d8c635091 Update to scintilla 5.5.1 & Lexilla 5.3.3
+- 2024-07-25 bfe27cc86 Add the ability to open the copy after "Save a Copy" command
+- 2024-07-23 6556b17ee Fix a typo; Make a function name & comment more accurate
+- 2024-07-28 6b97e68cb Refactoring - make tab color code on its correct place
+- 2024-07-28 29ff2da82 Fix Style Configurator regression: "URL hovered"'s "Go to Settings" not working
+- 2024-08-02 a16261caa Add customizable option for individual tab color
+- 2024-08-01 e17d77cea Fix edit zone not getting focus while clicking the active tab
+- 2024-07-27 9fb538d12 Add file type filters for UDL in Save dialogs
+- 2024-08-05 b78b3bdef Several enhancements for code
+- 2024-08-05 bf72b5ec4 Several enhancements for code - part II
+- 2024-08-06 72751182b Several enhancements for code - part III
+- 2024-08-09 48a2b30c1 Fix Python smart indent wrongly when comment line ends in colon
+- 2024-08-11 ae1d09cab Improve Python smart indent in case of string
+- 2024-08-10 f751ecaf0 Add fluent icons for treeview
+- 2024-08-12 2d79edca9 Enhance FunctionList, FaW & project panels' icons in lite mode
+- 2024-08-11 9e4290094 Add user-defined keyword ability for some supported programming languages
+- 2024-08-15 c1954e5c4 Fix "User-defined keywords" not being saved properly (Style Config)
+- 2024-08-20 d84f9b204 Fix Styler Configurator performance issue considerably
+- 2024-08-22 ad79718fc Update to scintilla 5.5.2 & Lexilla 5.4.0
+- 2024-08-22 86adb2148 Improve Styler Configurator performance
+- 2024-08-23 b32c07f74 Enhance build in other platforms
+- 2024-08-24 fb11abc5c Add TOML configuration file format
+- 2024-08-24 d2bb7a2af Fix a single undo reverting many changes issue
+- 2024-08-24 8e26e08c1 Simplify Python smart indent regex
+- 2024-08-27 446cc980e Add new plugin command & notification while native lang being changed
+- 2024-08-28 bdf3ccaca Fix regression of multiple selections in comboboxes of Find dialog
+- 2024-08-30 22c03102f Recognize Cython files as Python
+- 2024-08-31 21e5350f9 Refactoring for Find dlg Status messge color
+- 2024-09-01 43ebe796a Add comments for Style Configurator's parameters
+- 2024-09-01 a866900c8 Make find dlg status msgs color customizable via Style Configurator
+- 2024-09-03 a9b523540 Fix CVE-2014-9456 (but it's not a "Security Vulnerability")
+- 2024-09-03 85c390efd Fix NPPM_GETNATIVELANGFILENAME's comment documentation & 2 tipos
+- 2024-09-01 a13d4637b Add simple version of tex/latex function list
+- 2024-09-04 624e31568 Add forgotten entries for individual tab color in theme files
+- 2024-09-02 d5ec03a46 Fix monitoring large file with frequent writes freezes UI issue
+- 2024-09-07 4393f0ca0 Make naming more accurate
+- 2024-07-18 12d46fc61 [xml] Update Bulgarian localization
+- 2024-07-16 d3ac44943 [xml] Update Slovak translation
+- 2024-07-16 3e977c38e [xml] Update russian.xml v8.7.0
+- 2024-07-15 6cbebedb1 [xml] Update german.xml v8.6.9
+- 2024-07-17 ff5c03374 [xml] Update Corsican translation for Notepad++ 8.7
+- 2024-07-18 ba24ac84b [xml] Update japanese.xml
+- 2024-09-10 d942032cf [xml] Update czech.xml to v8.7.0
+- 2024-07-10 6308589e7 Update norwegian.xml to 8.6.8
+- 2024-08-23 4b0792e7d [xml] Update Ukrainian translation
+- 2024-07-14 3330661d2 [xml] Update Turkish localization
+- 2024-07-14 d932b029f [XML] Update brazilian_portuguese.xml
+- 2024-07-16 22e5c2b82 [xml] Update italian.xml
+- 2024-07-21 ccf534270 Update romanian.xml
+- 2024-07-25 06d1e8b06 [xml] Update portuguese.xml
+- 2024-07-26 af3283fcf Update swedish.xml
+- 2024-07-26 4728efd5a Update korean.xml
+- 2024-07-28 8f78f997f Update venetian.xml
+- 2024-08-29 291c5c371 [xml] Update spanish.xml v. 8.7.0
+- 2024-08-29 8a56d1a4e [xml] Update galician.xml v. 8.7.0
+- 2024-09-05 45cd29f8e [xml] Update Croatian translation for Notepad++ 8.7
+- 2024-09-15 ea08a8929 Fix the crash issue for NPPM_GETNATIVELANGFILENAME
+- 2024-09-16 4201368cd Fix typo
+- 2024-09-17 27ce5f849 Notepad++ 8.7 release
+- 2024-09-19 595074152 Small refactoring
+- 2024-09-22 8baa1553f Fix regression: can't open folder via cammand argument
+- 2024-09-24 fc051a123 Add tab created time tooltip for new opened untitled tab
+- 2024-09-28 f884a39dd Fix opened network files hanging issue while the network disconnected
+- 2024-10-03 a3535f385 Fix network files hanging while the network disconnected (part 2)
+- 2024-10-05 d2fb03e41 Make log function easier to be called
+- 2024-10-08 fb6d79b3a Fix crash on closing a disconnected network file tab
+- 2024-10-06 1445487bb Fix network files hanging while the network disconnected (part 3)
+- 2024-10-10 fdb68db3d Fix the wrong detection call
+- 2024-09-08 035ef19b1 Add "Close to system tray" in MISC preference
+- 2024-10-11 cd45afc02 Improve GUI for commands for the system tray in Preferences
+- 2024-10-07 0ca0348e7 Improve code & refactoring
+- 2024-10-11 3b6f22b35 Fix disconnected network files hanging while saving
+- 2024-10-12 5e3ee3e0e Rename variable & enhance the code
+- 2024-10-13 dc9f58dda Reduce network file hanging issue due to win32API GetFileAttributes cache (unsynchronized).
+- 2024-10-15 1890ea65f Avoid user confusion between Global override & Default Styles
+- 2024-10-16 901014746 Fix Find dialog status bar wrong messaging
+- 2024-10-16 bfe835e8a Fix wrong messages for replacement status
+- 2024-09-15 5d2bea5b9 Fix hanging issue while hiding lines
+- 2024-10-18 ad3446126 Make left behide hide line close marker removable
+- 2024-10-20 ba8cd8c46 Add one comment for localization file
+- 2024-10-19 213e9135b Update to scintilla 5.5.3 & Lexilla 5.4.1
+- 2024-10-11 2097969e7 [xml] Update Slovak translation
+- 2024-10-12 d3687c1b8 [xml] Update japanese.xml
+- 2024-10-13 5a20b1e54 [XML] Update italian.xml
+- 2024-10-13 c8533ddc5 Update translation texts for these commits: * Add "Close to system tray" in MISC preference (035ef19) * Improve GUI for commands for the system tray in Preferences (cd45afc)
+- 2024-10-16 7d9c60ff7 [XML] Update brazilian_portuguese.xml
+- 2024-10-19 439456bc4 [XML] Update romanian.xml
+- 2024-09-12 f6655850a [xml] Update german.xml v8.7
+- 2024-10-20 98a24a4d9 [xml] russian.xml  v 8.7.1
+- 2024-10-11 d34bca6a1 [xml] Update Corsican translation for Notepad++ 8.7.1
+- 2024-09-11 40c668e77 Update swedish.xml
+- 2024-09-13 911600fa2 [xml] Update Croatian.xml for Notepad++ 8.7
+- 2024-10-21 c224a9630 Fix modified Find dialog status msg not being remembered throu sessions
+- 2024-10-20 cc942822f [xml] Update portuguese.xml
+- 2024-10-20 5a02c1780 [xml] Update polish.xml
+- 2024-10-03 7dbb459b5 Fix URL parsing issue with '?' after '#'
+- 2024-10-23 c9168cce8 Add 2 unit tests for URL
+- 2024-10-12 ef4bedefe [xml] Update Bulgarian localization
+- 2024-10-28 62e6a5378 Fix SaveAs dialog "Append extension" option not working issue
+- 2024-10-25 bd415530a [xml] Update czech.xml to v8.7.1
+- 2024-10-24 b29fe57c2 [xml] Update galician.xml v. 8.7.1
+- 2024-10-24 ddf790853 [xml] Update spanish.xml v. 8.7.1
+- 2024-10-30 93ecbb004 Fix saved file from new empty doc keeping created time tip issue
+- 2024-09-06 3311924e1 Make auto-completion case sensitive for lua
+- 2024-10-31 2aa47e321 Revert "Fix saved file from new empty doc keeping created time tip issue"
+- 2024-10-31 682570ea6 Fix saved file from new empty doc keeping created time tip issue
+- 2024-11-04 ba3b4578b Notepad++ 8.7.1 release
+- 2024-11-03 5d29f7246 Fix replace field focus losing when Notepad++ is switched back
+- 2024-10-29 ce58b424b Add Pin tab feature
+- 2024-11-09 d9c24ad78 Remove dead entry from the localization files
+- 2024-11-09 c5094fee8 Refactoring to move the message definitions to the right place
+- 2024-11-10 55df10460 Refactoring (part 2)
+- 2024-11-10 5f4610293 Hide inactive tab buttons (Close & Pin)
+- 2024-11-13 f607044da Fix wrong position of pin button while close disabled and pin enabled
+- 2024-11-13 796b3a40b Highlight inactive darken tab on mouse hover
+- 2024-11-05 b8224808b Add ability to open/copy selected files from Search-results
+- 2024-11-11 eeb475304 Add "Minimize / Close to" option for System tray
+- 2024-11-16 c24444acf Fix Ctrl-C not doing copy from Search result issue
+- 2024-11-16 30e1319ea Fix empty.ico - removed random semi-transparent pixel
+- 2024-11-17 467182602 Fix selected pathnames in search results localization issue
+- 2024-11-18 af2b90f0a Add ability to open/copy selected files from Search-results (2)
+- 2024-11-19 8f0484caf Fix Ctrl-C not doing copy from Search result issue (part 2)
+- 2024-11-15 c021c8619 Code enhancement for file checking
+- 2024-11-17 dad2353a1 Update Record macro toolbar icon for dark mode
+- 2024-11-11 975f0b948 [xml] Update japanese.xml
+- 2024-11-16 7df8020d1 [xml] russian.xml v8.7.2
+- 2024-11-19 c21d0daea [xml] Update Croatian translation for Notepad++ 8.7.2
+- 2024-11-16 4c9adcb0f [xml] Update polish.xml
+- 2024-11-16 495e95217 [xml] Update Corsican translation for Notepad++ 8.7.2
+- 2024-11-12 62e80fbe3 [xml] Update Slovak translation
+- 2024-11-04 327326726 [XML] Update brazilian_portuguese.xml
+- 2024-11-13 4113c85b7 [xml] Update Bulgarian localization
+- 2024-11-21 76b4045df [xml] Update czech.xml to v8.7.2
+- 2024-11-05 c25a92537 Update swedish.xml
+- 2024-11-19 241a2dbbf Update hungarian.xml
+- 2024-11-21 09202b327 Update translations
+- 2024-11-21 780f77b54 Update Serbian localization to v8.7.2
+- 2024-11-02 6282d90db [xml] Update Ukrainian translation
+- 2024-11-03 5b83d3a24 [xml] Update german.xml
+- 2024-11-09 ae290d3d2 [xml] Update italian.xml
+- 2024-11-20 640e4f343 Updated Norwegian translation 8.6.9
+- 2024-11-17 fbff18fbc [xml] Update Romanian translation for Notepad++ 8.7.2
+- 2024-11-22 c1244b076 Remove unnecessary translation
+- 2024-11-22 30c6ac778 Remove obsolete entries from localization files
+- 2024-11-22 2556c1e56 Fix xml file structure error
+- 2024-11-23 09332d6f9 Promote Pin Tab feature
+- 2024-11-23 7af3c104d Fix copied paths repeated for "Copy Selected Pathname(s)" in Search results
+- 2024-11-25 ae5675247 Fix "Reduce Tabbar" option on/off not changing to needed tab width
+- 2024-11-27 aaf3b3906 Notepad++ 8.7.2 release
+- 2024-11-22 2c1212cba Rename an option in Preferences dialog to fit other settings
+- 2024-11-25 287c85f8f Add Pin/Unpin Tab context menu item
+- 2024-11-25 b1237df06 Fix a possible buffer overflow issue
+- 2024-11-28 6229e0f5d Fix regression: Drag&drop a folder in Notepad++ launch redundant dialog
+- 2024-11-28 61a1ca89f Add "Close All BUT Pinned" command
+- 2024-11-28 16da20efd Update localization files to v8.7.3
+- 2024-11-29 830979354 [xml] Update russian.xml  v 8.7.3
+- 2024-11-29 dc883d94d Fix a crash while disabling "Pin tab" feature
+- 2024-11-29 f18d99e24 [xml] Add a missing line to english.xml
+- 2024-11-29 234ce61b9 [xml] Update japanese.xml
+- 2024-11-29 b43eba3f4 Fix docked panels invisibility in multiinst mode
+- 2024-11-28 d871bec17 [xml] Update Corsican translation for Notepad++ 8.7.3
+- 2024-11-27 ac7a2a450 Update chineseSimplified.xml
+- 2024-11-29 435a8128f [xml] Update czech.xml to v8.7.3
+- 2024-11-27 d774b9b9c [XML] Update brazilian_portuguese.xml
+- 2024-11-30 e15e4a7e4 [xml] Update Slovak translation
+- 2024-11-30 1fafa4edb [xml] Update Croatian.xml for Notepad++ 8.7.3
+- 2024-11-23 822a0abda Update italian.xml
+- 2024-11-30 1c3c2f8d3 Update localization files
+- 2024-12-01 a7e2faf86 Notepad++ 8.7.3 release
+- 2024-11-30 2ed30a53e Fix the extension defined by user not override language default extension
+- 2024-12-03 28244a599 Buffer small refactoring
+- 2024-12-03 dd0b557e1 Fix encoding of nfo file cannot be changed bug
+- 2024-12-03 3426d5833 Fix applying MS-Dos style displayed incorrectly issue
+- 2024-12-03 da79968bd Add some more Debug Info
+- 2024-12-03 10627b02d [xml] Update Turkish localization
+- 2024-11-28 c0cdb2e43 Updated Norwegian translation 8.7.2
+- 2024-11-28 136c8d119 [xml] Update german.xml
+- 2024-11-24 8cd3860ce [xml] Update Portuguese.xml
+- 2024-11-27 ec0b2b5aa Update polish.xml
+- 2024-12-04 11a02f69c Fix regression of multi-line tabbar height not updated after closing
+- 2024-12-05 b3110cdcc Notepad++ 8.7.4 release
+- 2024-10-20 4972dcf4b Add "Show details" functionality in installer
+- 2024-12-05 af9af11ae Refactoring for the better performance & smaller binary size
+- 2024-12-08 d6169c418 Fix unusuability after deleting files in split view
+- 2024-12-09 83080c340 Fix the localization files to match the new behaviour
+- 2024-12-09 fdf3ed271 Add Swift, TypeScript, and Go for advanced Auto-indent
+- 2024-12-10 dc583bf34 Code enhancement: Prevent backup worker thread crash at Notepad++ exit
+- 2024-12-12 10ae99e79 Fix unsaved documents lost on next launch if portable npp change path
+- 2024-11-25 471a308bc Improve Copy-Selected-Lines
+- 2024-12-12 06a03ea41 Fix Reload Workspace not working
+- 2024-12-11 6453379ac Enhance "Follow current doc." GUI action/option in Find in files
+- 2024-12-17 a0bb55f0e Remove the obsolete entry from localization files
+- 2024-12-16 f5f7c1485 Update Verilog stylers/themes
+- 2024-12-15 d6a32d2f0 Added Visual Basic function list + unittest case
+- 2024-12-18 0c4bb240e Fix a typo for Kabyle identifier
+- 2024-12-10 de1a04038 Fix network file wrong modification detection (regression from v8.7.1)
+- 2024-12-19 f535087e5 Code enhancement: remove obsolete code
+- 2024-12-19 cb1172e2a Enhabnce updateTimeStamp fuction
+- 2024-12-18 f205b1223 Fix UDL comment & comment line conflicting
+- 2024-12-18 a6a300dd9 Update swedish.xml
+- 2024-12-18 017837f93 [xml] Update japanese.xml
+- 2024-12-10 795129f4e [xml] Update Slovak translation
+- 2024-12-09 7816c50b0 Update brazilian_portuguese.xml
+- 2024-12-09 5c3d48150 [xml] Update german.xml
+- 2024-12-05 cfdbfc139 Update Serbian to v8.7.4
+- 2024-12-05 6c6532b25 Update hungarian.xml
+- 2024-11-30 a66421321 Update romanian.xml
+- 2024-12-20 2f1cdbbef Fix nfo file losing modification issue (regression)
+- 2024-12-21 137200147 [xml] Update Bulgarian localization
+- 2024-12-21 0692b4fdb [xml] Update russian.xml  v 8.7.4
+- 2024-12-20 6a8e0d408 [xml] Update italian.xml
+- 2024-12-20 0447dc898 [xml] Update czech.xml to v8.7.5
+- 2024-12-21 50c2c3a74 Fix regression "Open Selected PathName(s)" command not working with Ctrl-A
+- 2024-12-25 8a8f8b2a8 Notepad++ 8.7.5 release
+- 2024-12-24 de9ffd2ea Enhance large files with syntax highlighting performance
+- 2024-12-30 f40df3cdf Optimize Scintilla notification code performance
+- 2025-01-03 c17d1d428 Optimize Scintilla notification code performance (part 2)
+- 2025-01-03 c5dd85cd9 Improve performance: Optimize activateBuffer function
+- 2025-01-05 71be434a3 Improve performance while disabling clickable URL link
+- 2025-01-07 7544df534 Fix regressionn while disabling clickable link
+- 2024-12-24 a6103d5de Update to scintilla 5.5.3 & Lexilla 5.4.1
+- 2024-12-30 4b637b4fc Fix wrong replace all while 2nd time replace in selection
+- 2025-01-08 d9d7c4fbb Fix vertical tab crashes on enabling/disabling pin tab feature
+- 2024-12-20 104cc8af7 Fix crash while passing invalid buffer with NPPM_SETUNTITLEDNAME
+- 2024-12-10 4fc044ed6 Add "color-scheme" keyword for CSS
+- 2024-11-18 9e1db77f8 Fix literals wrong style for server side JavaScript
+- 2025-01-10 e28324b8d Fix reload losing syntax highlighting regression
+- 2025-01-12 d7ddb6ea3 Enhance UX in "Find in file" action while Directory field is empty
+- 2025-01-13 26c300852 Make current line/position copiable in Go to line dialog
+- 2025-01-13 8fde4bd8a Make "Show close/pin button on each inactive tab" optional
+- 2025-01-14 c2d1ec6c8 Add localization entry & clean up
+- 2025-01-14 392181217 GUI enhancement: hide right menu shorcuts on the fly
+- 2025-01-11 b962835fe Fix backup file renaming bug for untitled tabs
+- 2025-01-15 0d484da68 Add "download" attribute in HTML
+- 2025-01-15 1cf112a34 Fix "Show buttons on inactive tabs" option inconsistent behaviour
+- 2025-01-15 6dfbc1f7e Add ShortcutMapper MultiLingual ability
+- 2025-01-17 b09b89799 Fix floating panels position resetting in multimon extended mode
+- 2025-01-18 85acdbc8a [xml] Update czech.xml to v8.7.6
+- 2025-01-16 879424742 [xml] Update Bulgarian localization
+- 2025-01-15 b110c4d65 Update russian.xml 8.7.6
+- 2025-01-14 5d6cefcc7 Sync Serbian with v8.7.6
+- 2025-01-12 f7881f61c Update german.xml
+- 2025-01-11 6a08f0a0e [xml] Update italian.xml
+- 2025-01-09 bb2af0206 [xml] Update Romanian translation for Notepad++ 8.7.6
+- 2025-01-09 1ba37e0fa [xml] Update japanese.xml
+- 2025-01-09 b9da6067a [xml] Update Corsican translation for Notepad++ 8.7.6
+- 2025-01-08 59e1005a6 [XML] Update brazilian_portuguese.xml
+- 2025-01-08 190a04fde [xml] Update Slovak translation
+- 2025-01-07 79b59ff0b Update swedish.xml
+- 2025-01-04 b6c177088 [xml] Update galician 8.7.5.xml
+- 2025-01-01 874043bfa [xml] Update Portuguese.xml
+- 2024-12-30 6113b7303 [xml] Update french.xml
+- 2024-12-26 f5fbff592 Update chinese.xml
+- 2024-12-22 ae8df71e7 [xml] Update croatian.xml to v8.7.5
+- 2025-01-20 e00f338d9 Update hungarian.xml
+- 2025-01-20 8c4c2c2fe [xml] Update galician.xml v.8.7.5
+- 2025-01-04 1d4e3c506 [xml] Update spanish 8.7.5.xml
+- 2025-01-20 236bbf5aa Allow shortcuts for keys specific to non-en-US keyboards
+- 2025-01-21 3eb1253d5 [xml] Update Vietnamese.xml to v8.7.6
+- 2025-01-24 8042e50b1 Remove unnecessary calls to remedy the plugin issue (regression)
+- 2025-01-28 5f004411a Notepad++ release 8.7.6
+- 2025-01-29 6fd3830b4 Add NPPM_ADDSCNMODIFIEDFLAGS to fix regression for Plugins
+- 2025-02-01 80319a71e Improve the code example of new API NPPM_ADDSCNMODIFIEDFLAGS
+- 2025-02-01 d888fb5f1 Improve NPPM_ADDSCNMODIFIEDFLAGS API
+- 2025-01-22 ec961c895 [xml] Update german.xml
+- 2025-02-07 706d7ae6d Notepad++ release 8.7.7
+- 2025-01-26 b2152d983 Optimize switching programming language performance for large files
+- 2025-02-08 e09481413 Set User Defined Languages online help to Notepad++ User Manual URL
+- 2025-02-02 db0bc136d Use a common abbreviation of a specific control code
+- 2024-12-08 abbe60e74 Allow using the Scintilla DirectWrite in non-Core Windows Server
+- 2025-02-12 5dfc9709c Fix a syntax highlighting regression while switching among UDL files
+- 2025-02-13 0b9800788 Minor refactoring & rename varibles
+- 2025-02-14 7ac7f9a0e Remove unecessary lines for accelerating switching into large files
+- 2025-02-12 4f295de86 Adds SAS programming language support
+- 2025-02-14 414baea93 Add latest AS3 keywords for auto-completion
+- 2025-02-17 fd2157729 Make other existing Scintilla rendering technology modes accessible
+- 2025-02-20 c2f84143d Enhance Style Configurator: reorganize Language and Styles
+- 2025-02-21 17287d756 Style Configurator: reorder Global Override style in all themes
+- 2025-02-19 a52738c1d Fix count operation on regex makes Notepad++ hang
+- 2025-02-17 83755ca15 Improve folding/unfolding performance for large files
+- 2025-02-21 3d4a53adb Add the ability to hide selected toolbar buttons via a XML conf file
+- 2025-02-10 bdf84ef57 [xml] Update japanese.xml
+- 2025-02-11 dba97be97 [xml] Update russian.xml v8.7.8
+- 2025-02-22 9b334f1a5 [xml] Update croatian.xml to v8.7.8
+- 2025-02-20 5b4590955 Update hungarian.xml
+- 2025-02-08 250fe3803 [xml] Update romanian.xml
+- 2025-02-08 933097b5f [Xml] Update brazilian_portuguese.xml
+- 2025-02-23 9694f9556 [xml] Update italian.xml
+- 2025-02-09 afcf7af12 [xml] Update german.xml
+- 2025-02-09 624152be6 [xml] Update Bulgarian localization
+- 2025-02-09 c93d76986 [xml] Update Slovak translation
+- 2025-02-24 123f5abc1 Remove deleted line from the localization files
+- 2025-02-24 72e44cea4 [xml] Update czech.xml to v8.7.8
+- 2025-02-24 0a4280651 Fix regression of keeping saving backup file even w/o modification
+- 2025-02-25 eb5ed6c52 Add a new quote
+- 2025-02-18 9008ae79f Update swedish.xml
+- 2025-02-25 977391c5c Enlarge the text fields of 2 control for the localization files
+- 2025-02-25 9044a085f [xml] Update romanian.xml
+- 2025-02-26 aecc0e4a3 Update French & Taiwanese Mandarin localization
+- 2025-02-27 bb0ed32d4 Fix installer silent mode doLocalConf.xml setting handling issue
+- 2025-03-02 99d3f86d8 Fix irish.xml copy error in installer
+- 2025-03-06 ba3b955a4 Fix syntax hiliting err while switch lang on untitled doc regression
+- 2025-03-01 1331002c7 [xml] Update Corsican translation for Notepad++ 8.7.8
+- 2025-03-06 a1f540538 Fix SQL Backslash Preference state regression (from v8.7)
+- 2025-03-04 829cd9d11 Fix FunctionList not refresh correctly on change of current doc's lang
+- 2025-03-07 8793825b3 Fix FuncList not refresh correctly due to large files perf improving
+- 2025-03-08 1068b5359 Notepad++ release 8.7.8
+- 2025-02-27 e38a0f2ec Update to scintilla 5.5.5 & Lexilla 5.4.3
+- 2025-03-08 88bc3955e Fix SQL Backslash Escape preference not taking effect immediately
+- 2025-03-13 25a40b9a6 Refactoring & clean up for TabBar (part 1)
+- 2025-03-14 0ead95eb8 Fix incorrect syntax hiliting by switching from wrong langType to right one
+- 2025-03-15 659330e81 Fix plugin button hidings being ignored bug in toolbar button conf
+- 2025-03-15 a679e8ebf Enable new low-level DirectX11 DirectWrite 1.1 Scintilla rendering mode
+- 2025-03-17 ff734af11 Refactoring & cleanup Tabbar (part 2)
+- 2025-03-18 a06c257a0 [xml] Update japanese.xml
+- 2025-03-18 3577dff9f [xml] Update russian.xml
+- 2025-03-17 48a68a793 [xml] Update czech.xml to v8.7.9
+- 2025-03-16 33d90b758 [xml] Update brazilian_portuguese.xml
+- 2025-03-16 f4746ceee Update swedish.xml
+- 2025-03-18 ce64d9902 Update Serbian
+- 2025-03-16 0b7162cf9 [xml] Update german.xml
+- 2025-03-16 46525827f [xml] Update Bulgarian localization
+- 2025-03-16 9e1184c77 [xml] Update Slovak translation
+- 2025-03-16 85477b780 Update romanian.xml
+- 2025-03-16 d3563cafa Update hungarian.xml
+- 2025-03-20 39d952584 Fix switching different languages regression
+- 2025-03-22 56795061c [xml] Update French translation
+- 2025-03-23 9eb2598ea Add version of external libraries (Scintilla/Lexilla/Boost) into Debug Info
+- 2025-03-23 100164ff8 Update Taiwanese Mandarin
+- 2025-03-26 8ce442bd2 Fix a regression introduced by refactoring
+- 2025-03-24 f9cd28e06 [xml] Update portuguese.xml
+- 2025-03-24 13e2f5556 [xml] Update croatian.xml to v8.7.9
+- 2025-03-23 ccb6993ab [xml] Update galician.xml v. 8.7.9
+- 2025-03-23 9279c8e20 [xml] Update spanish.xml v. 8.7.9
+- 2025-03-27 f3bc1881a Notepad++ release 8.7.9
+- 2025-04-01 b9bf6d64c Fix CMake build error
+- 2025-03-29 2a24867e9 Fix an easter egg not showing issue
+- 2025-03-29 3ae0875a8 Add class & method recognization ability for JavaScript function list
+- 2025-03-28 09abbad3d Fix -pluginMessage needing filename to work.
+- 2025-03-28 11e01d9ab Use '/' instead of English "or"
+- 2025-03-31 6bc7abb02 Make some items translatable (in UDL & on status bar)
+- 2025-03-26 2ae5df05b Fix "Keep selection when right-click outside of selection" not work issue
+- 2025-03-28 38ee65fdb Fix default installation setting for preventing control characters input
+- 2025-04-03 9122f45bd Force npcNoInputC0 value as "true" by default to avoid C0 code input
+- 2025-04-01 15b92c69d Adjust hot and control (softer) colors
+- 2025-03-26 bb61d0fab Fix invalid dot-char(s) handling in filenames checking
+- 2025-03-31 df74c1926 Make combobox in dark mode similar to standard visual style
+- 2025-04-03 f59777b0b Fix a hanging issue on regexp
+- 2025-04-04 8537f022b Improve slider control's look in dark mode when it's disabled
+- 2025-03-28 f7884726c Add "Show only pinned button" option to prevent from inacurate click
+- 2025-04-05 673c3ee6c Fix vertical tab bar messed up regression
+- 2025-04-06 dba2a9890 Add "Make the selected text foreground a single color" option on GUI
+- 2025-04-07 2a3152cd1 Update localization files
+- 2025-04-05 f127ba02d Rename darkmode functions, variables
+- 2025-04-04 5c1813185 Update to scintilla 5.5.6 & Lexilla 5.4.4
+- 2025-04-03 07e8d84e0 Fix crash when using custom toolbar icons
+- 2025-04-09 a23955742 Make some control names more accurate for dark mode
+- 2025-04-11 4f649d24d Use only toolbarButtonsConf.xml for toolbar buttons/icons customization
+- 2025-04-11 f2b13814e Add Fluent Icons Accent
+- 2025-04-03 5447ef762 Add option to apply different color to fluent toolbar icons
+- 2025-04-16 e45f72ae3 Reorganize GUI of Preferences dialog
+- 2025-04-16 331030ce6 Add  Accent Color for filled Fluent icons
+- 2025-04-16 d5b5e5e10 Refactor fluent icon color feature code
+- 2025-04-17 b68f25f3d Fix toolbar icon color picker's incoherent behaviour
+- 2025-04-17 1657dbbc5 Fix wrong toolbar color picker custom color between black/light mode
+- 2025-04-12 714eeafc4 Apply dark mode on treeview edit controls
+- 2025-04-13 b3b478284 Apply dark mode on rebar chevron
+- 2025-04-12 17cdde362 Fix Find dialog status text too left visual glitch
+- 2025-04-11 29c71c46b Fix compiling failure by LLVM/Clang's Windres
+- 2025-04-19 6bd3d9bfb Add accent tip for toolbar settings & update localization files
+- 2025-04-15 b324a68bc Fix inactive buffer reloading problem
+- 2025-04-17 a449c5e80 Fix breaking of the cloned file status after Notepad++ restart
+- 2025-04-19 4ddad4683 Make dark mode menu bar color in inactive state similar to light mode
+- 2025-04-18 9f2326d30 Fix GDI leak in setStartupBgColor
+- 2025-04-20 faec21b57 Fix accent tooltip behaviour and enhance '(?)' static control appearence
+- 2025-04-20 794e2bc41 [xml] Update Corsican translation for Notepad++ 8.8
+- 2025-04-14 8cc7bfe7f [xml] Update czech.xml to v 8.8
+- 2025-04-07 f4e9257ee [xml] Update russian.xml
+- 2025-04-05 963b7f498 [xml] Update japanese.xml
+- 2025-04-04 779c97a66 [xml] Update german.xml
+- 2025-04-03 c02c8c973 [xml] Update brazilian_portuguese.xml
+- 2025-04-03 22275b31b [xml] Update Slovak translation
+- 2025-04-04 b07f120e7 [xml] Update romanian.xml
+- 2025-04-22 0e32c6398 Update Serbian to v8.8
+- 2025-04-12 8c4278759 Update italian.xml
+- 2025-04-07 928e832e2 [xml] Update Bulgarian localization
+- 2025-04-22 e8f94c741 Update hungarian.xml
+- 2025-04-22 08c9774ea Remove items from the localization files
+- 2025-04-23 a506fb583 Reposition checkbox in tab bar section in Preferences
+- 2025-04-23 48d953693 Fix the wrong IDs of translation
+- 2025-04-28 4bc0d7f74 Notepad++ release 8.8
+- 2025-04-27 08084d2b1 Use "(?)" static text instead of "?" button for the tip/info/message
+- 2025-04-21 8a4aa48ed Code improvement: improve header readability
+- 2025-04-25 51449b09d Fix search result cut off result content due to nul characters ('\0')
+- 2025-04-22 13b08d0a5 Fix disabled Paste command with no previous text-data in clipboard
+- 2025-04-26 28978d3a1 Fix wrong directory defined in Preferences for opening files
+- 2025-04-29 cfbb4de52 Fix inconsistent find dialog '<<' button position when resizing
+- 2025-04-23 0ffd60605 Fix tab settings for external lexers cannot be saved issue
+- 2025-04-30 0feb209e9 Enlarge your FindReplaceDlg
+- 2025-04-27 19e356d61 Add ErrorList syntax highlighting
+- 2025-04-30 30976ec8d Fix ShortcutMapper displays wrong shortcut while editing regression (from v8.7.6)
+- 2025-04-29 fc2fa4bb1 Update slovak translation
+- 2025-04-23 01dcaf01a [xml] Update croatian.xml to v8.8
+- 2025-04-29 be00dd554 [xml] fix wrong toolbar-accent-tip in German
+- 2025-04-25 a9d8dca83 Add Locale-based line sort feature
+- 2025-05-02 eb1b7977f Enable Scintilla undo/redo selection history
+- 2025-05-03 e2c136237 [xml] Update romanian.xml
+- 2025-05-03 8bc333dbd [xml] Update czech.xml to v8.8.1
+- 2025-05-02 8c5f461c7 [xml] Update brazilian_portuguese.xml
+- 2025-05-03 46b4d35c5 [xml] Update japanese.xml
+- 2025-05-03 e719c5670 Fix Find in files progress bar visual regression (from v8.8)
+- 2025-05-05 910f02dfd Notepad++ release 8.8.1
+- 2025-05-04 0f79a5164 Fix an unresponsive issue due to hide lines
+- 2025-05-07 51eea9827 Update CONTRIBUTING.md
+- 2022-10-31 34677a541 Code enhancement:  Avoid usage of non FULL scintilla interfaces
+- 2025-05-08 b1cd1a9f2 Remove unused header file tchar.h
+- 2025-05-13 1da3312c7 Refactoring & clean up
+- 2025-05-12 dbce73c8f Add release-notifier workflow for synchronizing the headers with 2 plugin demos
+- 2025-05-12 b7faa4d70 Add basic DisplayInfo for the DebugInfo
+- 2025-05-13 bf1f4769e Clean up header file (part 1)
+- 2025-05-13 108e55555 Mark modified files with "*" in Windows menu dropdown
+- 2025-05-14 c24bf54ae Bring Back Political Incorrectness!
+- 2025-05-14 3395108c5 Update plugin header file (part 2)
+- 2025-05-14 f677a0c5d Update plugin header (part 3)
+- 2025-05-11 3310a613e Fix URL Link controls color in dark mode consistent issue for plugins
+- 2025-05-14 0e249b1bb Sync plugin header (part 4)
+- 2025-05-12 5406b82fb Add new plugin API: NPPM_GETTOOLBARICONSETMODE to get toolbar icon set choice
+- 2025-05-15 3548696bd Fix updown control style not changing when toggling dark mode
+- 2025-05-16 393815b99 Add labels in Preferences Tab bar section
+- 2025-05-18 140b11a83 Fix regression of tab background highlighting issue after drag&drop
+- 2025-05-18 2de626061 Deprecate 3 APIs
+- 2025-05-18 9232226d3 Improve dark mode updown control appearance in dark mode
+- 2025-05-21 b742c540b Fix typos
+- 2025-05-20 d3e846162 Fix Windows dialog file list not react with keystroke (character match)
+- 2025-05-21 8696d28cf Fix typos (part 2)
+- 2025-05-21 a10cebe2c Change from Nimrod to Nim in three themes
+- 2025-05-26 8bc77857a Fix "Go To Settings" links in Style Configurator regression (from v8.8)
+- 2025-05-16 19a1897ea Fix changing toolbar icon set not change to matched panel icon set issue
+- 2025-05-28 1f4811566 Fix regression of folding state not being remembered through sessions
+- 2025-05-03 da579eece Improve toolbarButtonsConf_example.xml documentation
+- 2025-05-16 703e2e172 Fix not enough room 4 translation of "Transparency" item in Style Configurator
+- 2025-05-23 645990581 Fix Notepad++ try icon lost after Windows Taskbar crashes & being recreate
+- 2025-05-23 abc23714d Add new feature of using first line of untitled document for its tab name
+- 2025-05-31 19267aa0e Make raw string syntax highlighting work for Golang
+- 2025-06-03 dfba12535 Remove .log from errorlist lexer's default extensions
+- 2025-06-04 d767fd846 Fix DisplayInfo maxAdapters searching limitation
+- 2025-06-01 8435308b0 Add XSD-based validation for the various XML files
+- 2025-06-05 191187541 Fix Python FunctionList absorbing next function issue if space after colon
+- 2025-06-05 0478caebf Fix use1stLineAsTabName feature called twice while undo/redo
+- 2025-06-06 299d7cb26 Minor changes in CONTRIBUTING.md
+- 2025-06-11 5b26ef1ca Fix rename tab error msg while no change tab name
+- 2025-06-09 e85c35413 Update to scintilla 5.5.7 & Lexilla 5.4.5
+- 2025-06-13 7cc002680 Fix right click on caption bar unhidding main menu
+- 2025-06-12 a8ff8bb78 Dark mode enhancement for tab control
+- 2025-06-12 61084f1c9 Fix scrollbar sometimes not drawn in listbox in dark mode
+- 2025-05-19 38cb13530 [xml] Update japanese.xml
+- 2025-06-04 116a17019 [xml] Update hungarian.xml
+- 2025-05-03 b9d7a1988 [xml] Update Bulgarian localization
+- 2025-05-04 08e014d61 [xml] Update Slovak translation
+- 2025-05-31 5e74415ad [xml] Update galician.xml v. 8.8.1
+- 2025-05-31 a45980f36 [xml] Update spanish.xml v. 8.8.1
+- 2025-05-17 379ea1f82 [xml] Update brazilian_portuguese.xml
+- 2025-05-10 b8b7583ac Update portuguese.xml
+- 2025-05-09 5eafd7009 Update swedish.xml
+- 2025-05-07 ccd155d60 [xml] Update ChineseSimplified.xml
+- 2025-06-15 a758c35b7 Add translation PR rule for the version number
+- 2025-06-01 bac4d91eb [xml] Update romanian.xml
+- 2025-05-04 27e40e1b7 [xml]  russian.xml v8.8.1
+- 2025-05-04 663f09baa [xml] Update german.xml
+- 2025-06-14 2214d10ce Add set read-only attribute on file feature
+- 2025-06-14 fb82d7904 Enhance NPPM_DARKMODESUBCLASSANDTHEME: Enable darkmode progress bar for plugins
+- 2025-06-17 8a28d27cd [xml] Update Slovak translation
+- 2025-06-17 46cedd211 Update romanian.xml
+- 2025-06-17 885134566 [xml] Update german.xml v8.8.1
+- 2025-06-17 b48efff53 [xml] Update russian.xml
+- 2025-06-16 f6b18fe79 [xml] Update hungarian.xml
+- 2025-05-11 b81e38ef6 [xml] Update polish.xml to 8.8.2
+- 2025-06-08 76b1cba60 Add new plugin notification: NPPN_TOOLBARICONSETCHANGED
+- 2025-06-20 abba79cea Remove unnecessary and wrong "Clear" word
+- 2025-06-02 bc99de07b Add update Notepad++ on exit feature
+- 2025-06-21 0b9ebf443 Update French & Taiwaese Madarin localization files
+- 2025-06-20 e76e6462a [xml] Update czech.xml translation
+- 2025-06-21 f2346ea00 Code enhancement: Use the absolute path instead of an unspecified path
+- 2025-06-06 044319943 Update Obsidian.xml
+- 2025-06-18 538b69a6d [xml] Update japanese.xml
+- 2025-06-22 222779cf7 [xml] Update Slovak translation
+- 2025-06-21 7f837a04f Update Bulgarian localization
+- 2025-06-23 999ec7a6c Enable SHA256 verification between Notepad++ & internal components
+- 2025-06-23 650d0dcd2 [xml] Update russian.xml
+- 2025-06-22 5bcf24a7a [xml] Update brazilian_portuguese.xml
+- 2025-06-22 e8843222a [xml] Update german.xml
+- 2025-06-24 e38016e3f Fix toggling "Read-only attribute in Windows" command wrong behaviour
+- 2025-06-24 f0f8f7ec2 Add warning message on "Read-only attribute in Windows" command failure
+- 2025-06-26 7b613b1ff Fix typos
+- 2025-06-26 441b32c5e Themes: get rid of fontSize overrides
+- 2025-06-24 ab8d29399 [xml] Update portuguese.xml
+- 2025-06-25 3d44ddc0c [xml] Update czech.xml translation
+- 2025-06-25 b6f67d22b [xml] Update japanese.xml
+- 2025-06-20 4a21d2e21 [xml] Update Corsican translation
+- 2025-06-22 5a6ae6b7d [xml] Update croatian.xml
+- 2025-06-23 ec8f7ac9e [xml] Update polish.xml to the latest commit
+- 2025-06-24 751c14137 [xml] Update hungarian.xml
+- 2025-06-24 6e1391673 [xml] Update Bulgarian localization
+- 2025-06-25 9e711e657 [xml] Update romanian.xml
+- 2025-06-25 a1e9d0def [xml] Update Slovak translation
+- 2025-06-25 e8fe14574 [xml] Update german.xml
+- 2025-06-27 84692afd8 Update vietnamese.xml
+- 2025-06-25 a76957aff [xml] Update brazilian_portuguese.xml
+- 2025-06-24 91be70dd1 [xml] Update russian.xml
+- 2025-06-27 8aef10b7e [xml] Update galician.xml
+- 2025-06-27 19a410603 [xml] Update spanish.xml
+- 2025-06-27 ae8bd95a7 [xml] Update Serbian
+- 2025-06-30 cc45875c6 Notepad++ v8.8.2 release
+- 2025-06-27 11cd8c55f Improve security for DLL loading
+- 2025-07-03 889efad2e Fix uninstaller security issue (CVE-2025-49144)
+- 2025-07-01 dfa7417da Update swedish.xml
+- 2025-07-03 03063ebf4 Use self-signed certificate
+- 2025-07-09 ebc6af14c Notepad++ release v8.8.3
+- 2025-07-10 45ce3418d Add more Notepad++ Root Certificate download locations
+- 2025-06-20 dddbf24ff Add a clear button for filter field in Shortcut Mapper
+- 2025-07-12 83d5b18d4 Fix resizing Shortcut Mapper height makes a mess
+- 2025-07-12 aef5ff18a Remove SHA256 for X.509 certificates
+- 2025-07-14 a93b533e8 Reword German FolderAsWorspaceSubfolderExists
+- 2025-07-12 a6cd3de8a Add button to insert variables in the run dialog
+- 2025-07-15 f234207f5 Fix "Follow Windows" option makes external lexers show twice in tab settings
+- 2025-07-16 e8b93575b Revert "Fix "Follow Windows" option makes external lexers show twice in tab settings"
+- 2025-07-17 47d120a6c Fix the validation date of Notetepad++ certificate
+- 2025-07-16 f89797207 Fix external lexers showing several time in tab_settings
+- 2025-07-16 0d98bd24f Fix -notabbar & asNotepad.xml stop hiding tabbar regression (from v8.7.9)
+- 2025-07-19 d6ad51a02 Add warning tip for the max length text on search (Find/Replace)
+- 2025-05-21 fe42d71db Update MVS to v17.14 (MS Visual Studio Community 2022)
+- 2025-07-21 1582c67b6 Update tip info
+- 2025-07-21 f5a34dcc9 Enhance "Go to settings": guide users to the related setting explicitly
+- 2025-07-23 22c5063d2 Increase search input length from 2046 to 16383
+- 2025-07-24 fe3f60936 Add asNotepad.xml status to Debug Info
+- 2025-07-24 11bc8107b Increase CURRENT_LINESTR variable length of run dialog
+- 2025-07-26 71fbdae00 Revert "Increase CURRENT_LINESTR variable length of run dialog"
+- 2025-07-26 36aeb8f68 Refactoring: use dynamic allocation to reduce stackoverflow risk
+- 2025-07-27 07a49ca0f Reduce stack memory usage to eliminate the compiling warning
+- 2025-07-29 8fd2d12ab Fix crash on indent settings after changing lang name in lang.xml
+- 2025-07-29 bf6fd373d Fix JavaScript listed twice in Language Preferences issue
+- 2024-03-29 c367ab896 Some code improvements
+- 2025-07-30 c710439b5 Fix possible heap memory leak
+- 2025-07-31 76c3e30fe Fix JavaScript indent settings incorrect behaviour
+- 2025-07-31 6f65d6fa4 Add pyi extension to Python
+- 2025-07-29 95996b9db [xml] Update hungarian.xml
+- 2025-07-25 8abf5814f Update dutch.xml
+- 2025-07-23 a75832cf9 Update romanian.xml
+- 2025-07-23 8c0db1450 [xml] Update Corsican translation for Notepad++ 8.8.3
+- 2025-07-22 9e7ab3f0f [xml] Update german.xml
+- 2025-07-22 1afd680ef [xml] Update russian.xml
+- 2025-07-21 fb5f1171b Update swedish.xml
+- 2025-07-21 1ccdacc19 [xml] Update japanese.xml
+- 2025-07-20 5f101df77 [xml] Update brazilian_portuguese.xml
+- 2025-07-20 4ddcd0b9a [xml] Update Slovak translation
+- 2025-07-05 c9f750fe1 [xml] Update Turkish localization
+- 2025-08-02 559085be8 [xml] Update polish.xml to the latest commit
+- 2025-08-03 3a90f4f8c Make NFO font overridable by adding fontName in Lexer "nfo" of stylers.xml
+- 2025-08-02 67693a84a [xml] Update Bulgarian localization
+- 2025-08-05 df87c7672 Fix "Edit with Notepad++" not removed by uninstaller regression (from v8.8.3)
+- 2025-08-09 aed12006a Update chineseSimplified.xml
+- 2025-08-07 554206681 [xml] Update czech.xml
+- 2025-08-10 b56ac80ff Fix MSIX singing issue
+- 2025-08-06 8b5fafca0 [xml] Update croatian.xml translation
+- 2025-08-12 faaa9bee7 Notepad++ 8.8.4 release
+- 2025-08-14 4467a4c99 Notepad++ 8.8.5 release
+- 2025-08-04 5933f791c Prevent stale search-result from making selection inside a multibyte character
+- 2025-08-18 dab30de9c Fix font size inconsistencies
+- 2025-08-19 1a0e8bea7 Use radix for GUI input fields to match the output in Column Editor
+- 2025-08-29 06750919a Fix column editor egression: insert column with bad parameters
+- 2025-08-30 dc58d4135 Enhance Column Editor
+- 2025-08-20 4b0fc8d31 Improve Notepad++ UAC operations largely
+- 2025-08-26 b3884c18a Add NPPM_GETNPPSETTINGSDIRPATH message to get Notepad++ settings directory path
+- 2025-09-04 de7aa5ae7 Add NPP_UAC_CREATEEMPTYFILE
+- 2025-08-30 5c6f89df3 Add capacity of pasting multiline into Find/Replace fields
+- 2025-09-07 cfc3fb6cf Improve copy multilines to comboboxs behaviour in Find Replace Dialog
+- 2025-09-08 d4442b9d1 Enhance Ctrl-F to copy to Find What field behaviour
+- 2025-09-10 962a17e9f Allow user to customize max selected chars to auto-fill "Find what" field
+- 2025-09-11 7a1cde702 Adjust "Find what" tooltip position for not hidding search settings
+- 2025-09-14 be59048c5 Fix filling Find what length not accurate problem
+- 2025-09-18 03d1268b4 Add function list ability for CSS
+- 2025-04-05 884f8cdc0 Fix C# function list not working with comments
+- 2025-06-26 105a141a4 Fix double clicking on border creates a new tab issue
+- 2025-08-30 5528fed4b Add Window dialog "File Modified Time" sorting capacity
+- 2025-09-21 9510f75fd Enhance Window dialog "File Modified Time" sorting capacity
+- 2025-09-22 3546a4d97 Fix DOCTYPE styling in xml and html
+- 2025-09-23 68c27fb14 Fix Pin Tab operation being too long with many opened documents
+- 2025-09-24 f44795a69 Fix column mode pasting to multi-selection issue due to different EOL
+- 2025-09-24 f68e1d1fd Fix a logic error
+- 2025-09-24 1fbff2448 Fix NPPN_CMDLINEPLUGINMSG not working issue
+- 2025-09-29 bee895f5c Update Notepad_plus_msgs.h copyright
+- 2025-09-29 8ccec170c Minor change for testing sync-notifier
+- 2025-09-18 785018385 Enhance SQL function list parser
+- 2025-09-28 8d585cf82 Add 2 new full-readonly modes via CLI & apply/remove readonly for all docs cmds
+- 2025-09-30 bc4a4809a Add translation items for full read-only features
+- 2025-09-30 c6e1212cd [xml] Update czech.xml
+- 2025-09-21 5f805ce6a [xml] Update brazilian_portuguese.xml
+- 2025-09-11 68ac15c55 [xml] Update Slovak translation
+- 2025-09-13 e2742a0cb [xml] Update japanese.xml
+- 2025-09-12 d87d12ec8 [xml] Update german.xml
+- 2025-09-11 ff8433aac [xml] Update hungarian.xml
+- 2025-09-19 809708db9 [xml] Update Corsican translation for Notepad++ 8.8.5
+- 2025-09-28 da97507a2 [xml] Update galician.xml
+- 2025-09-28 59331d2d6 [xml ]Update spanish.xml
+- 2025-09-12 2dbdfdcb6 [xml] Update russian.xml
+- 2025-08-28 4bdacd5e3 [xml] Update localization: Hong Kong Cantonese...
+- 2025-09-22 cd312d5c3 Update Serbian to version 8.8.5
+- 2025-09-17 2044febe9 Update swedish.xml
+- 2025-09-24 3952c1e76 [xml] Update Croatian localization
+- 2025-10-01 8be29baea Update NppIO.cpp, remove fake buffer id
+- 2025-09-14 88c2cc8df [xml] Update Bulgarian localization
+- 2025-09-21 598aefef9 [xml] Update Ukrainian localization
+- 2025-10-05 7a21c638e Enlarge some items' size in Preferences for translation
+- 2025-10-06 85fa8bf95 Enhance Command Line Arguments dialog: smaller & more readable
+- 2025-10-06 429c9bbc6 Add forgotten file
+- 2025-10-07 8660732d5 Notepad++ release 8.8.6
+- 2025-10-08 92f8f7f8d Fix pressing Alt or Tab causes controls to "disappear" in UDL dialog
+- 2025-10-09 a91b22bd8 Enhance Perl FunctionList for class
+- 2025-10-11 f424ec159 Fix Shortcut Mapper memory leak issue
+- 2025-10-03 d3bb31b0e Fix Monitoring in one view affects selections and position in second view
+- 2025-10-12 36856ddc9 Make packaging script impact
+- 2025-10-13 9e24a5a5a Make an item translated more accurate in Taiwanese Mandarin
+- 2025-10-20 1a9d52513 Sign Notepad++ binaries with GlobalSign certificat to fix false-positive alerts
+- 2025-10-20 e214d73fe Notepad++ v8.8.7 - Signed with a legitimate certificate
+- 2025-10-18 cf0a5c8ed Check null pointer for text2FindW to prevent potential crashes
+- 2025-10-12 cf8af1446 Improve the performance of saving session on exit
+- 2025-10-25 12dc00132 Improve Rust handling: keywords and autoCompletion
+- 2025-10-21 2170115d1 Fix GCC warnings
+- 2025-10-19 5996ed717 Add basic text scale support
+- 2025-10-05 8149f7271 Disable ANSI under full Unicode system & fix switching encoding not working
+- 2025-10-30 e6739c0ab Pass infoUrl argument to updater directely via Notepad++
+- 2025-10-29 1ec38b8f7 Fix NPPM_ISTABBARHIDDEN v8.7.9 refactoring regression
+- 2025-10-30 53f8aed18 Code enhancement: Use modern subclassing for color picker button
+- 2025-11-03 02f7df9ba Fix method definition syntax in class definition
+- 2025-11-02 c12fa283e Scaling enhancements to color popup
+- 2025-10-30 d6ad80125 Add tab label length limitation option to have reasonable tab width
+- 2025-11-03 fa2fbbfb9 Fix extra semicolon and some override warnings
+- 2025-11-04 7837bf107 Fix deprecated function usages
+- 2025-11-04 feead462d Refactoring: use the same constant for SetWindowSubclass
+- 2025-11-04 338790664 Use modern subclass for TabBarPlus
+- 2025-11-05 9ba9759a6 Remove a redondant/unnecessary condition
+- 2025-11-05 62b985b19 Use modern subclass for URLCtrl
+- 2025-11-06 2d4b1de1e Remove redondant code & improve Style Configurator's description look&feel
+- 2025-11-08 8cc7ce7d1 Add forgotten rust autocompletion into installer
+- 2025-11-06 7da0c061d Use modern subclassing on some controls
+- 2025-11-09 3ae5af89e Add forgotten localization file in installer
+- 2025-11-09 00ed50fca Fix text scaling not applying on some controls
+- 2025-11-07 bf646f0e1 Update dpiManagerV2 API
+- 2025-11-10 75fc7e9bd Update Taiwanese Mandarin & French localization files (v8.8.7)
+- 2025-11-10 0bfcd7203 Update swedish.xml
+- 2025-10-18 c37ee6664 Update chineseSimplified.xml to 8.8.6
+- 2025-11-07 f61398a8f [xml] Update Bulgarian localization
+- 2025-10-23 af52b5414 Update dutch.xml to 8.8.1
+- 2025-11-06 3177dfc60 [xml] Update croatian.xml
+- 2025-11-04 d37bb5bca [xml] Update brazilian_portuguese.xml
+- 2025-11-05 64f9a4634 [xml] Update German language file
+- 2025-11-05 6613fba85 [xml] Update hungarian.xml
+- 2025-11-05 5f08c0790 [xml] Update russian.xml
+- 2025-11-04 d43a785f5 [xml] Update Slovak translation
+- 2025-11-05 9fda54222 [xml] Update japanese.xml
+- 2025-11-10 b129dad6f [xml] Update czech.xml
+- 2025-11-09 c4587de44 Add Notepad++ MSI for enterprise IT deployment
+- 2025-11-11 3a1c88c57 Update dutch.xml to 8.8.7
+- 2025-11-12 dc4660364 Better MSI build integration
+- 2025-11-12 16683667e Fix an small error in path
+- 2025-11-12 a9ceeb519 Update azerbaijani.xml
+- 2025-11-16 3daa59326 Security enhancement: Add force domain URL from Notepad++ for update
+- 2025-11-18 9d87ac96d Notepad++ v8.8.8 release
+- 2025-11-11 2cdc66501 Code enhancement: Use subclass for menu bar
+- 2025-11-14 c6aa7f9ec Code enhancement: Remove old dpiManager
+- 2025-11-21 1f3b2ebe2 Fix "Select & Find Next" command not working regression
+- 2025-11-21 ea572cec8 Code enhancement: Make returned value safer
+- 2025-11-21 9a4e1c468 Update issue templates
+- 2025-11-21 0745cd922 Add field-sizing as 1 of keyword of CSS for syntax highlighting
+- 2025-11-19 ebf3657d6 Use modern subclass on FindReplaceDlg combo boxes
+- 2025-11-17 c696f6fa7 Optimize constants in ScintillaEditView.h to reduce binary size
+- 2025-11-16 b06678d73 Update to Scintilla 5.5.8 & Lexilla 5.4.6
+- 2025-11-23 4184d7cbb Fix wrong keywords used for HTML lexer
+- 2025-11-24 a8dfadefe Use an explicite function name
+- 2025-11-23 8e01545f3 Code enhancement: Use modern subclass for Finder
+- 2025-11-22 9f658e1d4 Improve some localization descriptions
+- 2025-11-23 477d2c06e Fix document map regression with keyboard input
+- 2025-11-16 9a1c7c5be Fix mouse wheel horizontal scrolling amount not respecting Windows setting
+- 2025-11-17 25792fcf2 Undo & redo enhancement: restore vertical scroll position
+- 2025-11-20 95dc9dcfd Code enhancement: Use modern subclass on ScintillaEditView
+- 2025-11-26 8bec8ecc4 MSI improvement: Suppres REBOOT & add NOUPDATER option
+- 2025-11-27 e7b5a47f0 MSI code enhancement: refactoring and break down the big file to small ones
+- 2025-11-30 db3ff05ef Make Command Line Arguments more readable
+- 2025-12-01 bcf2aa68e Security Enhancement: verify certificate & signature on update installer
+- 2025-11-26 86e3be5f6 Fix wrong system font scaling on Windows 7
+- 2025-11-26 878b00e53 Fix corrupted file loading for Windows full UTF-8 Code page System
+- 2025-11-20 c64b81e3a Add update users' langs.xml & stylers.xml from model XML files ability
+- 2025-11-27 ac46fab1d Update nlohmann json to version 3.12.0
+- 2025-11-29 e30a4d678 Fix context menu truncated regression on localization change
+- 2025-11-27 38730e469 Fix Perl Function List causes Notepad++ to freeze on tab switch regression
+- 2025-11-30 53bad84e6 Fix crashing when hashing SHA256 for large files
+- 2025-11-22 c204de590 Add feature to sort lines in a document by length
+- 2025-12-03 2048d0908 Remove Notepad++ root certificate & its info
+- 2025-12-03 90aab8e04 Model checking: use date instead of MD5 to improve the performance
+- 2025-12-03 f94a276e5 [xml] Update Bulgarian localization
+- 2025-12-02 cbf07cb22 [xml] Update brazilian_portuguese.xml
+- 2025-12-02 ea44f0ac0 [xml] Update russian.xml
+- 2025-12-04 867a98a8a [xml] Update czech.xml
+- 2025-12-04 c215da130 [xml] Update japanese.xml
+- 2025-12-02 15e1ab54b [xml] Update Slovak translation
+- 2025-11-22 8c188d7a7 [xml] Update portuguese.xml
+- 2025-11-14 468efd503 [xml] Update German language file
+- 2025-12-07 491a52ff2 Update chineseSimplified.xml
+- 2025-12-06 f8466cb13 Update Serbian to version 8.8.8
+- 2025-12-06 9335e444c Fix crash (regression) in v8.8.9 on langs.xml update
+- 2025-12-05 602ab3742 [xml] Update hungarian.xml
+- 2025-12-09 b5ce090bf Notepad++ 8.8.9 release
+- 2025-12-10 7f17447a9 Fix published MSI version 8.8.9 reports version 8.8.8
