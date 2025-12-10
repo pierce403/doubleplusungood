@@ -28,6 +28,20 @@ Focus: how the built-in updater (WinGUp/gup.exe) and its security posture evolve
 - 2025-12-01 — bcf2aa68e: security enhancement to verify certificate & signature on the update installer.
 - 2025-12-09 — b5ce090bf (Notepad++ 8.8.9 release): issued after reports that the updater was installing malware; 8.8.9 described as fixing the updater compromise (per headline “Notepad++ updater installed malware”).
 
+## 2025 malware incident: IOCs and triage tips
+- Allowed updater domains: `notepad-plus-plus.org`, `github.com`, `release-assets.githubusercontent.com`. Any gup.exe traffic elsewhere is suspect.
+- Suspicious droppers in %TEMP%: `update.exe`, `AutoUpdater.exe` (Notepad++/gup.exe never uses these names).
+- Legacy gup.exe hash (old self-signed cert): `5eb90daf1cad88ad33bceed04b0d01cb5aaf3883f991516ffc9e4b99a1c413de` (flag/replace if found).
+- gup.exe should only spawn `explorer.exe` and the signed Notepad++ installer; other child processes are suspicious.
+
+### Quick triage checklist
+1) Identify version: if <8.8.8, domain pinning absent; if <8.8.9, signature enforcement absent—update immediately to 8.8.9+.  
+2) Validate updater binary: check gup.exe signature (GlobalSign) and hash; replace if unsigned/self-signed.  
+3) Network review: look for gup.exe connections to non-allowed domains; block and capture PCAP if present.  
+4) Filesystem sweep: search %TEMP% for `update.exe` / `AutoUpdater.exe` and remove/quarantine.  
+5) Process audit: list gup.exe descendants; anything beyond explorer/official installer warrants containment.  
+6) Remediation: isolate host, upgrade to 8.8.9+, remove legacy Notepad++ root certs if present, reinstall Notepad++ from verified download.
+
 ## Current behaviors to note
 - Updater binaries live under `updater/gup.exe`; before launch, release builds verify the signature/known hashes (`PowerEditor/src/NppCommands.cpp`, `PowerEditor/src/MISC/Common/verifySignedfile.*`).
 - XP is blocked for the updater because Notepad++ update downloads require SSL; users are redirected to manual downloads.
